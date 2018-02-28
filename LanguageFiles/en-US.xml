@@ -1,0 +1,2468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModPlus Name="en-US" Version="1.0.0.0">
+  <ModPlusAPI>
+    <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
+    <msg2>No numeric values found!</msg2>
+    <close>Close</close>
+    <yes>Yes</yes>
+    <no>No</no>
+    <ok>Ok</ok>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <prefix>Prefix</prefix>
+    <suffix>Suffix</suffix>
+    <h1>In ModPlus error occurred</h1>
+    <h2>Message</h2>
+    <h3>Details</h3>
+    <h4>Source</h4>
+    <h5>Stack trace</h5>
+    <h6>SELECT NUMBER FROM TEXT</h6>
+    <h7>Separator of the integer and fractional part:</h7>
+    <h8>Dot</h8>
+    <h9>Comma</h9>
+    <h10>Did you like the function? Do you consider it useful?</h10>
+    <h11>But do not like to see this window every time?</h11>
+    <h12>Just buy yourself this function!</h12>
+    <h13>And believe - it's quite inexpensive!</h13>
+    <h14>including tax of 5%</h14>
+    <h15>Close after:</h15>
+  </ModPlusAPI>
+  <CUI>
+    <group1>Annotations</group1>
+    <group2>Design</group2>
+    <group3>Utils</group3>
+    <group4>Information/Calculations</group4>
+    <group5>Products</group5>
+    <group6>View</group6>
+    <group7>Structure</group7>
+    <group8>Insert</group8>
+  </CUI>
+  <Configurator LocalName="Configurator">
+    <title1>MODPLUS CONFIGURATOR</title1>
+    <title2>CHECKING KEYS</title2>
+    <writableDir>You do not have write access to the directory: {0}\.\nThe Startup of the Configurator will be terminated!\nPut the folder with the ModPlus plugin in the directory to which you have full access and run the Configurator again</writableDir>
+    <runed>The application is already running</runed>
+    <closeCad>To start the ModPlus configurator, you need to close AutoCAD</closeCad>
+    <closeRevit>To start the ModPlus configurator, you need to close Revit</closeRevit>
+    <loading>LOADING...</loading>
+    <progress1>Running a timer to check for running AutoCAD or Revit applications</progress1>
+    <progress2>Checking the location of the directory with the plugin</progress2>
+    <progress3>Adding entries to the registry</progress3>
+    <progress4>Checking the default directories</progress4>
+    <progress5>Unpacking the auto-update module (if necessary)</progress5>
+    <progress6>Checking the configuration file</progress6>
+    <progress7>Initialization of the main window</progress7>
+    <progress8>Initializing the configuration file</progress8>
+    <progress9>Definition and application of the theme</progress9>
+    <progress10>Reading data from the configuration file</progress10>
+    <progress11>Reading settings from the registry</progress11>
+    <progress12>Filling in the list of hard disks</progress12>
+    <progress13>Setting the binding option from the configuration file</progress13>
+    <progress14>Reading version plugin components</progress14>
+    <progress15>Loading change history</progress15>
+    <progress16>Checking the created shortcut on the desktop</progress16>
+    <progress17>Search Autodesk products</progress17>
+    <progress18>Checking and starting the welcome screen</progress18>
+    <progress19>Close the splash screen</progress19>
+    <tab1>Configuration</tab1>
+    <tab2>Customize</tab2>
+    <tab3>Settings</tab3>
+    <tab4>About the program</tab4>
+    <adminMsg>The configuration is started in read-only mode. In this mode, you may experience problems with the editing of some files (for example, acad.exe.config). It is recommended that you run the configurator with administrator rights</adminMsg>
+    <adminReload>Restart with administrator rights</adminReload>
+    <header1>AUTHORIZATION</header1>
+    <header2>AUTODESK PRODUCTS</header2>
+    <header3>ACTIVATION KEYS</header3>
+    <header4>FUNCTIONS</header4>
+    <header5>Menu for:</header5>
+    <header6>Active functions</header6>
+    <header7>Display:</header7>
+    <header8>GENERAL</header8>
+    <header9>Language:</header9>
+    <header10>Theme of the plugin:</header10>
+    <header11>Theme of the Configurator:</header11>
+    <header12>Window borders:</header12>
+    <header13>Separator:</header13>
+    <header14>CONFIGURATION FILE</header14>
+    <header15>Location of the configuration file:</header15>
+    <header16>REGISTRATION</header16>
+    <header17>Contacts:</header17>
+    <header18>CHANGE STORY</header18>
+    <header19>Function</header19>
+    <header20>Product</header20>
+    <header21>Product version</header21>
+    <header22>Key</header22>
+    <header23>Result</header23>
+    <header24>Registration key:</header24>
+    <header25>Binding Option:</header25>
+    <header26>Binding to a physical disk:</header26>
+    <header27>Binding to account:</header27>
+    <header28>READ MORE ABOUT BINDING</header28>
+    <header29>Version of Configurator:</header29>
+    <header30>Version of auto-update module:</header30>
+    <header31>Version of working libraries for AutoCAD:</header31>
+    <header32>Version of working libraries for Revit:</header32>
+    <header33>Database version:</header33>
+    <header34>Dwg base version:</header34>
+    <header35>DOWNLOAD FILE</header35>
+    <header36>Specify the mail address for which the directory was created on the server when the configuration file was uploaded:</header36>
+    <header37>VIDEO</header37>
+    <header38>You can also watch the video in</header38>
+    <header39>the browser</header39>
+    <header40>Welcome to ModPlus</header40>
+    <header41>Video "Quick start"</header41>
+    <header42>Video "Installation and purchase"</header42>
+    <header43>Go to the website</header43>
+    <header44>Go to the forum</header44>
+    <header45>Send e-mail</header45>
+    <header46>Show this window at startup</header46>
+    <header47>Display functions for:</header47>
+    <header48>version:</header48>
+    <header49>There is no connection to www.modplus.org. Displaying only the local list</header49>
+    <header50>Paid</header50>
+    <header51>Uninstalled</header51>
+    <header52>In developing</header52>
+    <header53>Database:</header53>
+    <header54>Dwg base:</header54>
+    <header55>Functions loaded:</header55>
+    <header56>If there is no function in the list of active functions, then adding this function to the ribbon and in the menu is provided by the internal mechanisms of the plugin</header56>
+    <header57>Note: functions that are not connected to the ModPlus plugin (Configuration tab) will not be added when building a ribbon and menus!</header57>
+    <header58>No installed versions of AutoCAD, suitable for installing ModPlus</header58>
+    <header59>No installed versions of Revit, suitable for installing ModPlus</header59>
+    <header60>Supported version of the product:</header60>
+    <header61>Available version:</header61>
+    <header62>Detail</header62>
+    <header63>Current version:</header63>
+    <header64>Price, USD:</header64>
+    <header65>Author:</header65>
+    <header66>Do not remind</header66>
+    <header67>Rename</header67>
+    <header68>There is no connection to https://modplus.org</header68>
+    <header69>There is no access to the internet or modplus.org</header69>
+    <header70>Display only:</header70>
+    <header71>Show only unused functions</header71>
+    <key1>Save to file</key1>
+    <key2>Load from file</key2>
+    <key3>Check keys</key3>
+    <key4>Delete keys</key4>
+    <key5>Upload on server</key5>
+    <key6>Download from server</key6>
+    <openPath>Open directory</openPath>
+    <b1>Install and enable all</b1>
+    <b2>Install</b2>
+    <b3>Build standard</b3>
+    <b4>Bind</b4>
+    <b5>Unbind</b5>
+    <b6>Delete settings</b6>
+    <b7>Uninstall application</b7>
+    <b8>Download from server</b8>
+    <b9>Continue</b9>
+    <b10>Cancel</b10>
+    <b11>Accept</b11>
+    <b12>Check</b12>
+    <b13>Delete the shortcut on the desktop</b13>
+    <b14>Create a shortcut on the desktop</b14>
+    <ribbon>Ribbon</ribbon>
+    <fMenu>Floating menu</fMenu>
+    <drawings>Drawings</drawings>
+    <palette>Palette</palette>
+    <tt1>Welcome screen</tt1>
+    <tt2>It is necessary to specify your login used when registering on the site!</tt2>
+    <tt3>Attention!</tt3>
+    <tt4>Based on your login, the registration key is generated!</tt4>
+    <tt5>Enter your email address.</tt5>
+    <tt6>The address of the mail is required if you send your data (configuration file and keys) to the server.</tt6>
+    <tt7>The email address is required to identify you on the server.</tt7>
+    <tt8>It is recommended to use the e-mail address specified at the registration on modplus.org</tt8>
+    <tt9>Select versions of Autodesk products for which you want to connect the ModPlus plugin</tt9>
+    <tt10>Working with your activation keys</tt10>
+    <tt11>Save the keys to an xml file</tt11>
+    <tt12>Load keys from xml-file</tt12>
+    <tt13>Check all keys</tt13>
+    <tt14>Delete all keys</tt14>
+    <tt15>Upload the key file to the FTP server</tt15>
+    <tt16>Download the key file from the FTP server</tt16>
+    <tt17>Update the list of functions</tt17>
+    <tt18>The list displays only those versions of the specified product that are in the PC</tt18>
+    <tt19>Install and enable all functions for the current version of the product</tt19>
+    <tt20>Connect to ModPlus plugin</tt20>
+    <tt21>Watch the video for the function</tt21>
+    <tt22>Go to the store to purchase the full version of the function</tt22>
+    <tt23>Download and install the function</tt23>
+    <tt24>To get the activation key, go to modplus.org and buy the function</tt24>
+    <tt25>Check the entered key</tt25>
+    <tt26>Do not remind about this function when checking for new functions</tt26>
+    <tt27>The configurator installs the functions and databases that are relevant at the time of installation!</tt27>
+    <tt28>To update features and databases, use the auto-update module</tt28>
+    <tt29>The configurator and the auto-update module installs only the dwg database pointer file!</tt29>
+    <tt30>Dwg files downloaded with "Dwg base" function on user request or manually on modplus.org</tt30>
+    <tt31>Clear menu</tt31>
+    <tt32>Change size</tt32>
+    <tt33>Create group</tt33>
+    <tt34>Delete group</tt34>
+    <tt35>Add function to group</tt35>
+    <tt36>Delete function from group</tt36>
+    <tt37>Move up</tt37>
+    <tt38>Move down</tt38>
+    <tt39>Update functions list</tt39>
+    <tt40>Enable/disable ribbon</tt40>
+    <tt41>Enable/disable floating menu</tt41>
+    <tt42>Enable/disable display of open drawings in a separate floating menu</tt42>
+    <tt43>Enable/disable the ModPlus palette</tt43>
+    <tt44>Separator of integer and fractional part of numbers</tt44>
+    <tt45>Upload configuration file to FTP server</tt45>
+    <tt46>Download configuration file from FTP server</tt46>
+    <tt47>Reload list of physical disks</tt47>
+    <tt48>Deleting the configuration file, entries in the registry</tt48>
+    <tt49>Go to the website</tt49>
+    <tt50>Go to group in VK</tt50>
+    <tt51>Go to group on Facebook</tt51>
+    <tt52>Youtube Playlist</tt52>
+    <tt53>Google+ Community</tt53>
+    <tt54>Send e-mail</tt54>
+    <tt55>Download configuration file from ftp server</tt55>
+    <tt56>Copy to clipboard</tt56>
+    <tt57>Add panel for small buttons</tt57>
+    <tt58>The panel should contain only two or three functions!</tt58>
+    <w1>Login</w1>
+    <w2>Finding a function in the list</w2>
+    <w3>Activation key</w3>
+    <w4>You need to enter login on the Configuration tab!</w4>
+    <w5>Events with the server ...</w5>
+    <w6>Activation key is not required</w6>
+    <cb1>Binding to a physical disk</cb1>
+    <cb2>Binding to Google Account</cb2>
+    <border1>Border by color</border1>
+    <border2>Glow by color</border2>
+    <border3>Border + glow by color</border3>
+    <border4>Shadow</border4>
+    <border5>No borders</border5>
+    <err>Error</err>
+    <err1>No configuration file found </err1>
+    <err2>Do not write access to the configuration file </err2>
+    <err3>Unknown error</err3>
+    <err4>Configurator could not find the folder used by Revit to connect external plugins</err4>
+    <err5>The configuration file is missing!</err5>
+    <err6>The module was not found!</err6>
+    <err7>Error getting the list of hard drives!</err7>
+    <err8>The serial number of the hard disk is missing!</err8>
+    <err9>You have not linked a Google account!</err9>
+    <err10>Caution!\nIn the configuration file, the media was saved:\n{0}\nwhich is not currently in the system!</err10>
+    <err11>OAuth authorization error:</err11>
+    <err12>Invalid authorization response</err12>
+    <err13>Invalid request received</err13>
+    <err14>It is forbidden to use the $ symbol in the login</err14>
+    <err15>Failed to download the file from the server. Try later</err15>
+    <err16>There is no registration key on the Settings tab!</err16>
+    <err17>The list of keys is empty!</err17>
+    <err18>Not entered username!</err18>
+    <err19>The configuration file is corrupt! Restart the configurator</err19>
+    <err20>File not found!</err20>
+    <msg1>No email address!</msg1>
+    <msg2>Invalid mail address</msg2>
+    <msg3>You did not enter anything</msg3>
+    <msg4>The program has detected that the directory location path contains invalid values (Windows/Program Files)\nIt is strongly recommended to place ModPlus in another directory!</msg4>
+    <msg5>If you saved the configuration file on the modplus.org server, you can download it. To do this, click - YES\nIf you did not save the configuration file on the server or this is the first time the program was started, press NO and a new configuration file will be created</msg5>
+    <msg6>You did not connect the ModPlus plug-in to any version of AutoCAD!\nExactly exit?</msg6>
+    <msg7>You did not create an adaptation menu for AutoCAD! When you load AutoCAD, the ribbon, palette, and/or the floating ModPlus menu will be empty!\nExactly exit?</msg7>
+    <msg8>You did not connect the ModPlus plug-in to any version of Revit!\nExactly exit?</msg8>
+    <msg9>You did not create an adaptation menu for Revit! When you load a Revit ribbon will be empty!\nExactly exit?</msg9>
+    <msg10>You have not installed any databases! The functions in the "Products" section will not work!\nExactly exit?</msg10>
+    <msg11>When you added the required data to the AutoCAD configuration file, an error occurred:\n{0}\nRun the Configurator as administrator and try again.\nFor more information on modifying the configuration file, see modplus.org in the Help section.\nConfiguration can still add an entry to the registry to load the ModPlus plug-in, but the plug-in can not earn\nAdd the registry entry?</msg11>
+    <msg12>When you added the required data to the Revit configuration file, an error occurred:\n{0}\nRun the Configurator as administrator and try again.\nFor more information on modifying the configuration file, see modplus.org in the Help section.\nConfiguration can still add an entry to the registry to load the ModPlus plug-in, but the plug-in can not earn\nAdd the registry entry?</msg12>
+    <msg13>All keys will be erased! Continue?</msg13>
+    <msg14>All keys deleted</msg14>
+    <msg15>No email address!\nGo to the "Configuration" tab and specify the mail address in the sub-group "Authorization"</msg15>
+    <msg16>All missing functions for the specified product version will be installed and enabled\nContinue?</msg16>
+    <msg17>It's valid activation key</msg17>
+    <msg18>It's NOT valid activation key</msg18>
+    <msg19>Attention! After downloading the configuration file from the server Configurator is restarted!\nContinue?</msg19>
+    <msg20>ATTENTION!\nBe deleted the configuration file, the shortcut on the desktop and all registry entries (including the autorun plugin ModPlus), then the Configurator will be closed automatically\nYou sure You want to continue?</msg20>
+    <msg21>No access to the configuration file! Perhaps it is open or busy\nAfter closing the Configurator, delete the configuration file manually:</msg21>
+    <ftp1>Downloading the configuration file from the server</ftp1>
+    <ftp2>Retrieving Authorization Data...</ftp2>
+    <ftp3>Reading directories on the server...</ftp3>
+    <ftp4>The directory for the specified mail address could not be found on the server!\nThe catalog is created when the configuration file is uploaded to the server</ftp4>
+    <ftp5>The server does not have a saved configuration file!</ftp5>
+    <ftp6>Download the file from the server...</ftp6>
+    <ftp7>The configuration file has been downloaded!</ftp7>
+    <ftp8>Sending a key file to the server</ftp8>
+    <ftp9>Creating a Key File</ftp9>
+    <ftp10>Create a connection</ftp10>
+    <ftp11>Create a user directory</ftp11>
+    <ftp12>Check for a saved key file</ftp12>
+    <ftp13>The server already has a saved key file! Overwrite it?</ftp13>
+    <ftp14>Uploading the key file to the server</ftp14>
+    <ftp15>The key file is stored on the server</ftp15>
+    <ftp16>Failed to get authorization data!\nTry again</ftp16>
+    <ftp17>Attention! All current activation keys will be overwritten!\nContinue?</ftp17>
+    <ftp18>Downloading keys from the server</ftp18>
+    <ftp19>There is no saved key file on the server!</ftp19>
+    <ftp20>Downloading the key file</ftp20>
+    <ftp21>Installing the keys</ftp21>
+    <ftp22>Installation of the function:</ftp22>
+    <ftp23>Create temporary folder</ftp23>
+    <ftp24>Downloading a file from the server to a temporary folder</ftp24>
+    <ftp25>Unpacking the function</ftp25>
+    <ftp26>Deleting a temporary folder</ftp26>
+    <ftp27>Timeout: failed to download the file from the server\nTry again</ftp27>
+    <ftp28>The function {0} was not installed! You may have entered an incorrect address in the download settings!\nPlease try again. If the error repeats, then inform us on modplus.org\nYou can download installation files from the site and install them manually using the auto-update module!</ftp28>
+    <ftp29>The following functions: {0} were not installed! You may have entered an incorrect address in the download settings!\nPlease try again. If the error repeats, then inform us on modplus.org\nYou can download installation files from the site and install them manually using the auto-update module!</ftp29>
+    <ftp30>Sending the configuration file to the server</ftp30>
+    <ftp31>The server already has a saved configuration file! Overwrite?</ftp31>
+    <ftp32>The configuration file saved on the server</ftp32>
+    <ftp33>Delete the current configuration file</ftp33>
+    <ftp34>Restart The Configurator</ftp34>
+    <reg1>Your registration key is generated based on the user name (Login) and serial number of the SPECIFIED physical disk. This means that the plugin does not need to be on the specified physical disk - enough that this disk is in the system while the plugin is running!</reg1>
+    <reg2>For example: you can connect a removable disk or a USB flash drive to your computer. Selecting it in the list (and, accordingly, entering the user name), you will receive a unique registration key, tied to this flash drive. Now your paid functions purchased for this key will work on ANY COMPUTER if you have the desired removable disk or flash drive (and, accordingly, with the same user name). You only need to run the configurator and specify the physical disk in the list</reg2>
+    <reg3>Your registration key is generated based on the user name and the number of your Goggle account. For the program to be able to obtain the number of your Google account, you must allow access to the main information of your account by clicking the "Bind" button. Your data (mail and password) are not transmitted anywhere and are not saved anywhere!</reg3>
+    <reg4>As with the case of a hard drive binding, you can use the functions you purchased on ANY computer! It is enough just to bind to your Google account!</reg4>
+    <installed>Installed</installed>
+    <missing>Missing!</missing>
+    <cui1>You must select a group</cui1>
+    <cui2>Are you sure you want to delete the group</cui2>
+    <cui3>A group with this name already exists</cui3>
+    <cui4>Enter a name for the new group</cui4>
+    <cui5>At least one group must be created</cui5>
+    <cui6>You must select the function in the list of active functions</cui6>
+    <cui7>The selected active function has subfunctions, so it can only be added to the group!</cui7>
+    <cui8>Above nowhere!</cui8>
+    <cui9>Below is nowhere!</cui9>
+    <cui10>Nothing is selected!</cui10>
+    <cui11>Enter a new name for the group</cui11>
+    <cui12>The menu will be built according to the standard scheme\nThe existing menu will be erased!\nContinue?</cui12>
+    <cui13>Are you sure you want to clear the menu?</cui13>
+  </Configurator>
+  <AutoUpdater LocalName="Auto Updates Module">
+    <close>Close</close>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <version>Version</version>
+    <product>Product</product>
+    <productVersion>Product version</productVersion>
+    <function>Function</function>
+    <functionVersion>Function version</functionVersion>
+    <h1>Updates</h1>
+    <h2>Errors</h2>
+    <h3>The configurator needs to be started!</h3>
+    <h4>You need to start the configurator to update the adaptation menu!</h4>
+    <h5>Run the update after you close AutoCAD, Revit, or Configurator</h5>
+    <h6>On modplus.org site published a new news</h6>
+    <h7>In VK group "ModPlus for AutoCad and Revit" a new record was published</h7>
+    <h8>Go to record</h8>
+    <h9>Do not miss! This can be useful!</h9>
+    <h10>MANUAL INSTALLATION/UPDATE</h10>
+    <h11>If you do not have access to the internet, you can install or update the plugin components manually. To do this, you must download the plugin installation files (with the .mpif extension) from modplus.org and use one of the following options:</h11>
+    <h12>Install or update from the specified .mpif installation file</h12>
+    <h13>Install or update from the specified folder where the .mpif installation files are located</h13>
+    <h14>ModPlus: new functions</h14>
+    <h15>New functions are available in the ModPlus plugin!</h15>
+    <h16>Check the functions in the list that you wish to install</h16>
+    <h17>Function version:</h17>
+    <h18>Product version:</h18>
+    <h19>Do not remind</h19>
+    <h20>anymore</h20>
+    <h21>AUTO UPDATE MODULE: SETTINGS</h21>
+    <h22>Autoloading module with Windows (recommended!)</h22>
+    <h23>Update check period:</h23>
+    <h24>If updates are available:</h24>
+    <h25>When installing new fuctions:</h25>
+    <h26>Double-click on the tray icon:</h26>
+    <h27>The ModPlus auto-update module is already running!</h27>
+    <h28>ModPlus installation file (* .mpif) | * .mpif</h28>
+    <h29>Select the ModPlus installation file</h29>
+    <h30>Specify the folder in which the ModPlus installation files are located</h30>
+    <h31>The version of the auto-update module:</h31>
+    <h32>ModPlus Error</h32>
+    <h33>Could not access server files</h33>
+    <h34>Database</h34>
+    <h35>Dwg base</h35>
+    <b1>Install from file</b1>
+    <b2>Install from folder</b2>
+    <b3>Check all</b3>
+    <b4>Uncheck all</b4>
+    <t1>30 minutes</t1>
+    <t2>1 hour</t2>
+    <t3>2 hours</t3>
+    <t4>4 hours</t4>
+    <t5>8 hours</t5>
+    <i1>Install automatically</i1>
+    <i2>Ask</i2>
+    <i3>Rebuild the standard adaptation menu</i3>
+    <i4>Do not rebuild the menu</i4>
+    <i5>Open auto-update module settings</i5>
+    <i6>Open Modplus Configurator</i6>
+    <cm1>Auto Update Module</cm1>
+    <cm2>Check for updates</cm2>
+    <cm3>Change story</cm3>
+    <cm4>Manual installation/update</cm4>
+    <cm5>Open Configurator</cm5>
+    <cm6>Settings</cm6>
+    <cm7>Close</cm7>
+    <tt1>Check for updates and new functions</tt1>
+    <tt2>View change history on modplus.org</tt2>
+    <tt3>Open Modplus Configurator</tt3>
+    <tt4>Modplus Auto Update Module Settings</tt4>
+    <tt5>ModPlus plugin auto-update module</tt5>
+    <msg1>The auto-update module should be located in the ModPlus plugin folder!\nIf the folder is correct, you should run the Configurator to update the data in the registry</msg1>
+    <msg2>The auto update module has been updated</msg2>
+    <msg3>The operation of the module is limited, because AutoCad or Revit is open</msg3>
+    <msg4>The operation of the module is limited, because Modplus Configurator is open</msg4>
+    <msg5>When installing / upgrading from * .mpif files, you need to run the configurator to update the data in the configuration file!\nDo you want to start the configurator now?</msg5>
+    <msg6>The specified folder contains the update file for the auto-update module\nTo install it, use the installation from the file</msg6>
+    <msg7>You did not choose anything!</msg7>
+    <msg8>Updating the adaptation menu</msg8>
+    <msg9>Updates are available for plugin components:</msg9>
+    <msg10>To update, you need to close AutoCAD</msg10>
+    <msg11>To update, you need to close the ModPlus configurator</msg11>
+    <msg12>Updates plugin modules are available\nUpdate?</msg12>
+    <msg13>Updates of plugin components are installed:</msg13>
+    <msg14>Installing the update:</msg14>
+    <msg15>Functions updates are available:</msg15>
+    <msg16>To update, you need to close Revit</msg16>
+    <msg17>Functions updates available\nUpdate?</msg17>
+    <msg18>Updated functions are installed:</msg18>
+    <msg19>New functions are available:</msg19>
+    <msg20>To install, you need to close AutoCAD</msg20>
+    <msg21>To install, you need to close Revit</msg21>
+    <msg22>To install, you need to close the ModPlus configurator</msg22>
+    <msg23>New functions are installed:</msg23>
+    <err1>Error reading file on server</err1>
+    <err2>There are no updates for the configurator</err2>
+    <err3>There are no updates for working files</err3>
+    <err4>There are no updates for databases</err4>
+    <err5>The local configurator file was not found</err5>
+    <err6>No local working files found</err6>
+    <err7>No local database files found</err7>
+    <err8>Error downloading configurator updates</err8>
+    <err9>Error while downloading working files updates</err9>
+    <err10>Error while downloading database updates</err10>
+    <err11>Error while downloading functions updates</err11>
+    <err12>Error while updating data in the configuration file</err12>
+    <err13>Error while unpacking updates</err13>
+    <err14>No entry was found in the registry. Run the configurator</err14>
+    <err15>The configuration file was not found. Run the configurator</err15>
+    <err16>Unable to register application for Revit</err16>
+    <err17>File not found</err17>
+    <err18>No ModPlus installation files found</err18>
+    <err19>There is no access to the internet or modplus.org site</err19>
+    <err20>Not found Modplus Configurator!</err20>
+    <p1>Downloading and installing the module update...</p1>
+    <p2>Update function:</p2>
+    <p3>Function installation:</p3>
+  </AutoUpdater>
+  <AutocadDlls LocalName="Working libraries for AutoCAD">
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <close>Close</close>
+    <h1>MODPLUS SETTINGS</h1>
+    <h2>GENERAL</h2>
+    <h3>WORK WITH THE SERVER</h3>
+    <h4>REGISTRATION</h4>
+    <h5>Language:</h5>
+    <h6>Theme:</h6>
+    <h7>Window borders:</h7>
+    <h8>Separator:</h8>
+    <h9>Registration key:</h9>
+    <h10>The key is binding to the physical disk:</h10>
+    <h11>The key is binding to a Google Account:</h11>
+    <h12>Settings</h12>
+    <h13>General</h13>
+    <h14>Context menu</h14>
+    <h15>Quiet loading</h15>
+    <h16>ADAPTATION</h16>
+    <h17>Ribbon</h17>
+    <h18>Palette</h18>
+    <h19>Functions</h19>
+    <h20>Drawings</h20>
+    <h21>Floating menu</h21>
+    <h22>collapse to:</h22>
+    <h23>Drawings (separately)</h23>
+    <h24>Set Nested Objects to ByBlock[mpEntByBlock]</h24>
+    <h25>Frequently Used Blocks</h25>
+    <h26>Viewport boundary in model space [mpVPtoMS]</h26>
+    <h27>BLOCK SELECTION</h27>
+    <h28>Block display name</h28>
+    <h29>FREQUENTLY USED BLOCKS</h29>
+    <h30>File name:</h30>
+    <h31>Block name:</h31>
+    <h32>ATTENTION! Do not use blocks with attributes!</h32>
+    <h33>Maximum allowed number of blocks: 10</h33>
+    <h34>New drawing</h34>
+    <h35>Open drawing</h35>
+    <h36>Close current drawing</h36>
+    <h37>Enable product identification icon</h37>
+    <h38>When you turn on the identification icon for all primitives that have extended data with information about the product, a conditional icon in the form of a blue I-beam will be displayed. The icon is displayed in the upper right corner relative to the rectangle primitive described. The size of the icon changes after regeneration, depending on the size of the visible part of the screen</h38>
+    <h39>Disable product identification icon</h39>
+    <h40>Calling the "Field" function</h40>
+    <h41>ModPlus settings</h41>
+    <h42>The main settings of the ModPlus plugin - themes, menu on/off, context menu settings for the mini-functions. It also allows you to find out your registration key without running the Configurator</h42>
+    <h43>Fields</h43>
+    <h44>Fields editor</h44>
+    <h45>The editor of the fields used to fill in stamps</h45>
+    <h46>On product icon</h46>
+    <h47>Off product icon</h47>
+    <h48>ModPlus palette</h48>
+    <h49>MP:Set Nested Objects to ByBlock</h49>
+    <h50>MP:Insert block</h50>
+    <h51>MP:VP boundary in model</h51>
+    <cb1>Icon</cb1>
+    <cb2>Title</cb2>
+    <border1>Border by color</border1>
+    <border2>Glow by color</border2>
+    <border3>Border + glow by color</border3>
+    <border4>Shadow</border4>
+    <border5>No borders</border5>
+    <tt1>Separator of integer and fractional part of numbers</tt1>
+    <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
+    <tt3>You must enter your Login in the Configuration tab! (ModPlus Configurator)</tt3>
+    <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
+    <tt5>Load plugin in AutoCAD with minimal details on the command line</tt5>
+    <tt6>Enable/disable ribbon</tt6>
+    <tt7>Enable/disable pelette</tt7>
+    <tt8>Enabling/disabling the "Functions" tab in the palette</tt8>
+    <tt9>Enabling/disabling the "Drawings" tab in the palette</tt9>
+    <tt10>Enable/disable floaring menu</tt10>
+    <tt11>Enable/disable the display of open drawings in the floating menu</tt11>
+    <tt12>Enable/disable the display window of open drawings</tt12>
+    <tt13>Enable/disable the context menu for the mini-function "Set Nested Objects to ByBlock"</tt13>
+    <tt14>Enable/disable the context menu for the mini-function "Frequently Used Blocks"</tt14>
+    <tt15>Configure a list of frequently used blocks</tt15>
+    <tt16>Enable/disable the context menu for the mini function "Viewport boundary in model space"</tt16>
+    <tt17>To change the language in the palette, you need to restart AutoCAD</tt17>
+    <err1>This name is already in use! Create another</err1>
+    <err2>You need to specify the display name of the block!</err2>
+    <err3>You need to select a block in the list!</err3>
+    <err4>Configuration file not found!</err4>
+    <err5>Are you sure you want to delete this block from the list?</err5>
+    <err6>Specify a file</err6>
+    <err7>The configuration file is corrupt! It is impossible to fill in menu</err7>
+    <msg1>Select lines, polylines, circles, arcs, ellipses or splines:</msg1>
+    <msg2>Select the blocks:</msg2>
+    <msg3>Select the viewport:</msg3>
+    <msg4>The specified object is not an object of cropping the viewport</msg4>
+    <msg5>The view screen is cropped by an unhandled object!</msg5>
+    <msg6>Viewport №</msg6>
+    <msg7>trimming object:</msg7>
+    <msg8>Insertion point:</msg8>
+    <msg9>Angle of rotation:</msg9>
+    <msg10>First point:</msg10>
+    <msg11>Select table:</msg11>
+    <msg12>Select cell:</msg12>
+    <msg13>Wrong choice!</msg13>
+    <msg14>Did not hit the cell!</msg14>
+    <msg15>Select row:</msg15>
+    <msg16>Specify point:</msg16>
+    <msg17>The table contains the wrong number of columns!\nContinue?</msg17>
+    <msg18>The table is not empty! Overwrite it?\nYes - owerwrite, No - supplement</msg18>
+    <msg19>The table is not a ModPlus table. Data may not be entered correctly!\nContinue?</msg19>
+    <p1>ATTENTION!</p1>
+    <p2>Trying to load the plugin into an incompatible version of the AutoCAD!</p2>
+    <p3>Download interrupt</p3>
+    <p4>Loading the ModPlus plugin...</p4>
+    <p5>Loading working libraries...</p5>
+    <p6>Loading databases...</p6>
+    <p7>Initializing the configuration file:</p7>
+    <p8>Loading functions...</p8>
+    <p9>ModPlus plugin load is completed. Elapsed time (ms):</p9>
+    <p10>Have a nice work!</p10>
+    <p11>Download library:</p11>
+    <p12>Loading the database file:</p12>
+    <p13>The database file could not be found:</p13>
+    <p14>The folder Data is not found!</p14>
+    <p15>Loading function:</p15>
+  </AutocadDlls>
+  <RevitDlls LocalName="Working libraries for Revit">
+    <h1>MODPLUS SETTINGS</h1>
+    <h2>GENERAL</h2>
+    <h3>WORK WITH THE SERVER</h3>
+    <h4>REGISTRATION</h4>
+    <h5>Language:</h5>
+    <h6>Theme:</h6>
+    <h7>Window borders:</h7>
+    <h8>Separator:</h8>
+    <h9>Registration key:</h9>
+    <h10>The key is binding to the physical disk:</h10>
+    <h11>The key is binding to a Google Account:</h11>
+    <h12>Settings</h12>
+    <border1>Border by color</border1>
+    <border2>Glow by color</border2>
+    <border3>Border + glow by color</border3>
+    <border4>Shadow</border4>
+    <border5>No borders</border5>
+    <tt1>Separator of integer and fractional part of numbers</tt1>
+    <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
+    <tt3>You must enter your Login in the Configuration tab! (ModPlus Configurator)</tt3>
+    <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
+    <tt5>To change the language on the Ribbon, you need to restart the Revit</tt5>
+    <err1>The configuration file is corrupt! Can not build a Ribbon</err1>
+  </RevitDlls>
+  <mpTxtNumCopy LocalName="Copy with numbering"
+                Description="Copies the selected text or block with an attribute containing a numeric value, changing the value to a specified numerical step"
+                FullDescription="Copies the selected single line or multiline text, a block with an attribute or a multileader containing a digital value, with a value change to a specified numerical step. There are various settings - adding a prefix/suffix, suppressing tail zeros, etc.">
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <next>Continue</next>
+    <prefix>Prefix</prefix>
+    <suffix>Suffix</suffix>
+    <msg1>Select text, block with attributes or a multyleader:</msg1>
+    <msg2>Wrong choice!</msg2>
+    <msg3>Selected block does not contain attributes</msg3>
+    <msg4>Selected text does not contain numeric values</msg4>
+    <msg5>Could not get number</msg5>
+    <msg6>Error number search</msg6>
+    <msg7>Base number:</msg7>
+    <msg8>Enter the increment step:</msg8>
+    <msg9>Base point:</msg9>
+    <msg10>Selected multileader does not contain text</msg10>
+    <msg11>Specify a point:</msg11>
+    <h1>Select attribute</h1>
+    <h2>Tag:</h2>
+    <h3>Value:</h3>
+    <h4>Settings</h4>
+    <h5>Increment Step:</h5>
+    <h6>Save text BEFORE and text AFTER</h6>
+    <h7>Leading zeros</h7>
+    <h8>Adding zeros to the beginning of a number</h8>
+    <h9>Suppression of tail zeros</h9>
+    <h10>Removal from number all tail zeros</h10>
+    <h11>Result:</h11>
+  </mpTxtNumCopy>
+  <mpMultiCopy LocalName="Multi copy"
+               Description="Multiple copies of selected primitives with a certain step"
+               FullDescription="The function supports two types of copying:\nmarkup - copies primitives with a specified distance between them along the specified line;\ndivide - copies primitives by dividing the specified line by the number of segments entered.\nThere is a possibility to select an entity (line, polyline, spline) to set the copy path.">
+    <msg1>Select entities:</msg1>
+    <msg2>Specify distance or [Divide]</msg2>
+    <msg3>Enter the number of segments or [Mark]</msg3>
+    <msg4>Specify a base point or:</msg4>
+    <msg5>Select a line, a polyline, or a spline:</msg5>
+    <msg6>Specify the second point:</msg6>
+    <kw1>Divide</kw1>
+    <kw2>Mark</kw2>
+    <kw3>Entity</kw3>
+  </mpMultiCopy>
+  <mpTxtCenter LocalName="Text by center" 
+               Description="The function allows you to create a single line text or align the existing one in the middle between two specified points">
+    <msg1>Specify the first point or [Existing]</msg1>
+    <msg2>Existing</msg2>
+    <msg3>Enter text:</msg3>
+    <msg4>Select single line text:</msg4>
+    <msg5>Select single line text or [New]:</msg5>
+    <msg6>New</msg6>
+    <msg7>Wrong choice!</msg7>
+    <msg8>Specify the first point:</msg8>
+    <msg9>Specify the second point:</msg9>
+  </mpTxtCenter>
+  <mpStandards LocalName="Standards"
+               Description="Function allows you to create, store and add layer sets, text styles, dimensional styles and multileader styles">
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <copy>Copy</copy>
+    <no>No</no>
+    <h1>Set name:</h1>
+    <h2>Enter the name of the set</h2>
+    <h3>Add Layer</h3>
+    <h4>Refresh list</h4>
+    <h5>Name</h5>
+    <h6>Freeze</h6>
+    <h7>Lock</h7>
+    <h8>Color</h8>
+    <h9>Linetype</h9>
+    <h10>Lineweight</h10>
+    <h11>Plot</h11>
+    <h12>On</h12>
+    <h13>Layer</h13>
+    <h14>Default</h14>
+    <h15>STANDARDS</h15>
+    <h16>Styles</h16>
+    <h17>Layer sets</h17>
+    <h18>Standard set of ModPlus layers. Can not delete</h18>
+    <h19>Create a new set of layers</h19>
+    <h20>Edit (view) the selected set of layers</h20>
+    <h21>Delete selected layer set</h21>
+    <h22>Text styles</h22>
+    <h23>Standard style of ModPlus. Can not delete</h23>
+    <h24>A text style is associated with a dimension style or a multileader style</h24>
+    <h25>Add one or more text styles from the current drawing</h25>
+    <h26>Delete the selected text style from the set</h26>
+    <h27>Dimension styles</h27>
+    <h28>Add one or more dimension styles from the current drawing</h28>
+    <h29>Delete the selected dimension style from the set</h29>
+    <h30>Multileader styles</h30>
+    <h31>Add one or more multileader styles from the current drawing</h31>
+    <h32>Delete the selected dimension style from the set</h32>
+    <h33>Add Selected</h33>
+    <h34>Add selected standards to the current drawing</h34>
+    <h35>From file</h35>
+    <h36>Specify the file from which you want to copy the standards:</h36>
+    <h37>Specify the standards that you want to copy:</h37>
+    <h38>Settings</h38>
+    <h39>Editing settings is only available in the full version of the function</h39>
+    <h40>Create groups for sets of layers</h40>
+    <h41>Auto-load standards when creating a drawing</h41>
+    <h42>Auto-load standards when opening a drawing</h42>
+    <h43>Copying standards from a file when creating a drawing</h43>
+    <h44>Copying standards from a file when opening a drawing</h44>
+    <h45>Details in the command line</h45>
+    <h46>After adding make current:</h46>
+    <h47>Text style:</h47>
+    <h48>Dimensional style:</h48>
+    <h49>Multileader style:</h49>
+    <h50>EDITOR SET LAYERS</h50>
+    <h51>VIEWING SET LAYERS</h51>
+    <cb1>Layers of the current set</cb1>
+    <cb2>Layers of the current set + layers of the drawing</cb2>
+    <cb3>Layers</cb3>
+    <cb4>Text styles</cb4>
+    <cb5>Dimension styles</cb5>
+    <cb6>Multileader styles</cb6>
+    <msg1>Enter the name of the set</msg1>
+    <msg2>A set with this name already exists</msg2>
+    <msg3>The set does not have layers</msg3>
+    <msg4>Could not copy the helper file to disk!\nThere may be no administrator rights</msg4>
+    <msg5>The following dependent styles will be removed:</msg5>
+    <msg6>Continue?</msg6>
+    <msg7>Delete the dependent text style?\nYes - delete, No - untie</msg7>
+    <msg8>Specify the source file</msg8>
+    <msg9>No source file specified!</msg9>
+    <msg10>The specified source file was not found</msg10>
+    <msg11>No standard is selected for copying</msg11>
+    <msg12>Configuration file not found!</msg12>
+    <msg13>Failed to load linetype:</msg13>
+    <p1>ModPlus: Added text style</p1>
+    <p2>ModPlus: Added dimension style</p2>
+    <p3>ModPlus: Added multileader style</p3>
+    <p4>ModPlus: Added a set of layers</p4>
+    <p5>with layers:</p5>
+    <p6>ModPlus: Created layer group</p6>
+    <p7>ModPlus: The current text style is set</p7>
+    <p8>ModPlus: The current dimension style is set</p8>
+    <p9>ModPlus: The current multileader style is set</p9>
+    <l1>Mp_Basic</l1>
+    <l2>Mp_Thin</l2>
+    <l3>Mp_Dimensions</l3>
+    <l4>Mp_Leaders</l4>
+    <l5>Mp_Thick</l5>
+    <l6>Mp_Hatching</l6>
+    <l7>Mp_Axial</l7>
+    <l8>Mp_Nonprinting</l8>
+    <l9>Mp_Text</l9>
+  </mpStandards>
+  <mpMultiScale LocalName="Multi scale"
+                Description="Function allows you to scale each of the selected objects relative to themselves"
+                FullDescription="Each selected entity will be scaled relative to the specified point - Left Bottom, Right Bottom, Left Top, Right Top or Center. The scale point is determined by the rectangle describing the entity (Bounding Box)">
+    <msg1>Copy</msg1>
+    <msg2>Select objects:</msg2>
+    <msg3>Scale:</msg3>
+    <msg4>Select a base point:</msg4>
+    <kw1>Center</kw1>
+    <kw2>LBottom</kw2>
+    <kw3>LTop</kw3>
+    <kw4>RTop</kw4>
+    <kw5>RBottom</kw5>
+    <kw6>CBottom</kw6>
+    <kw7>CTop</kw7>
+    <kw8>CLeft</kw8>
+    <kw9>CRight</kw9>
+  </mpMultiScale>
+  <mpRotAtt LocalName="Rotation angle of attributes"
+            Description="Function is used to change the rotation angle of attributes in the selected blocks">
+    <msg1>Select blocks:</msg1>
+    <msg2>New angle of rotation attributes:</msg2>
+  </mpRotAtt>
+  <mpLayerAuto LocalName="Auto layers"
+               Description="Function is used to automatically add a layer to the created objects (dimensions, text, multileaders, hatch, tables, viewports)"
+               FullDescription="The function processes the creation, copying, pasting and other commands when working with AutoCAD objects - dimensions, text, multileaders, hatching, tables, viewports - and sets the layer specified in the function settings for them. There is an option to specify the specified layers for the selected objects">
+    <save>Save</save>
+    <h1>AUTO LAYERS</h1>
+    <h2>Set the layers</h2>
+    <h3>Other settings are available in the full version</h3>
+    <h4>For dimensions:</h4>
+    <h5>For text:</h5>
+    <h6>For multileaders:</h6>
+    <h7>For hatch:</h7>
+    <h8>For tables:</h8>
+    <h9>For viewports:</h9>
+    <h10>Excluding commands</h10>
+    <h11>Learn More</h11>
+    <h12>The function of the function is based on the processing of the command completion event. However, not all commands create new objects and can also cause errors when working with this function. You can edit the list of excludings yourself</h12>
+    <h13>More details on</h13>
+    <h14>forum</h14>
+    <h15>Remove a command from the list</h15>
+    <h16>Enter the command to exclude</h16>
+    <h17>Add</h17>
+    <h18>Load</h18>
+    <h19>Remember</h19>
+    <h20>You can save the current layers in the settings in order to quickly set them. ATTENTION! If the layer saved in the settings is not present in the current document, it will be ignored</h20>
+    <h21>Save the settings for the current drawing and close the window</h21>
+    <h22>Apply to selected</h22>
+    <h23>Apply settings to selected objects</h23>
+    <h24>Disable</h24>
+    <h25>Enable</h25>
+    <h26>Default Layer</h26>
+    <h27>You did not enter command!</h27>
+    <h28>Command</h28>
+    <h29>already in the list</h29>
+    <h30>Saved!</h30>
+    <h31>Select objects:</h31>
+    <h32>ModPlus: The object is moved to the layer:</h32>
+    <h33>Error of AutoLayers function:</h33>
+    <h34>objects were assigned layers</h34>
+  </mpLayerAuto>
+  <mpFormats LocalName="Formats"
+             Description="Function of inserting in the drawing formats according to GOST 2.301-68"
+             FullDescription="Formats are inserted in the form of a block with a special label in the extended data. A label in the extended data is required to define the formats with other functions (for example, &quot;Sheet Numbering&quot;). Therefore, you should not insert the formats with standard means of inserting a block into AutoCAD. The function allows you to add stamps to the format - for this you need to install and at least once started the function &quot;Stamps&quot;">
+    <accept>Accept</accept>
+    <no>No</no>
+    <h1>Russia</h1>
+    <h2>Ukraine</h2>
+    <h3>Belarus</h3>
+    <h4>Formats</h4>
+    <h5>GOST 2.301-68</h5>
+    <h6>Format/multiplicity</h6>
+    <h7>Sheet Orientation</h7>
+    <h8>Landscape</h8>
+    <h9>Portrait</h9>
+    <h10>Side of multiplicity</h10>
+    <h11>Short</h11>
+    <h12>Long</h12>
+    <h13>Manual input</h13>
+    <h14>Length of the format, mm</h14>
+    <h15>Height of the format, mm</h15>
+    <h16>"Copied"</h16>
+    <h17>Bottom frame:</h17>
+    <h18>5 mm</h18>
+    <h19>10 mm</h19>
+    <h20>Text style:</h20>
+    <h21>Format scale:</h21>
+    <h22>Stamp:</h22>
+    <h23>Use fields</h23>
+    <h24>Launching the Fields function</h24>
+    <h25>Main text height:</h25>
+    <h26>Additional text height:</h26>
+    <h27>Logo</h27>
+    <h28>from block:</h28>
+    <h29>from file:</h29>
+    <h30>Specify a dwg file as a logo</h30>
+    <h31>Posts</h31>
+    <h32>Edit the list of user posts</h32>
+    <h33>Add post to stamp</h33>
+    <h34>Remove post from stamp</h34>
+    <h35>Posts in the stamp</h35>
+    <h36>One line up</h36>
+    <h37>One line down</h37>
+    <h38>Length of the format (mm) x Height of the format (mm)</h38>
+    <h39>Insert</h39>
+    <h40>Replace</h40>
+    <h41>Create layout</h41>
+    <h42>New layout name</h42>
+    <h43>Add to stamp:</h43>
+    <h44>Layout name</h44>
+    <h45>Layout number</h45>
+    <h46>Scale 1:1</h46>
+    <h47>If you uncheck the box, the scale of the format will correspond to the scale indicated in the main window of the function</h47>
+    <h49>Post</h49>
+    <h50>Add new post</h50>
+    <h51>Remove selected post</h51>
+    <h52>Layout</h52>
+    <h53>Use dwg-file as a logo</h53>
+    <err1>The configuration file is corrupt!\nRun the ModPlus Configurator</err1>
+    <err2>An error has occurred!</err2>
+    <err3>Invalid characters in the layout name:</err3>
+    <err4>The following characters are not allowed:</err4>
+    <err5>No file with stamps was found!\nRun the "Stamps" function to unpack a dwg file with stamps</err5>
+    <err6>Length of the format is not entered</err6>
+    <err7>Height of the format is not entered</err7>
+    <err8>Length of the format must be at least 30 mm</err8>
+    <err9>Height of the format should be not less than 15 mm</err9>
+    <err10>A stamp with a table style was not found in the stamp file</err10>
+    <err11>Run the "Stamps" function to overwrite the stamps file</err11>
+    <err12>The stamp does not correspond to the stamp ModPlus! Invalid number of cells</err12>
+    <err13>The file was created in a later version of AutoCAD!</err13>
+    <err14>Invalid block name</err14>
+    <msg1>Value</msg1>
+    <msg2>already contained in the list of standard values</msg2>
+    <msg3>The list contains the same values!</msg3>
+    <msg4>Available with the full version of the "Stamps" function</msg4>
+    <msg5>You can not add more than</msg5>
+    <msg6>posts</msg6>
+    <msg7>In file</msg7>
+    <msg8>no fields found</msg8>
+    <msg9>Choose the replacement format:</msg9>
+    <msg10>Wrong choice!</msg10>
+    <msg11>Insertion point:</msg11>
+  </mpFormats>
+  <mpNotes LocalName="Notes"
+           Description="Function for working with frequently-used notes">
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <h1>Settings</h1>
+    <h2>Context menu for text</h2>
+    <h3>Double click on a note</h3>
+    <h4>For standard notes:</h4>
+    <h5>Insert as Mtext</h5>
+    <h6>Add to Mtext</h6>
+    <h7>For user notes:</h7>
+    <h8>Edit</h8>
+    <h9>Working with server</h9>
+    <h10>You must specify a mail address in the settings window</h10>
+    <h11>Available in the full version of the function</h11>
+    <h12>Upload the current user notes file to the server</h12>
+    <h13>Download a file of user notes from the server</h13>
+    <h14>Events with the server...</h14>
+    <h15>Notes</h15>
+    <h16>User</h16>
+    <h17>User notes file</h17>
+    <h18>Open an existing user notes file</h18>
+    <h19>Create user notes file</h19>
+    <h20>Sections</h20>
+    <h21>Delete selected section</h21>
+    <h22>Add new note</h22>
+    <h23>Add a note from the text</h23>
+    <h24>Edit selected note</h24>
+    <h25>Remove selected note</h25>
+    <h26>Text Height:</h26>
+    <h27>Standard</h27>
+    <h28>Text Width:</h28>
+    <h29>Text style:</h29>
+    <h30>The selected text style is annotative. Consider the scale of the annotation</h30>
+    <h31>Annotative</h31>
+    <h32>New note</h32>
+    <h33>CHOOSE A SECTION:</h33>
+    <h34>OR CREATE NEW:</h34>
+    <h35>TEXT NOTES:</h35>
+    <h36>SELECTING A FILE</h36>
+    <h37>Choose which file of user notes should be downloaded from the server:</h37>
+    <h38>File name:</h38>
+    <h39>Date of creation:</h39>
+    <h40>You did not select a file in the list!</h40>
+    <h41>User notes file is not found</h41>
+    <h42>Select a section or create a new one!</h42>
+    <h43>You should write a note!</h43>
+    <h44>Such a note is already present!</h44>
+    <h45>An error occurred while searching for a note in the file</h45>
+    <h46>notes xml-file</h46>
+    <h47>The selected file is not a file of notes!</h47>
+    <h48>Accurately delete the selected section?</h48>
+    <h49>Select text:</h49>
+    <h50>Wrong choice!</h50>
+    <h51>Accurately delete the selected note?</h51>
+    <h52>Select multiline text:</h52>
+    <h53>Not specified (or not created) file of user notes!</h53>
+    <h54>There is no access to the internet or modplus.org</h54>
+    <h55>Sending a file of user notes to the server</h55>
+    <h56>Retrieving Authorization Data</h56>
+    <h57>Reading directories on the server</h57>
+    <h58>Create a directory for the user</h58>
+    <h59>Creating a directory for a function</h59>
+    <h60>The server already has a saved file</h60>
+    <h61>Overwrite it?</h61>
+    <h62>Sending a file to the server</h62>
+    <h63>The file is saved on the server!</h63>
+    <h64>Undo Upload File</h64>
+    <h65>Downloading the user notes file from the server</h65>
+    <h66>Reading the directory for the user on the server</h66>
+    <h67>The directory for the specified mail address was not found on the server!\nThe directory is created when the user notes file is uploaded to the server</h67>
+    <h68>Reading the directory for a function on the server</h68>
+    <h69>Reading files in the function directory</h69>
+    <h70>Folder for the location of the downloaded file</h70>
+    <h71>There is already a file in the specified folder</h71>
+    <h72>There are no user notes files on the server!\nFirst they need to be uploaded to the server</h72>
+    <h73>Cancel Download</h73>
+    <h74>Specify the insertion point:</h74>
+    <h75>MP:Save as a note</h75>
+    <h76>Upload</h76>
+    <h77>Download</h77>
+  </mpNotes>
+  <mpMeshes LocalName="Meshes"
+			Description="Selection and calculation of the mass of rebar according to normative documents">
+    <kg>kg</kg>
+    <mm>mm</mm>
+    <insert>Insert</insert>
+    <h1>Meshes</h1>
+    <h2>GOST 23279-85</h2>
+    <h3>Mesh type</h3>
+    <h4>Roll</h4>
+    <h5>Image</h5>
+    <h6>Mesh width (b)</h6>
+    <h7>Mesh length (l)</h7>
+    <h8>Diameter of bars</h8>
+    <h9>Longitudinal (d)</h9>
+    <h10>Transversal (d1)</h10>
+    <h11>Step bars</h11>
+    <h12>Longitudinal (s1)</h12>
+    <h13>Transversal (s)</h13>
+    <h14>Rebar releases</h14>
+    <h15>Longitudinal (a1,a2)</h15>
+    <h16>Transversal (a)</h16>
+    <h17>Mesh weight:</h17>
+    <h18>Rounding the mass</h18>
+    <h19>GOST 8478-81</h19>
+    <h20>Mesh type by dimensional accuracy</h20>
+    <h21>Mesh width - 2350 mm</h21>
+    <h22>Main step (s)</h22>
+    <h23>Longitudinal (a1)</h23>
+    <h24>Number of longitudinal bars in mesh, pcs.</h24>
+    <h25>Break mesh width by the number of steps</h25>
+    <h26>s or (s)+s2</h26>
+    <h27>Mesh length L=</h27>
+    <h28>Series 1.410-3</h28>
+    <h29>Mesh type: working reinforcement</h29>
+    <h30>Diameter ratio</h30>
+    <h31>of bars (d1/d2)</h31>
+    <h32>Transversal (a2)</h32>
+    <h33>Longitudinal (m)</h33>
+    <h34>Transversal (n)</h34>
+    <h35>Welded reinforcing mesh for reinforced concrete structures and products</h35>
+    <h36>Welded mesh for reinforced concrete structures</h36>
+    <h37>Issue 1. Meshes with working reinforcement diameter from 10 to 32 mm</h37>
+    <h38>Mesh type: Heavy</h38>
+    <h39>Mesh type: Light</h39>
+    <h40>(From 850 to the length of the roll)</h40>
+    <h41>(From 3950 to the length of the roll)</h41>
+    <h42>(From 850 to 9000)</h42>
+    <h43>(From 3950 to 9000)</h43>
+    <h44>The ratio of the smaller bar diameter to the larger should be at least 0.25</h44>
+    <h45>The value of the output of the reinforcement must be a multiple of 25</h45>
+    <h46>The output value should be 25 mm. It is allowed to take from 30 to 200 mm a multiple of 5 mm</h46>
+    <h47>The output value should be 25 mm. It is allowed to take from 15,20 and 30 mm, and also from 25 to 100 mm multiples of 25 mm</h47>
+    <h48>The additional step of longitudinal bars in heavy meshes is not allowed!</h48>
+    <h49>The additional step of the longitudinal bars in the light meshes should be from 50 mm to the size of the main step</h49>
+    <h50>multiple of 10 mm</h50>
+    <h51>The additional step of the transverse bars in heavy type 1 meshes should be 100, 200 or 300 mm!</h51>
+    <h52>The additional step of the transverse bars in heavy meshes of type 2,3 is not allowed!</h52>
+    <h53>The additional step of the transverse bars in the light meshes should be from 50 to 250 mm in multiples of 10 mm!</h53>
+    <h54>Not all data is entered correctly! Continue?</h54>
+    <h55>Normal accuracy</h55>
+    <h56>Increased accuracy</h56>
+    <h57>Invalid mesh length!</h57>
+    <h58>in one direction</h58>
+    <h59>in two directions</h59>
+    <h60>The width of mesh must be at least</h60>
+    <h61>The width of mesh should be no more than</h61>
+    <h62>The length of mesh must be at least</h62>
+    <h63>The length of mesh should be no more than</h63>
+  </mpMeshes>
+  <mpTables LocalName="Tables"
+			Description="Function of inserting AutoCAD tables into the drawing according to GOST/DSTU/STB or from the specified file">
+    <insert>Insert</insert>
+    <all>All</all>
+    <h1>TABLES</h1>
+    <h2>ModPlus tables</h2>
+    <h3>Normative documents for:</h3>
+    <h4>Russia</h4>
+    <h5>Ukraine</h5>
+    <h6>Belarus</h6>
+    <h7>Weed of normative document:</h7>
+    <h8>Selecting the normative document</h8>
+    <h9>Table name</h9>
+    <h10>Normative document:</h10>
+    <h11>Description:</h11>
+    <h12>Brief description (reference to the table in the normative document)</h12>
+    <h13>Document's name</h13>
+    <h14>You can scale and pan the image with the mouse wheel</h14>
+    <h15>Inactive</h15>
+    <h16>Inserting a table with Top-left binding</h16>
+    <h17>Inserting a table with Top-right binding</h17>
+    <h18>Inserting a table with Bottom-Left binding</h18>
+    <h19>Inserting a table with Bottom-right binding</h19>
+    <h20>Reduce image</h20>
+    <h21>Enlarge Image</h21>
+    <h22>TABLE SETTINGS</h22>
+    <h23>Table scale:</h23>
+    <h24>Text height:</h24>
+    <h25>Row height:</h25>
+    <h26>Text style:</h26>
+    <h27>Dynamic row insertion</h27>
+    <h28>Tables from file</h28>
+    <h29>File</h29>
+    <h30>Clear path to file</h30>
+    <h31>Specify the path to the file</h31>
+    <h32>TABLES FROM FILE</h32>
+    <h33>Drawing file</h33>
+    <h34>Select a file</h34>
+    <msg1>Could not copy file to disk!\nThere may be no administrator rights</msg1>
+    <msg2>Could not copy table</msg2>
+    <msg3>In the "Tables from file" section, the file is incompatible with this version of AutoCAD!</msg3>
+  </mpTables>
+  <mpDimJustif LocalName="Aligning Dimensions"
+			   Description="Aligning the extension or dimension lines along the specified straight line">
+    <h1>ALIGNMENT DIMENSIONS</h1>
+    <h2>Align extension lines</h2>
+    <h3>Align dimension lines</h3>
+    <msg1>Select dimensions for alignment of extension lines</msg1>
+    <msg2>First point of the alignment line:</msg2>
+    <msg3>Select dimensions for alignment of dimension lines</msg3>
+    <msg4>Second point of the alignment line:</msg4>
+  </mpDimJustif>
+  <mpStamps LocalName="Stamps"
+            Description="Function of inserting stamps (basic inscription) in the drawing (as AutoCAD tables) according to GOST/DSTU/STB, with field support"
+            FullDescription="Using the &quot;Field&quot; function allows you to add additional values to the document that you can insert into the stamp in the form of fields. This allows you to change the values in the stamp at once in all the stamps throughout the document">
+    <insert>Insert</insert>
+    <no>No</no>
+    <h1>STAMPS</h1>
+    <h2>Name of stamp</h2>
+    <h3>Normative documents for:</h3>
+    <h4>Russia</h4>
+    <h5>Ukraine</h5>
+    <h6>Belarus</h6>
+    <h7>Weed of normative document:</h7>
+    <h8>Selecting the normative document</h8>
+    <h9>Table name</h9>
+    <h10>Normative document:</h10>
+    <h11>Description:</h11>
+    <h12>Brief description (reference to the stamp in the normative document)</h12>
+    <h13>Inactive</h13>
+    <h14>Inserting a stamp with Top-left binding</h14>
+    <h15>Inserting a stamp with Top-right binding</h15>
+    <h16>Inserting a stamp with Bottom-left binding</h16>
+    <h17>Inserting a stamp with Bottom-right binding</h17>
+    <h18>Show image</h18>
+    <h19>Hide image</h19>
+    <h20>STAMP SETTINGS</h20>
+    <h21>Stamp scale:</h21>
+    <h22>Text style:</h22>
+    <h23>Main text height:</h23>
+    <h24>Additional text height:</h24>
+    <h25>Logo</h25>
+    <h26>from block:</h26>
+    <h27>from file:</h27>
+    <h28>Specify a dwg file as a logo</h28>
+    <h29>Available in full version</h29>
+    <h30>Use fields</h30>
+    <h31>Posts</h31>
+    <h32>Edit the list of user posts</h32>
+    <h33>Add post to stamp</h33>
+    <h34>Remove post from stamp</h34>
+    <h35>Posts in the stamp</h35>
+    <h36>One line up</h36>
+    <h37>One line down</h37>
+    <h38>Launching "Fields" function</h38>
+    <h39>The height of the text in all cells of the stamp. The default is 2.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h39>
+    <h40>Additional text height. It is installed in such cells as "Document designation", "Stage", "Sheet", etc., which gives the stamp expressiveness and readability. The default is 3.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h40>
+    <h41>Specify the block defined in this drawing to insert it into the stamp as a logo</h41>
+    <h42>The specified dwg-file will be added to the current drawing in the form of a block, which will be inserted into the stamp as a logo. The file name will be the file name. If a block with this name already exists in the current drawing, the block from the drawing will be used</h42>
+    <h43>POSTS</h43>
+    <h44>Post</h44>
+    <h45>FIELDS</h45>
+    <h46>Surenames</h46>
+    <h47>Standard</h47>
+    <h48>Custom</h48>
+    <h49>POST</h49>
+    <h50>Add new post</h50>
+    <h51>Remove selected post</h51>
+    <h52>SURENAME</h52>
+    <h53>GOST R 21.1101-2013</h53>
+    <h54>Appendix Z</h54>
+    <h55>Box 1</h55>
+    <h56>Box 2</h56>
+    <h57>Box 3</h57>
+    <h58>Box 6</h58>
+    <h59>Box 9</h59>
+    <h60>Appendix L</h60>
+    <h61>Add to drawing</h61>
+    <h62>Add completed fields to the drawing</h62>
+    <h63>From file</h63>
+    <h64>Load and set the field values from the specified dwg file</h64>
+    <h65>Save</h65>
+    <h66>Save filled fields as standard</h66>
+    <h67>Load</h67>
+    <h68>Load saved field values</h68>
+    <h69>Add fields to stamp</h69>
+    <h70>Set Default Values</h70>
+    <h71>Get the value from the drawing</h71>
+    <h72>DSTU B A.2.4-4: 2009</h72>
+    <h73>STB 2255-2012</h73>
+    <h74>Update in drawing</h74>
+    <msg1>The configuration file is corrupt!\nRun the ModPlus Configurator</msg1>
+    <msg2>An error has occurred!</msg2>
+    <msg3>Value</msg3>
+    <msg4>already contained in the list of standard values</msg4>
+    <msg5>The list contains the same values!</msg5>
+    <msg6>Filled values updated in the current drawing\nDo not forget to call regeneration to update the values in the stamps</msg6>
+    <msg7>Filled values added to the drawing</msg7>
+    <msg8>Saved</msg8>
+    <msg9>Select stamp:</msg9>
+    <msg10>Wrong choice! This is not a stamp!</msg10>
+    <msg11>Specify the object to retrieve the text (text, multileader, table):</msg11>
+    <msg12>Specify the cell:</msg12>
+    <msg13>Add fields from file</msg13>
+    <msg14>In file</msg14>
+    <msg15>no fields found</msg15>
+    <msg16>File was created in a later version of AutoCAD!</msg16>
+    <msg17>Could not copy file to disk!\nThere may be no administrator rights</msg17>
+    <msg18>Could not copy table from resource file</msg18>
+    <msg19>You can not add more than</msg19>
+    <msg20>posts</msg20>
+    <msg21>The stamp does not correspond to the stamp ModPlus!\nInvalid number of cells</msg21>
+    <msg22>The "Organization" cell contains a logo\nReplace on field?</msg22>
+    <msg23>Use dwg-file as a logo</msg23>
+    <msg24>Insertion point:</msg24>
+  </mpStamps>
+  <mpSummLength LocalName="Sum of lengths"
+                Description="Gets and displays the number and sum of the lengths of selected lines, polylines, circles, arcs and splines">
+    <h1>SUM OF LENGTHS</h1>
+    <h2>Total length:</h2>
+    <h3>Rounding Result</h3>
+    <h4>Count:</h4>
+    <h5>ENTITIES</h5>
+    <h6>Insert result as a single line text</h6>
+    <h7>Insert result into a table cell</h7>
+    <h8>Export result to a txt file</h8>
+    <h9>Line</h9>
+    <h10>Circle</h10>
+    <h11>Polyline</h11>
+    <h12>Arc</h12>
+    <h13>Spline</h13>
+    <h14>Ellipse</h14>
+  </mpSummLength>
+  <mpSelSim LocalName="Select similar"
+            Description="Functions allow you to select objects that are similar to sample objects from all objects in the drawing, or from a specific set"
+            FullDescription="Before using the function, you need to configure the conditions by which similar objects will be searched for - the same type, the same layer, the same color, etc. For some types, there are additional matching conditions. For example, the same text heights, blocks with the same name, etc.">
+    <h1>SELECT SIMILAR</h1>
+    <h2>GENERAL SETTINGS</h2>
+    <h3>Add sample objects to the final set (select similar from the selected)</h3>
+    <h4>Same types</h4>
+    <h5>On the same layer</h5>
+    <h6>With the same color</h6>
+    <h7>With the same linetype</h7>
+    <h8>With the same linetype scale</h8>
+    <h9>With the same lineweight</h9>
+    <h10>BLOCKS</h10>
+    <h11>With the same block name</h11>
+    <h12>The block name contains:</h12>
+    <h13>With the same block scale</h13>
+    <h14>HATCH</h14>
+    <h15>With the same hatch pattern</h15>
+    <h16>With the same hatching scale</h16>
+    <h17>RASTER IMAGES</h17>
+    <h18>With the same image</h18>
+    <h19>CIRCLES</h19>
+    <h20>With the same radius</h20>
+    <h21>SINGLE LINE TEXT</h21>
+    <h22>With the same contents of the text</h22>
+    <h23>With the same text style</h23>
+    <h24>With the same text height</h24>
+    <h25>With the same number of characters</h25>
+    <h26>MULTILINE TEXT</h26>
+    <h27>LINES</h27>
+    <h28>Same length of lines</h28>
+    <h29>POLYLINES</h29>
+    <h30>Same length of polylines</h30>
+    <h31>Save</h31>
+    <msg1>Settings</msg1>
+    <msg2>Select sample objects or</msg2>
+    <msg3>Select objects to delete from the set or</msg3>
+    <msg4>Select objects among which to search for analogues:</msg4>
+    <msg5>Select the objects to be removed from the set:</msg5>
+    <mi1>MP:Select similar</mi1>
+    <mi2>Select similar</mi2>
+    <mi3>Select similar from selected</mi3>
+    <mi4>SelSim Settings</mi4>
+    <mi5>MP:Select similar from selected</mi5>
+    <mi6>MP:SelSim Settings</mi6>
+  </mpSelSim>
+  <mpHandDim LocalName="Hand dims"
+             Description="Color highlight, restore or delete dimensions with an override value">
+    <msg1>Select dimensions:</msg1>
+    <msg2>Options [Color/Select/Restore/Delete]</msg2>
+  </mpHandDim>
+  <mpCalc LocalName="Calculator"
+          Description="It is an analog of a standard calculator, with the ability to retrieve data from a drawing, adding a result to a drawing, and the ability to manually write a formula for calculating">
+    <prefix>Prefix</prefix>
+    <suffix>Suffix</suffix>
+    <mi1>Absolute value of the specified number</mi1>
+    <mi2>The angle whose cosine is equal to the specified number</mi2>
+    <mi3>The angle whose sine is equal to the specified number</mi3>
+    <mi4>Angle, the tangent of which is equal to the specified number</mi4>
+    <mi5>The smallest integer is greater than or equal to a given number</mi5>
+    <mi6>E, raised to the specified degree</mi6>
+    <mi7>The largest integer is less than or equal to a given number</mi7>
+    <mi8>The remainder of dividing the indicated number by another specified number</mi8>
+    <mi9>The logarithm of the specified number</mi9>
+    <mi10>Logarithm with base 10 of the specified number</mi10>
+    <mi11>The greater of the two numbers</mi11>
+    <mi12>The smaller of the two numbers</mi12>
+    <mi13>The specified number, raised to the specified degree</mi13>
+    <mi14>Rounds a value to the nearest integer or specified number of decimal places</mi14>
+    <mi15>The value that specifies the sign of a number</mi15>
+    <mi16>The integer part of number</mi16>
+    <h1>Calculator</h1>
+    <h2>Interpolation</h2>
+    <h3>Degree, slope</h3>
+    <h4>Use transparency</h4>
+    <h5>CALCULATOR</h5>
+    <h6>INTERPOLATION</h6>
+    <h7>DEGREE, SLOPE</h7>
+    <h8>Insert function</h8>
+    <h9>Rounding:</h9>
+    <h10>A number of simbols after comma</h10>
+    <h11>DATA FROM DRAWING</h11>
+    <h12>Measure the distance between two points</h12>
+    <h13>Get the sum of lengths from entities</h13>
+    <h14>Get coordinate</h14>
+    <h15>Get the area</h15>
+    <h16>Get value from text</h16>
+    <h17>Get value from multileader</h17>
+    <h18>Get value from table cell</h18>
+    <h19>Get value from dimension</h19>
+    <h20>Several</h20>
+    <h21>Round</h21>
+    <h22>Round the taken value</h22>
+    <h23>Separator:</h23>
+    <h24>Linear interpolation</h24>
+    <h25>Linear extrapolation of a smaller</h25>
+    <h26>Linear extrapolation of a larger</h26>
+    <h27>DEGREE</h27>
+    <h28>Angular degree:</h28>
+    <h29>Decimal degree:</h29>
+    <h30>Radian:</h30>
+    <h31>SLOPE</h31>
+    <h32>Slope (dimensionless):</h32>
+    <h33>Percent (%):</h33>
+    <h34>Promille (‰):</h34>
+    <h35>Translation of degrees</h35>
+    <h36>Ratio:</h36>
+    <h37>Result to drawing:</h37>
+    <h38>Insert result as a single line text</h38>
+    <h39>Insert result into existing single line text (with replacement)</h39>
+    <h40>Insert result into a table cell</h40>
+    <h41>Add result to multiline text</h41>
+    <h42>Insert result as multileader</h42>
+    <h43>Journal</h43>
+    <h44>Clear journal</h44>
+    <msg1>An error has occurred. Possible formula for calculation is incorrect</msg1>
+    <msg2>Specify point:</msg2>
+    <msg3>Select the coordinate: [X/Y/Z]</msg3>
+    <msg4>Get the area: [Polyline/Hatch]</msg4>
+    <msg5>Select polyline:</msg5>
+    <msg6>Select several polylines:</msg6>
+    <msg7>Select hatch:</msg7>
+    <msg8>Select several hatchings:</msg8>
+    <msg9>Select single-line or multi-line text:</msg9>
+    <msg10>Select several single-line or multi-line texts:</msg10>
+    <msg11>Select multileader:</msg11>
+    <msg12>Select several multileaders:</msg12>
+    <msg13>Select table:</msg13>
+    <msg14>Select cell:</msg14>
+    <msg15>First corner of the frame:</msg15>
+    <msg16>Second corner of the frame:</msg16>
+    <msg17>Select dimension:</msg17>
+    <msg18>Select several dimensions:</msg18>
+    <msg19>Select multi-line text:</msg19>
+    <msg20>Select single-line text:</msg20>
+    <msg21>x0 is equal to x2</msg21>
+    <msg22>x1 does not belong\nto interval x0-x2</msg22>
+    <msg23>is equal to</msg23>
+    <err1>Wrong choice!</err1>
+    <err2>Selected text does not contain numeric values</err2>
+    <err3>Do not hit the cell!</err3>
+    <err4>Invalid Input</err4>
+  </mpCalc>
+  <mpDBviewer LocalName="Normative base"
+              Description="Function for viewing the normative base of the plugin">
+    <cancel>Cancel</cancel>
+    <cb1>Metall</cb1>
+    <cb2>Concrete</cb2>
+    <cb3>Wood/Plastics</cb3>
+    <cb4>Materials</cb4>
+    <cb5>Other</cb5>
+    <h1>NORMATIVE BASE</h1>
+    <h2>Show as list</h2>
+    <h3>Show as tree</h3>
+    <h4>Document's name</h4>
+    <h5>Open image</h5>
+    <h6>Properties</h6>
+    <h7>Table</h7>
+    <h8>Name</h8>
+    <h9>Steel grade</h9>
+    <h10>Export</h10>
+    <h11>Export document</h11>
+    <h12>Export to Excel</h12>
+    <h13>Export to Word</h13>
+    <h14>Get the list of documents in the database</h14>
+    <h15>Open the database search bar</h15>
+    <h16>Search</h16>
+    <h17>2 or more characters</h17>
+    <h18>List of documents in the database</h18>
+    <p1>Create a new document</p1>
+    <p2>Document Number:</p2>
+    <p3>Filling headers</p3>
+    <p4>Filling data</p4>
+  </mpDBviewer>
+  <mpArmature LocalName="Reinforcement"
+              Description="Working with assortments of reinforcement - obtaining various information and calculations"
+              FullDescription="The function requires plug-in databases. The function allows you to obtain various information and calculation data (area, weight, anchoring, etc.) for a large number of different assortments">
+    <cancel>Cancel</cancel>
+    <h1>REINFORCEMENT</h1>
+    <h2>Norm. document</h2>
+    <h3>Selecting the normative document</h3>
+    <h4>Diameter</h4>
+    <h5>Selecting by diameter of the reinforcement</h5>
+    <h6>Sectional area, cm²</h6>
+    <h7>Selection by cross-sectional area of the reinforcement</h7>
+    <h8>Weight 1 m, kg</h8>
+    <h9>Selection by weight of one running meter of reinforcement</h9>
+    <h10>Reinforcement class</h10>
+    <h11>Selecting a class of steel reinforcement</h11>
+    <h12>Mass</h12>
+    <h13>Length, mm:</h13>
+    <h14>The field for entering the length (mm) for calculating the mass</h14>
+    <h15>m</h15>
+    <h16>In running meters</h16>
+    <h17>Measure the length between two points</h17>
+    <h18>Get the sum of lengths from entities</h18>
+    <h19>RESULT, KG</h19>
+    <h20>A number of simbols after comma</h20>
+    <h21>Result to table</h21>
+    <h22>Insert the result of the calculation in the AutoCAD table</h22>
+    <h23>Name to table</h23>
+    <h24>Insert the name of the selected reinforcement into the AutoCAD table</h24>
+    <h25>Insert result and name</h25>
+    <h26>Insert the result of the calculation and the name of the selected reinforcement in the AutoCAD table</h26>
+    <h27>Areas</h27>
+    <h28>With the number of rods:</h28>
+    <h29>Area, cm²:</h29>
+    <h30>At step rods (mm):</h30>
+    <h31>Area, cm²/1m:</h31>
+    <h32>Anchoring</h32>
+    <h33>SP 52-101-2003</h33>
+    <h34>Concrete class:</h34>
+    <h35>Concrete class for compressive strength</h35>
+    <h36>Estimated tensile strength</h36>
+    <h37>View of the surface of reinforcement</h37>
+    <h38>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</h38>
+    <h39>Estimated tensile strength, MPa</h39>
+    <h40>Basic (main) length of anchoring, mm:</h40>
+    <h41>Coefficient α:</h41>
+    <h42>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</h42>
+    <h43>Required and actual reinforcement are equal</h43>
+    <h44>Actually installed reinforcement (diameter)</h44>
+    <h45>By default, we accept that the required reinforcement and the actual installed reinforcement are equal. In case the reinforcement is different, select the actually installed reinforcement. The required reinforcement is selected in the left part of the window</h45>
+    <h46>Required (estimated) anchoring length, mm:</h46>
+    <h47>Generate report in MS Word</h47>
+    <h48>In detail</h48>
+    <msg1>Available in full version!</msg1>
+    <msg2>No value in the "Length" field</msg2>
+    <msg3>Not selected reinforcement</msg3>
+    <msg4>Allowed to enter only numbers and point</msg4>
+    <msg5>Not all data entered</msg5>
+    <msg6>Mass of one meter to table</msg6>
+    <msg7>Select the "Specification" table</msg7>
+    <msg8>Select the "Name" cell</msg8>
+    <msg9>kg/m</msg9>
+    <msg10>Select the "Mass" cell</msg10>
+    <err1>Wrong choice!</err1>
+    <err2>Do not hit the cell!</err2>
+    <mpa>MPa</mpa>
+    <cb1>Smooth rebar</cb1>
+    <cb2>Cold-deformed (periodic profile)</cb2>
+    <cb3>Hot rolled (periodic profile)</cb3>
+    <cb4>Thermo-mechanically processed (periodic profile)</cb4>
+    <p1>Result of calculation in Word</p1>
+    <p2>Create a new document</p2>
+    <p3>Filling data</p3>
+  </mpArmature>
+  <mpTxtCopyPaste LocalName="Fast text copy"
+                  Description="Fast copying of single line or multiline text content">
+    <msg1>Select the source text:</msg1>
+    <msg2>Select source text or [Delete]</msg2>
+    <msg3>Wrong choice!</msg3>
+    <msg4>Delete the source text?</msg4>
+    <msg5>Select the text to replace the content</msg5>
+  </mpTxtCopyPaste>
+  <mpRemoveAnnotScale LocalName="Clear scales"
+                      Description="Clears the list of annotative scales in the selected annotative objects, leaving the current scale">
+    <msg1>Select annotative entities:</msg1>
+  </mpRemoveAnnotScale>
+  <mpTotals LocalName="Totals"
+            Description="Function for quickly creating Totals with the possibility of obtaining values from the drawing"
+            FullDescription="The function collects data from tables inserted into the current document. The list of reference documents is collected according to the regulatory documents that are present in the plugin database">
+    <insert>Insert table</insert>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <xml>xml-file</xml>
+    <h1>Russia</h1>
+    <h2>Ukraine</h2>
+    <h3>Belarus</h3>
+    <h4>Settings</h4>
+    <h5>Create a file automatically</h5>
+    <h6>If this option is enabled and the current document is saved, the shared data file (Drawing name_Totals.xml) will be automatically created in the current drawing location directory when the function starts</h6>
+    <h7>Inserting tables</h7>
+    <h8>Table scale:</h8>
+    <h9>Text height:</h9>
+    <h10>Row height:</h10>
+    <h11>Text style:</h11>
+    <h12>TOTALS</h12>
+    <h13>Not saved!</h13>
+    <h14>Save Totals file</h14>
+    <h15>Load Totals file</h15>
+    <h16>Get Totals from model or specified layouts</h16>
+    <h17>Get Totals</h17>
+    <h18>Statement drawings</h18>
+    <h19>Sheet</h19>
+    <h20>Name</h20>
+    <h21>Note</h21>
+    <h22>Add new row</h22>
+    <h23>Delete selected row</h23>
+    <h24>Move selected row up</h24>
+    <h25>Move selected row down</h25>
+    <h26>Insert table in current drawing</h26>
+    <h27>Statement specifications</h27>
+    <h28>Statement reference documents</h28>
+    <h29>Designation</h29>
+    <h30>In model</h30>
+    <h31>As formats use:</h31>
+    <h32>ModPlus formats</h32>
+    <h33>Formats from list (in form of blocks):</h33>
+    <h34>In layouts</h34>
+    <h35>Search in layouts is made on tables without taking into account the format! It is conventionally accepted that one layout corresponds to one format</h35>
+    <h36>Collect:</h36>
+    <h37>Tables are not saved to file! After closing, all data will be lost!\nAre you sure you want to close the window?</h37>
+    <h38>Existing tables will be overwritten!\nContinue?</h38>
+    <h39>The selected item will be permanently deleted\nContinue?</h39>
+    <h40>Statement drawings has no values</h40>
+    <h41>Statement specifications has no values</h41>
+    <h42>Statement reference documents has no values</h42>
+    <h43>Available in full version!</h43>
+    <h44>Overwrite existing tables?\nYes - overwrite, No - supplement</h44>
+    <h45>No blocks found in the current space!</h45>
+    <h46>Error reading settings!</h46>
+    <h47>In the table file not found a table with a table style</h47>
+    <h48>Run the "Tables" function to overwrite the table file</h48>
+    <h49>No file with tables found!\nYou need to start the "Tables" function</h49>
+    <h50>Finding data in layout:</h50>
+    <h51>The view screen is cropped by an unhandled object!</h51>
+    <h52>Viewport №</h52>
+    <h53>trimming object:</h53>
+    <h54>Insertion point:</h54>
+    <h55>No endpoints have been selected for searching!</h55>
+    <h56>No variants have been chosen for searching the format!</h56>
+    <h57>No layouts have been selected for searching!</h57>
+    <h58>Unselect</h58>
+    <h59>Select all</h59>
+  </mpTotals>
+  <mpProductInsert LocalName="Product insert"
+                   Description="The function of inserting products from the ModPlus database as blocks containing extended data"
+                   FullDescription="The function creates AutoCAD blocks based on data from the plugin database. Extended data is added to the blocks, which allows processing these blocks with other functions and creating a specification based on them\nThe function also allows you to add extended data to ordinary AutoCAD entities\nImportant! Blocks must be inserted with this function or copy already inserted, otherwise (when inserted by normal means AutoCAD), extended data will not be added!">
+    <close>Close</close>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <all>All</all>
+    <cb1>Metall</cb1>
+    <cb2>Concrete</cb2>
+    <cb3>Wood/Plastics</cb3>
+    <cb4>Materials</cb4>
+    <cb5>Other</cb5>
+    <h1>Edit the list of documents used by the function</h1>
+    <h2>Open the database search bar</h2>
+    <h3>Search</h3>
+    <h4>2 characters or more</h4>
+    <h5>PRODUCT INSERT</h5>
+    <h6>Choose a section:</h6>
+    <h7>Filter by groups:</h7>
+    <h8>Select a document:</h8>
+    <h9>Open image</h9>
+    <h10>Document status: Valid</h10>
+    <h11>Document status: Not valid</h11>
+    <h12>Document status: No information or legislation</h12>
+    <h13>Length, mm</h13>
+    <h14>Measure between two points</h14>
+    <h15>Diameter, mm</h15>
+    <h16>Width, mm</h16>
+    <h17>Height (thickness), mm</h17>
+    <h18>Steel:</h18>
+    <h19>Density, kg/m³:</h19>
+    <h20>Save the entered dimension values</h20>
+    <h21>Product position</h21>
+    <h22>Insertion Option</h22>
+    <h23>Masking</h23>
+    <h24>Add masking to hide items behind the block</h24>
+    <h25>Insert as block</h25>
+    <h26>Inserting a product in the form of a block with a simple geometry and with extended data</h26>
+    <h27>Replace block</h27>
+    <h28>Replace block representing the product</h28>
+    <h29>Add to entitie</h29>
+    <h30>Add to the specified entitie extended data containing information about the product</h30>
+    <h31>Show documents for the database section:</h31>
+    <h32>Document status:</h32>
+    <h33>Valid</h33>
+    <h34>Not valid</h34>
+    <h35>No information or legislation</h35>
+    <h36>PRODUCT DATA</h36>
+    <rb1>Side view</rb1>
+    <rb2>Front view (section)</rb2>
+    <rb3>Top view</rb3>
+    <s1>Side</s1>
+    <err1>Error creating block name!</err1>
+    <err2>Incorrect block name!</err2>
+    <msg1>Select block for replace:</msg1>
+    <msg2>The selected block does not contain the extended data of the ModPlus product\nReplace this block?</msg2>
+    <msg3>Select entities in which you want to add data for the product</msg3>
+    <msg4>Enter the length of the product</msg4>
+    <msg5>Enter the diameter of the product</msg5>
+    <msg6>Enter the width of the product</msg6>
+    <msg7>Enter the height of the product</msg7>
+    <msg8>Insertion point:</msg8>
+    <msg9>MP:Product data</msg9>
+  </mpProductInsert>
+  <mpDrawOrderByLayer LocalName="Draworder by layer"
+                      Description="The function serves to change the draworder according to the layers"
+                      FullDescription="The function processes the layers marked with check marks in the window, changing the drawing order according to the order of the marked layers. There is a mode &quot;Auto&quot;, which automatically changes the order of drawing objects on one of the two specified layers when creating or editing">
+    <h1>DRAWORDER BY LAYER</h1>
+    <h2>Reverse list</h2>
+    <h3>Select all</h3>
+    <h4>Unselect all</h4>
+    <h5>Inversion selection</h5>
+    <h6>Auto mode</h6>
+    <h7>Move front</h7>
+    <h8>Move back</h8>
+    <h9>Apply</h9>
+    <h10>ModPlus: Entity on layer:</h10>
+    <h11>moved front</h11>
+    <h12>moved back</h12>
+  </mpDrawOrderByLayer>
+  <mpDocTemplates LocalName="Templates. Stage P"
+                  Description="The function allows you to create templates of the text part of the section according to &quot;Resolution of the Russian Federation No.87&quot; with the title page according to GOST R 21.1101-2013">
+    <h1>TEMPLATES. STAGE P</h1>
+    <h2>Common Properties</h2>
+    <h3>Project Name</h3>
+    <h4>Project Number</h4>
+    <h5>Chief Engineer</h5>
+    <h6>Chief Project Engineer</h6>
+    <h7>Completed</h7>
+    <h8>Standard control</h8>
+    <h9>Organization</h9>
+    <h10>Certificate of admission (SRO)</h10>
+    <h11>Customer</h11>
+    <h12>Get from fields</h12>
+    <h13>Get data from fields (see function "Stamps")</h13>
+    <h14>Templates</h14>
+    <h15>Objects of capital constr.</h15>
+    <h16>Linear Objects</h16>
+    <h17>Create</h17>
+    <h18>Cancel</h18>
+    <h19>You did not specify any template to create</h19>
+    <h20>Creating templates</h20>
+    <h21>Opening the Word application</h21>
+    <h22>Creating a template</h22>
+    <h23>Open a Word file</h23>
+  </mpDocTemplates>
+  <mpPrPosition LocalName="Product position"
+                Description="The function adds/removes a position to the selected products and allows position marking of the item">
+    <h1>Select entities that are ModPlus products</h1>
+    <h2>Delete</h2>
+    <h3>Element</h3>
+    <h4>Specify position</h4>
+    <h5>Select entities that are ModPlus products to delete a position</h5>
+    <h6>Select the type of marking for the product</h6>
+    <h7>Position</h7>
+    <h8>Nothing/Text/Multileader</h8>
+    <h9>MP:Multileader with mark</h9>
+    <h10>Insertion point</h10>
+  </mpPrPosition>
+  <mpPrToTable LocalName="Products to table"
+               Description="The function allows you to fill the specification table with the selected ModPlus products"
+               FullDescription="The function collects data for the specification from the extended product data (blocks created by the &quot;Insert product&quot; function, or AutoCAD primitives with the expanded data added by the &quot;Insert product&quot; function), as well as from blocks that have attributes for the specification. It is possible to specify a line from which the table will be populated">
+    <yes>Yes</yes>
+    <no>No</no>
+    <h1>Select entities that are ModPlus products</h1>
+    <h2>Row</h2>
+    <h3>Decimals</h3>
+    <h4>Ask a row to start filling</h4>
+    <h5>A number of simbols after comma</h5>
+    <h6>Select table</h6>
+    <h7>Wrong choice! This is not a table!</h7>
+    <h8>MP:Add to specification</h8>
+    <h9>Product search</h9>
+  </mpPrToTable>
+  <mpDimBreak LocalName="Dim break"
+              Description="Break the selected linear dimension into two or more new"
+              FullDescription="The function allows you to break the selected linear dimension into two or more linear dimensions by dynamically specifying a new point that will be common for the two new dimensions">
+    <h1>Select linear dimension</h1>
+    <h2>Wrong choice!</h2>
+    <h3>Break point</h3>
+  </mpDimBreak>
+  <mpBlkReplace LocalName="Block replace"
+                Description="The function allows quick replacement of blocks in the drawing with a sample block"
+                FullDescription="The function works in two modes: Replace selected - allows you to replace all selected blocks with one sample block; Replace similar - allows you to replace all occurrences of one block with one sample block. Allows you to delete the description of the replaced block from the drawing database. By analogy with the command &quot;PURGE&quot;. There are various settings">
+    <h1>Select replaced block</h1>
+    <wrong>Wrong choice!</wrong>
+    <h2>Select replacing block</h2>
+    <h3>Select multiple blocks to replace them</h3>
+    <h4>Eliminate unnecessary blocks</h4>
+    <h5>Delete replaced blocks from the drawing database?</h5>
+    <yes>Yes</yes>
+    <no>No</no>
+    <h6>Function work variant</h6>
+    <k1>seLected</k1>
+    <k2>Similar</k2>
+    <k3>seTtings</k3>
+    <h7>For copied blocks, repeat:</h7>
+    <h8>layer of replaced block</h8>
+    <h9>scale of replaced block</h9>
+    <h10>transformation (mirror and rotation) of replaced block</h10>
+    <h11>only rotation of replaced block</h11>
+    <h12>Removing replaced blocks from DB:</h12>
+    <h13>Ask</h13>
+    <h14>Automatically remove</h14>
+    <h15>Do not remove</h15>
+    <h16>Close</h16>
+    <h17>All settings are automatically saved</h17>
+  </mpBlkReplace>
+  <mpPlinesEdit LocalName="Polylines"
+                Description="Collection of various functions for working with polylines">
+    <h1>POLYLINES</h1>
+    <h2>Function works with 3D polylines</h2>
+    <h3>Function works with 2D polylines</h3>
+    <h4>Function works with LW polylines</h4>
+    <h5>Add Panel to Ribbon</h5>
+    <h6>Color of auxiliary geometry:</h6>
+    <h7>The ModPlus tab is not found</h7>
+    <h8>The ModPlus tab was not found to add a work panel to polylines</h8>
+    <h9>Polylines</h9>
+    <h10>Work option:</h10>
+    <h11>Min. machined arc radius:</h11>
+    <h12>Any</h12>
+    <h13>Divide the arc by an equal number of segments\nThe image shows a variant of dividing by 3 segments\nR is the arc radius in the polyline</h13>
+    <h14>Divide the arc into segments by specifying the length of the arc segments resulting from the division\nR is the arc radius in the polyline\nL - length of the arc segment</h14>
+    <h15>Divide the arc into segments by specifying the chord deviation (segment height)\nR is the arc radius in the polyline\nH - segment height</h15>
+    <h16>Divide the arc into segments by specifying the length of the chord\nR is the arc radius in the polyline\nX - chord length</h16>
+    <h17>Delete selected polylines</h17>
+    <h18>Exclude endpoints</h18>
+    <h19>Copy blocks:</h19>
+    <h20>Rotate:</h20>
+    <h21>TOLERANCES</h21>
+    <h22>P is the point of the polyline</h22>
+    <h23>- The function works by checking both conditions</h23>
+    <h24>H is the maximum deviation from the straight line:</h24>
+    <h25>a - angle tolerance:</h25>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <cb1>Number of segments</cb1>
+    <cb2>Length of segment</cb2>
+    <cb3>Chord deviation</cb3>
+    <cb4>Chord length</cb4>
+    <cb5>by insertion point of the block</cb5>
+    <cb6>by geometric center</cb6>
+    <cb7>do not rotate</cb7>
+    <cb8>rotate by previous segment</cb8>
+    <cb9>rotate by next segment</cb9>
+    <l1>Convert 3D polyline to LW</l1>
+    <d1>Create copies of selected 3D polylines as LW-polylines (2D) with transfer to level 0.0</d1>
+    <l2>Deleting matching polyline vertices</l2>
+    <d2>Deleting adjacent vertices of selected polylines that have the same coordinates</d2>
+    <l3>Removing vertices that lie on a straight line</l3>
+    <d3>Deleting adjacent vertices of selected polyline, which lie on a straight line. It is possible to set tolerance for deviation from the straight or angular tolerance</d3>
+    <l4>Placing an object at the vertices of a polyline</l4>
+    <d4>Place the selected object in the vertices of the polyline. It is possible to rotate the object along the polyline segment. Blocks can be placed both on the geometric center, and on the insertion point</d4>
+    <l5>Replacing an arc segment with linear</l5>
+    <d5>Replacing the specified arc segment of the polyline with a linear</d5>
+    <l6>Replacing an linear segment with arc</l6>
+    <d6>Replacing the specified linear (or arc) segment of the polyline with an arc. It is possible to construct an arc along a tangent or a point on an arc</d6>
+    <l7>Dynamically adding a vertex</l7>
+    <d7>Dynamically adding a vertex to the specified polyline</d7>
+    <l8>Drawing a rectangle by three points</l8>
+    <l9>Removing Arc Segments from a Polyline</l9>
+    <d9>Remove polyline arc segments by replacing them with linear segments. There are several options for the function: the number of segments, the length of segments, the height of segments (chord deviation), the length of the chord</d9>
+    <l10>Building the middle line</l10>
+    <d10>The construction of a midline (as polyline) between two specified curves (segments, polylines or splines)</d10>
+    <wrong>Wrong choice!</wrong>
+    <k1>Select 3D polylines</k1>
+    <k2>Select polylines</k2>
+    <k3>Vertices removed</k3>
+    <k4>Polyline</k4>
+    <k5>does not contain matching vertices</k5>
+    <k6>Select polylines or</k6>
+    <k7>Tolerances</k7>
+    <k8>The maximum deviation from the straight line (H) is accepted</k8>
+    <k9>Angular tolerance in degrees (a) accepted</k9>
+    <k10>contains only</k10>
+    <k11>vertices</k11>
+    <k12>does not contain vertices lying on a straight line or suitable under the conditions of tolerance</k12>
+    <k13>Select polyline</k13>
+    <k14>Select an object to place</k14>
+    <k15>Select an arc segment of the polyline</k15>
+    <k16>Select the polyline segment</k16>
+    <k17>Specify a point on the tangent or: [Tangent/traverse Point]</k17>
+    <k18>Specify a point on the arc or: [Tangent/traverse Point]</k18>
+    <k19>Specify the point (hold Ctrl to move the vertex forward)</k19>
+    <k20>Specify first point</k20>
+    <k21>Specify second point</k21>
+    <k22>Specify third point</k22>
+    <k23>Enter the number of segments</k23>
+    <k24>Enter the length of the segment</k24>
+    <k25>Enter the chord deviation (segment height)</k25>
+    <k26>Enter the length of the chord</k26>
+    <k27>Select first support element (line, polyline or spline)</k27>
+    <k28>Select second support element (line, polyline or spline)</k28>
+    <k29>Number of control points</k29>
+    <k30>Simplify the polyline?\nThe points on the same straight line will be deleted</k30>
+  </mpPlinesEdit>
+  <mpSpecifications LocalName="Specifications"
+                    Description="Function for the formation and filling of general specifications"
+                    FullDescription="The function allows you to add items to the context menu of AutoCAD, allowing you to expand the ability to work with the specifications: Context menu for tables: Add product from the database - allows you to add products from the plugin database directly into the AutoCAD table; Context menu for blocks: Add/change attributes for the specification - allows you to add attributes to the blocks for the specification (see details in the help)">
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <h1>SPECIFICATIONS</h1>
+    <h2>Russia</h2>
+    <h3>Ukraine</h3>
+    <h4>Belarus</h4>
+    <h5>Settings</h5>
+    <h6>CONTEXTUAL MENUS</h6>
+    <h7>Available in the full version of the function</h7>
+    <h8>Context menu for tables:</h8>
+    <h9>Add product from the database</h9>
+    <h10>Context menu for blocks:</h10>
+    <h11>Add/Change attributes for specification</h11>
+    <h12>TABLE SETTINGS</h12>
+    <h13>Table scale:</h13>
+    <h14>Text height:</h14>
+    <h15>Row height:</h15>
+    <h16>Text style:</h16>
+    <h17>Only for the current file</h17>
+    <h18>Save</h18>
+    <h19>Delete current specification</h19>
+    <h20>Create a new empty specification</h20>
+    <h21>Add new item</h21>
+    <h22>Edit selected item</h22>
+    <h23>Add selected products from the drawing to the specification</h23>
+    <h24>Move selected item up</h24>
+    <h25>Move selected item down</h25>
+    <h26>Delete selected item</h26>
+    <h27>Fill table</h27>
+    <h28>Insert table</h28>
+    <h29>Binding:</h29>
+    <h30>Select from the list or write</h30>
+    <h31>Show documents for the database section:</h31>
+    <h32>Document status:</h32>
+    <h33>Valid</h33>
+    <h34>Not valid</h34>
+    <h35>No information or legislation</h35>
+    <h36>SPECIFICATION NAME</h36>
+    <h37>Enter a name for the specification</h37>
+    <h38>For this drawing there is already a specification with this name!</h38>
+    <h39>Product search</h39>
+    <h40>MANUAL INPUT</h40>
+    <h41>Pos.</h41>
+    <h42>Designation</h42>
+    <h43>Name</h43>
+    <h44>Count</h44>
+    <h45>Mass</h45>
+    <h46>Note</h46>
+    <h47>Steel</h47>
+    <h48>Edit the list of documents used by the function</h48>
+    <h49>Open the database search bar</h49>
+    <h50>Search</h50>
+    <h51>2 characters or more</h51>
+    <h52>PRODUCT FROM BASE</h52>
+    <h53>Choose a section:</h53>
+    <h54>Filter by groups:</h54>
+    <h55>Select a document:</h55>
+    <h56>Open image</h56>
+    <h57>Document status: Valid</h57>
+    <h58>Document status: Not valid</h58>
+    <h59>Document status: No information or legislation</h59>
+    <h60>Length, mm</h60>
+    <h61>Measure between two points</h61>
+    <h62>Diameter, mm</h62>
+    <h63>Width, mm</h63>
+    <h64>Height (thickness), mm</h64>
+    <h65>Steel:</h65>
+    <h66>Density, kg/m³:</h66>
+    <h67>Save the entered dimension values</h67>
+    <h68>Not all data entered</h68>
+    <cb1>Add from base</cb1>
+    <cb2>Add subsection</cb2>
+    <cb3>Manual input</cb3>
+    <cb4>Top left</cb4>
+    <cb5>Top right</cb5>
+    <k1>The current specification is not saved! Data will be lost!\nAre you sure you want to exit the function?</k1>
+    <k2>Select entities that are ModPlus products</k2>
+    <k3>Delete the selected item?</k3>
+    <k4>Specification</k4>
+    <k5>An error occurred while generating the key for the current drawing</k5>
+    <k6>The current specification is not saved and will be lost irrevocably!\nContinue?</k6>
+    <k7>The specification will be permanently deleted!\nContinue?</k7>
+    <k8>There is no file with tables! You need to run the "Tables" function to create it</k8>
+    <k9>Could not copy table from resource file</k9>
+    <k10>The file is created by the function "Specification" (mpSpecifications), which is part of the ModPlus plugin.\nDO NOT change this file manually. This can lead to errors in the function!</k10>
+    <k11>Insertion point</k11>
+    <k12>You did not enter anything!</k12>
+    <k13>MP:Add product from database</k13>
+    <k14>Select row</k14>
+    <k15>Do not hit the cell!</k15>
+    <k16>MP:Attributes for specification</k16>
+    <k17>ATTRIBUTES FOR SPECIFICATION</k17>
+    <all>All</all>
+    <cb6>Metall</cb6>
+    <cb7>Concrete</cb7>
+    <cb8>Wood/Plastics</cb8>
+    <cb9>Materials</cb9>
+    <cb10>Other</cb10>
+    <msg1>Enter the length of the product</msg1>
+    <msg2>Enter the diameter of the product</msg2>
+    <msg3>Enter the width of the product</msg3>
+    <msg4>Enter the height of the product</msg4>
+    <msg5>Specify density</msg5>
+    <ad1>Product position</ad1>
+    <ad2>Designation for the product</ad2>
+    <ad3>Product name</ad3>
+    <ad4>Product mass</ad4>
+    <ad5>Note for the product</ad5>
+  </mpSpecifications>
+  <mpLayoutManager LocalName="Layout manager"
+                   Description="Drawing layout manager displayed in the palette">
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <close>Close</close>
+    <h1>New layout</h1>
+    <h2>New layout from template</h2>
+    <h3>Layout</h3>
+    <h4>Are you sure you want to delete layout</h4>
+    <h5>Are you sure you want to delete selected layouts?</h5>
+    <h6>You can not rename the "Model" tab</h6>
+    <h7>Please select one layout</h7>
+    <h8>Layout manager</h8>
+    <h9>CREATE LAYOUT</h9>
+    <h10>Layout name:</h10>
+    <h11>Specify layout name</h11>
+    <h12>There is already layout with this name in the current drawing!\nPlease enter a different name</h12>
+    <h13>LAYOUT MANAGER: SETTINGS</h13>
+    <h14>Autostart with AutoCAD</h14>
+    <h15>Connect to the ModPlus palette</h15>
+    <h16>Request name when creating layout</h16>
+    <h17>Switch to a new layout when creating</h17>
+    <h18>Display Model in the list</h18>
+    <h19>MOVE/COPY</h19>
+    <h20>Place selected layouts</h20>
+    <h21>Before layout:</h21>
+    <h22>Create a copy</h22>
+    <h23>Number of copies:</h23>
+    <h24>You need to select a layout in the list!</h24>
+    <h25>move to the end</h25>
+    <h26>RENAME LAYOUT</h26>
+    <h27>Current layout name:</h27>
+    <h28>New layout name:</h28>
+    <mi1>Open</mi1>
+    <mi2>Delete</mi2>
+    <mi3>Rename</mi3>
+    <mi4>Move/Copy</mi4>
+    <mi5>Select all layouts</mi5>
+    <mi6>Layout settings manager</mi6>
+    <mi7>Print</mi7>
+    <mi8>Export Layout to Model</mi8>
+  </mpLayoutManager>
+  <mpSheetNumbers LocalName="Sheet numbering"
+                  Description="Function for setting the sheet number in the document and in the volume in ModPlus format and stamps"
+                  FullDescription="The function works in models and in sheets. First you need to get data that is read from the stamps and formats of the ModPlus plugin. After specifying new data, you just need to apply the changes">
+    <h1>SHEET NUMBERING</h1>
+    <h2>Get data from current drawing</h2>
+    <h3>In model</h3>
+    <h4>Unselect all</h4>
+    <h5>Sheet name</h5>
+    <h6>No. in doc.</h6>
+    <h7>Autonumbering values down</h7>
+    <h8>All "Number in document" values will be automatically numbered from this cell. An integer must be entered in the cell</h8>
+    <h9>No. in volume</h9>
+    <h10>All "Number in volume" values will be automatically numbered from this cell. An integer must be entered in the cell</h10>
+    <h11>In layouts</h11>
+    <h12>Layout name</h12>
+    <h13>Available in full version</h13>
+    <h14>You need to go to the "Model" tab</h14>
+    <h15>Search by ModPlus Formats</h15>
+    <h16>No field for number</h16>
+    <h17>No Stamp</h17>
+    <h18>No cell for name</h18>
+    <h19>No Format</h19>
+    <h20>No data from layout</h20>
+    <h21>Setting data for layout</h21>
+    <h22>Setting data in model</h22>
+    <h23>Select all</h23>
+    <h24>You must enter an integer in the "Number in document"</h24>
+    <h25>You must enter an integer in the "Number in volume"</h25>
+    <apply>Apply</apply>
+    <close>Close</close>
+  </mpSheetNumbers>
+  <mprSheetCopy LocalName="Sheet copy"
+                Description="The function allows you to make copies of the specified sheets with different settings"
+                FullDescription="The selected sheets can be copied without views and with views. You can specify whether to copy legends and schedules. A unique numbering system allows you not to change the number for a copy of the sheet, if you specify a prefix or suffix to obtain a unique number">
+    <h1>SHEET COPY</h1>
+    <h2>Search by name/number</h2>
+    <h3>Number of copies</h3>
+    <h4>Select all sheets</h4>
+    <h5>SHEET SETTINGS</h5>
+    <h6>Copy without views</h6>
+    <h7>Copy with views</h7>
+    <h8>Set title block:</h8>
+    <h9>Configure the name of the duplicate sheet</h9>
+    <h10>When creating a new name, add the numbering</h10>
+    <h11>in</h11>
+    <h12>. Add more:</h12>
+    <h13>Number prefix</h13>
+    <h14>Number</h14>
+    <h15>Number suffix</h15>
+    <h16>Name prefix</h16>
+    <h17>Name</h17>
+    <h18>Name suffix</h18>
+    <h19>In the sheet number find and replace</h19>
+    <h20>Case sensitive!</h20>
+    <h21>on</h21>
+    <h22>Do not add numbering if possible</h22>
+    <h23>If you add a prefix or suffix to the sheet number or sheet name to get a unique sheet number or sheet name, then the numbering will not be added</h23>
+    <h24>Available in full version</h24>
+    <h25>VIEW SETTINGS</h25>
+    <h26>View copy option:</h26>
+    <h27>View template:</h27>
+    <h28>Dublicate Legends</h28>
+    <h29>Dublicate Schedules</h29>
+    <h30>Configure names for:</h30>
+    <h31>View Name</h31>
+    <h32>Procceed</h32>
+    <h33>Current title block</h33>
+    <h34>Do not change</h34>
+    <h35>Unselect all sheets</h35>
+    <h36>You did not specify duplicate sheets</h36>
+    <h37>Sheet duplication</h37>
+    <h38>Failed to generate name and number for duplicate sheet</h38>
+    <h39>Duplicate view</h39>
+    <h40>Can not create dependent view for view</h40>
+    <h41>An attempt will be made to duplicate with detail</h41>
+    <h42>Do not copy the view</h42>
+    <h43>Failed to generate name for duplicate view</h43>
+    <h44>Duplicate viewport</h44>
+    <h45>Dublicate schedule</h45>
+    <start>Start</start>
+    <end>End</end>
+    <cb1>Dublicate</cb1>
+    <cb2>Dublicate with Detailing</cb2>
+    <cb3>Dublicate as a Dependent</cb3>
+  </mprSheetCopy>
+  <mpDwgBase LocalName="Dwg base"
+             Description="Base of various blocks and drawings"
+             FullDescription="The dwg database allows you to insert both blocks and finished drawings (for example, details view). The dwg database is filled with users. The function requires access to the internet">
+    <h1>Sending user blocks and drawings to the modplus.org server</h1>
+    <h2>Search by database</h2>
+    <h3>Search</h3>
+    <h4>Search by database from 3 characters...</h4>
+    <h5>Path:</h5>
+    <h6>Description:</h6>
+    <h7>Author:</h7>
+    <h8>Source:</h8>
+    <h9>Dwg base</h9>
+    <h10>Add a new item to the local database</h10>
+    <h11>Auxiliary methods for managing the user base</h11>
+    <h12>Delete</h12>
+    <h13>Rename Group</h13>
+    <h14>Edit</h14>
+    <h15>You can scale and pan the image with the mouse wheel</h15>
+    <h16>Reduce image</h16>
+    <h17>Enlarge image</h17>
+    <h18>This is a three-dimensional block</h18>
+    <h19>Layer:</h19>
+    <h20>Close the window after inserting</h20>
+    <h21>Rotation</h21>
+    <h22>Add block to base</h22>
+    <h23>Add drawing to base</h23>
+    <h24>Change block data</h24>
+    <h25>Change drawing data</h25>
+    <h26>Sending base to the server</h26>
+    <h27>Specify one or more files from your dwg database. The function will archive these files and create an index file for the items stored in these files</h27>
+    <h28>Files in the user base:</h28>
+    <h29>Elements that are stored in the file:</h29>
+    <h30>The path to the file:</h30>
+    <h31>Comment</h31>
+    <h32>You can leave a comment on the archive and we will pay attention to it</h32>
+    <h33>Collect archive</h33>
+    <h34>View archive</h34>
+    <h35>Delete archive</h35>
+    <h36>Send archive to server</h36>
+    <h37>Recommendations for adding blocks</h37>
+    <h38>Recommendations</h38>
+    <h39>Select a block in the current drawing</h39>
+    <h40>Upload last entered data</h40>
+    <h41>Dwg-file:</h41>
+    <h42>Current file</h42>
+    <h43>Dwg-file into which the block will be copied</h43>
+    <h44>This is a 3D block</h44>
+    <h45>Check if the specified block is three-dimensional</h45>
+    <h46>Name:</h46>
+    <h47>The name of the block that is displayed in the function window</h47>
+    <h48>Brief description of the block</h48>
+    <h49>Normative document:</h49>
+    <h50>Normative document - source</h50>
+    <h51>If there is no normative document, just leave the field blank</h51>
+    <h52>Added by:</h52>
+    <h53>Who added the block to the dwg database</h53>
+    <h54>Add attributes for specifications</h54>
+    <h55>Attribute name</h55>
+    <h56>Default value</h56>
+    <h57>Block attributes:</h57>
+    <h58>Take attribute values from the block</h58>
+    <h59>Name</h59>
+    <h60>Prompt</h60>
+    <h61>Value</h61>
+    <h62>Recommendations for adding drawing</h62>
+    <h63>Rename group</h63>
+    <h64>Current group name:</h64>
+    <h65>New group name:</h65>
+    <h66>Add</h66>
+    <h67>What do you want to add?</h67>
+    <h68>Add block</h68>
+    <h69>Add drawing</h69>
+    <h70>Property</h70>
+    <h71>Value</h71>
+    <bt1>ModPlus base</bt1>
+    <bt2>User base</bt2>
+    <insert>Insert</insert>
+    <insertBlock>Insert as block</insertBlock>
+    <msg1>ModPlus database file pointer is not found!\nClose AutoCAD and run the update check by the auto-update module</msg1>
+    <msg2>Current layer</msg2>
+    <msg3>The user database file pointer was not created. Create?</msg3>
+    <msg4>The source file is missing! Download?</msg4>
+    <msg5>Downloading the database file</msg5>
+    <msg6>There is no access to the internet or modplus.org!\nPlease try again later</msg6>
+    <msg7>The group will be deleted</msg7>
+    <msg8>and all subgroups</msg8>
+    <msg9>However, dwg-files will not be deleted</msg9>
+    <msg10>Delete group</msg10>
+    <msg11>The selected item will be removed from the database</msg11>
+    <msg12>Delete item</msg12>
+    <msg13>Insertion point</msg13>
+    <msg14>Angle of rotation</msg14>
+    <msg15>You have not selected any files to archive!</msg15>
+    <msg16>Create temporary folder</msg16>
+    <msg17>Collection of required items from the database</msg17>
+    <msg18>Could not create index file</msg18>
+    <msg19>The file is ready to be sent</msg19>
+    <msg20>Could not delete temporary folder</msg20>
+    <msg21>Perhaps you have an archive opened</msg21>
+    <msg22>Could not find the file to send. Perhaps you deleted it?</msg22>
+    <msg23>There is no access to the internet or modplus.org!</msg23>
+    <msg24>Retrieving Authorization Data</msg24>
+    <msg25>Uploading a file to the server</msg25>
+    <msg26>File upload to server is complete</msg26>
+    <msg27>File</msg27>
+    <msg28>was sent to the modplus.org server</msg28>
+    <msg29>Once the file is verified, we will add its contents to the public database</msg29>
+    <msg30>Delete the created archive?</msg30>
+    <msg31>Could not delete archive! Maybe it's open at the moment</msg31>
+    <msg32>Add a block with such data?</msg32>
+    <msg33>Could not copy the selected block to the specified file</msg33>
+    <msg34>Select block to add to database</msg34>
+    <msg35>The plugin dwg database contains a block named</msg35>
+    <msg36>Error parsing the file-pointer of plugin database!</msg36>
+    <msg37>The dwg user database contains a block named</msg37>
+    <msg38>Error parsing the file-pointer of user database!</msg38>
+    <msg39>Specify the display name of the block</msg39>
+    <msg40>Specify the path in the catalog</msg40>
+    <msg41>Check the "Current file" for dwg-file, however, the current file is not located in the directory dwg-base!</msg41>
+    <msg42>Catalog of dwg-base</msg42>
+    <msg43>Catalog of current file</msg43>
+    <msg44>Perhaps the current file has not been saved yet!</msg44>
+    <msg45>Check the "Current file" for dwg-file, however, it failed to recognize the current location of the file directory</msg45>
+    <msg46>Specify the dwg file to copy the block</msg46>
+    <msg47>Selecting a file to add a block</msg47>
+    <msg48>The selected file must be saved in AutoCAD 2010 version!</msg48>
+    <msg49>The specified file must be located in a subfolder of the folder</msg49>
+    <msg50>Create a new dwg database file</msg50>
+    <msg51>Do not create a file in the root of the</msg51>
+    <msg52>Create a subfolder!</msg52>
+    <msg53>Attention! The selected block is dynamic! The attributes for the specification are counted for one instance of the block!\nIf the block has several visibility options, then working with such a block will be confusing!</msg53>
+    <msg54>The current values of the attributes are filled with the default values specified when the block was created\nIf you continue, the values of the attributes will be filled with values from the selected block insert!\nGet the values of the attributes from the selected block insert?</msg54>
+    <msg55>The current file is not located in the dwg-database directory!</msg55>
+    <msg56>Unable to recognize the location directory of the current file</msg56>
+    <msg57>The version of the current file does not correspond to the version of AutoCAD 2010!\nSince ModPlus plugin works with AutoCAD 2010 version and above,\nthe file should be saved to AutoCAD 2010 version</msg57>
+    <msg58>Save the entered data as "Last entered data"?</msg58>
+    <msg59>Selecting a drawing to add to the database</msg59>
+    <msg60>The selected file contains proxy objects and can not be added to the database!\nDelete all proxy objects and try again</msg60>
+    <msg61>Specify the folder to copy the selected file</msg61>
+    <msg62>In the specified folder there is already a file</msg62>
+    <msg63>Replace?</msg63>
+    <msg64>Do not select a folder</msg64>
+    <msg65>The selected folder should be in the subfolder of the folder</msg65>
+    <msg66>Add a drawing with such data?</msg66>
+    <msg67>The plugin database contains a drawing with the name</msg67>
+    <msg68>The user database contains a drawing with the name</msg68>
+    <msg69>Specify a display name for the drawing</msg69>
+    <msg70>Specify the dwg file for the drawing</msg70>
+    <msg71>Enter new group name</msg71>
+    <wrong>Wrong choice!</wrong>
+    <p1>Document</p1>
+    <p2>Description</p2>
+    <p3>Object type</p3>
+    <p4>Annotative</p4>
+    <p5>Dynamic</p5>
+    <p6>3D block</p6>
+    <p7>Attributes for specification</p7>
+    <p8>Added by</p8>
+    <p9>Source</p9>
+    <yes>Yes</yes>
+    <no>No</no>
+    <block>Block</block>
+    <drawing>Drawing</drawing>
+    <close>Close</close>
+    <select>Select</select>
+    <create>Create</create>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <copy>Copy</copy>
+    <ad1>Product position</ad1>
+    <ad2>Designation for the product</ad2>
+    <ad3>Product name</ad3>
+    <ad4>Product mass</ad4>
+    <ad5>Note for the product</ad5>
+    <a1>Position</a1>
+    <a2>Designation</a2>
+    <a3>Name</a3>
+    <a4>Mass</a4>
+    <a5>Note</a5>
+    <r1>The default function assumes that the blocks added to the local (user) database will be added to the global database that is available to all users.</r1>
+    <r2>Therefore, try to follow the recommendations:</r2>
+    <r3>The added block should be useful in the work. No matter what professional orientation it will be</r3>
+    <r4>Do not use a wide variety of layers in the blocks, if this is not necessary. The best option is to use the standard layers of the ModPlus plugin</r4>
+    <r5>If the block is dynamic, then perhaps it is not necessary to add attributes for the specification</r5>
+    <r6>Let the blocks understandable names and descriptions, so that the user does not have to guess what it is and why</r6>
+    <r7>If you took a block from some resource, then be sure to specify the source!</r7>
+    <r8>Do not be lazy to think over the path to the block in the database</r8>
+    <r9>Also on the files with blocks are imposed restrictions, namely - all the added drawings with blocks should be saved in the version of AutoCAD 2010</r9>
+    <r10>The default function assumes that the drawings added to the local (user) database will be added to the global database, which is accessible to all users.</r10>
+    <r11>Therefore, some restrictions are added to the attached drawings:</r11>
+    <r12>The drawings that are added to the database must be saved in AutoCAD 2010</r12>
+    <r13>In the attached drawing, Proxy primitives should not be used</r13>
+    <r14>Drawings made in poor quality (for example, with multyleaders from lines and text, etc.) will not be taken to the public database</r14>
+    <r15>Also try to follow the recommendations:</r15>
+    <r16>Do not use a wide variety of layers in the drawings, if this is not necessary. The best option is to use the standard layers of the ModPlus plugin</r16>
+    <r17>Do not use a large number of annotation styles in your drawings. The best option is to use the annotations styles of the ModPlus plugin</r17>
+    <r18>Do not use line types in drawings that are not standard for AutoCAD</r18>
+    <r19>Do not use fonts that are not part of the standard AutoCAD font set in drawings</r19>
+    <r20>If you took a drawing from some resource, then be sure to specify the source!</r20>
+    <r21>Do not be lazy to think over the way to the drawing in the database</r21>
+    <pp1>It is assumed that you have selected a block in a file that is not yet located in the ModPlus/Data/DwgBase directory. Therefore, you must either specify a file previously created in the ModPlus/Data/DwgBase directory to place blocks in it, or create this file. The selected block will be copied to the specified file.</pp1>
+    <pp2>If you add several blocks with a common orientation (for example, blocks of floor slabs), then create one file for them. You do not need to create a separate file for each block!</pp2>
+    <pp3>Files in the root of the ModPlus/Data/DwgBase folder can not be created! Create subfolders in it (for example, ModPlus/Data/DwgBase/Floor slabs).</pp3>
+    <pp4>If you created a file with blocks, put it in the folder DwgBase and now add blocks from the file to the database, check the "Current file" check box.</pp4>
+    <pp5>The field is filled in according to your wish</pp5>
+    <pp6>P.S. We are very happy for you, if you have an original and beautiful Nick, but try all the same to write Surname and First Name</pp6>
+    <pp7>If you are not the author of the block, then indicate the source from where this block was taken, so as not to offend its creator</pp7>
+    <pp8>The conditional path to the block in the directory that forms the structure of the tree</pp8>
+    <pp9>For example, the path "Блоки/Каталог1/Каталог2/Каталог3" will yield the following result:</pp9>
+    <pp10>Each conditional subdirectory must be separated by a "/"</pp10>
+    <pp11>Adding attributes for the specifications to the block </pp11>
+    <pp12>Attributes will be added to the block when it is inserted by this function.</pp12>
+    <pp13>All attributes will be invisible. You can change their value in the block properties after inserting.</pp13>
+    <pp14>You can fill in the default values.</pp14>
+    <pp15>Existing block attributes</pp15>
+    <pp16>Specify the default values for the attributes. These values will be added to the block when it is inserted.</pp16>
+    <pp17>By default, the values of the attributes that were set as the "default value" when the attribute is created are populated. You can fill the attribute values with the values of the currently selected block.</pp17>
+    <pp18>Dwg-file of the drawing</pp18>
+    <pp19>To add to the database, the file must be saved in AutoCAD 2010 version!</pp19>
+    <pp20>If you have already located the file in the subfolder of the ModPlus/Data/DwgBase folder, then you can "Select" it.</pp20>
+    <pp21>If the drawing file is not located in the subfolder of the ModPlus/Data/DwgBase folder, then you can "Copy" it to it.</pp21>
+    <pp22>If you are adding an open drawing currently located in the subfolder of the ModPlus/Data/DwgBase folder, check the "Current file" check box.</pp22>
+    <pp23>The name of the drawing that is displayed in the function window</pp23>
+    <pp24>Brief Description of the Drawing</pp24>
+    <pp25>Who added the drawing to the dwg database</pp25>
+    <pp26>If you are not the author of the drawing, then indicate the source from where this drawing was taken, so as not to offend its creator</pp26>
+    <pp27>The conditional path to the drawing in the directory that forms the structure of the tree</pp27>
+    <u1>UTILITIES OF THE DWG USER BASE</u1>
+    <u2>Statistics</u2>
+    <u3>Edit "Path" for multiple items</u3>
+    <u4>Edit "Source" and "Added by"</u4>
+    <u5>Unused files</u5>
+    <u6>Elements without source file</u6>
+    <u7>Collect statistics</u7>
+    <u8>Select several items in the list (check the boxes) for which you want to change the "Path" in the database. Specify a new value for "Path" and click "Apply"</u8>
+    <u9>Ctrl+A - select all</u9>
+    <u10>Enter the main group</u10>
+    <u11>Blocks</u11>
+    <u12>Drawings</u12>
+    <u13>New "Path" for the specified elements of the database:</u13>
+    <u14>Select several items in the list (check the boxes) for which you want to change "Source" and "Added by". Specify a new value for "Source" and "Added by" and click "Apply" (Leave the field blank if you do not want to change the value)</u14>
+    <u15>Unused files are files located in the directory</u15>
+    <u16>that are not referenced by any element in databases (plug-in base and user database)</u16>
+    <u17>Find unused files</u17>
+    <u18>Delete selected unused files</u18>
+    <u19>Also, images for these files and .bak files will be deleted</u19>
+    <u20>Elements without a source file are items in the user database that reference a non-existent source file</u20>
+    <u21>Find items without source file</u21>
+    <u22>Specified source file:</u22>
+    <u23>Delete selected items</u23>
+    <u24>Processing of base elements:</u24>
+    <u25>You can not specify only the main group!</u25>
+    <u26>You did not choose anything!</u26>
+    <u27>Attention! The changes you made can not be undone!\nContinue?</u27>
+    <u28>Processing of database elements completed</u28>
+    <u29>The user database contains</u29>
+    <u30>items</u30>
+    <u31>Of them:</u31>
+    <u32>Blocks:</u32>
+    <u33>Drawings:</u33>
+    <u34>Among</u34>
+    <u35>blocks there are:</u35>
+    <u36>Dynamic blocks:</u36>
+    <u37>Annotative blocks:</u37>
+    <u38>Three-dimensional blocks:</u38>
+    <u39>Blocks that have attributes for the specification:</u39>
+    <u40>User database is filled with</u40>
+    <u41>authors:</u41>
+    <u42>Existing dwg files used by the database:</u42>
+    <u43>Among references to dwg-files</u43>
+    <u44>invalid references were found. Those. source files are missing!</u44>
+    <u45>Unused files not found!</u45>
+    <u46>The selected files will be permanently deleted!\nContinue?</u46>
+    <u47>Deleted files</u47>
+    <u48>Failed to delete files:</u48>
+    <u49>Files can not be accessed. Perhaps they are open</u49>
+    <u50>No matching items were found!</u50>
+    <u51>The selected items will be deleted irrevocably!\nContinue?</u51>
+    <u52>Items deleted:</u52>
+    <u53>Specify at least one value ("Source" or "Added by") to replace</u53>
+    <u54>Rename source file</u54>
+    <u55>Select one of the database files in the list, specify a new file name without an extension, and click "Apply"</u55>
+    <u56>New file name without extension</u56>
+    <u57>Rename</u57>
+    <u58>You did not specify a new file name</u58>
+    <u59>The file name can not contain the following characters:</u59>
+    <u60>Can not access the file. Maybe it's open</u60>
+    <u61>Already exists a file:</u61>
+  </mpDwgBase>
+  <ostViewIn3D LocalName="3D section box"
+			   Description="Cuts the selected elements in the view cube, with the possibility of specifying the size of the view cube"
+			   FullDescription="It is possible to dynamically change the dimensions of the view cubes uniformly in all directions relative to the selected elements">
+    <h1>3D section box</h1>
+    <msg1>Select elements for 3D trimming</msg1>
+  </ostViewIn3D>
+  <mmRebarSolidAndVisible LocalName="Rebar solid and visible"
+						  Description="Change the state of the visibility of the rebar (view unobscured and veiw as solid) for the selected item"
+						  FullDescription="The visibility state of View unobscured is set to any view, whether 2D or 3D. View as solid - set only in 3D view">
+    <msg1>Select an element with rebar</msg1>
+  </mmRebarSolidAndVisible>
+  <mpESKD LocalName="ModPlus ESKD"
+		  Description="A collection of functions that creates intelligent objects (custom entities) for drawing up drawings according to the rules of ESKD">
+  
+  </mpESKD>
+  <whshScheduleLookup LocalName="Schedule lookup"
+                      Description="Search for schedules in a project that contain the specified value"
+                      FullDescription="Searches for specified rows (whole or part), as well as numbers among the project schedules in field names, column headers or in cells, with or without case registration">
+    <h1>Results view</h1>
+    <h2>Search results</h2>
+    <h3>Double-click on the line opens the details window</h3>
+    <h4>Information about search results</h4>
+    <h5>Property</h5>
+    <h6>Value</h6>
+    <h7>Current project doesn't contain any schedule yet.\nCannot continue.</h7>
+    <h8>Attention!</h8>
+    <h9>The operation was aborted!</h9>
+    <h10>Nothing entered yet</h10>
+    <h11>Click "Find" to start</h11>
+    <h12>Click "Find" to refresh search</h12>
+    <h13>No schedules match criteria</h13>
+    <h14>Schedules found:</h14>
+    <h15>Schedule lookup</h15>
+    <h16>that must present in table</h16>
+    <h17>delimiter\n symbol</h17>
+    <h18>Search substring</h18>
+    <h19>Ignore case</h19>
+    <h20>Search for</h20>
+    <h21>field name</h21>
+    <h22>column name</h22>
+    <h23>cell value</h23>
+    <h24>header value</h24>
+    <h25>% completed...</h25>
+    <h26>STATE:</h26>
+    <h27>Press spacebar twice to insert delimeter</h27>
+    <h28>Enter field (or parameter) names delimited by</h28>
+    <h29>Enter heading names delimited by</h29>
+    <h30>Enter cell values delimited by</h30>
+    <sr1>Searched string:</sr1>
+    <sr2>Found in name/value:</sr2>
+    <sr3>Containing schedule name:</sr3>
+    <sr4>Is a key schedule?</sr4>
+    <sr5>Schedule ID:</sr5>
+    <sr6>Field name:</sr6>
+    <sr7>Field parameter name:</sr7>
+    <sr8>Column heading name:</sr8>
+    <sr9>From key schedule named:</sr9>
+    <sr10>Key schedule parameter name:</sr10>
+    <sr11>Column number:</sr11>
+    <sr12>Is column hidden?</sr12>
+    <sr13>Row number:</sr13>
+    <sr14>Table section:</sr14>
+    <sr15>Cell type:</sr15>
+    <sr16>Is headings row?</sr16>
+    <sr17>Searched executed?</sr17>
+    <sr18>Value was found?</sr18>
+    <sr19>Substring searched?</sr19>
+    <sr20>Case ignored?</sr20>
+    <yes>Yes</yes>
+    <no>No</no>
+    <cancel>Cancel</cancel>
+    <ok>Ok</ok>
+    <find>Find</find>
+    <clean>Clean</clean>
+  </whshScheduleLookup>
+  <mprCADmanager LocalName="CAD manager"
+                 Description="Manage all imports of dwg files in the current document"
+                 FullDescription="The function displays all types of inserted dwg files - both belonging to the types and not belonging to the views. It is possible to search in the list, copy the identifier of the dwg-insert or view, open the view containing the dwg-insert, and delete the dwg-insertion">
+    <h1>CAD manager</h1>
+    <h2>Copied!</h2>
+    <h3>Sorting:</h3>
+    <h4>Search by name or view...</h4>
+    <h5>Name:</h5>
+    <h6>Copy Id to clipboard</h6>
+    <h7>View:</h7>
+    <h8>Select and show element</h8>
+    <h9>Delete element</h9>
+    <h10>Select all</h10>
+    <h11>Use transparency of window</h11>
+    <h12>Change the transparency of the window while hovering the mouse cursor</h12>
+    <h13>Delete selected elements:</h13>
+    <all>All</all>
+    <sv1>Unidentified</sv1>
+    <sv2>View specific imports</sv2>
+    <sv3>Model imports</sv3>
+    <yes>Yes</yes>
+    <no>No</no>
+    <msg1>The selected imports will be permanently deleted!\nContinue?</msg1>
+    <msg2>The current document does not contain imports!</msg2>
+    <msg3>Unrecognized insertion element</msg3>
+    <msg4>Error retrieving view name</msg4>
+    <msg5>Does not belong to the view</msg5>
+    <msg6>Import</msg6>
+    <msg7>will be permanently deleted!\nContinue?</msg7>
+    <msg8>On view</msg8>
+    <msg9>all imported categories are hidden\nSelect a further action:</msg9>
+    <msg10>Show all imported categories</msg10>
+    <msg11>Enable displaying hidden items</msg11>
+    <msg12>Category</msg12>
+    <msg13>hidden on the view</msg13>
+    <msg14>Select a further action:</msg14>
+    <msg15>Make a category visible in the view</msg15>
+    <msg16>hidden on the view</msg16>
+    <msg17>Make element visible</msg17>
+    <msg18>Failed to get element</msg18>
+    <msg19>Can not delete the element!</msg19>
+    <msg20>Deletion:</msg20>
+    <msg21>Unable to delete elements</msg21>
+  </mprCADmanager>
+  <mprExteriorPlanDimensions LocalName="External dimensions on the plan"
+							 Description="External dimensions on the floor plan"
+							 FullDescription="The function allows you to put in one click the external dimensions on the floor plan. The function only processes horizontal and vertical walls and axes. The outer dimensions are set according to the current working configuration, which indicates the sides of dimensioning and setting of dimensional chains"
+							 LocalName1="External dimensions. Settings"
+							 Description1="Working configuration settings for external dimensions in the floor plan">
+  
+  </mprExteriorPlanDimensions>
+  <mprDimByLine LocalName="Dimensions by line"
+                Description="Placing dimensions on the plan along the specified line"
+                FullDescription="The function allows you to place dimensions on the plan along the conditional line formed by the two indicated points. Elements that will be dimensioned and ways of dimensioning (in the center and/or on the extreme sides) are specified in the working configuration"
+                LocalName1="Dimensions by line. Settings"
+                Description1="Working configuration settings for dimensions by line">
+    
+  </mprDimByLine>
+  <mprDimBias LocalName="Dim offset"
+			  Description="Automatic movement of the dimension value that falls on the dimension lines"
+			  FullDescription="The application monitors all the created or edited dimensions and in case the dimensional text falls on dimensional lines, it moves the text aside!">
+  
+  </mprDimBias>
+</ModPlus>

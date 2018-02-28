@@ -9,5 +9,7 @@
     <Import_RootNamespace>LanguageFiles</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)en-US.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)ru-RU.xml" />
   </ItemGroup>
 </Project>
