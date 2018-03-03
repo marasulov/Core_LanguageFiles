@@ -627,6 +627,11 @@
     <h9>Suppression of tail zeros</h9>
     <h10>Removal from number all tail zeros</h10>
     <h11>Result:</h11>
+    <cb1>Tens</cb1>
+    <cb2>Hundreds</cb2>
+    <cb3>Thousands</cb3>
+    <cb4>Ten of thousands</cb4>
+    <cb5>Hundreds of thousands</cb5>
   </mpTxtNumCopy>
   <mpMultiCopy LocalName="Multi copy"
                Description="Multiple copies of selected primitives with a certain step"
@@ -2469,10 +2474,13 @@
     <h16>Configuration name</h16>
     <h17>Dimension fitting side:</h17>
     <h18>DIMENSIONAL CHAINS:</h18>
+    <h19>Remove dimension chain</h19>
+    <h20>Add dimension chain</h20>
     <attention>Attention!</attention>
     <edit>Edit</edit>
     <create>Create</create>
     <delete>Delete</delete>
+    <accept>Accept</accept>
     <cb1>smallest</cb1>
     <cb2>largest</cb2>
     <d1>Indent</d1>
@@ -2486,6 +2494,19 @@
     <d9>That is, vertical walls for the left/right direction, horizontal for the bottom/top direction</d9>
     <d10>Opens the ability to select options for "Openings" and "Intersecting walls"</d10>
     <d11>Openings</d11>
+    <d12>- dimensioning to wall openings in a given direction</d12>
+    <d13>Intersec. walls</d13>
+    <d14>- dimensioning intersecting walls:</d14>
+    <d15>Dimensions are placed on walls that are perpendicular to the current direction and cross all walls in the given direction</d15>
+    <d16>Grids</d16>
+    <d17>- dimensioning of the grids perpendicular to current direction</d17>
+    <d18>Extreme grids</d18>
+    <d19>- dimensioning along the extreme grids perpendicular to this direction:</d19>
+    <d20>This option disables the possibility of installing dimensions on the walls</d20>
+    <d21>Overall size</d21>
+    <d22>- dimensioning of the overall size in this direction:</d22>
+    <d23>Overall size in current direction is the distance from the extreme edges of the outer walls</d23>
+    <d24>This option disables all other options</d24>
   </mprExteriorPlanDimensions>
   <mprDimByLine LocalName="Dimensions by line"
                 Description="Placing dimensions on the plan along the specified line"
