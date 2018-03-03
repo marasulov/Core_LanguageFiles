@@ -2476,6 +2476,18 @@
     <h18>DIMENSIONAL CHAINS:</h18>
     <h19>Remove dimension chain</h19>
     <h20>Add dimension chain</h20>
+    <msg1>You need to specify the name of the configuration!</msg1>
+    <msg2>You need to specify at least one side of the dimensioning!</msg2>
+    <msg3>Missing the ID attribute</msg3>
+    <msg4>Dimensional chain №</msg4>
+    <msg5>There are no working configurations\nOpen settings window of working configurations?</msg5>
+    <msg6>You need to go to the floor plan!</msg6>
+    <msg7>Could not create a working set of walls!</msg7>
+    <msg8>In the specified set there are no walls, suitable for the minimum permissible width!</msg8>
+    <msg9>In this set, there are no walls intersected by view range!</msg9>
+    <msg10>Select walls and grids</msg10>
+    <msg11>It is necessary to choose more than one element!</msg11>
+    <msg12>Could not create dimension line!</msg12>
     <attention>Attention!</attention>
     <edit>Edit</edit>
     <create>Create</create>
