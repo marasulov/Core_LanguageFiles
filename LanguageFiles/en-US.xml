@@ -1336,6 +1336,10 @@
     <h42>Insert result as multileader</h42>
     <h43>Journal</h43>
     <h44>Clear journal</h44>
+    <h45>Add</h45>
+    <h46>Subtract</h46>
+    <h47>Multiply</h47>
+    <h48>Divide</h48>
     <msg1>An error has occurred. Possible formula for calculation is incorrect</msg1>
     <msg2>Specify point:</msg2>
     <msg3>Select the coordinate: [X/Y/Z]</msg3>
