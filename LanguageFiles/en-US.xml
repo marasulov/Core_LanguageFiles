@@ -2525,8 +2525,8 @@
     <d24>This option disables all other options</d24>
   </mprExteriorPlanDimensions>
   <mprDimByLine LocalName="Dimensions by line"
-                Description="Placing dimensions on the plan along the specified line"
-                FullDescription="The function allows you to place dimensions on the plan along the conditional line formed by the two indicated points. Elements that will be dimensioned and ways of dimensioning (in the center and/or on the extreme sides) are specified in the working configuration"
+                Description="Placing dimensions along the specified line"
+                FullDescription="The function allows you to place dimensions on the plan or section view along the conditional line formed by the two indicated points. Elements that will be dimensioned and ways of dimensioning (in the center and/or on the extreme sides) are specified in the working configuration"
                 LocalName1="Dimensions by line. Settings"
                 Description1="Working configuration settings for dimensions by line">
     <h1>Configuration name</h1>
@@ -2552,7 +2552,7 @@
     <h21>will be permanently deleted!</h21>
     <h22>Sure?</h22>
     <h23>There are no working configurations\nOpen settings window of working configurations?</h23>
-    <h24>You need to go to the floor plan!</h24>
+    <h24>You need to go to the plan or section view!</h24>
     <h25>Missing the ID attribute</h25>
     <h26>No matching elements found!</h26>
     <h27>Enter first point</h27>
@@ -2575,13 +2575,15 @@
     <e5>Model lines</e5>
     <e6>Room separation lines</e6>
     <e7>Ramps</e7>
-    <e8>Rebar</e8>
+    <e8>Rebars</e8>
     <e9>Structural framing</e9>
     <e10>Rectangular/oval ducts</e10>
     <e11>Round ducts</e11>
     <e12>Pipes</e12>
     <e13>Cable trays</e13>
     <e14>Conduits</e14>
+    <e15>Trusses</e15>
+    <e16>Floors</e16>
   </mprDimByLine>
   <mprDimBias LocalName="Dim offset"
               Description="Automatic movement of the dimension value that falls on the dimension lines"
