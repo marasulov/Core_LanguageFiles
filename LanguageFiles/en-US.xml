@@ -36,6 +36,7 @@
     <group6>View</group6>
     <group7>Structure</group7>
     <group8>Insert</group8>
+    <group9>ModPlus ESKD</group9>
   </CUI>
   <Configurator LocalName="Configurator">
     <title1>MODPLUS CONFIGURATOR</title1>
@@ -2348,8 +2349,180 @@
     <msg1>Select an element with rebar</msg1>
   </mmRebarSolidAndVisible>
   <mpESKD LocalName="ModPlus ESKD"
-		  Description="A collection of functions that creates intelligent objects (custom entities) for drawing up drawings according to the rules of ESKD">
-  
+          Description="A collection of functions that creates intellectual objects (custom entities) for drawing up drawings according to the rules of ESKD">
+    <tab1>Lines</tab1>
+    <tab2>Settings</tab2>
+    <tab3>Axes</tab3>
+    <tab4>Styles and settings</tab4>
+    <tab5>Working with styles and settings of ModPlus objects</tab5>
+    <tab6>Properties palette</tab6>
+    <tab7>ModPlus objects properties palette</tab7>
+    <defl>Default</defl>
+    <err1>Could not find file</err1>
+    <err2>Failed to load linetype</err2>
+    <err3>The value can not be empty!</err3>
+    <err4>Invalid value! Enter the number!</err4>
+    <err5>Error getting data from the registry! Run the Configurator to update the data in the registry</err5>
+    <msg1>Specify the insertion point:</msg1>
+    <msg2>Specify an endpoint:</msg2>
+    <vc1>VARIOUS</vc1>
+    <vc2>UNDEFINED</vc2>
+    <h1>Palette settings</h1>
+    <h2>Autostart with AutoCAD</h2>
+    <h3>Connect to the ModPlus palette</h3>
+    <h4>Exceeded maximum limit</h4>
+    <h5>of the selected objects</h5>
+    <h6>Palette work is stopped</h6>
+    <h7>Maximum limit of the selected objects</h7>
+    <h8>can be changed in the function</h8>
+    <h9>settings</h9>
+    <h10></h10>
+    <h11>Properties of ModPlus objects</h11>
+    <h12>System</h12>
+    <h13>New User Style</h13>
+    <h14>STYLE EDITOR</h14>
+    <h15>SETTINGS</h15>
+    <h16>Add a new custom style</h16>
+    <h17>Delete the selected custom style</h17>
+    <h18>Set the selected style as the default style</h18>
+    <h19>Create a new style based on the selected intellectual entity</h19>
+    <h20>Property description:</h20>
+    <h21>GENERAL SETTINGS</h21>
+    <h22>When creating an entity, set the scale from the style</h22>
+    <h23>If checked, then when creating the entity, the scale will be applied to it, set in the current style, regardless of the annotative scale of the drawing. Otherwise, the annotative scale of the drawing will be applied to the entity</h23>
+    <h24>When creating an entity, set the layer from the style</h24>
+    <h25>If checked, then when creating the entity, it will be applied layer, installed in the current style, regardless of the current layer of the drawing. Otherwise, the current layer of the drawing will be applied to the entity</h25>
+    <h26>If there is no layer in the current document specified in the style:</h26>
+    <h27>Apply current layer</h27>
+    <h28>When you create a entity, the current drawing layer is applied to it</h28>
+    <h29>Create and apply a layer from the style</h29>
+    <h30>In the current document, a layer set in style will be created and applied to the entity</h30>
+    <h31>When creating an entity, set the text style from the style</h31>
+    <h32>If checked, then when you create the entity, a text style will be applied to it, set in the current style, regardless of the current text style of the drawing. Otherwise, the current text style of the drawing will be applied to the entity</h32>
+    <h33>If there is no text style specified in the style in the current document:</h33>
+    <h34>Apply current text style</h34>
+    <h35>When creating an entity, the current text style of the drawing will be applied to it</h35>
+    <h36>Create and apply a text style from the style</h36>
+    <h37>In the current document, a text style will be created and applied to the entity, set in style</h37>
+    <h38>The maximum limit of the selected objects when the property palette stops working. This setting is needed to speed up the work in the AutoCAD environment by disabling the reading of object properties. For example, if you need to select 1000 objects to copy to another drawing, then processing the properties of all these objects is not necessary</h38>
+    <h39>Maximum limit of the selected objects (0 - always work):</h39>
+    <h40>SETTINGS ENTITIES</h40>
+    <h41>Straight axis</h41>
+    <h42>Change the scale of the line type in proportion to the scale of the entity</h42>
+    <h43>The scale of the line type that is set for the axis will vary in proportion to the basic scale of the axis. For example, if you set the axis scale to 1:1 and scale the line type to 2, then if you set the axis scale to 1:100, the line type scale becomes 200</h43>
+    <h44>Save the values of the last created axes and continue the values of the new created axes</h44>
+    <h45>When creating axis, the value of the first marker will be stored in the current document and automatically continue for each new axis</h45>
+    <h46>To edit axis values by double-clicking, use the built-in editor</h46>
+    <h47>Double-clicking the left mouse button on the axis will use the built-in editor of the values of the ModPlus plug-in. Otherwise, the standard text editor AutoCAD</h47>
+    <h48>Break Line</h48>
+    <h49>General</h49>
+    <h50>Style:</h50>
+    <h51>Geometry</h51>
+    <h52>Style of intellectual entity</h52>
+    <h53>Basic style for the break line</h53>
+    <h54>Style name</h54>
+    <h55>Style description</h55>
+    <h56>Create break line according to GOST 2.303-68</h56>
+    <h57>Creation of an intellectual object on the basis of an anonymous block describing the line of the break according to GOST 2.303-68, by specifying two points</h57>
+    <h58>Curvilinear break</h58>
+    <h59>Cylindrical break</h59>
+    <h60>Create curvilinear break</h60>
+    <h61>Create cylindrical break</h61>
+    <h62>Creating an intellectual object based on an anonymous block describing a curvilinear break, by specifying two points</h62>
+    <h63>Creating an intellectual object based on an anonymous block describing a cylindrical break, by specifying two points</h63>
+    <h64>Content</h64>
+    <h65>Creating a straight axis according to GOST 21.101-97</h65>
+    <h66>Creating an intellectual object based on an anonymous block describing the straight axis in accordance with GOST 21.101-97, by specifying two points</h66>
+    <h67>Edit axis values</h67>
+    <h68>Basic style for a straight axis</h68>
+    <h69>The selected style will be permanently deleted! Continue?</h69>
+    <h70>Style group</h70>
+    <h71>contains styles with the same name</h71>
+    <h72>Rename the styles so that there are no identical names</h72>
+    <gp1>Stretch</gp1>
+    <gp2>Move</gp2>
+    <blt1>Linear</blt1>
+    <blt2>Curvilinear</blt2>
+    <blt3>Cylindrical</blt3>
+    <amt1>From two sides</amt1>
+    <amt2>From above</amt2>
+    <amt3>From below</amt3>
+    <type1>Type 1</type1>
+    <type2>Type 2</type2>
+    <close>Close</close>
+    <accept>Accept</accept>
+    <p1>BreakLine type:</p1>
+    <d1>BreakLine type: linear, curved or cylindrical</d1>
+    <p2>Projections per object:</p2>
+    <p2-1>Projections per object (a):</p2-1>
+    <d2>For linear break value of the projection is specified in mm For curved break the value of the projection is specified in % of the length between the main points. For cylindrical break value of the projection is not being used</d2>
+    <p3>Break width:</p3>
+    <p3-1>Break width (w):</p3-1>
+    <d3>Break width in mm. Only for linear type BreakLine</d3>
+    <p4>Break height:</p4>
+    <p4-1>Break height (h):</p4-1>
+    <d4>Break height in mm. Only for linear type BreakLine</d4>
+    <p5>Scale:</p5>
+    <d5>BreakLine scale</d5>
+    <d5-1>Axis scale</d5-1>
+    <p6>Linetype scale:</p6>
+    <d6>The scale of the linetype specified in the properties of block</d6>
+    <p7>Layer:</p7>
+    <d7>Entity layer</d7>
+    <p8>Markers position:</p8>
+    <d8>Position of markers: from two sides, from above or from below</d8>
+    <p9>Fracture:</p9>
+    <d9>Fracture height of axis</d9>
+    <p10>Markers diameter:</p10>
+    <d10>Diameter of axis markers</d10>
+    <p11>Markers count:</p11>
+    <d11>Number of axis markers</d11>
+    <p12>First marker type:</p12>
+    <d12>Type of axis first marker</d12>
+    <p13>Second marker type:</p13>
+    <d13>Type of axis second marker</d13>
+    <p14>Third marker type:</p14>
+    <d14>Type of axis third marker</d14>
+    <p15>Bottom fracture offset:</p15>
+    <d15>Offset of bottom axis fracture</d15>
+    <p16>Top fracture offset:</p16>
+    <d16>Offset of top axis fracture</d16>
+    <p17>Text style:</p17>
+    <d17>Text style for text axis elements</d17>
+    <p18>Text height:</p18>
+    <d18>Text height of axis text elements</d18>
+    <p19>Axis line type:</p19>
+    <d19>Axis line type</d19>
+    <p20>First value prefix:</p20>
+    <d20>The prefix of the first value:</d20>
+    <p21>First value suffix:</p21>
+    <d21>The suffix of the first value:</d21>
+    <p22>First value:</p22>
+    <d22>First value</d22>
+    <p23>Second value prefix:</p23>
+    <d23>The prefix of the second value:</d23>
+    <p24>Second value suffix:</p24>
+    <d24>The suffix of the second value:</d24>
+    <p25>Second value:</p25>
+    <d25>Second value</d25>
+    <p26>Third value prefix:</p26>
+    <d26>The prefix of the third value:</d26>
+    <p27>Third value suffix:</p27>
+    <d27>The suffix of the third value:</d27>
+    <p28>Third value:</p28>
+    <d28>Third value</d28>
+    <p29>Arrows size:</p29>
+    <d29>Arrows size</d29>
+    <p30>Bottom orient marker value:</p30>
+    <d30>The value of the bottom orient marker</d30>
+    <p31>Top orient marker value:</p31>
+    <d31>The value of the top orient marker</d31>
+    <p32>Bottom orient marker:</p32>
+    <d32>Visibility of the bottom orient marker</d32>
+    <p33>Top orient marker:</p33>
+    <d33>Visibility of the top orient marker</d33>
+    <p34>Orient marker type:</p34>
+    <d34>Type of axis orient marker</d34>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
