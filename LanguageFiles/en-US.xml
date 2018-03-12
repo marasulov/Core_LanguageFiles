@@ -2472,8 +2472,10 @@
     <p8>Markers position:</p8>
     <d8>Position of markers: from two sides, from above or from below</d8>
     <p9>Fracture:</p9>
+    <p9-1>Fracture (b):</p9-1>
     <d9>Fracture height of axis</d9>
     <p10>Markers diameter:</p10>
+    <p10-1>Markers diameter (d):</p10-1>
     <d10>Diameter of axis markers</d10>
     <p11>Markers count:</p11>
     <d11>Number of axis markers</d11>
@@ -2484,12 +2486,17 @@
     <p14>Third marker type:</p14>
     <d14>Type of axis third marker</d14>
     <p15>Bottom fracture offset:</p15>
+    <p15-1>Bottom fracture offset (a):</p15-1>
     <d15>Offset of bottom axis fracture</d15>
     <p16>Top fracture offset:</p16>
     <d16>Offset of top axis fracture</d16>
+    <p16-1>Top fracture offset (a):</p16-1>
+    <p16-2>Fracture offset:</p16-2>
+    <d16-2>Offset of top or bottom axis fracture</d16-2>
     <p17>Text style:</p17>
     <d17>Text style for text axis elements</d17>
     <p18>Text height:</p18>
+    <p18-1>Text height (h):</p18-1>
     <d18>Text height of axis text elements</d18>
     <p19>Axis line type:</p19>
     <d19>Axis line type</d19>
@@ -2512,6 +2519,7 @@
     <p28>Third value:</p28>
     <d28>Third value</d28>
     <p29>Arrows size:</p29>
+    <p29-1>Arrows size (c):</p29-1>
     <d29>Arrows size</d29>
     <p30>Bottom orient marker value:</p30>
     <d30>The value of the bottom orient marker</d30>
