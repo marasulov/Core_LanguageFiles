@@ -2365,6 +2365,7 @@
     <err5>Error getting data from the registry! Run the Configurator to update the data in the registry</err5>
     <msg1>Specify the insertion point:</msg1>
     <msg2>Specify an endpoint:</msg2>
+    <msg3>Select a block that is an intellectual ModPlus entity</msg3>
     <vc1>VARIOUS</vc1>
     <vc2>UNDEFINED</vc2>
     <h1>Palette settings</h1>
