@@ -2366,6 +2366,7 @@
     <msg1>Specify the insertion point:</msg1>
     <msg2>Specify an endpoint:</msg2>
     <msg3>Select a block that is an intellectual ModPlus entity</msg3>
+    <msg4>Editing the values when double-clicking on the place at the moment is not implemented. Use the built-in value editor (see Settings) or the Properties palette</msg4>
     <vc1>VARIOUS</vc1>
     <vc2>UNDEFINED</vc2>
     <h1>Palette settings</h1>
