@@ -14,8 +14,7 @@ namespace ModPlusLanguageCreator
                 var mainLangFile = Path.Combine(curDir, "ru-RU.xml");
                 if (!File.Exists(mainLangFile))
                 {
-                    MessageBox.Show("The application must be located in the folder " + curDir +
-                                    "where the ru-RU file should be located");
+                    MessageBox.Show("The application must be located in the folder /ModPlus/Languages/ where the ru-RU file should be located");
                     Application.Current.Shutdown();
                 }
 

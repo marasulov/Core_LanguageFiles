@@ -5,10 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ModPlusLanguageCreator"
         xmlns:models="clr-namespace:ModPlusLanguageCreator.Models"
-        xmlns:helpers="clr-namespace:ModPlusLanguageCreator.Helpers"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        ResizeMode="CanResizeWithGrip"
-        Title="ModPlus language creator" Height="350" Width="800"
+        ResizeMode="CanResizeWithGrip" 
+        Title="ModPlus language creator" Height="650" Width="800"
         d:DataContext="{d:DesignInstance d:Type=local:MainViewModel, IsDesignTimeCreatable=False}">
     <Window.Resources>
         <Style x:Key="TreeViewItemFocusVisual">
@@ -74,7 +73,8 @@
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <ToggleButton x:Name="Expander"  Style="{StaticResource ExpandCollapseToggleStyle}" ClickMode="Press" IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" />
+                            <ToggleButton x:Name="Expander"  Style="{StaticResource ExpandCollapseToggleStyle}" ClickMode="Press" VerticalAlignment="Top"
+                                          IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" />
                             <Border x:Name="Bd" SnapsToDevicePixels="true" Grid.Column="1" Grid.ColumnSpan="2" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
                                 <ContentPresenter x:Name="PART_Header" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" ContentSource="Header"/>
                             </Border>
@@ -88,15 +88,14 @@
                                 <Setter Property="Visibility" TargetName="Expander" Value="Hidden"/>
                             </Trigger>
                             <Trigger Property="IsSelected" Value="true">
-                                <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
-                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+                                <Setter Property="Background" TargetName="Bd" Value="AliceBlue"/>
                             </Trigger>
                             <MultiTrigger>
                                 <MultiTrigger.Conditions>
                                     <Condition Property="IsSelected" Value="true"/>
                                     <Condition Property="IsSelectionActive" Value="false"/>
                                 </MultiTrigger.Conditions>
-                                <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                                <Setter Property="Background" TargetName="Bd" Value="MistyRose"/>
                                 <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
                             </MultiTrigger>
                             <Trigger Property="IsEnabled" Value="false">
@@ -107,70 +106,269 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-        <HierarchicalDataTemplate DataType="{x:Type models:NodeModel}"
-                                  ItemsSource="{Binding Path=Items}">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                </Grid.RowDefinitions>
-                <TextBlock Text="{Binding Path=NodeName}"></TextBlock>
-                <!-- attributes -->
-                <Expander Grid.Row="1" HorizontalContentAlignment="Stretch"
-                          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                          Visibility="{Binding Path=AttributesVisibility}">
-                <ListBox Grid.IsSharedSizeScope="True"
-                         ItemsSource="{Binding Path=Attributes}"
-                         HorizontalContentAlignment="Stretch"
-                         ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" SharedSizeGroup="Name"></ColumnDefinition>
-                                    <ColumnDefinition Width="*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{Binding Path=Name}"></TextBlock>
-                                <TextBox Grid.Column="1" Text="{Binding Path=Value}" IsReadOnly="{Binding Path=IsReadOnly}"
-                                         TextWrapping="Wrap"></TextBox>
-                            </Grid>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-                </Expander>
-            </Grid>
-            <HierarchicalDataTemplate.ItemTemplate>
-                <DataTemplate DataType="{x:Type models:ItemModel}">
-                    <TextBox Text="{Binding Path=Value}"></TextBox>
-                </DataTemplate>
-            </HierarchicalDataTemplate.ItemTemplate>
-        </HierarchicalDataTemplate>
+        <!-- control styles -->
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="2"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="2"></Setter>
+        </Style>
+        <Style TargetType="{x:Type ComboBox}">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="2"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TreeView}">
+            <Setter Property="Margin" Value="2"></Setter>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.Column="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Text="Main language"></TextBlock>
-            <ComboBox Grid.Column="1" ItemsSource="{Binding Path=LocalLanguageFiles}"></ComboBox>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Main language"></TextBlock>
+            <ComboBox Grid.Row="1" ItemsSource="{Binding Path=LanguagesForMain}"
+                      Width="150" 
+                      SelectedItem="{Binding Path=CurrentMainLanguageFile}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                            <Run Text="{Binding Path=DisplayName, Mode=OneWay}"></Run>
+                            <Run Text="["></Run>
+                            <Run Text="{Binding Path=Name, Mode=OneWay}"></Run>
+                            <Run Text="]"></Run>
+                        </TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <TextBlock Grid.Row="2" TextAlignment="Center">
+                <Run Text="Language file version:"></Run>
+                <LineBreak/>
+                <Run Text="{Binding Path=MainLanguage.Version}" FontSize="20"></Run>
+            </TextBlock>
         </Grid>
         <!-- main language -->
-        <TreeView Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Path=MainLanguage.Nodes}"
+        <TreeView Grid.Column="1" Grid.Row="0" ItemsSource="{Binding Path=MainLanguage.Nodes}"
+                  x:Name="TvMainLanguage" Grid.IsSharedSizeScope="True"
                   ItemContainerStyle="{StaticResource StretchTreeViewItemStyle}"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                  HorizontalContentAlignment="Stretch"></TreeView>
+                  HorizontalContentAlignment="Stretch">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type models:NodeModel}"
+                                          ItemsSource="{Binding Path=Items}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="{Binding Path=NodeName}" FontSize="14" Foreground="DarkBlue"></TextBlock>
+                        <!-- attributes -->
+                        <Expander Grid.Row="1" HorizontalContentAlignment="Stretch"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                  Visibility="{Binding Path=AttributesVisibility}"
+                                  IsExpanded="{Binding Path=IsExpanded, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                  Header="Attributes">
+                            <ListBox Grid.IsSharedSizeScope="True"
+                                     ItemsSource="{Binding Path=Attributes}"
+                                     HorizontalContentAlignment="Stretch"
+                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" SharedSizeGroup="Name"></ColumnDefinition>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Grid.Column="0" Text="{Binding Path=Name}" VerticalAlignment="Center" Margin="1,1,3,1"></TextBlock>
+                                            <TextBox Grid.Column="1" Text="{Binding Path=Value}" IsReadOnly="{Binding Path=IsReadOnly}"
+                                                     TextWrapping="Wrap"></TextBox>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Expander>
+                    </Grid>
+                    <HierarchicalDataTemplate.ItemTemplate>
+                        <DataTemplate DataType="{x:Type models:ItemModel}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" SharedSizeGroup="Tag"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Path=Tag}" Foreground="Gray" VerticalAlignment="Center" Margin="2,2,5,2"></TextBlock>
+                                <TextBox Grid.Column="1" Text="{Binding Path=Value}"
+                                         BorderThickness="0"></TextBox>
+                            </Grid>
+                        </DataTemplate>
+                    </HierarchicalDataTemplate.ItemTemplate>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+        <!-- missing values -->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Missing attributes:" VerticalAlignment="Center" Margin="2"></TextBlock>
+            <TextBox Grid.Column="1" Margin="2" Text="{Binding Path=MissingAttributes.Count, Mode=OneWay}"
+                     IsReadOnly="True"></TextBox>
+            <Button Grid.Column="2" x:Name="BtGoToFirstMissingAttribute" Content="Go to first" Margin="2"
+                    Click="BtGoToFirstMissingAttribute_OnClick"></Button>
+            <TextBlock Grid.Column="3" Text="Missing items:" VerticalAlignment="Center" Margin="10,2,2,2"></TextBlock>
+            <TextBox Grid.Column="4" Margin="2" Text="{Binding Path=MissingItems.Count, Mode=OneWay}"
+                     IsReadOnly="True"></TextBox>
+            <Button Grid.Column="5" x:Name="BtGoToFirstMissingItem" Content="Go to first" Margin="2"
+                    ></Button>
+        </Grid>
         <!-- work language -->
-        <TextBlock Grid.Column="1" Grid.Row="0" Text="Work language"></TextBlock>
-        
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Work language"></TextBlock>
+            <ComboBox Grid.Row="1" ItemsSource="{Binding Path=LanguagesForWork}"
+                      Width="150" x:Name="CbWorkLanguages"
+                      SelectedItem="{Binding Path=CurrentWorkLanguageFile}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                            <Run Text="{Binding Path=DisplayName, Mode=OneWay}"></Run>
+                            <Run Text="["></Run>
+                            <Run Text="{Binding Path=Name, Mode=OneWay}"></Run>
+                            <Run Text="]"></Run>
+                        </TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button Grid.Row="2" Margin="2" Content="Create new language file" 
+                    Command="{Binding Path=CreateNewLanguageFileCommand}"></Button>
+            <TextBlock Grid.Row="3" TextAlignment="Center">
+                <Run Text="Completion of translation:"></Run>
+                <LineBreak/>
+                <Run Text="{Binding Path=TranslationComplition, StringFormat=N3}"
+                     FontSize="20"></Run>
+                <Run Text="%" FontSize="20"></Run>
+            </TextBlock>
+            <Button Grid.Row="5" Content="Save language to file" Margin="2"
+                    x:Name="BtSave" Click="BtSave_OnClick"></Button>
+        </Grid>
+        <!-- work language -->
+        <TreeView Grid.Column="1" Grid.Row="2" ItemsSource="{Binding Path=WorkLanguage.Nodes}"
+                  x:Name="TvWorkLanguage" Grid.IsSharedSizeScope="True"
+                  ItemContainerStyle="{StaticResource StretchTreeViewItemStyle}"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                  HorizontalContentAlignment="Stretch">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type models:NodeModel}"
+                                          ItemsSource="{Binding Path=Items}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="{Binding Path=NodeName}" FontSize="14" Foreground="DarkBlue"></TextBlock>
+                        <!-- attributes -->
+                        <Expander Grid.Row="1" HorizontalContentAlignment="Stretch"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                  Visibility="{Binding Path=AttributesVisibility}"
+                                  IsExpanded="{Binding Path=IsExpanded, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                  Header="Attributes">
+                            <ListBox Grid.IsSharedSizeScope="True"
+                                     ItemsSource="{Binding Path=Attributes}"
+                                     HorizontalContentAlignment="Stretch"
+                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" SharedSizeGroup="Name"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Grid.Column="0" Text="{Binding Path=Name}" VerticalAlignment="Center" Margin="1,1,3,1"></TextBlock>
+                                            <Button Grid.Column="1" Content="Translate" Command="{Binding Path=TranslateCommand}">
+                                                <Button.Style>
+                                                    <Style>
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}},
+                                                                Path=IsSelected, FallbackValue=False}" Value="True">
+                                                                <Setter Property="Button.IsEnabled" Value="True"></Setter>
+                                                            </DataTrigger>
+                                                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}},
+                                                                Path=IsSelected, FallbackValue=False}" Value="False">
+                                                                <Setter Property="Button.IsEnabled" Value="False"></Setter>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                            <TextBox Grid.Column="2" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                     IsReadOnly="{Binding Path=IsReadOnly}"
+                                                     TextWrapping="Wrap" x:Name="TbAttribute"
+                                                     GotFocus="TbAttribute_OnGotFocus"></TextBox>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Expander>
+                    </Grid>
+                    <HierarchicalDataTemplate.ItemTemplate>
+                        <DataTemplate DataType="{x:Type models:ItemModel}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" SharedSizeGroup="Tag"></ColumnDefinition>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Path=Tag}" Foreground="Gray" VerticalAlignment="Center" Margin="1,1,5,1"></TextBlock>
+                                <Button Grid.Column="1" Margin="1" Content="Transale"
+                                        Command="{Binding Path=TranslateCommand}">
+                                    <Button.Style>
+                                        <Style>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TreeViewItem}}, FallbackValue=False}"
+                                                             Value="True">
+                                                    <Setter Property="Button.IsEnabled" Value="True"></Setter>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TreeViewItem}}, FallbackValue=False}"
+                                                             Value="False">
+                                                    <Setter Property="Button.IsEnabled" Value="False"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                                <TextBox Grid.Column="2" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         x:Name="TbItemValue" Margin="1" BorderThickness="0"
+                                         GotFocus="TbItemValue_OnGotFocus"></TextBox>
+                            </Grid>
+                        </DataTemplate>
+                    </HierarchicalDataTemplate.ItemTemplate>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
     </Grid>
 </Window>

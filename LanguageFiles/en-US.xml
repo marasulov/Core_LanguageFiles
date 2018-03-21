@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.0.0.0">
+<ModPlus Name="en-US" Version="1.0.0.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1604,6 +1604,7 @@
     <rb2>Front view (section)</rb2>
     <rb3>Top view</rb3>
     <s1>Side</s1>
+    <s2>Front (Section)</s2>
     <err1>Error creating block name!</err1>
     <err2>Incorrect block name!</err2>
     <msg1>Select block for replace:</msg1>
@@ -2378,7 +2379,7 @@
     <h7>Maximum limit of the selected objects</h7>
     <h8>can be changed in the function</h8>
     <h9>settings</h9>
-    <h10></h10>
+    <h10>functions</h10>
     <h11>Properties of ModPlus objects</h11>
     <h12>System</h12>
     <h13>New User Style</h13>
