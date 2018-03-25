@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="ru-RU" Version="1.0.0.1">
+<ModPlus Name="ru-RU" Version="1.0.0.2">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -142,6 +142,17 @@
     <header69>Отсутствует доступ к сети internet или сайту modplus.org</header69>
     <header70>Отобразить только:</header70>
     <header71>Отобразить только неиспользованные функции</header71>
+    <header72>НАСТРОЙКИ ПРОКСИ</header72>
+    <header73>Статус:</header73>
+    <header74>Настроить прокси вручную</header74>
+    <header75>Аутентификация пользователя (при необходимости. Можно не заполнять)</header75>
+    <header76>Пароль</header76>
+    <header77>Проверить</header77>
+    <header78>Адрес</header78>
+    <header79>Порт</header79>
+    <ps1>Подключение к internet не использует прокси</ps1>
+    <ps2>При подключении к internet используется прокс:</ps2>
+    <ps3>Ручная настройка прокси</ps3>
     <key1>Сохранить в файл</key1>
     <key2>Загрузить из файла</key2>
     <key3>Проверить ключи</key3>
