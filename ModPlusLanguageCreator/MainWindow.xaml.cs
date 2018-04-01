@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -47,7 +48,8 @@ namespace ModPlusLanguageCreator
                                         {
                                             lbi.IsSelected = true;
                                             lbi.BringIntoView();
-                                        } else textBlock.BringIntoView();
+                                        }
+                                        else textBlock.BringIntoView();
                                         break;
                                     }
                                 }
@@ -179,6 +181,7 @@ namespace ModPlusLanguageCreator
                             if (TvWorkLanguage.ItemContainerGenerator.ContainerFromItem(nodeModel) is TreeViewItem nodeTvi)
                             {
                                 nodeModel.IsExpanded = true;
+                                TvWorkLanguage.UpdateLayout();
                                 foreach (TextBlock textBlock in FindVisualChildren<TextBlock>(nodeTvi))
                                 {
                                     if (textBlock.Text == missingValue.Name)
@@ -198,6 +201,83 @@ namespace ModPlusLanguageCreator
                     }
                 }
             }
+        }
+
+        private void BtGoToFirstMissingItem_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is MainViewModel mainViewModel)
+            {
+                var missingValue = mainViewModel.MissingItems?.FirstOrDefault();
+                if (missingValue != null && TvWorkLanguage.ItemsSource is ObservableCollection<NodeModel> workNodes)
+                {
+                    foreach (NodeModel nodeModel in workNodes)
+                    {
+                        if (nodeModel.NodeName == missingValue.NodeName)
+                        {
+                            if (TvWorkLanguage.ItemContainerGenerator.ContainerFromItem(nodeModel) is TreeViewItem nodeTvi)
+                            {
+                                nodeTvi.IsExpanded = true;
+                                TvWorkLanguage.UpdateLayout();
+                                foreach (TextBlock textBlock in FindVisualChildren<TextBlock>(nodeTvi))
+                                {
+                                    if (textBlock.Text == missingValue.Name)
+                                    {
+                                        var lbi = FindParent<TreeViewItem>(textBlock);
+                                        if (lbi != null)
+                                        {
+                                            FindVisualChildren<TextBox>(lbi).FirstOrDefault()?.Focus();
+                                        }
+                                        else textBlock.BringIntoView();
+                                        break;
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void BtGoToFirstItemWithSpecialSymbol_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is MainViewModel mainViewModel)
+            {
+                var missingValue = mainViewModel.MissingItemsWithSpecialSymbols?.FirstOrDefault();
+                if (missingValue != null && TvWorkLanguage.ItemsSource is ObservableCollection<NodeModel> workNodes)
+                {
+                    foreach (NodeModel nodeModel in workNodes)
+                    {
+                        if (nodeModel.NodeName == missingValue.NodeName)
+                        {
+                            if (TvWorkLanguage.ItemContainerGenerator.ContainerFromItem(nodeModel) is TreeViewItem nodeTvi)
+                            {
+                                nodeTvi.IsExpanded = true;
+                                TvWorkLanguage.UpdateLayout();
+                                foreach (TextBlock textBlock in FindVisualChildren<TextBlock>(nodeTvi))
+                                {
+                                    if (textBlock.Text == missingValue.Name)
+                                    {
+                                        var lbi = FindParent<TreeViewItem>(textBlock);
+                                        if (lbi != null)
+                                        {
+                                            FindVisualChildren<TextBox>(lbi).FirstOrDefault()?.Focus();
+                                        }
+                                        else textBlock.BringIntoView();
+                                        break;
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void Hyperlink_OnClick(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://modplus.org/");
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using System.Xml.Linq;
 using ModPlusLanguageCreator.Helpers;
 
@@ -33,11 +35,23 @@ namespace ModPlusLanguageCreator.Models
                     XElement nodeXel = new XElement(nodeModel.NodeName);
                     foreach (NodeAttributeModel attributeModel in nodeModel.Attributes)
                     {
+                        // same langs!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                         nodeXel.SetAttributeValue(attributeModel.Name, attributeModel.Value);
                     }
                     foreach (ItemModel itemModel in nodeModel.Items)
                     {
-                        nodeXel.SetElementValue(itemModel.Tag, itemModel.Value);
+                        XElement itemXel = new XElement(itemModel.Tag);
+                        itemXel.SetValue(itemModel.Value ?? string.Empty);
+                        if (itemModel.SameLanguageNames.Any())
+                        {
+                            var sameLangs = string.Empty;
+                            foreach (string s in itemModel.SameLanguageNames)
+                            {
+                                sameLangs += s + ";";
+                            }
+                            itemXel.SetAttributeValue("SameLangs", sameLangs.TrimEnd(';'));
+                        }
+                        nodeXel.Add(itemXel);
                     }
                     xDoc.Add(nodeXel);
                 }

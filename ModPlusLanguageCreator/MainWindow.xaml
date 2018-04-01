@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ModPlusLanguageCreator"
         xmlns:models="clr-namespace:ModPlusLanguageCreator.Models"
+        xmlns:helpers="clr-namespace:ModPlusLanguageCreator.Helpers"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         ResizeMode="CanResizeWithGrip" 
-        Title="ModPlus language creator" Height="650" Width="800"
+        Title="ModPlus language creator" Height="650" Width="900"
         d:DataContext="{d:DesignInstance d:Type=local:MainViewModel, IsDesignTimeCreatable=False}">
     <Window.Resources>
         <Style x:Key="TreeViewItemFocusVisual">
@@ -114,12 +115,17 @@
         <Style TargetType="{x:Type TextBox}">
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
         </Style>
         <Style TargetType="{x:Type ComboBox}">
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="Margin" Value="2"></Setter>
         </Style>
         <Style TargetType="{x:Type TreeView}">
+            <Setter Property="Margin" Value="2"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Padding" Value="5 2"></Setter>
             <Setter Property="Margin" Value="2"></Setter>
         </Style>
     </Window.Resources>
@@ -132,6 +138,7 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.RowDefinitions>
@@ -210,7 +217,7 @@
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Text="{Binding Path=Tag}" Foreground="Gray" VerticalAlignment="Center" Margin="2,2,5,2"></TextBlock>
                                 <TextBox Grid.Column="1" Text="{Binding Path=Value}"
-                                         BorderThickness="0"></TextBox>
+                                         BorderThickness="1" BorderBrush="LightGray"></TextBox>
                             </Grid>
                         </DataTemplate>
                     </HierarchicalDataTemplate.ItemTemplate>
@@ -226,21 +233,33 @@
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Text="Missing attributes:" VerticalAlignment="Center" Margin="2"></TextBlock>
-            <TextBox Grid.Column="1" Margin="2" Text="{Binding Path=MissingAttributes.Count, Mode=OneWay}"
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Missing attributes:" VerticalAlignment="Center" Margin="2"></TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="2" Text="{Binding Path=MissingAttributes.Count, Mode=OneWay}"
                      IsReadOnly="True"></TextBox>
-            <Button Grid.Column="2" x:Name="BtGoToFirstMissingAttribute" Content="Go to first" Margin="2"
+            <Button Grid.Row="0" Grid.Column="2" x:Name="BtGoToFirstMissingAttribute" Content="Go to first" Margin="2"
+                    Padding="5 2"
                     Click="BtGoToFirstMissingAttribute_OnClick"></Button>
-            <TextBlock Grid.Column="3" Text="Missing items:" VerticalAlignment="Center" Margin="10,2,2,2"></TextBlock>
-            <TextBox Grid.Column="4" Margin="2" Text="{Binding Path=MissingItems.Count, Mode=OneWay}"
+            <TextBlock Grid.Row="0" Grid.Column="3" Text="Missing items:" VerticalAlignment="Center" Margin="10,2,2,2"></TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="4" Margin="2" Text="{Binding Path=MissingItems.Count, Mode=OneWay}"
                      IsReadOnly="True"></TextBox>
-            <Button Grid.Column="5" x:Name="BtGoToFirstMissingItem" Content="Go to first" Margin="2"
-                    ></Button>
+            <Button Grid.Row="0" Grid.Column="5" x:Name="BtGoToFirstMissingItem" Content="Go to first" Margin="2"
+                    Padding="5 2"
+                    Click="BtGoToFirstMissingItem_OnClick"></Button>
+            <TextBlock Grid.Row="0" Grid.Column="6" Text="Items with special symbols (\n,{0}, etc):"></TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="7" Margin="2" IsReadOnly="True"
+                     Text="{Binding Path=MissingItemsWithSpecialSymbols.Count, Mode=OneWay}"></TextBox>
+            <Button Grid.Row="0" Grid.Column="8" x:Name="BtGoToFirstItemWithSpecialSymbol" Content="Go to first" Margin="2"
+                    Padding="5 2" Click="BtGoToFirstItemWithSpecialSymbol_OnClick"></Button>
         </Grid>
         <!-- work language -->
         <Grid Grid.Row="2" Grid.Column="0">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
@@ -272,7 +291,24 @@
                      FontSize="20"></Run>
                 <Run Text="%" FontSize="20"></Run>
             </TextBlock>
-            <Button Grid.Row="5" Content="Save language to file" Margin="2"
+            <TextBlock Grid.Row="4" Margin="2" Text="Set language file version:"></TextBlock>
+            <TextBox Grid.Row="5" Margin="2" FontSize="20">
+                <TextBox.Text>
+                    <Binding Path="WorkLanguage.Version"
+                             Mode="TwoWay"
+                             UpdateSourceTrigger="PropertyChanged"
+                             ValidatesOnNotifyDataErrors="True"
+                             ValidatesOnDataErrors="True"
+                             NotifyOnValidationError="True">
+                        <Binding.ValidationRules>
+                            <helpers:VersionValidationRule ValidatesOnTargetUpdated="True"></helpers:VersionValidationRule>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            
+            
+            <Button Grid.Row="7" Content="Save language to file" Margin="2"
                     x:Name="BtSave" Click="BtSave_OnClick"></Button>
         </Grid>
         <!-- work language -->
@@ -341,6 +377,7 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto" SharedSizeGroup="Tag"></ColumnDefinition>
                                     <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Text="{Binding Path=Tag}" Foreground="Gray" VerticalAlignment="Center" Margin="1,1,5,1"></TextBlock>
@@ -361,8 +398,11 @@
                                         </Style>
                                     </Button.Style>
                                 </Button>
-                                <TextBox Grid.Column="2" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                         x:Name="TbItemValue" Margin="1" BorderThickness="0"
+                                <CheckBox Grid.Column="2" Margin="2" VerticalAlignment="Center"
+                                          ToolTip="This value same in current Main Language"
+                                          IsChecked="{Binding Path=IsSameWithCurrentMainLanguage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                                <TextBox Grid.Column="3" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         x:Name="TbItemValue" Margin="1" BorderThickness="1" BorderBrush="LightGray"
                                          GotFocus="TbItemValue_OnGotFocus"></TextBox>
                             </Grid>
                         </DataTemplate>
@@ -370,5 +410,10 @@
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
         </TreeView>
+        
+        <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Run Text="Copyright © ModPlus"></Run>
+            <Hyperlink Click="Hyperlink_OnClick">modplus.og</Hyperlink>
+        </TextBlock>
     </Grid>
 </Window>

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ModPlus.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -72,6 +75,7 @@
       <DependentUpon>NewLanguageFileSelector.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\RelayCommand .cs" />
+    <Compile Include="Helpers\VersionValidationRule.cs" />
     <Compile Include="Helpers\YandexTranslator.cs" />
     <Compile Include="Models\ItemModel.cs" />
     <Compile Include="Helpers\BaseNotify.cs" />
@@ -112,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ModPlus.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

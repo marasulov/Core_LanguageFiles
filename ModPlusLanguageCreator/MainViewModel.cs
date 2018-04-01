@@ -18,9 +18,9 @@ namespace ModPlusLanguageCreator
     public class MainViewModel : BaseNotify
     {
         public YandexTranslator Translator;
-        private CultureInfo[] _cultures;
+        private readonly CultureInfo[] _cultures;
         private readonly string _curDir;
-        private MainWindow _mainWindow;
+        private readonly MainWindow _mainWindow;
         private LangItem _currentMainLanguageFile;
         private LangItem _currentWorkLanguageFile;
         private LanguageModel _mainLanguage;
@@ -69,13 +69,41 @@ namespace ModPlusLanguageCreator
             get => _currentMainLanguageFile;
             set
             {
-                _currentMainLanguageFile = value;
-                FillLanguageFiles(LanguagesForWork, value);
-                NeedToFindMissing = false;
-                IsLoadingLanguageProcess = true;
-                MainLanguage = LoadLanguageFromFile(value, true);
-                IsLoadingLanguageProcess = false;
-                NeedToFindMissing = true;
+                if (CurrentWorkLanguageFile == null)
+                {
+                    _currentMainLanguageFile = value;
+                    FillLanguageFiles(LanguagesForWork, value);
+                    NeedToFindMissing = false;
+                    IsLoadingLanguageProcess = true;
+                    MainLanguage = LoadLanguageFromFile(value, true);
+                    IsLoadingLanguageProcess = false;
+                    NeedToFindMissing = true;
+                }
+                else
+                {
+                    if (value.Name == CurrentWorkLanguageFile.Name &&
+                        value.DisplayName == CurrentWorkLanguageFile.DisplayName)
+                    {
+                        _currentMainLanguageFile = null;
+                        MainLanguage = null;
+                        MissingAttributes.Clear();
+                        MissingItems.Clear();
+                        MissingItemsWithSpecialSymbols.Clear();
+                    }
+                    else
+                    {
+                        _currentMainLanguageFile = value;
+                        NeedToFindMissing = false;
+                        IsLoadingLanguageProcess = true;
+                        MainLanguage = LoadLanguageFromFile(value, true);
+                        CheckWorkLanguage();
+                        FindMissingAttributes();
+                        FindMissingItems();
+                        FindMissingItemsWithSpecialSymbols();
+                        IsLoadingLanguageProcess = false;
+                        NeedToFindMissing = true;
+                    }
+                }
                 OnPropertyChanged();
             }
         }
@@ -92,6 +120,7 @@ namespace ModPlusLanguageCreator
                 CheckWorkLanguage();
                 FindMissingAttributes();
                 FindMissingItems();
+                FindMissingItemsWithSpecialSymbols();
                 IsLoadingLanguageProcess = false;
                 NeedToFindMissing = true;
                 GetTranslationComplition();
@@ -150,16 +179,17 @@ namespace ModPlusLanguageCreator
 
             TranslationComplition = task.Result;
         }
-
+        /// <summary>Загрузка списка языков в указанную коллекцию</summary>
+        /// <param name="languageFilesList"></param>
+        /// <param name="exceptLang"></param>
         private void FillLanguageFiles(ObservableCollection<LangItem> languageFilesList, LangItem exceptLang = null)
         {
             languageFilesList.Clear();
             foreach (string file in Directory.GetFiles(_curDir, "*.xml", SearchOption.TopDirectoryOnly))
             {
-                XElement xDoc;
                 using (FileStream fileStream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
-                    xDoc = XElement.Load(fileStream);
+                    var xDoc = XElement.Load(fileStream);
                     var langName = xDoc.Attribute("Name")?.Value;
                     if (!string.IsNullOrEmpty(langName))
                     {
@@ -183,7 +213,7 @@ namespace ModPlusLanguageCreator
                 if (!File.Exists(file)) return null;
                 XElement xel = XElement.Load(file);
                 LanguageModel language = new LanguageModel(file, xel.Attribute("Version")?.Value, xel.Attribute("Name")?.Value);
-                
+
                 foreach (XElement nodeXel in xel.Elements())
                 {
                     NodeModel nodeModel = new NodeModel(nodeXel.Name.LocalName, language);
@@ -222,8 +252,50 @@ namespace ModPlusLanguageCreator
                 for (var i = 0; i < MainLanguage.Nodes.Count; i++)
                 {
                     NodeModel mainNode = MainLanguage.Nodes[i];
-
-                    if (WorkLanguage.Nodes.Count - 1 < i)
+                    if (i <= WorkLanguage.Nodes.Count - 1)
+                    {
+                        NodeModel workNode = WorkLanguage.Nodes[i];
+                        if (mainNode.NodeName != workNode.NodeName)
+                        {
+                            var newNode = mainNode.CreateEmptyCopy(WorkLanguage);
+                            // create attributes and values
+                            foreach (NodeAttributeModel mainAttr in mainNode.Attributes)
+                                newNode.Attributes.Add(mainAttr.CreateEmptyCopy(newNode));
+                            foreach (ItemModel mainItem in mainNode.Items)
+                                newNode.Items.Add(mainItem.CreateEmptyCopy(newNode));
+                            WorkLanguage.Nodes.Insert(i, newNode);
+                        }
+                        else
+                        {
+                            // check attributes
+                            if (mainNode.Attributes.Count != workNode.Attributes.Count)
+                                for (var j = 0; j < mainNode.Attributes.Count; j++)
+                                {
+                                    NodeAttributeModel mainAttributeModel = mainNode.Attributes[j];
+                                    if (j <= workNode.Attributes.Count - 1)
+                                    {
+                                        if (mainAttributeModel.Name != workNode.Attributes[j].Name)
+                                            workNode.Attributes.Insert(j, mainAttributeModel.CreateEmptyCopy(workNode));
+                                    }
+                                    else
+                                        workNode.Attributes.Add(mainAttributeModel.CreateEmptyCopy(workNode));
+                                }
+                            // check items
+                            if (mainNode.Items.Count != workNode.Items.Count)
+                                for (var j = 0; j < mainNode.Items.Count; j++)
+                                {
+                                    ItemModel mainItemModel = mainNode.Items[j];
+                                    if (j <= workNode.Items.Count - 1)
+                                    {
+                                        if (workNode.Items[j].Tag != mainItemModel.Tag)
+                                            workNode.Items.Insert(j, mainItemModel.CreateEmptyCopy(workNode));
+                                    }
+                                    else
+                                        workNode.Items.Add(mainItemModel.CreateEmptyCopy(workNode));
+                                }
+                        }
+                    }
+                    else
                     {
                         var newNode = mainNode.CreateEmptyCopy(WorkLanguage);
                         // create attributes and values
@@ -232,26 +304,6 @@ namespace ModPlusLanguageCreator
                         foreach (ItemModel mainItem in mainNode.Items)
                             newNode.Items.Add(mainItem.CreateEmptyCopy(newNode));
                         WorkLanguage.Nodes.Add(newNode);
-                    }
-                    else
-                    {
-                        NodeModel workNode = WorkLanguage.Nodes[i];
-                        // check attributes
-                        if (mainNode.Attributes.Count != workNode.Attributes.Count)
-                            for (var j = 0; j < mainNode.Attributes.Count; j++)
-                            {
-                                NodeAttributeModel mainAttributeModel = mainNode.Attributes[j];
-                                if (workNode.Attributes.Count - 1 < j)
-                                    workNode.Attributes.Add(mainAttributeModel.CreateEmptyCopy(workNode));
-                            }
-                        // check items
-                        if (mainNode.Items.Count != workNode.Items.Count)
-                            for (var j = 0; j < mainNode.Items.Count; j++)
-                            {
-                                ItemModel mainItemModel = mainNode.Items[j];
-                                if (workNode.Items.Count - 1 < j)
-                                    workNode.Items.Add(mainItemModel.CreateEmptyCopy(workNode));
-                            }
                     }
                 }
             }
@@ -264,7 +316,7 @@ namespace ModPlusLanguageCreator
         public ICommand CreateNewLanguageFileCommand { get; set; }
         private void CreateNewLanguageFile(object o)
         {
-            if(!LanguagesForWork.Any()) return;
+            if (!LanguagesForWork.Any()) return;
             NewLanguageFileSelector win = new NewLanguageFileSelector() { Owner = _mainWindow };
             win.LbLanguages.ItemsSource = _cultures;
             if (win.ShowDialog() == true)
@@ -291,6 +343,7 @@ namespace ModPlusLanguageCreator
 
         public ObservableCollection<MissingValue> MissingAttributes { get; set; }
         public ObservableCollection<MissingValue> MissingItems { get; set; }
+        public ObservableCollection<MissingValue> MissingItemsWithSpecialSymbols { get; set; }
 
         public async void FindMissingAttributes()
         {
@@ -365,6 +418,51 @@ namespace ModPlusLanguageCreator
                 MissingItems = task.Result;
                 OnPropertyChanged(nameof(MissingItems));
             }
+        }
+        public async void FindMissingItemsWithSpecialSymbols()
+        {
+            Task<ObservableCollection<MissingValue>> task = new Task<ObservableCollection<MissingValue>>(() =>
+            {
+                try
+                {
+                    var collection = new ObservableCollection<MissingValue>();
+                    for (var i = 0; i < MainLanguage.Nodes.Count; i++)
+                    {
+                        NodeModel mainLanguageNode = MainLanguage.Nodes[i];
+                        NodeModel workLanguageNode = WorkLanguage.Nodes[i];
+                        for (var j = 0; j < mainLanguageNode.Items.Count; j++)
+                        {
+                            ItemModel mainItemModel = mainLanguageNode.Items[j];
+                            ItemModel workItemModel = workLanguageNode.Items[j];
+                            if (HasSymbol(mainItemModel.Value) && !HasSymbol(workItemModel.Value))
+                                collection.Add(new MissingValue(workLanguageNode.NodeName, workItemModel.Tag));
+                        }
+                    }
+                    return collection;
+                }
+                catch
+                {
+                    return null;
+                }
+            });
+            task.Start();
+            await task;
+            if (task.Result != null)
+            {
+                MissingItemsWithSpecialSymbols = task.Result;
+                OnPropertyChanged(nameof(MissingItemsWithSpecialSymbols));
+            }
+        }
+
+        private static bool HasSymbol(string str)
+        {
+            if (string.IsNullOrEmpty(str)) return false;
+            var symbols = new List<string> { "\\n", "{0}", "{1}", "{2}", "{3}", "{4}", "{5}", "{6}", "{7}", "{8}" };
+            foreach (string s in symbols)
+            {
+                if (str.Contains(s)) return true;
+            }
+            return false;
         }
 
         #endregion

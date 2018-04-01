@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
 using ModPlusLanguageCreator.Helpers;
 
 namespace ModPlusLanguageCreator.Models
@@ -9,6 +10,7 @@ namespace ModPlusLanguageCreator.Models
         {
             OwnerNodeModel = ownerNode;
             _mainViewModel = viewModel;
+            SameLanguageNames = new ObservableCollection<string>();
             TranslateCommand = new RelayCommand(Translate);
         }
 
@@ -20,8 +22,11 @@ namespace ModPlusLanguageCreator.Models
             set
             {
                 _value = MustBeUppercase ? value.ToUpper() : value;
-                if(_mainViewModel != null && _mainViewModel.NeedToFindMissing)
+                if (_mainViewModel != null && _mainViewModel.NeedToFindMissing)
+                {
                     _mainViewModel.FindMissingItems();
+                    _mainViewModel.FindMissingItemsWithSpecialSymbols();
+                }
                 OnPropertyChanged();
                 _mainViewModel?.GetTranslationComplition();
             }
@@ -41,6 +46,33 @@ namespace ModPlusLanguageCreator.Models
             return new ItemModel(ownerNodeModel, _mainViewModel) { Tag = Tag };
         }
 
+        private bool _isSameWithCurrentMainLanguage;
+        /// <summary>
+        /// Установка галочки "Это значение одинаково для текущего главного языка"
+        /// </summary>
+        public bool IsSameWithCurrentMainLanguage
+        {
+            get => _isSameWithCurrentMainLanguage;
+            set
+            {
+                _isSameWithCurrentMainLanguage = value;
+                if (_mainViewModel != null && _mainViewModel.NeedToFindMissing)
+                {
+                    if (!value)
+                        if (SameLanguageNames.Contains(_mainViewModel.MainLanguage.Name))
+                            SameLanguageNames.Remove(_mainViewModel.MainLanguage.Name);
+                    if (value)
+                        if (!SameLanguageNames.Contains(_mainViewModel.MainLanguage.Name))
+                            SameLanguageNames.Add(_mainViewModel.MainLanguage.Name);
+
+                    _mainViewModel.FindMissingItems();
+                    _mainViewModel.FindMissingItemsWithSpecialSymbols();
+                }
+                OnPropertyChanged();
+            }
+        }
+        public ObservableCollection<string> SameLanguageNames { get; set; }
+
         public ICommand TranslateCommand { get; set; }
         private void Translate(object o)
         {
@@ -54,7 +86,7 @@ namespace ModPlusLanguageCreator.Models
                         {
                             var langFrom = _mainViewModel.CurrentMainLanguageFile.TwoLetterISOLanguageName;
                             var langTo = _mainViewModel.CurrentWorkLanguageFile.TwoLetterISOLanguageName;
-                            Value = _mainViewModel.Translator.Translate(mainItem.Value.Replace("\\n"," ").Replace("{0}",""), langFrom + "-" + langTo);
+                            Value = _mainViewModel.Translator.Translate(mainItem.Value.Replace("\\n", " ").Replace("{0}", ""), langFrom + "-" + langTo);
 
                             break;
                         }
