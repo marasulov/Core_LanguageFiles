@@ -60,14 +60,18 @@ namespace ModPlusLanguageCreator.Models
             return null;
         }
 
-        private static bool HasItem(List<SameLangItem> sameLangItems, SameLangItem sameLangItem)
+        private static bool HasItem(List<SameLangItem> sameLangItems, SameLangItem sameLangItem, out SameLangItem lItem)
         {
+            lItem = null;
             foreach (SameLangItem langItem in sameLangItems)
             {
                 if (langItem.Tag == sameLangItem.Tag &&
                     langItem.WorkLangName == sameLangItem.WorkLangName &&
                     langItem.NodeName == sameLangItem.NodeName)
+                {
+                    lItem = langItem;
                     return true;
+                }
             }
             return false;
         }
@@ -86,8 +90,18 @@ namespace ModPlusLanguageCreator.Models
                         List<SameLangItem> itemsToAdd = new List<SameLangItem>();
                         foreach (SameLangItem sameLangItem in exist)
                         {
-                            if(!HasItem(sameLangItems, sameLangItem))
+                            if (!HasItem(sameLangItems, sameLangItem, out var litem))
+                            {
                                 itemsToAdd.Add(sameLangItem);
+                            }
+                            else
+                            {
+                                foreach (string lang in litem.SameLangs)
+                                {
+                                    if(!sameLangItem.SameLangs.Contains(lang))
+                                        sameLangItem.SameLangs.Add(lang);
+                                }
+                            }
                         }
                         sameLangItems.AddRange(itemsToAdd);
                     }
