@@ -24,6 +24,7 @@ namespace ModPlusLanguageCreator.Models
 
         public void SaveToFile()
         {
+            List<SameLangItem> sameLangItems = new List<SameLangItem>();
             using (FileStream fileStream = new FileStream(FileName, FileMode.Create, FileAccess.Write, FileShare.Write))
             {
                 XElement xDoc = new XElement("ModPlus");
@@ -35,29 +36,25 @@ namespace ModPlusLanguageCreator.Models
                     XElement nodeXel = new XElement(nodeModel.NodeName);
                     foreach (NodeAttributeModel attributeModel in nodeModel.Attributes)
                     {
-                        // same langs!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                         nodeXel.SetAttributeValue(attributeModel.Name, attributeModel.Value);
+                        if(attributeModel.SameLanguageNames.Any())
+                            sameLangItems.Add(new SameLangItem(attributeModel.Name, Name, attributeModel.OwnerNodeModel.NodeName,
+                                attributeModel.SameLanguageNames));
                     }
                     foreach (ItemModel itemModel in nodeModel.Items)
                     {
-                        XElement itemXel = new XElement(itemModel.Tag);
-                        itemXel.SetValue(itemModel.Value ?? string.Empty);
-                        if (itemModel.SameLanguageNames.Any())
-                        {
-                            var sameLangs = string.Empty;
-                            foreach (string s in itemModel.SameLanguageNames)
-                            {
-                                sameLangs += s + ";";
-                            }
-                            itemXel.SetAttributeValue("SameLangs", sameLangs.TrimEnd(';'));
-                        }
-                        nodeXel.Add(itemXel);
+                        nodeXel.SetElementValue(itemModel.Tag, itemModel.Value);
+                        if(itemModel.SameLanguageNames.Any())
+                            sameLangItems.Add(new SameLangItem(itemModel.Tag, Name, itemModel.OwnerNodeModel.NodeName,
+                                itemModel.SameLanguageNames));
                     }
                     xDoc.Add(nodeXel);
                 }
                 // save
                 xDoc.Save(fileStream);
             }
+            if(sameLangItems.Any())
+                SameLangItem.SaveToFile(sameLangItems);
         }
     }
 }

@@ -97,6 +97,7 @@ namespace ModPlusLanguageCreator
                         IsLoadingLanguageProcess = true;
                         MainLanguage = LoadLanguageFromFile(value, true);
                         CheckWorkLanguage();
+                        FindSameLangItems();
                         FindMissingAttributes();
                         FindMissingItems();
                         FindMissingItemsWithSpecialSymbols();
@@ -118,6 +119,7 @@ namespace ModPlusLanguageCreator
                 NeedToFindMissing = false;
                 WorkLanguage = LoadLanguageFromFile(value, false);
                 CheckWorkLanguage();
+                FindSameLangItems();
                 FindMissingAttributes();
                 FindMissingItems();
                 FindMissingItemsWithSpecialSymbols();
@@ -149,8 +151,9 @@ namespace ModPlusLanguageCreator
                     {
                         NodeAttributeModel mainAttributeModel = mainLanguageNode.Attributes[j];
                         NodeAttributeModel workAttributeModel = workLanguageNode.Attributes[j];
-                        if (mainAttributeModel.Value == workAttributeModel.Value &&
-                            mainAttributeModel.Value.ToLower() != "ok")
+                        if (mainAttributeModel.IsSameWithCurrentMainLanguage)
+                            val.Add(true);
+                        else if (mainAttributeModel.Value == workAttributeModel.Value && mainAttributeModel.Value.ToLower() != "ok")
                             val.Add(false);
                         else if (string.IsNullOrEmpty(workAttributeModel.Value))
                             val.Add(false);
@@ -160,8 +163,9 @@ namespace ModPlusLanguageCreator
                     {
                         ItemModel mainItemModel = mainLanguageNode.Items[j];
                         ItemModel workItemModel = workLanguageNode.Items[j];
-                        if (mainItemModel.Value == workItemModel.Value &&
-                            mainItemModel.Value.ToLower() != "ok")
+                        if (mainItemModel.IsSameWithCurrentMainLanguage)
+                            val.Add(true);
+                        else if (mainItemModel.Value == workItemModel.Value && mainItemModel.Value.ToLower() != "ok")
                             val.Add(false);
                         else if (string.IsNullOrEmpty(workItemModel.Value))
                             val.Add(false);
@@ -221,14 +225,14 @@ namespace ModPlusLanguageCreator
                     foreach (XAttribute attribute in nodeXel.Attributes())
                     {
                         NodeAttributeModel nodeAttributeModel =
-                            new NodeAttributeModel(attribute.Name.LocalName, attribute.Value, nodeModel, this);
+                            new NodeAttributeModel(attribute.Name.LocalName, attribute.Value, nodeModel, this, null);
                         nodeAttributeModel.IsReadOnly = isReadOnly;
                         nodeModel.Attributes.Add(nodeAttributeModel);
                     }
                     // get items
                     foreach (XElement itemXel in nodeXel.Elements())
                     {
-                        ItemModel item = new ItemModel(nodeModel, this);
+                        ItemModel item = new ItemModel(nodeModel, this, null);
                         item.Tag = itemXel.Name.LocalName;
                         item.Value = itemXel.Value;
                         item.IsReadOnly = isReadOnly;
@@ -242,6 +246,39 @@ namespace ModPlusLanguageCreator
             {
                 MessageBox.Show(exception.Message + Environment.StackTrace);
                 return null;
+            }
+        }
+
+        private void FindSameLangItems()
+        {
+            var sameLangItems = SameLangItem.LoadFromFile();
+            if (sameLangItems != null && sameLangItems.Any())
+            {
+                var langItemsForCurrentLang = sameLangItems.Where(li => li.WorkLangName == WorkLanguage.Name).ToList();
+                if (langItemsForCurrentLang.Any())
+                    foreach (NodeModel nodeModel in WorkLanguage.Nodes)
+                    {
+                        foreach (NodeAttributeModel attributeModel in nodeModel.Attributes)
+                        {
+                            foreach (SameLangItem langItem in langItemsForCurrentLang)
+                            {
+                                if (langItem.NodeName == nodeModel.NodeName &&
+                                    langItem.Tag == attributeModel.Name &&
+                                    langItem.SameLangs.Contains(MainLanguage.Name))
+                                    attributeModel.IsSameWithCurrentMainLanguage = true;
+                            }
+                        }
+                        foreach (ItemModel itemModel in nodeModel.Items)
+                        {
+                            foreach (SameLangItem langItem in langItemsForCurrentLang)
+                            {
+                                if (langItem.NodeName == nodeModel.NodeName &&
+                                    langItem.Tag == itemModel.Tag &&
+                                    langItem.SameLangs.Contains(MainLanguage.Name))
+                                    itemModel.IsSameWithCurrentMainLanguage = true;
+                            }
+                        }
+                    }
             }
         }
         /// <summary>Проверка рабочего языка на отсутствие нужных нодов</summary>
@@ -360,6 +397,8 @@ namespace ModPlusLanguageCreator
                         {
                             NodeAttributeModel mainAttributeModel = mainLanguageNode.Attributes[j];
                             NodeAttributeModel workAttributeModel = workLanguageNode.Attributes[j];
+                            if(workAttributeModel.IsSameWithCurrentMainLanguage) continue;
+
                             if (mainAttributeModel.Value == workAttributeModel.Value &&
                                 mainAttributeModel.Value.ToLower() != "ok")
                                 collection.Add(new MissingValue(workLanguageNode.NodeName, workAttributeModel.Name));
@@ -379,6 +418,7 @@ namespace ModPlusLanguageCreator
             if (task.Result != null)
             {
                 MissingAttributes = task.Result;
+                // ReSharper disable once ExplicitCallerInfoArgument
                 OnPropertyChanged(nameof(MissingAttributes));
             }
         }
@@ -397,6 +437,7 @@ namespace ModPlusLanguageCreator
                         {
                             ItemModel mainItemModel = mainLanguageNode.Items[j];
                             ItemModel workItemModel = workLanguageNode.Items[j];
+                            if(workItemModel.IsSameWithCurrentMainLanguage) continue;
                             if (mainItemModel.Value == workItemModel.Value &&
                                 mainItemModel.Value.ToLower() != "ok")
                                 collection.Add(new MissingValue(workLanguageNode.NodeName, workItemModel.Tag));
@@ -416,6 +457,7 @@ namespace ModPlusLanguageCreator
             if (task.Result != null)
             {
                 MissingItems = task.Result;
+                // ReSharper disable once ExplicitCallerInfoArgument
                 OnPropertyChanged(nameof(MissingItems));
             }
         }
@@ -450,6 +492,7 @@ namespace ModPlusLanguageCreator
             if (task.Result != null)
             {
                 MissingItemsWithSpecialSymbols = task.Result;
+                // ReSharper disable once ExplicitCallerInfoArgument
                 OnPropertyChanged(nameof(MissingItemsWithSpecialSymbols));
             }
         }

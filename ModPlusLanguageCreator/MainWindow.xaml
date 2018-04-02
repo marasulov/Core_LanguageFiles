@@ -146,7 +146,7 @@
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="Main language"></TextBlock>
+            <TextBlock Grid.Row="0" Text="Source language" FontSize="14"></TextBlock>
             <ComboBox Grid.Row="1" ItemsSource="{Binding Path=LanguagesForMain}"
                       Width="150" 
                       SelectedItem="{Binding Path=CurrentMainLanguageFile}">
@@ -267,7 +267,7 @@
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="Work language"></TextBlock>
+            <TextBlock Grid.Row="0" Text="Target language" FontSize="14"></TextBlock>
             <ComboBox Grid.Row="1" ItemsSource="{Binding Path=LanguagesForWork}"
                       Width="150" x:Name="CbWorkLanguages"
                       SelectedItem="{Binding Path=CurrentWorkLanguageFile}">
@@ -342,6 +342,7 @@
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="Auto" SharedSizeGroup="Name"></ColumnDefinition>
                                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
                                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                             </Grid.ColumnDefinitions>
                                             <TextBlock Grid.Column="0" Text="{Binding Path=Name}" VerticalAlignment="Center" Margin="1,1,3,1"></TextBlock>
@@ -361,7 +362,11 @@
                                                     </Style>
                                                 </Button.Style>
                                             </Button>
-                                            <TextBox Grid.Column="2" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                            <CheckBox Grid.Column="2" VerticalAlignment="Center" Margin="2"
+                                                      ToolTip="This value same in Source Main Language"
+                                                      ToolTipService.InitialShowDelay="0"
+                                                      IsChecked="{Binding Path=IsSameWithCurrentMainLanguage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                                            <TextBox Grid.Column="3" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                      IsReadOnly="{Binding Path=IsReadOnly}"
                                                      TextWrapping="Wrap" x:Name="TbAttribute"
                                                      GotFocus="TbAttribute_OnGotFocus"></TextBox>
@@ -399,7 +404,8 @@
                                     </Button.Style>
                                 </Button>
                                 <CheckBox Grid.Column="2" Margin="2" VerticalAlignment="Center"
-                                          ToolTip="This value same in current Main Language"
+                                          ToolTip="This value same in Source Main Language"
+                                          ToolTipService.InitialShowDelay="0"
                                           IsChecked="{Binding Path=IsSameWithCurrentMainLanguage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
                                 <TextBox Grid.Column="3" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                          x:Name="TbItemValue" Margin="1" BorderThickness="1" BorderBrush="LightGray"

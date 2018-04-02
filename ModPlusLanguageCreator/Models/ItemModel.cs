@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Windows.Documents;
 using System.Windows.Input;
 using ModPlusLanguageCreator.Helpers;
 
@@ -6,11 +8,16 @@ namespace ModPlusLanguageCreator.Models
 {
     public class ItemModel : BaseNotify
     {
-        public ItemModel(NodeModel ownerNode, MainViewModel viewModel)
+        public ItemModel(NodeModel ownerNode, MainViewModel viewModel, List<string> sameLangs)
         {
             OwnerNodeModel = ownerNode;
             _mainViewModel = viewModel;
-            SameLanguageNames = new ObservableCollection<string>();
+            SameLanguageNames = new List<string>();
+            if(sameLangs != null)
+                foreach (var sameLang in sameLangs)
+                {
+                    SameLanguageNames.Add(sameLang);
+                }
             TranslateCommand = new RelayCommand(Translate);
         }
 
@@ -43,7 +50,7 @@ namespace ModPlusLanguageCreator.Models
 
         public ItemModel CreateEmptyCopy(NodeModel ownerNodeModel)
         {
-            return new ItemModel(ownerNodeModel, _mainViewModel) { Tag = Tag };
+            return new ItemModel(ownerNodeModel, _mainViewModel, null) { Tag = Tag };
         }
 
         private bool _isSameWithCurrentMainLanguage;
@@ -71,7 +78,7 @@ namespace ModPlusLanguageCreator.Models
                 OnPropertyChanged();
             }
         }
-        public ObservableCollection<string> SameLanguageNames { get; set; }
+        public List<string> SameLanguageNames { get; set; }
 
         public ICommand TranslateCommand { get; set; }
         private void Translate(object o)

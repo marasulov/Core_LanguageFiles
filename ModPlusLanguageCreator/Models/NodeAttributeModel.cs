@@ -1,4 +1,6 @@
-﻿using System.Windows.Input;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Windows.Input;
 using ModPlusLanguageCreator.Helpers;
 
 namespace ModPlusLanguageCreator.Models
@@ -7,12 +9,18 @@ namespace ModPlusLanguageCreator.Models
     {
         private string _value;
 
-        public NodeAttributeModel(string attrName, string attrValue, NodeModel ownerNode, MainViewModel viewModel)
+        public NodeAttributeModel(string attrName, string attrValue, NodeModel ownerNode, MainViewModel viewModel, List<string> sameLangs)
         {
             Name = attrName;
             Value = attrValue;
             OwnerNodeModel = ownerNode;
             _mainViewModel = viewModel;
+            SameLanguageNames = new List<string>();
+            if (sameLangs != null)
+                foreach (var sameLang in sameLangs)
+                {
+                    SameLanguageNames.Add(sameLang);
+                }
             TranslateCommand = new RelayCommand(Translate);
         }
         public string Name { get; }
@@ -37,8 +45,34 @@ namespace ModPlusLanguageCreator.Models
 
         public NodeAttributeModel CreateEmptyCopy(NodeModel ownerNodeModel)
         {
-            return new NodeAttributeModel(Name, string.Empty, ownerNodeModel, _mainViewModel);
+            return new NodeAttributeModel(Name, string.Empty, ownerNodeModel, _mainViewModel, null);
         }
+
+        private bool _isSameWithCurrentMainLanguage;
+        /// <summary>
+        /// Установка галочки "Это значение одинаково для текущего главного языка"
+        /// </summary>
+        public bool IsSameWithCurrentMainLanguage
+        {
+            get => _isSameWithCurrentMainLanguage;
+            set
+            {
+                _isSameWithCurrentMainLanguage = value;
+                if (_mainViewModel != null && _mainViewModel.NeedToFindMissing)
+                {
+                    if (!value)
+                        if (SameLanguageNames.Contains(_mainViewModel.MainLanguage.Name))
+                            SameLanguageNames.Remove(_mainViewModel.MainLanguage.Name);
+                    if (value)
+                        if (!SameLanguageNames.Contains(_mainViewModel.MainLanguage.Name))
+                            SameLanguageNames.Add(_mainViewModel.MainLanguage.Name);
+
+                    _mainViewModel.FindMissingAttributes();
+                }
+                OnPropertyChanged();
+            }
+        }
+        public List<string> SameLanguageNames { get; set; }
 
         public ICommand TranslateCommand { get; set; }
         private void Translate(object o)

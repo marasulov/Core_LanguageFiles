@@ -91,6 +91,7 @@
     <Compile Include="Models\MissingValue.cs" />
     <Compile Include="Models\NodeAttributeModel.cs" />
     <Compile Include="Models\NodeModel.cs" />
+    <Compile Include="Models\SameLangItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
