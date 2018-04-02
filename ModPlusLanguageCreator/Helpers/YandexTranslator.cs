@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Net;
+using System.Windows;
 using Newtonsoft.Json;
 
 namespace ModPlusLanguageCreator.Helpers
@@ -14,9 +15,16 @@ namespace ModPlusLanguageCreator.Helpers
                                                        + "key=trnsl.1.1.20180321T085924Z.e668b43f5a1b040b.d77a5c74d8cf9fe5b2b25f31ac2cde85bb40d97c"
                                                        + "&text=" + s
                                                        + "&lang=" + lang);
-
-                WebResponse response = request.GetResponse();
-
+                WebResponse response = null;
+                try
+                {
+                    response = request.GetResponse();
+                }
+                catch
+                {
+                    MessageBox.Show("Cannot translate " + lang);
+                }
+                if(response != null)
                 using (StreamReader stream = new StreamReader(response.GetResponseStream()))
                 {
                     string line;
