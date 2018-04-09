@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.0.0.2
-         ">
+<ModPlus Name="en-US" Version="1.0.0.3">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -491,7 +490,7 @@
     <h21>Floating menu</h21>
     <h22>collapse to:</h22>
     <h23>Drawings (separately)</h23>
-    <h24>Set Nested Objects to ByBlock[mpEntByBlock]</h24>
+    <h24>Set Nested Objects to ByBlock [mpEntByBlock]</h24>
     <h25>Frequently Used Blocks</h25>
     <h26>Viewport boundary in model space [mpVPtoMS]</h26>
     <h27>BLOCK SELECTION</h27>
@@ -519,6 +518,9 @@
     <h49>MP:Set Nested Objects to ByBlock</h49>
     <h50>MP:Insert block</h50>
     <h51>MP:VP boundary in model</h51>
+    <h53>Add [mpAddVertexToWipeout] and Remove [mpRemoveVertexFromWipeout] vertices of wipeout</h53>
+    <h54>MP:Add vertex</h54>
+    <h55>MP:Remove vertex</h55>
     <cb1>Icon</cb1>
     <cb2>Title</cb2>
     <border1>Border by color</border1>
@@ -543,6 +545,7 @@
     <tt15>Configure a list of frequently used blocks</tt15>
     <tt16>Enable/disable the context menu for the mini function "Viewport boundary in model space"</tt16>
     <tt17>To change the language in the palette, you need to restart AutoCAD</tt17>
+    <tt18>Enable/disable the context menu for wipeouts, which allows you to add or remove vertices of wipeout</tt18>
     <err1>This name is already in use! Create another</err1>
     <err2>You need to specify the display name of the block!</err2>
     <err3>You need to select a block in the list!</err3>
@@ -569,6 +572,9 @@
     <msg17>The table contains the wrong number of columns!\nContinue?</msg17>
     <msg18>The table is not empty! Overwrite it?\nYes - owerwrite, No - supplement</msg18>
     <msg19>The table is not a ModPlus table. Data may not be entered correctly!\nContinue?</msg19>
+    <msg20>Select wipeout</msg20>
+    <msg21>Specify the position of the new vertex</msg21>
+    <msg22>Specify the vertex to remove</msg22>
     <p1>ATTENTION!</p1>
     <p2>Trying to load the plugin into an incompatible version of the AutoCAD!</p2>
     <p3>Download interrupt</p3>
