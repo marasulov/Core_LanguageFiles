@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="ru-RU" Version="1.0.1.6">
+<ModPlus Name="ru-RU" Version="1.0.1.7">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -156,6 +156,7 @@
     <header83>Период действия подписки в месяцах:</header83>
     <header84>Окончание периода подписки</header84>
     <header85>Статус подписки:</header85>
+    <header86>Подписка для:</header86>
     <sks1>Неверный активационный ключ подписки</sks1>
     <sks2>Не указан активационный ключ подписки</sks2>
     <sks3>Подписка истекает</sks3>
