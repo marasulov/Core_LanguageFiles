@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.0.0.3">
+<ModPlus Name="en-US" Version="1.0.1.3">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -150,6 +150,18 @@
     <header77>Check</header77>
     <header78>Adress</header78>
     <header79>Port</header79>
+    <header80>SUBSCRIBE</header80>
+    <header81>Subscription key:</header81>
+    <header82>Subscription period starts on:</header82>
+    <header83>Subscription period in months:</header83>
+    <header84>Subscription period ends on:</header84>
+    <header85>Subscribe status:</header85>
+    <sks1>Invalid activation key for subscription</sks1>
+    <sks2>Subscription activation key not specified</sks2>
+    <sks3>Subscription expires</sks3>
+    <sks4>Subscription expired</sks4>
+    <sks5>Subscription period has not started yet</sks5>
+    <sks6>Subscription is active</sks6>
     <ps1>Connecting to internet does not use a proxy</ps1>
     <ps2>When connecting to the internet, the following proxy is used:</ps2>
     <ps3>Manual proxy configuration</ps3>
