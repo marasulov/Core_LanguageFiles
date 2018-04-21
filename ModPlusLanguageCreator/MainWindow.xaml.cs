@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Windows.Input;
 using System.Windows.Media;
 using ModPlusLanguageCreator.Models;
 
@@ -169,6 +170,11 @@ namespace ModPlusLanguageCreator
 
         private void BtGoToFirstMissingAttribute_OnClick(object sender, RoutedEventArgs e)
         {
+            GoToFirstMissingAttribute();
+        }
+
+        private void GoToFirstMissingAttribute()
+        {
             if (DataContext is MainViewModel mainViewModel)
             {
                 var missingValue = mainViewModel.MissingAttributes?.FirstOrDefault();
@@ -205,6 +211,11 @@ namespace ModPlusLanguageCreator
 
         private void BtGoToFirstMissingItem_OnClick(object sender, RoutedEventArgs e)
         {
+            GoToFirstMissingItem();
+        }
+
+        private void GoToFirstMissingItem()
+        {
             if (DataContext is MainViewModel mainViewModel)
             {
                 var missingValue = mainViewModel.MissingItems?.FirstOrDefault();
@@ -240,6 +251,11 @@ namespace ModPlusLanguageCreator
         }
 
         private void BtGoToFirstItemWithSpecialSymbol_OnClick(object sender, RoutedEventArgs e)
+        {
+            GoToFirstItemWithSpecialSymbol();
+        }
+
+        private void GoToFirstItemWithSpecialSymbol()
         {
             if (DataContext is MainViewModel mainViewModel)
             {
@@ -278,6 +294,72 @@ namespace ModPlusLanguageCreator
         private void Hyperlink_OnClick(object sender, RoutedEventArgs e)
         {
             Process.Start("https://modplus.org/");
+        }
+
+        private void TbAttribute_OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if (Enum.TryParse(Properties.Settings.Default.HotKeys_Translate, out Key k))
+                if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control && e.Key == k && sender is TextBox tb)
+            {
+                var lbi = FindParent<ListBoxItem>(tb);
+                if (lbi != null && lbi.Content is NodeAttributeModel nam)
+                {
+                    nam.Translate(true);
+                }
+            }
+            else HotKeysOfWin(e);
+        }
+
+        private void TbItemValue_OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if(Enum.TryParse(Properties.Settings.Default.HotKeys_Translate, out Key k))
+            if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control && e.Key == k && sender is TextBox tb)
+            {
+                var tvi = FindParent<TreeViewItem>(tb);
+                if (tvi != null)
+                {
+                    var b = tvi.DataContext as ItemModel;
+                    b?.Translate(true);
+                }
+            }
+            else HotKeysOfWin(e);
+        }
+
+        private void MainWindow_OnKeyDown(object sender, KeyEventArgs e)
+        {
+            HotKeysOfWin(e);
+        }
+
+        private void HotKeysOfWin(KeyEventArgs e)
+        {
+            Enum.TryParse(Properties.Settings.Default.HotKeys_GoToAttribute, out Key attrKey);
+            Enum.TryParse(Properties.Settings.Default.HotKeys_GoToItem, out Key itemKey);
+            Enum.TryParse(Properties.Settings.Default.HotKeys_GoToSymbol, out Key symbKey);
+            if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control && e.Key == attrKey)
+            {
+                GoToFirstMissingAttribute();
+            }
+            if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control && e.Key == itemKey)
+            {
+                GoToFirstMissingItem();
+            }
+            if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control && e.Key == symbKey)
+            {
+                GoToFirstItemWithSpecialSymbol();
+            }
+        }
+
+        private void HotKeysComboBoxes_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            List<string> hotKeys = new List<string>
+            {
+                Properties.Settings.Default.HotKeys_GoToItem,
+                Properties.Settings.Default.HotKeys_Translate,
+                Properties.Settings.Default.HotKeys_GoToAttribute,
+                Properties.Settings.Default.HotKeys_GoToSymbol
+            };
+            if (hotKeys.GroupBy(n => n).Any(g => g.Count() > 1))
+                MessageBox.Show("You specified the same hotkeys! Please specify other values");
         }
     }
 }

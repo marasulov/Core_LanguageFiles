@@ -1,7 +1,8 @@
 ﻿using System.IO;
 using System.Net;
+using System.Runtime.Serialization;
 using System.Windows;
-using Newtonsoft.Json;
+using System.Runtime.Serialization.Json;
 
 namespace ModPlusLanguageCreator.Helpers
 {
@@ -31,13 +32,17 @@ namespace ModPlusLanguageCreator.Helpers
 
                     if ((line = stream.ReadLine()) != null)
                     {
-                        Translation translation = JsonConvert.DeserializeObject<Translation>(line);
-
-                        s = "";
-
-                        foreach (string str in translation.text)
+                        using (var streamFromLine = GenerateStreamFromString(line))
                         {
-                            s += str;
+                            var dataContractJsonSerializer = new DataContractJsonSerializer(typeof(Translation));
+                            var translation = (Translation) dataContractJsonSerializer.ReadObject(streamFromLine);
+
+                            s = "";
+
+                            foreach (string str in translation.text)
+                            {
+                                s += str;
+                            }
                         }
                     }
                 }
@@ -47,12 +52,24 @@ namespace ModPlusLanguageCreator.Helpers
             else
                 return "";
         }
+        public static Stream GenerateStreamFromString(string s)
+        {
+            var stream = new MemoryStream();
+            var writer = new StreamWriter(stream);
+            writer.Write(s);
+            writer.Flush();
+            stream.Position = 0;
+            return stream;
+        }
     }
-
+    [DataContract]
     class Translation
     {
+        [DataMember]
         public string code { get; set; }
+        [DataMember]
         public string lang { get; set; }
+        [DataMember]
         public string[] text { get; set; }
     }
 }

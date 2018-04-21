@@ -75,7 +75,7 @@ namespace ModPlusLanguageCreator.Models
         public List<string> SameLanguageNames { get; set; }
 
         public ICommand TranslateCommand { get; set; }
-        private void Translate(object o)
+        public void Translate(object o)
         {
             foreach (NodeModel mainLanguageNode in _mainViewModel.MainLanguage.Nodes)
             {
@@ -87,7 +87,8 @@ namespace ModPlusLanguageCreator.Models
                         {
                             var langFrom = _mainViewModel.CurrentMainLanguageFile.TwoLetterISOLanguageName;
                             var langTo = _mainViewModel.CurrentWorkLanguageFile.TwoLetterISOLanguageName;
-                            Value = _mainViewModel.Translator.Translate(mainNodeAttr.Value, langFrom + "-" + langTo);
+                            Value = _mainViewModel.Translator.Translate(mainNodeAttr.Value.Replace("\\n", " ").Replace("{0}", "").Replace(';','$'),
+                                langFrom + "-" + langTo).Replace('$',';');
 
                             break;
                         }

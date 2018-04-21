@@ -6,10 +6,12 @@
         xmlns:local="clr-namespace:ModPlusLanguageCreator"
         xmlns:models="clr-namespace:ModPlusLanguageCreator.Models"
         xmlns:helpers="clr-namespace:ModPlusLanguageCreator.Helpers"
+        xmlns:properties="clr-namespace:ModPlusLanguageCreator.Properties"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         ResizeMode="CanResizeWithGrip" 
         Title="ModPlus language creator" Height="650" Width="900"
-        d:DataContext="{d:DesignInstance d:Type=local:MainViewModel, IsDesignTimeCreatable=False}">
+        d:DataContext="{d:DesignInstance d:Type=local:MainViewModel, IsDesignTimeCreatable=False}"
+        KeyDown="MainWindow_OnKeyDown">
     <Window.Resources>
         <Style x:Key="TreeViewItemFocusVisual">
             <Setter Property="Control.Template">
@@ -138,6 +140,7 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.Column="0">
@@ -369,7 +372,8 @@
                                             <TextBox Grid.Column="3" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                      IsReadOnly="{Binding Path=IsReadOnly}"
                                                      TextWrapping="Wrap" x:Name="TbAttribute"
-                                                     GotFocus="TbAttribute_OnGotFocus"></TextBox>
+                                                     GotFocus="TbAttribute_OnGotFocus"
+                                                     KeyDown="TbAttribute_OnKeyDown"></TextBox>
                                         </Grid>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
@@ -409,15 +413,55 @@
                                           IsChecked="{Binding Path=IsSameWithCurrentMainLanguage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
                                 <TextBox Grid.Column="3" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                          x:Name="TbItemValue" Margin="1" BorderThickness="1" BorderBrush="LightGray"
-                                         GotFocus="TbItemValue_OnGotFocus"></TextBox>
+                                         GotFocus="TbItemValue_OnGotFocus"
+                                         KeyDown="TbItemValue_OnKeyDown"></TextBox>
                             </Grid>
                         </DataTemplate>
                     </HierarchicalDataTemplate.ItemTemplate>
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
         </TreeView>
-        
-        <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+        <!-- Hot keys -->
+        <Expander Grid.Column="1" Grid.Row="3" Header="Hot keys">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="Translate Attribute or Item (when TextBox is focused):"></TextBlock>
+                <TextBlock Grid.Column="1" Grid.Row="0" Text="Ctrl +"></TextBlock>
+                <ComboBox Grid.Column="2" Grid.Row="0" MinWidth="50"
+                          ItemsSource="{Binding Source={x:Static helpers:Constants.Keys}}"
+                          SelectedItem="{Binding Source={x:Static properties:Settings.Default}, Path=HotKeys_Translate}"
+                          SelectionChanged="HotKeysComboBoxes_OnSelectionChanged"></ComboBox>
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="Go to first missing attribute:"></TextBlock>
+                <TextBlock Grid.Column="1" Grid.Row="1" Text="Ctrl +"></TextBlock>
+                <ComboBox Grid.Column="2" Grid.Row="1"
+                          ItemsSource="{Binding Source={x:Static helpers:Constants.Keys}}"
+                          SelectedItem="{Binding Source={x:Static properties:Settings.Default}, Path=HotKeys_GoToAttribute}"
+                          SelectionChanged="HotKeysComboBoxes_OnSelectionChanged"></ComboBox>
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="Go to first missing item:"></TextBlock>
+                <TextBlock Grid.Column="1" Grid.Row="2" Text="Ctrl +"></TextBlock>
+                <ComboBox Grid.Column="2" Grid.Row="2"
+                          ItemsSource="{Binding Source={x:Static helpers:Constants.Keys}}"
+                          SelectedItem="{Binding Source={x:Static properties:Settings.Default}, Path=HotKeys_GoToItem}"
+                          SelectionChanged="HotKeysComboBoxes_OnSelectionChanged"></ComboBox>
+                <TextBlock Grid.Column="0" Grid.Row="3" Text="Go to first missing item with special symbol:"></TextBlock>
+                <TextBlock Grid.Column="1" Grid.Row="3" Text="Ctrl +"></TextBlock>
+                <ComboBox Grid.Column="2" Grid.Row="3"
+                          ItemsSource="{Binding Source={x:Static helpers:Constants.Keys}}"
+                          SelectedItem="{Binding Source={x:Static properties:Settings.Default}, Path=HotKeys_GoToSymbol}"
+                          SelectionChanged="HotKeysComboBoxes_OnSelectionChanged"></ComboBox>
+            </Grid>
+        </Expander>
+        <TextBlock Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
             <Run Text="Copyright © ModPlus"></Run>
             <Hyperlink Click="Hyperlink_OnClick">modplus.og</Hyperlink>
         </TextBlock>
