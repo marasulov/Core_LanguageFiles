@@ -27,11 +27,6 @@ namespace ModPlusLanguageCreator
         private LanguageModel _workLanguage;
         private double _translationComplition;
 
-        public MainViewModel()
-        {
-
-        }
-
         public MainViewModel(string curDir, MainWindow parentWindow)
         {
             Translator = new YandexTranslator();
@@ -397,7 +392,7 @@ namespace ModPlusLanguageCreator
                         {
                             NodeAttributeModel mainAttributeModel = mainLanguageNode.Attributes[j];
                             NodeAttributeModel workAttributeModel = workLanguageNode.Attributes[j];
-                            if(workAttributeModel.IsSameWithCurrentMainLanguage) continue;
+                            if (workAttributeModel.IsSameWithCurrentMainLanguage) continue;
 
                             if (mainAttributeModel.Value == workAttributeModel.Value &&
                                 mainAttributeModel.Value.ToLower() != "ok")
@@ -437,7 +432,7 @@ namespace ModPlusLanguageCreator
                         {
                             ItemModel mainItemModel = mainLanguageNode.Items[j];
                             ItemModel workItemModel = workLanguageNode.Items[j];
-                            if(workItemModel.IsSameWithCurrentMainLanguage) continue;
+                            if (workItemModel.IsSameWithCurrentMainLanguage) continue;
                             if (mainItemModel.Value == workItemModel.Value &&
                                 mainItemModel.Value.ToLower() != "ok")
                                 collection.Add(new MissingValue(workLanguageNode.NodeName, workItemModel.Tag));
@@ -509,5 +504,59 @@ namespace ModPlusLanguageCreator
         }
 
         #endregion
+
+        /// <summary>Переменная для обозначения того, что идет работа по замене одинаковых значений</summary>
+        public bool IsFindSameItemsInWork = false;
+
+        public async void FindAndChangeSameValues(string ownerNodeName, string tag, string value)
+        {
+            if(MainLanguage == null || WorkLanguage == null) return;
+            IsFindSameItemsInWork = true;
+            // Имя нода нужно, чтобы не менять само значение, которое вызвало изменение
+            Task task = new Task(() =>
+            {
+                // Сначала найду заменяемое значение в базовом документе
+                var sameValueInBaseLang = string.Empty;
+                foreach (NodeModel mainLanguageNode in MainLanguage.Nodes)
+                {
+                    if (!mainLanguageNode.NodeName.Equals(ownerNodeName)) continue;
+                    foreach (ItemModel item in mainLanguageNode.Items)
+                    {
+                        if (item.Tag.Equals(tag))
+                        {
+                            sameValueInBaseLang = item.Value; break;
+                        }
+                    }
+                }
+                // Теперь нужно собрать "адреса" таких же значений
+                List<string[]> adresses = new List<string[]>();
+                foreach (NodeModel mainLanguageNode in MainLanguage.Nodes)
+                {
+                    foreach (ItemModel item in mainLanguageNode.Items)
+                    {
+                        // Пропускаю само значение, по которому происходит перевод
+                        if (mainLanguageNode.NodeName.Equals(ownerNodeName) && item.Tag.Equals(tag)) continue;
+                        if (item.Value.Equals(sameValueInBaseLang))
+                            adresses.Add(new[] { mainLanguageNode.NodeName, item.Tag });
+                    }
+                }
+                if(adresses.Any())
+                    foreach (string[] adress in adresses)
+                    {
+                        var node = WorkLanguage.Nodes.FirstOrDefault(n => n.NodeName.Equals(adress[0]));
+                        var item = node?.Items.FirstOrDefault(i => i.Tag.Equals(adress[1]));
+                        if (item != null) item.Value = value;
+                    }
+            });
+            task.Start();
+            await task;
+            if (NeedToFindMissing)
+            {
+                FindMissingItems();
+                FindMissingItemsWithSpecialSymbols();
+            }
+            GetTranslationComplition();
+            IsFindSameItemsInWork = false;
+        }
     }
 }

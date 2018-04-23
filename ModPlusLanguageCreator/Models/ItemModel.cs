@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Windows.Documents;
 using System.Windows.Input;
 using ModPlusLanguageCreator.Helpers;
 
@@ -29,13 +27,11 @@ namespace ModPlusLanguageCreator.Models
             set
             {
                 _value = MustBeUppercase ? value.ToUpper() : value;
-                if (_mainViewModel != null && _mainViewModel.NeedToFindMissing)
-                {
-                    _mainViewModel.FindMissingItems();
-                    _mainViewModel.FindMissingItemsWithSpecialSymbols();
-                }
                 OnPropertyChanged();
-                _mainViewModel?.GetTranslationComplition();
+                // метод поиска и замены одинаковых значений вызовет и метод вычесления процента изменения
+                //_mainViewModel?.GetTranslationComplition();
+                if(!_mainViewModel.IsFindSameItemsInWork)
+                    _mainViewModel?.FindAndChangeSameValues(OwnerNodeModel.NodeName, Tag, value);
             }
         }
 
@@ -81,6 +77,7 @@ namespace ModPlusLanguageCreator.Models
         public List<string> SameLanguageNames { get; set; }
 
         public ICommand TranslateCommand { get; set; }
+        /// <summary>Выполнить перевод, используя Яндекс переводчик</summary>
         public void Translate(object o)
         {
             foreach (NodeModel mainLanguageNode in _mainViewModel.MainLanguage.Nodes)
@@ -99,7 +96,6 @@ namespace ModPlusLanguageCreator.Models
                             break;
                         }
                     }
-
                     break;
                 }
             }
