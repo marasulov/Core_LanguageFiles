@@ -2799,6 +2799,7 @@
     <e14>Conduits</e14>
     <e15>Trusses</e15>
     <e16>Floors</e16>
+    <e17>Mechanical equipment</e17>
   </mprDimByLine>
   <mprDimBias LocalName="Dim offset"
               Description="Automatic movement of the dimension value that falls on the dimension lines"
