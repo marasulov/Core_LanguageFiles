@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.1.2.0">
+<ModPlus Name="en-US" Version="1.2.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2863,4 +2863,43 @@
     <ts2>The source file is missing!</ts2>
     <ts3>Source sheet is missing or renamed!</ts3>
   </mprExcelImport>
+  <mprInteriorPlanDimensions LocalName="Internal dimensions on plan"
+                             Description="Internal dimensions on the floor plan"
+                             FullDescription="Function only works with vertical and horizontal walls in the plan and does not process the curtain walls">
+    <h1>Internal dimensions on plan</h1>
+    <h2>Axis dimensioning</h2>
+    <h3>Openings dimensioning</h3>
+    <h4>Indentation of the dimension chain:</h4>
+    <h5>Handle walls with a thickness of</h5>
+    <h6>Exclude from the work walls in the name of the type which contains:</h6>
+    <h7>Exclude from the work of the wall in the material name of the layer "Structure" which contains:</h7>
+    <h8>Step:</h8>
+    <tt1>Specify a comma-separated value that can be contained in the name of the type of the wall</tt1>
+    <tt2>Not case-sensitive</tt2>
+    <tt3>For example:</tt3>
+    <tt4>_Insul,Finishing,Ceramic</tt4>
+    <tt5>Specify, by comma, the values that can be contained in the material name of the "Structure" layer of the wall</tt5>
+    <tt6>concrete,brick</tt6>
+    <mm>mm</mm>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <msg1>You need to go to the floor plan!</msg1>
+    <msg2>Choose walls, grids and openings</msg2>
+    <err1>Could not create a working wall list!</err1>
+    <err2>In this set there are no walls intersected by Primary range Cut plane!</err2>
+    <err3>At runtime, the program went into an endless loop! If you see this message, please contact the developer!</err3>
+    <err4>It is necessary to choose more than one element!</err4>
+    <err5>Among the selected elements there are no walls!</err5>
+    <s1>Filtering the initial list of walls</s1>
+    <s2>Search internal and external walls</s2>
+    <s3>Creating analytical dimensions</s3>
+    <s4>Filtering analytical dimensions</s4>
+    <s5>Creating dimension-wall mappings</s5>
+    <s6>Filtering dimension-wall mappings</s6>
+    <s7>Preparation of the final dimension-wall mappings</s7>
+    <s8>Filter element references</s8>
+    <s9>Creating worker dimension chains</s9>
+    <s10>Filtration of working dimensional chains</s10>
+    <s11>Creating final fimension chains</s11>
+  </mprInteriorPlanDimensions>
 </ModPlus>
