@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.3.2.0">
+<ModPlus Name="en-US" Version="1.3.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1621,7 +1621,7 @@
     <h22>Insertion Option</h22>
     <h23>Masking</h23>
     <h24>Add masking to hide items behind the block</h24>
-    <h25>Insert as block</h25>
+    <h25>Insert</h25>
     <h26>Inserting a product in the form of a block with a simple geometry and with extended data</h26>
     <h27>Replace block</h27>
     <h28>Replace block representing the product</h28>
@@ -1633,6 +1633,9 @@
     <h34>Not valid</h34>
     <h35>No information or legislation</h35>
     <h36>PRODUCT DATA</h36>
+    <h37>By two points</h37>
+    <h38>In the form of polyline</h38>
+    <h39>The insertion options "By two points" and "In the form of polyline" are only available for linear products (products whose length is required). The insertion option will use if it is active and selected. When using either of the two options, you do not need to pre-specify the length of the product in the window. The "By two point" insert option is available when you select the "Side view" or "Top view" display option. The insertion option "In the form of polyline" is available when selecting the "Front view (section)" display option</h39>
     <rb1>Side view</rb1>
     <rb2>Front view (section)</rb2>
     <rb3>Top view</rb3>
@@ -1649,6 +1652,8 @@
     <msg7>Enter the height of the product</msg7>
     <msg8>Insertion point:</msg8>
     <msg9>MP:Product data</msg9>
+    <msg10>First point</msg10>
+    <msg11>Second point</msg11>
   </mpProductInsert>
   <mpDrawOrderByLayer LocalName="Draworder by layer"
                       Description="The function serves to change the draworder according to the layers"
