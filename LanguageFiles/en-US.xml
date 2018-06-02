@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.3.3.0">
+<ModPlus Name="en-US" Version="1.3.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2807,6 +2807,9 @@
     <e15>Trusses</e15>
     <e16>Floors</e16>
     <e17>Mechanical equipment</e17>
+    <e18>Air terminals</e18>
+    <e19>Windows</e19>
+    <e20>Doors</e20>
   </mprDimByLine>
   <mprDimBias LocalName="Dim offset"
               Description="Automatic movement of the dimension value that falls on the dimension lines"
