@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.3.5.0">
+<ModPlus Name="en-US" Version="1.3.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1123,6 +1123,8 @@
     <msg1>Could not copy file to disk!\nThere may be no administrator rights</msg1>
     <msg2>Could not copy table</msg2>
     <msg3>In the "Tables from file" section, the file is incompatible with this version of AutoCAD!</msg3>
+    <msg4>Insertion point</msg4>
+    <msg5>Specify second point</msg5>
   </mpTables>
   <mpDimJustif LocalName="Aligning Dimensions"
 			   Description="Aligning the extension or dimension lines along the specified straight line">
