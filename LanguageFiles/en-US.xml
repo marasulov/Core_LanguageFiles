@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.3.6.0">
+<ModPlus Name="en-US" Version="1.3.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2782,6 +2782,7 @@
     <h27>Enter first point</h27>
     <h28>Enter second point</h28>
     <h29>Distance between points is too small!</h29>
+    <h30>A configuration with this name already exists! Please specify a different configuration name!</h30>
     <attention>Attention!</attention>
     <edit>Edit</edit>
     <create>Create</create>
