@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.3.7.0">
+<ModPlus Name="en-US" Version="1.4.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2961,4 +2961,45 @@
     <ok>Ok</ok>
     <cancel>Cancel</cancel>
   </mprNestedFamilyParamsTransfer>
+  <mprTools LocalName="Tools"
+            Description="A collection of small auxiliary functions">
+    <Hide>Hide</Hide>
+    <Show>Show</Show>
+    <ttShow>Show all items of the specified category in the current view</ttShow>
+    <ttHide>Hide all items of the specified category in the current view</ttHide>
+    <Walls>Walls</Walls>
+    <Windows>Windows</Windows>
+    <Doors>Doors</Doors>
+    <Tags>Tags</Tags>
+    <Floors>Floors</Floors>
+    <Columns>Columns</Columns>
+    <Levels>Levels</Levels>
+    <Grids>Grids</Grids>
+    <StairsRailing>Railing</StairsRailing>
+    <Stairs>Stairs</Stairs>
+    <Ramps>Ramps</Ramps>
+    <Roofs>Roofs</Roofs>
+    <Ceilings>Ceilings</Ceilings>
+    <Elevations>Elevations</Elevations>
+    <Sections>Sections</Sections>
+    <Components>Components</Components>
+    <ReferencePlanes>Reference planes</ReferencePlanes>
+    <StructuralFraming>Structural Framing</StructuralFraming>
+    <h1>Notching distance</h1>
+    <h2>Notching distance, mm</h2>
+    <h3>Automatically change the Notching distance for the elements of the Structural framing</h3>
+    <h4>Attention! The value of the Notching distance be set to the specified value for any change in the geometry of the element!</h4>
+    <h5>Change the Notching distance for selected items</h5>
+    <h6>Change the Notching distance for all items in the current view</h6>
+    <h7>Modify the Notching distance for the specified elements or turn on the automatic Notching distance change mode</h7>
+    <h8>Select beams</h8>
+    <h9>Changing the Notching distance</h9>
+    <h10>Incorrect value entered!</h10>
+    <h11>Grids mode</h11>
+    <h12>Switching 2D-3D mode of the specified grids</h12>
+    <h13>Toggle all grids on the current view in 2D</h13>
+    <h14>Toggle all grids on the current view in 3D</h14>
+    <h15>Invert Grids mode</h15>
+    <h16>Toggle mode of 2D grids in 3D, 3D grids - in 2D</h16>
+  </mprTools>
 </ModPlus>
