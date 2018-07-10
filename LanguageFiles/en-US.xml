@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.4.1.0">
+<ModPlus Name="en-US" Version="1.4.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2083,6 +2083,7 @@
     <h43>Failed to generate name for duplicate view</h43>
     <h44>Duplicate viewport</h44>
     <h45>Dublicate schedule</h45>
+    <h46>Copy values of sheet parameters</h46>
     <start>Start</start>
     <end>End</end>
     <cb1>Dublicate</cb1>
