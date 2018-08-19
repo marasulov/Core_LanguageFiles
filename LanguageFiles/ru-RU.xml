@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="ru-RU" Version="1.4.3.0">
+<ModPlus Name="ru-RU" Version="1.4.4.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -2815,6 +2815,7 @@
     <e18>Воздухораспределители</e18>
     <e19>Окна</e19>
     <e20>Двери</e20>
+    <e21>Части</e21>
   </mprDimByLine>
   <mprDimBias LocalName="Смещение размеров"
               Description="Автоматическое перемещение размерного значения, попадающего на размерные линии"
