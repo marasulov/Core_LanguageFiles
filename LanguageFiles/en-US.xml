@@ -433,7 +433,7 @@
     <tt5>ModPlus plugin auto-update module</tt5>
     <msg1>The auto-update module should be located in the ModPlus plugin folder!\nIf the folder is correct, you should run the Configurator to update the data in the registry</msg1>
     <msg2>The auto update module has been updated</msg2>
-    <msg3>The operation of the module is limited, because AutoCad or Revit is open</msg3>
+    <msg3>The operation of the module is limited, because AutoCad, Revit or Renga is open</msg3>
     <msg4>The operation of the module is limited, because Modplus Configurator is open</msg4>
     <msg5>When installing / upgrading from * .mpif files, you need to run the configurator to update the data in the configuration file!\nDo you want to start the configurator now?</msg5>
     <msg6>The specified folder contains the update file for the auto-update module\nTo install it, use the installation from the file</msg6>
@@ -454,6 +454,9 @@
     <msg21>To install, you need to close Revit</msg21>
     <msg22>To install, you need to close the ModPlus configurator</msg22>
     <msg23>New functions are installed:</msg23>
+    <msg24>To update, you need to close Revit</msg24>
+    <msg25>To update, you need to close Renga</msg25>
+    <msg26>To install, you need to close AutoCAD</msg26>
     <err1>Error reading file on server</err1>
     <err2>There are no updates for the configurator</err2>
     <err3>There are no updates for working files</err3>
