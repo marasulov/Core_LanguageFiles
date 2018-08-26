@@ -46,6 +46,7 @@
     <runed>The application is already running</runed>
     <closeCad>To start the ModPlus configurator, you need to close AutoCAD</closeCad>
     <closeRevit>To start the ModPlus configurator, you need to close Revit</closeRevit>
+    <closeRenga>To start the ModPlus configurator, you need to close Renga</closeRenga>
     <loading>LOADING...</loading>
     <progress1>Running a timer to check for running AutoCAD or Revit applications</progress1>
     <progress2>Checking the location of the directory with the plugin</progress2>
@@ -73,7 +74,7 @@
     <adminMsg>The configuration is started in read-only mode. In this mode, you may experience problems with the editing of some files (for example, acad.exe.config). It is recommended that you run the configurator with administrator rights</adminMsg>
     <adminReload>Restart with administrator rights</adminReload>
     <header1>AUTHORIZATION</header1>
-    <header2>AUTODESK PRODUCTS</header2>
+    <header2>SUPPORTED PRODUCTS</header2>
     <header3>ACTIVATION KEYS</header3>
     <header4>FUNCTIONS</header4>
     <header5>Menu for:</header5>
@@ -158,6 +159,8 @@
     <header84>Subscription period ends on:</header84>
     <header85>Subscribe status:</header85>
     <header86>Subscribe for:</header86>
+    <header87>No installed versions of Renga, suitable for installing ModPlus</header87>
+    <header88>Version of working libraries for Renga:</header88>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -200,7 +203,7 @@
     <tt6>The address of the mail is required if you send your data (configuration file and keys) to the server.</tt6>
     <tt7>The email address is required to identify you on the server.</tt7>
     <tt8>It is recommended to use the e-mail address specified at the registration on modplus.org</tt8>
-    <tt9>Select versions of Autodesk products for which you want to connect the ModPlus plugin</tt9>
+    <tt9>Select the products for which you want to connect the ModPlus plugin</tt9>
     <tt10>Working with your activation keys</tt10>
     <tt11>Save the keys to an xml file</tt11>
     <tt12>Load keys from xml-file</tt12>
@@ -306,6 +309,7 @@
     <msg20>ATTENTION!\nBe deleted the configuration file, the shortcut on the desktop and all registry entries (including the autorun plugin ModPlus), then the Configurator will be closed automatically\nYou sure You want to continue?</msg20>
     <msg21>No access to the configuration file! Perhaps it is open or busy\nAfter closing the Configurator, delete the configuration file manually:</msg21>
     <msg22>The proxy is correct. Restart the Configurator for the settings to take effect</msg22>
+    <msg23>You did not connect the ModPlus plug-in to any version of Renga!\nExactly exit?</msg23>
     <ftp1>Downloading the configuration file from the server</ftp1>
     <ftp2>Retrieving Authorization Data...</ftp2>
     <ftp3>Reading directories on the server...</ftp3>
@@ -359,6 +363,8 @@
     <cui11>Enter a new name for the group</cui11>
     <cui12>The menu will be built according to the standard scheme\nThe existing menu will be erased!\nContinue?</cui12>
     <cui13>Are you sure you want to clear the menu?</cui13>
+    <rp>Renga version supported by the function:</rp>
+    <rpany>Any</rpany>
   </Configurator>
   <AutoUpdater LocalName="Auto Updates Module">
     <close>Close</close>
@@ -634,6 +640,9 @@
     <tt5>To change the language on the Ribbon, you need to restart the Revit</tt5>
     <err1>The configuration file is corrupt! Can not build a Ribbon</err1>
   </RevitDlls>
+  <RengaDlls LocalName="Working libraries for Renga">
+
+  </RengaDlls>
   <mpTxtNumCopy LocalName="Copy with numbering"
                 Description="Copies the selected text or block with an attribute containing a numeric value, changing the value to a specified numerical step"
                 FullDescription="Copies the selected single line or multiline text, a block with an attribute or a multileader containing a digital value, with a value change to a specified numerical step. There are various settings - adding a prefix/suffix, suppressing tail zeros, etc.">
