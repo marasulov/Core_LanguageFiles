@@ -641,7 +641,45 @@
     <err1>The configuration file is corrupt! Can not build a Ribbon</err1>
   </RevitDlls>
   <RengaDlls LocalName="Working libraries for Renga">
-
+    <h1>MODPLUS SETTINGS</h1>
+    <h2>GENERAL</h2>
+    <h3>WORK WITH THE SERVER</h3>
+    <h4>REGISTRATION</h4>
+    <h5>Language:</h5>
+    <h6>Theme:</h6>
+    <h7>Window borders:</h7>
+    <h9>Registration key:</h9>
+    <h10>The key is binding to the physical disk:</h10>
+    <h11>The key is binding to a Google Account:</h11>
+    <h12>Settings</h12>
+    <border1>Border by color</border1>
+    <border2>Glow by color</border2>
+    <border3>Border + glow by color</border3>
+    <border4>Shadow</border4>
+    <border5>No borders</border5>
+    <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
+    <tt3>You must enter your Login in the Configuration tab! (ModPlus Configurator)</tt3>
+    <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
+    <AssemblyInstance>Assembly</AssemblyInstance>
+    <Undefined>Unknown</Undefined>
+    <Level>Level</Level>
+    <Wall>Wall</Wall>
+    <Column>Column</Column>
+    <Beam>Beam</Beam>
+    <Floor>Floor</Floor>
+    <Opening>Opening</Opening>
+    <Roof>Roof</Roof>
+    <Ramp>Ramp</Ramp>
+    <Stair>Stair</Stair>
+    <Door>Door</Door>
+    <Window>Window</Window>
+    <Railing>Railing</Railing>
+    <IsolatedFoundation>Isolated foundation</IsolatedFoundation>
+    <WallFoundation>Wall foundation</WallFoundation>
+    <Room>Room</Room>
+    <Element>Element</Element>
+    <IfcObject>IFC object</IfcObject>
+    <Rebar>Rebar</Rebar>
   </RengaDlls>
   <mpTxtNumCopy LocalName="Copy with numbering"
                 Description="Copies the selected text or block with an attribute containing a numeric value, changing the value to a specified numerical step"
