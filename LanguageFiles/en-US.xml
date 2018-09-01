@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.4.4.0">
+<ModPlus Name="en-US" Version="1.5.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -191,6 +191,7 @@
     <b12>Check</b12>
     <b13>Delete the shortcut on the desktop</b13>
     <b14>Create a shortcut on the desktop</b14>
+    <b15>Disable all</b15>
     <ribbon>Ribbon</ribbon>
     <fMenu>Floating menu</fMenu>
     <drawings>Drawings</drawings>
@@ -253,6 +254,7 @@
     <tt56>Copy to clipboard</tt56>
     <tt57>Add panel for small buttons</tt57>
     <tt58>The panel should contain only two or three functions!</tt58>
+    <tt59>Disable all functions for the current version of the product</tt59>
     <w1>Login</w1>
     <w2>Finding a function in the list</w2>
     <w3>Activation key</w3>
@@ -310,6 +312,7 @@
     <msg21>No access to the configuration file! Perhaps it is open or busy\nAfter closing the Configurator, delete the configuration file manually:</msg21>
     <msg22>The proxy is correct. Restart the Configurator for the settings to take effect</msg22>
     <msg23>You did not connect the ModPlus plug-in to any version of Renga!\nExactly exit?</msg23>
+    <msg24>Create a standard adaptation menu?</msg24>
     <ftp1>Downloading the configuration file from the server</ftp1>
     <ftp2>Retrieving Authorization Data...</ftp2>
     <ftp3>Reading directories on the server...</ftp3>
@@ -3055,4 +3058,14 @@
     <h15>Invert Grids mode</h15>
     <h16>Toggle mode of 2D grids in 3D, 3D grids - in 2D</h16>
   </mprTools>
+  <mrObjectsFilter LocalName="Filter"
+                   Description="Filter selected objects by category">
+    <h1>Category:</h1>
+    <h2>Objects count:</h2>
+    <h3>Select all</h3>
+    <h4>Select none</h4>
+    <h5>Total selected objects:</h5>
+    <h6>Accept</h6>
+    <h7>Cancel</h7>
+  </mrObjectsFilter>
 </ModPlus>
