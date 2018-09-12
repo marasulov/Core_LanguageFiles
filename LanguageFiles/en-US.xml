@@ -3071,13 +3071,13 @@
   <mprWallsReinforcement LocalName="Walls reinforcement"
                          Description="Analysis, grouping and reinforcement according to given conditions of walls and openings"
                          FullDescription="The function works only with walls located in one level. The function analyzes the walls, allowing you to find three types of intersections (corner, end and cross) and openings. Flexible grouping allows you to specify exactly what type of reinforcement should be made. You can perform reinforcement only for the specified groups - walls, intersections or openings. The function can work even on an empty template">
-    <h1>Settings</h1>
-    <h2>Plugin window:</h2>
+    <h1>SETTINGS</h1>
+    <h2>PLUGIN WINDOW:</h2>
     <h3>Transparency of the window</h3>
     <h4>Over the windows</h4>
-    <h5>Display in the model:</h5>
+    <h5>DISPLAY IN THE MODEL:</h5>
     <h6>Scaling factor:</h6>
-    <h7>Reinforcement by default:</h7>
+    <h7>REINFORCEMENT BY DEFAULT:</h7>
     <h8>Background wall reinforcement</h8>
     <h9>Reinforcement of intersections</h9>
     <h10>Openings reinforcement</h10>
@@ -3110,6 +3110,117 @@
     <h37>Intersection type</h37>
     <h38>Parameters</h38>
     <h39>Intersections in the group:</h39>
+    <h40>You can drag and drop the intersections from the current group to other groups</h40>
+    <h41>Walls in the intersection:</h41>
+    <h42>Reinforcement</h42>
+    <h43>Opening size</h43>
+    <h44>1. Openings to</h44>
+    <h45>2. Openings from</h45>
+    <h46>mm to:</h46>
+    <h47>3. Openings from</h47>
+    <h48>Set the basic reinforcement for size groups</h48>
+    <h49>Source</h49>
+    <h50>Openings count</h50>
+    <h51>Wall width</h51>
+    <h52>Group by width</h52>
+    <h53>Group by height</h53>
+    <h54>Source</h54>
+    <h55>Openings in the group:</h55>
+    <h56>Width</h56>
+    <h57>Height</h57>
+    <h58>You can drag and drop openings from the current group to other groups</h58>
+    <h59>Group reinforcement settings</h59>
+    <h60>Carry out reinforcement</h60>
+    <h61>Calculation of anchoring by SP 52-101-2003</h61>
+    <h62>Diameter:</h62>
+    <h63>Sectional area, mm²:</h63>
+    <h64>Concrete class:</h64>
+    <h65>Type of the surface of reinforcement:</h65>
+    <h66>Estimated tensile strength, MPa:</h66>
+    <h67>Basic (main) length of anchoring, mm:</h67>
+    <h68>Coefficient α:</h68>
+    <h69>Required (estimated) anchoring length, mm:</h69>
+    <h70>Anchoring lengthДлина анкеровки:</h70>
+    <h71>Intersection reinforcement settings</h71>
+    <h72>Opening reinforcement settings</h72>
+    <h73>Wall reinforcement settings</h73>
+    <h74>Replace with reinforcement settings of the group</h74>
+    <h75>Leave the reinforcement settings</h75>
+    <h76>VERTICAL REINFORCEMENT</h76>
+    <h77>Rebar bar type:</h77>
+    <h78>Diameter, mm:</h78>
+    <h79>Step, mm:</h79>
+    <h80>Binding of the center to the edge of the wall, mm:</h80>
+    <h81>Processing additional step:</h81>
+    <h82>Distance from the end of the wall, mm:</h82>
+    <h83>Overhang over the wall, mm:</h83>
+    <h84>Cover from the rebars ends, mm:</h84>
+    <h85>Create the reinforcement above the last opening at a height of the wall above the opening more (mm):</h85>
+    <h86>Do not create the reinforcement under the opening if the height of the wall under the opening is less than or equal to two wall thicknesses (but not less than 400 mm)</h86>
+    <h87>HORIZONTAL REINFORCEMENT</h87>
+    <h88>Location::</h88>
+    <h89>Indentation of the first rebar, mm:</h89>
+    <h90>Indentation of the last rebar, mm:</h90>
+    <h91>U-SHAPED REBARS IN THE WALL ENDS:</h91>
+    <h92>Detail length, mm:</h92>
+    <h93>Calculate the length of the U-shaped rebar</h93>
+    <h94>CROSS HOLE (STIRRUPS):</h94>
+    <h95>Stirrup type</h95>
+    <h96>Turn the stirrups under 45° with the girth of the intersections of the main reinforcement</h96>
+    <h97>Type of layout:</h97>
+    <h98>Horizontal step, mm:</h98>
+    <h99>Vertical step, mm:</h99>
+    <h100>CORNER INTERSECTIONS:</h100>
+    <h101>Step of details:</h101>
+    <h102>Type of reinforcement:</h102>
+    <h103>Detail №1</h103>
+    <h104>Anchoring length, mm:</h104>
+    <h105>Calculate anchoring length</h105>
+    <h106>Detail №2</h106>
+    <h107>T-SHAPED INTERSECTIONS:</h107>
+    <h108>CROSS INTERSECTIONS:</h108>
+    <h109>VERTICAL REBARS</h109>
+    <h110>Create Reinforcement</h110>
+    <h111>Indent from the opening:</h111>
+    <h112>Rows count:</h112>
+    <h113>Displace when hit by vertical reinforcement bars</h113>
+    <h114>HORIZONTAL REBARS</h114>
+    <h115>U-SHAPED REBARS ALONG VERTICAL</h115>
+    <h116>U-SHAPED REBARS ALONG HORIZONTAL</h116>
+    <h117>Anchoring (detail) length, mm:</h117>
+    <h118>Detail step, mm:</h118>
+    <i1>1. Corner</i1>
+    <i2>2. T-shaped</i2>
+    <i3>3. Cross</i3>
+    <i4>0. Undefined</i4>
+    <m1>Enter a value from</m1>
+    <m2>to</m2>
+    <m3>To run the command, go to the floor plan</m3>
+    <m4>Deformed deformation type rebars</m4>
+    <m5>Plain deformation type rebars</m5>
+    <m6>For rebar</m6>
+    <m7>value of the property "Standard bend diameter"</m7>
+    <m8>does not comply with the norms of SP 63.13330.2012</m8>
+    <m9>The minimum value of the bending diameter for the rebar</m9>
+    <m10>with diameter</m10>
+    <m11>must be:</m11>
+    <m12>The value of the property will be changed</m12>
+    <m13>Reinforcement cover</m13>
+    <create>Create</create>
+    <rn>Rebar ⌀</rn>
+    <mm>mm</mm>
+    <full>Available in full version!</full>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <c1>Move to the end of the wall</c1>
+    <c2>Move to the middle of the wall</c2>
+    <c3>Distribute vertical reinforcement</c3>
+    <c4>Inside</c4>
+    <c5>Outside</c5>
+    <c6>Direct order</c6>
+    <c7>Chess order</c7>
+    <c8>By the smallest step</c8>
+    <c9>By the largest step</c9>
     <t1>Select walls for later analysis</t1>
     <t2>In the selection filter, only walls with the following parameters fall:</t2>
     <t3>The wall is bounded by straight lines</t3>
@@ -3129,5 +3240,36 @@
     <t17>Display in the model the next wall in the list</t17>
     <t18>The heights of the walls are determined only at the intersections</t18>
     <t19>The group contains intersections whose reinforcement settings have been edited manually and differ from the group reinforcement settings</t19>
+    <t20>The intersection reinforcement settings have been edited manually and differ from the reinforcement settings of the group</t20>
+    <t21>Edit the reinforcement settings of the selected intersection</t21>
+    <t22>Replace the settings of reinforcement intersection settings from the group</t22>
+    <t23>Display in the model the previous intersection in the list</t23>
+    <t24>Display in the model the intersection selected in the list</t24>
+    <t25>Display in the model the next intersection in the list</t25>
+    <t26>This wall is not processed by a plug-in (not reinforced) and serves only to determine the intersection with one of the selected walls</t26>
+    <t27>A brief description of the reinforcement of the wall, where:</t27>
+    <t28>V - vertical reinforcement indicating the diameter and step of the bars</t28>
+    <t29>H - horizontal reinforcement indicating the diameter, step and position of the bars</t29>
+    <t30>S - cross reinforcement (stirrups) with diameter indication</t30>
+    <t31>U - U-shaped bars at the ends with diameter indication</t31>
+    <t32>Edit reinforcement settings for the size group</t32>
+    <t33>The group contains openings, the reinforcement settings of which have been edited manually and differ from the reinforcement settings of the group</t33>
+    <t34>The reinforcement settings of the opening are manually edited and differ from the reinforcement settings of the group</t34>
+    <t35>Edit the reinforcement settings of the selected opening</t35>
+    <t36>Replace the reinforcement settings with the settings from the group</t36>
+    <t37>Display in the model the previous opening in the list</t37>
+    <t38>Display in the model the selected aperture in the list</t38>
+    <t39>Display in the model the next opening in the list</t39>
+    <t40>Copy the reinforcement settings of the current group to all selected groups</t40>
+    <t41>Save the reinforcement settings of current group in the xml file</t41>
+    <t42>Load the reinforcement settings from the xml file and set it for the current group</t42>
+    <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
+    <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</t44>
+    <t45>According to paragraph 10.3.8 of SP 63.13330.2012, the vertical bars take no more than 2t and 400 mm (t is the thickness of the wall). The maximum allowable value is calculated based on the smallest wall thickness in the group</t45>
+    <t46>Detail length is defined by the inner edge of the rebar</t46>
+    <t47>Increases the time of the reinforcement generation!</t47>
+    <t48>The details of the reinforcement of the intersection will be established with the horizontal reinforcement of the walls - by the smallest or the largest step of horizontal reinforcement of the walls participating in the intersection</t48>
+    <t49>The number of rows of vertical reinforcement (in a row is two bars "along" the opening)</t49>
+    <t50>The number of rows of horizontal reinforcement (in a row is two bars "along" the opening)</t50>
   </mprWallsReinforcement>
 </ModPlus>
