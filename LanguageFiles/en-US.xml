@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.5.0.0">
+<ModPlus Name="en-US" Version="1.6.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3189,10 +3189,17 @@
     <h116>U-SHAPED REBARS ALONG HORIZONTAL</h116>
     <h117>Anchoring (detail) length, mm:</h117>
     <h118>Detail step, mm:</h118>
+    <h119>Default reinforcement settings for walls</h119>
+    <h120>Default reinforcement settings for intersections</h120>
+    <h121>Default reinforcement settings for openings</h121>
+    <h122>First size group</h122>
+    <h123>Second size group</h123>
+    <h124>Third size group</h124>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
     <i4>0. Undefined</i4>
+    <i5>Various</i5>
     <m1>Enter a value from</m1>
     <m2>to</m2>
     <m3>To run the command, go to the floor plan</m3>
@@ -3206,6 +3213,37 @@
     <m11>must be:</m11>
     <m12>The value of the property will be changed</m12>
     <m13>Reinforcement cover</m13>
+    <m14>Up to</m14>
+    <m15>From</m15>
+    <m16>Window</m16>
+    <m17>Door</m17>
+    <m18>Generic model</m18>
+    <m19>Rectangular opening</m19>
+    <m20>The list of walls contains walls whose reinforcement settings have been changed manually and differ from the settings of the reinforcement group</m20>
+    <m21>The list of intersections contains intersections whose reinforcement settings have been changed manually and differ from the reinforcement settings of the group</m21>
+    <m22>The list of openings contains openings whose reinforcement settings have been changed manually and differ from the reinforcement settings of the group</m22>
+    <m23>Reinforcement settings copied</m23>
+    <m24>You did not specify for which groups to create reinforcement!</m24>
+    <m25>No groups have been created for reinforcement!</m25>
+    <p1>Search is not processed walls intersecting with the selected walls</p1>
+    <p2>Initializing the geometry of the walls</p2>
+    <p3>Search for intersections of walls</p3>
+    <p4>Removing the same intersections</p4>
+    <p5>Integrating intersections</p5>
+    <p6>Geometry analysis of intersections</p6>
+    <p7>Determination of the belonging of walls to intersections</p7>
+    <p8>Removing the reinforcement created earlier</p8>
+    <p9>Calculation and modeling of wall reinforcement</p9>
+    <p10>Calculation and modeling of intersection reinforcement</p10>
+    <p11>Calculation and modeling of reinforcement of the opening</p11>
+    <p12>Revit rebars generation</p12>
+    <p13>Combining the horizontal rebars of the reinforcement</p13>
+    <dd1>V</dd1>
+    <dd2>H</dd2>
+    <dd3>inside</dd3>
+    <dd4>outside</dd4>
+    <dd5>S</dd5>
+    <dd6>U</dd6>
     <create>Create</create>
     <rn>Rebar ⌀</rn>
     <mm>mm</mm>
