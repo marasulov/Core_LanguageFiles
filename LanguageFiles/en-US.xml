@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.6.2.0">
+<ModPlus Name="en-US" Version="1.6.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -289,6 +289,8 @@
     <err18>Not entered username!</err18>
     <err19>The configuration file is corrupt! Restart the configurator</err19>
     <err20>File not found!</err20>
+    <err21>Errors in loading ModPlus functions</err21>
+    <err22>One or more errors occurred while loading functions. All errors are displayed in this document. Please send this document to the e-mail address modplus@mail.ru. This will help us to quickly understand the problem and eliminate it!</err22>
     <msg1>No email address!</msg1>
     <msg2>Invalid mail address</msg2>
     <msg3>You did not enter anything</msg3>
