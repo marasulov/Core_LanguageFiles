@@ -40,8 +40,8 @@
     <group10>Parameters</group10>
   </CUI>
   <Configurator LocalName="Configurator">
-    <title1>MODPLUS CONFIGURATOR</title1>
-    <title2>CHECKING KEYS</title2>
+    <title1>ModPlus configurator</title1>
+    <title2>Checking keys</title2>
     <writableDir>You do not have write access to the directory: {0}\.\nThe Startup of the Configurator will be terminated!\nPut the folder with the ModPlus plugin in the directory to which you have full access and run the Configurator again</writableDir>
     <runed>The application is already running</runed>
     <closeCad>To start the ModPlus configurator, you need to close AutoCAD</closeCad>
@@ -73,22 +73,22 @@
     <tab4>About the program</tab4>
     <adminMsg>The configuration is started in read-only mode. In this mode, you may experience problems with the editing of some files (for example, acad.exe.config). It is recommended that you run the configurator with administrator rights</adminMsg>
     <adminReload>Restart with administrator rights</adminReload>
-    <header1>AUTHORIZATION</header1>
-    <header2>SUPPORTED PRODUCTS</header2>
-    <header3>ACTIVATION KEYS</header3>
-    <header4>FUNCTIONS</header4>
+    <header1>Authorization</header1>
+    <header2>Supported products</header2>
+    <header3>Activation keys</header3>
+    <header4>Functions</header4>
     <header5>Menu for:</header5>
     <header6>Active functions</header6>
     <header7>Display:</header7>
-    <header8>GENERAL</header8>
+    <header8>General</header8>
     <header9>Language:</header9>
     <header10>Theme of the plugin:</header10>
     <header11>Theme of the Configurator:</header11>
     <header12>Window borders:</header12>
     <header13>Separator:</header13>
-    <header14>CONFIGURATION FILE</header14>
+    <header14>Configuration file</header14>
     <header15>Location of the configuration file:</header15>
-    <header16>REGISTRATION</header16>
+    <header16>Registration</header16>
     <header17>Contacts:</header17>
     <header18>CHANGE STORY</header18>
     <header19>Function</header19>
@@ -107,9 +107,9 @@
     <header32>Version of working libraries for Revit:</header32>
     <header33>Database version:</header33>
     <header34>Dwg base version:</header34>
-    <header35>DOWNLOAD FILE</header35>
+    <header35>Download file</header35>
     <header36>Specify the mail address for which the directory was created on the server when the configuration file was uploaded:</header36>
-    <header37>VIDEO</header37>
+    <header37>Video</header37>
     <header38>You can also watch the video in</header38>
     <header39>the browser</header39>
     <header40>Welcome to ModPlus</header40>
@@ -144,7 +144,7 @@
     <header69>There is no access to the internet or modplus.org</header69>
     <header70>Display only:</header70>
     <header71>Show only unused functions</header71>
-    <header72>PROXY SETTINGS</header72>
+    <header72>Proxy settings</header72>
     <header73>Status:</header73>
     <header74>Configure the proxy manually</header74>
     <header75>User Authentication (if necessary. You can not fill it)</header75>
@@ -152,7 +152,7 @@
     <header77>Check</header77>
     <header78>Address</header78>
     <header79>Port</header79>
-    <header80>SUBSCRIBE</header80>
+    <header80>Subscribe</header80>
     <header81>Subscription key:</header81>
     <header82>Subscription period starts on:</header82>
     <header83>Subscription period in months:</header83>
@@ -161,6 +161,8 @@
     <header86>Subscribe for:</header86>
     <header87>No installed versions of Renga, suitable for installing ModPlus</header87>
     <header88>Version of working libraries for Renga:</header88>
+    <header89>Menu</header89>
+    <header90>Registration</header90>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
