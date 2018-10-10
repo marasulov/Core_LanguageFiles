@@ -231,7 +231,7 @@
     <tt31>Clear menu</tt31>
     <tt32>Change size</tt32>
     <tt33>Create group</tt33>
-    <tt34>Delete group</tt34>
+    <tt34>Remove group</tt34>
     <tt35>Add function to group</tt35>
     <tt36>Delete function from group</tt36>
     <tt37>Move up</tt37>
@@ -257,10 +257,12 @@
     <tt57>Add panel for small buttons</tt57>
     <tt58>The panel should contain only two or three functions!</tt58>
     <tt59>Disable all functions for the current version of the product</tt59>
+    <tt60>Remove function</tt60>
+    <tt61>Remove panel</tt61>
     <w1>Login</w1>
     <w2>Finding a function in the list</w2>
     <w3>Activation key</w3>
-    <w4>You need to enter login on the Configuration tab!</w4>
+    <w4>You need to enter login!</w4>
     <w5>Events with the server ...</w5>
     <w6>Activation key is not required</w6>
     <cb1>Binding to a physical disk</cb1>
@@ -286,9 +288,9 @@
     <err13>Invalid request received</err13>
     <err14>It is forbidden to use the $ symbol in the login</err14>
     <err15>Failed to download the file from the server. Try later</err15>
-    <err16>There is no registration key on the Settings tab!</err16>
+    <err16>There is no registration key on the "Registration" tab!</err16>
     <err17>The list of keys is empty!</err17>
-    <err18>Not entered username!</err18>
+    <err18>No login specified on the "Registration" tab!</err18>
     <err19>The configuration file is corrupt! Restart the configurator</err19>
     <err20>File not found!</err20>
     <err21>Errors in loading ModPlus functions</err21>
@@ -307,7 +309,7 @@
     <msg12>When you added the required data to the Revit configuration file, an error occurred:\n{0}\nRun the Configurator as administrator and try again.\nFor more information on modifying the configuration file, see modplus.org in the Help section.\nConfiguration can still add an entry to the registry to load the ModPlus plug-in, but the plug-in can not earn\nAdd the registry entry?</msg12>
     <msg13>All keys will be erased! Continue?</msg13>
     <msg14>All keys deleted</msg14>
-    <msg15>No email address!\nGo to the "Configuration" tab and specify the mail address in the sub-group "Authorization"</msg15>
+    <msg15>Enter your email address</msg15>
     <msg16>All missing functions for the specified product version will be installed and enabled\nContinue?</msg16>
     <msg17>It's valid activation key</msg17>
     <msg18>It's NOT valid activation key</msg18>
