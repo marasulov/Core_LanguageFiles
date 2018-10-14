@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.6.5.0">
+<ModPlus Name="en-US" Version="1.7.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -569,7 +569,7 @@
     <border5>No borders</border5>
     <tt1>Separator of integer and fractional part of numbers</tt1>
     <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
-    <tt3>You must enter your Login in the Configuration tab! (ModPlus Configurator)</tt3>
+    <tt3>You must enter your Login in the "Registration" tab! (ModPlus Configurator)</tt3>
     <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
     <tt5>Load plugin in AutoCAD with minimal details on the command line</tt5>
     <tt6>Enable/disable ribbon</tt6>
@@ -650,7 +650,7 @@
     <border5>No borders</border5>
     <tt1>Separator of integer and fractional part of numbers</tt1>
     <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
-    <tt3>You must enter your Login in the Configuration tab! (ModPlus Configurator)</tt3>
+    <tt3>You must enter your Login in the "Registration" tab! (ModPlus Configurator)</tt3>
     <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
     <tt5>To change the language on the Ribbon, you need to restart the Revit</tt5>
     <err1>The configuration file is corrupt! Can not build a Ribbon</err1>
@@ -673,7 +673,7 @@
     <border4>Shadow</border4>
     <border5>No borders</border5>
     <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
-    <tt3>You must enter your Login in the Configuration tab! (ModPlus Configurator)</tt3>
+    <tt3>You must enter your Login in the "Registration" tab! (ModPlus Configurator)</tt3>
     <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
     <AssemblyInstance>Assembly</AssemblyInstance>
     <Undefined>Unknown</Undefined>
