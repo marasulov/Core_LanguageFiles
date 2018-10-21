@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.0.0">
+<ModPlus Name="en-US" Version="1.7.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2939,6 +2939,8 @@
     <m12>Do you want to open the created view?</m12>
     <m13>Source file not found!</m13>
     <m14>The selected table and the associated drafting view will be permanently deleted! Continue?</m14>
+    <m15>Cell read error</m15>
+    <m16>Error processing cell</m16>
     <ts1>Table update required</ts1>
     <ts2>The source file is missing!</ts2>
     <ts3>Source sheet is missing or renamed!</ts3>
