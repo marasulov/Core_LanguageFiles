@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.1.0">
+<ModPlus Name="en-US" Version="1.7.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3242,6 +3242,7 @@
     <m24>You did not specify for which groups to create reinforcement!</m24>
     <m25>No groups have been created for reinforcement!</m25>
     <m26>Select walls</m26>
+    <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the Function cannot be opened in the Family Editor! It is recommended that before using the function, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
     <p1>Search is not processed walls intersecting with the selected walls</p1>
     <p2>Initializing the geometry of the walls</p2>
     <p3>Search for intersections of walls</p3>
