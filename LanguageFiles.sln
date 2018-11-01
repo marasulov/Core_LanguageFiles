@@ -7,6 +7,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LanguageFiles", "LanguageFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModPlusLanguageCreator", "ModPlusLanguageCreator\ModPlusLanguageCreator.csproj", "{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Releaser", "Releaser\Releaser.csproj", "{50979918-64FF-4751-B781-38B0C99EB9F7}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		LanguageFiles\LanguageFiles.projitems*{59ee89c8-4bcd-4b4d-97ac-8dafd1dca8d4}*SharedItemsImports = 13
@@ -20,6 +22,10 @@ Global
 		{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50979918-64FF-4751-B781-38B0C99EB9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50979918-64FF-4751-B781-38B0C99EB9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50979918-64FF-4751-B781-38B0C99EB9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50979918-64FF-4751-B781-38B0C99EB9F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

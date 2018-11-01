@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.2.0">
+<ModPlus Name="en-US" Version="1.7.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3028,6 +3028,9 @@
     <h19>Nested family parameter:</h19>
     <h20>Parameter type:</h20>
     <h21>Parameters of the appropriate type:</h21>
+    <h22>Parameter value:</h22>
+    <h23>Associate a parameter with an existing parameter of the current family</h23>
+    <h24>Associated parameter of the current family:</h24>
     <ok>Ok</ok>
     <cancel>Cancel</cancel>
   </mprNestedFamilyParamsTransfer>
