@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.3.0">
+<ModPlus Name="en-US" Version="1.7.3.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1311,7 +1311,7 @@
     <h2>Total length:</h2>
     <h3>Rounding Result</h3>
     <h4>Count:</h4>
-    <h5>ENTITIES</h5>
+    <h5>Entities</h5>
     <h6>Insert result as a single line text</h6>
     <h7>Insert result into a table cell</h7>
     <h8>Export result to a txt file</h8>
