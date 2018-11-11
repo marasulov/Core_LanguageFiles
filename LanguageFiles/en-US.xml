@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.3.1">
+<ModPlus Name="en-US" Version="1.7.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2475,6 +2475,10 @@
     <msg2>Specify an endpoint:</msg2>
     <msg3>Select a block that is an intellectual ModPlus entity</msg3>
     <msg4>Editing the values when double-clicking on the place at the moment is not implemented. Use the built-in value editor (see Settings) or the Properties palette</msg4>
+    <msg5>Specify next point:</msg5>
+    <msg6>Select Polyline:</msg6>
+    <msg7>Delete the original polyline?</msg7>
+    <wrong>Invalid object!</wrong>
     <vc1>VARIOUS</vc1>
     <vc2>UNDEFINED</vc2>
     <h1>Palette settings</h1>
@@ -2490,14 +2494,14 @@
     <h11>Properties of ModPlus objects</h11>
     <h12>System</h12>
     <h13>New User Style</h13>
-    <h14>STYLE EDITOR</h14>
-    <h15>SETTINGS</h15>
+    <h14>Style editor</h14>
+    <h15>Settings</h15>
     <h16>Add a new custom style</h16>
     <h17>Delete the selected custom style</h17>
     <h18>Set the selected style as the default style</h18>
     <h19>Create a new style based on the selected intellectual entity</h19>
     <h20>Property description:</h20>
-    <h21>GENERAL SETTINGS</h21>
+    <h21>General settings</h21>
     <h22>When creating an entity, set the scale from the style</h22>
     <h23>If checked, then when creating the entity, the scale will be applied to it, set in the current style, regardless of the annotative scale of the drawing. Otherwise, the annotative scale of the drawing will be applied to the entity</h23>
     <h24>When creating an entity, set the layer from the style</h24>
@@ -2516,7 +2520,7 @@
     <h37>In the current document, a text style will be created and applied to the entity, set in style</h37>
     <h38>The maximum limit of the selected objects when the property palette stops working. This setting is needed to speed up the work in the AutoCAD environment by disabling the reading of object properties. For example, if you need to select 1000 objects to copy to another drawing, then processing the properties of all these objects is not necessary</h38>
     <h39>Maximum limit of the selected objects (0 - always work):</h39>
-    <h40>SETTINGS ENTITIES</h40>
+    <h40>Entities settings</h40>
     <h41>Straight axis</h41>
     <h42>Change the scale of the line type in proportion to the scale of the entity</h42>
     <h43>The scale of the line type that is set for the axis will vary in proportion to the basic scale of the axis. For example, if you set the axis scale to 1:1 and scale the line type to 2, then if you set the axis scale to 1:100, the line type scale becomes 200</h43>
@@ -2549,8 +2553,16 @@
     <h70>Style group</h70>
     <h71>contains styles with the same name</h71>
     <h72>Rename the styles so that there are no identical names</h72>
+    <h73>Ground line</h73>
+    <h74>Ground marking line</h74>
+    <h75>Creating an intellectual object based on an anonymous block describing the ground line</h75>
+    <h76>Ground line from polyline</h76>
+    <h77>Converting the selected polyline to the ground line</h77>
+    <h78>Basic style for the Ground line</h78>
     <gp1>Stretch</gp1>
     <gp2>Move</gp2>
+    <gp3>Remove vertex</gp3>
+    <gp4>Add vertex</gp4>
     <blt1>Linear</blt1>
     <blt2>Curvilinear</blt2>
     <blt3>Cylindrical</blt3>
@@ -2559,6 +2571,9 @@
     <amt3>From below</amt3>
     <type1>Type 1</type1>
     <type2>Type 2</type2>
+    <glfst1>Distance between strokes</glfst1>
+    <glfst2>Half the distance between groups of strokes</glfst2>
+    <glfst3>The distance between groups of strokes</glfst3>
     <close>Close</close>
     <accept>Accept</accept>
     <p1>BreakLine type:</p1>
@@ -2641,6 +2656,23 @@
     <d33>Visibility of the top orient marker</d33>
     <p34>Orient marker type:</p34>
     <d34>Type of axis orient marker</d34>
+    <p35>Line type:</p35>
+    <d35>Line type of main polyline</d35>
+    <p36>First stroke indent:</p36>
+    <p36-1>First stroke indent (a):</p36-1>
+    <d36>Indent the first stroke in each segment of the ground line</d36>
+    <p37>Stroke length:</p37>
+    <p37-1>Stroke length (l):</p37-1>
+    <d37>Stroke length:</d37>
+    <p38>Distance between strokes:</p38>
+    <p38-1>Distance between strokes (b):</p38-1>
+    <d38>Distance between strokes</d38>
+    <p39>Tilt angle of the stroke:</p39>
+    <p39-1>Tilt angle of the stroke (α):</p39-1>
+    <d39>Tilt angle of the stroke</d39>
+    <p40>Indent group of strokes:</p40>
+    <p40-1>Indent group of strokes (c):</p40-1>
+    <d40>Indent group of strokes</d40>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"

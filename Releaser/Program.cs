@@ -3,7 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
     using System.Reflection;
+    using System.Xml.Linq;
 
     class Program
     {
@@ -22,6 +24,18 @@
                 WriteResourceToFile(pair.Key, Path.Combine(outputDir, pair.Value));
             }
 
+            XElement langDoc = XElement.Load(Path.Combine(outputDir, langs.First().Value));
+            var version = langDoc.Attribute("Version")?.Value;
+
+            var langsFile = @"E:\ModPlus Updates\Langs.xml";
+            Console.WriteLine($"Write to {langsFile}");
+            XElement xDoc = XElement.Load(langsFile);
+            foreach (XElement xElement in xDoc.Elements("lang"))
+            {
+                xElement.Attribute("Version")?.SetValue(version);
+            }
+            xDoc.Save(langsFile);
+            Console.WriteLine("Done!");
             Console.Read();
         }
 
