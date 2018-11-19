@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.4.0">
+<ModPlus Name="en-US" Version="1.7.4.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1403,7 +1403,7 @@
     <h8>Insert function</h8>
     <h9>Rounding:</h9>
     <h10>A number of symbols after comma</h10>
-    <h11>DATA FROM DRAWING</h11>
+    <h11>Data from drawing</h11>
     <h12>Measure the distance between two points</h12>
     <h13>Get the sum of lengths from entities</h13>
     <h14>Get coordinate</h14>
