@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.4.1">
+<ModPlus Name="en-US" Version="1.7.4.2">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -274,7 +274,7 @@
     <border5>No borders</border5>
     <err>Error</err>
     <err1>No configuration file found </err1>
-    <err2>Do not write access to the configuration file </err2>
+    <err2>No write access to configuration file </err2>
     <err3>Unknown error</err3>
     <err4>Configurator could not find the folder used by Revit to connect external plugins</err4>
     <err5>The configuration file is missing!</err5>
