@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.4.2">
+<ModPlus Name="en-US" Version="1.7.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1651,6 +1651,8 @@
     <h57>No layouts have been selected for searching!</h57>
     <h58>Unselect</h58>
     <h59>Select all</h59>
+    <h60>Search only in current drawing</h60>
+    <h61>You must select one or more drawings in the list of open drawings or set the checkbox "Search only in current drawing"</h61>
   </mpTotals>
   <mpProductInsert LocalName="Product insert"
                    Description="The function of inserting products from the ModPlus database as blocks containing extended data"
