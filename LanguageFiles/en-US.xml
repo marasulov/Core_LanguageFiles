@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.5.0">
+<ModPlus Name="en-US" Version="1.7.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2467,6 +2467,7 @@
     <tab5>Working with styles and settings of ModPlus objects</tab5>
     <tab6>Properties palette</tab6>
     <tab7>ModPlus objects properties palette</tab7>
+    <tab8>Views, sections</tab8>
     <defl>Default</defl>
     <err1>Could not find file</err1>
     <err2>Failed to load linetype</err2>
@@ -2556,11 +2557,28 @@
     <h71>contains styles with the same name</h71>
     <h72>Rename the styles so that there are no identical names</h72>
     <h73>Ground line</h73>
-    <h74>Ground marking line</h74>
+    <h74>Creating a ground marking line</h74>
     <h75>Creating an intellectual object based on an anonymous block describing the ground line</h75>
     <h76>Ground line from polyline</h76>
     <h77>Converting the selected polyline to the ground line</h77>
     <h78>Basic style for the Ground line</h78>
+    <h79>Section</h79>
+    <h80>Creating a section designation according to GOST 2.305-68</h80>
+    <h81>Creating an intellectual object based on an anonymous block describing the section according to GOST 2.305-68</h81>
+    <h82>Broken section</h82>
+    <h83>Section from polyline</h83>
+    <h84>Creating a broken section designation according to GOST 2.305-68</h84>
+    <h85>Convert selected polyline to section designation</h85>
+    <h86>Continue values ​​for new sections</h86>
+    <h87>When creating a new section in the current space, the last created section will be searched, the value of which will be taken as the basis for the new section.</h87>
+    <h88>Display auxiliary section line</h88>
+    <h89>When you select a section, an auxiliary line will be displayed that passes through all points of the section</h89>
+    <h91>To edit section values ​​by double-click use the built-in editor.</h91>
+    <h92>Double-clicking with the left mouse button on the section will use the built-in value editor Mod Plus Plus. Otherwise, the AutoCAD standard text editor will be used.</h92>
+    <h93>Restore text position</h93>
+    <h94>Edit section values</h94>
+    <h95>MP:Create analog</h95>
+    <h96>Base section style</h96>
     <gp1>Stretch</gp1>
     <gp2>Move</gp2>
     <gp3>Remove vertex</gp3>
@@ -2621,7 +2639,7 @@
     <p16-2>Fracture offset:</p16-2>
     <d16-2>Offset of top or bottom axis fracture</d16-2>
     <p17>Text style:</p17>
-    <d17>Text style for text axis elements</d17>
+    <d17>Text style for axis text elements</d17>
     <p18>Text height:</p18>
     <p18-1>Text height (h):</p18-1>
     <d18>Text height of axis text elements</d18>
@@ -2675,6 +2693,41 @@
     <p40>Indent group of strokes:</p40>
     <p40-1>Indent group of strokes (c):</p40-1>
     <d40>Indent group of strokes</d40>
+    <p41>Text style:</p41>
+    <d41>Text style for section text elements</d41>
+    <p42>Middle stroke length:</p42>
+    <p42-1>Middle stroke length (a):</p42-1>
+    <d42>The length of the middle stroke to the point of fracture</d42>
+    <p43>Stroke thickness:</p43>
+    <p43-1>Stroke thickness (w):</p43-1>
+    <d43>Thickness of all section strokes</d43>
+    <p44>Stroke length:</p44>
+    <p44-1>Stroke length (b):</p44-1>
+    <d44>The length of the main strokes of the section</d44>
+    <p45>Shelf indent:</p45>
+    <p45-1>Shelf indent (c):</p45-1>
+    <d45>Shelf indent along the stroke in percent</d45>
+    <p46>Shelf length:</p46>
+    <p46-1>Shelf length (d):</p46-1>
+    <d46>Shelf length</d46>
+    <p47>Arrow length:</p47>
+    <p47-1>Arrow length (e):</p47-1>
+    <d47>Arrow length</d47>
+    <p48>Arrow thickness:</p48>
+    <p48-1>Arrow thickness (t):</p48-1>
+    <d48>Arrow thickness</d48>
+    <p49>Text height:</p49>
+    <p49-1>Text height (h1):</p49-1>
+    <d49>Text height</d49>
+    <p50>Small text height:</p50>
+    <p50-1>Small text height (h2):</p50-1>
+    <d50>Small text height</d50>
+    <p51>Designation:</p51>
+    <d51>Designation</d51>
+    <p52>Designation prefix:</p52>
+    <d52>Designation prefix</d52>
+    <p53>Sheet number:</p53>
+    <d53>Sheet number</d53>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
