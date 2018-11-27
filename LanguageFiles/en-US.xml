@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.6.0">
+<ModPlus Name="en-US" Version="1.7.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2573,12 +2573,14 @@
     <h87>When creating a new section in the current space, the last created section will be searched, the value of which will be taken as the basis for the new section.</h87>
     <h88>Display auxiliary section line</h88>
     <h89>When you select a section, an auxiliary line will be displayed that passes through all points of the section</h89>
+    <h90>Dependent text movement</h90>
     <h91>To edit section values ​​by double-click use the built-in editor.</h91>
     <h92>Double-clicking with the left mouse button on the section will use the built-in value editor Mod Plus Plus. Otherwise, the AutoCAD standard text editor will be used.</h92>
     <h93>Restore text position</h93>
     <h94>Edit section values</h94>
     <h95>MP:Create analog</h95>
     <h96>Base section style</h96>
+    <h97>When you move one of the texts of Section, the second text will automatically shift to the same distance</h97>
     <gp1>Stretch</gp1>
     <gp2>Move</gp2>
     <gp3>Remove vertex</gp3>
@@ -2728,6 +2730,8 @@
     <d52>Designation prefix</d52>
     <p53>Sheet number:</p53>
     <d53>Sheet number</d53>
+    <p54>Sheet number position:</p54>
+    <d54>Sheet number position: on both sides, bottom, top</d54>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
