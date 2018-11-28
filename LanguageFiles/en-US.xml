@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.7.1">
+<ModPlus Name="en-US" Version="1.7.7.2">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2481,6 +2481,7 @@
     <msg5>Specify next point:</msg5>
     <msg6>Select Polyline:</msg6>
     <msg7>Delete the original polyline?</msg7>
+    <msg8>Copy layer? [Yes/No]</msg8>
     <wrong>Invalid object!</wrong>
     <vc1>VARIOUS</vc1>
     <vc2>UNDEFINED</vc2>
@@ -2581,6 +2582,10 @@
     <h95>MP:Create analog</h95>
     <h96>Base section style</h96>
     <h97>When you move one of the texts of Section, the second text will automatically shift to the same distance</h97>
+    <h98>How to handle the "Layer" property in the "Create analog" command:</h98>
+    <la1>Copy</la1>
+    <la2>Do not copy</la2>
+    <la3>To ask</la3>
     <gp1>Stretch</gp1>
     <gp2>Move</gp2>
     <gp3>Remove vertex</gp3>

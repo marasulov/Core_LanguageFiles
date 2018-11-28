@@ -66,9 +66,10 @@
 
                 if (File.Exists(langsFile))
                 {
+                    Console.WriteLine($"Upload file: {langsFile}");
                     ftpClient.UploadFile("/", langsFile);
                 } else Console.WriteLine($"File is missing: {langsFile}");
-            }
+            } else Console.WriteLine("Skip uploading");
 
             Console.WriteLine("Done!");
             Console.Read();
