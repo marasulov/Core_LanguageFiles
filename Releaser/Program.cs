@@ -6,6 +6,7 @@
     using System.Linq;
     using System.Reflection;
     using System.Xml.Linq;
+    using ModPlusUpdate.Helpers;
 
     class Program
     {
@@ -28,13 +29,47 @@
             var version = langDoc.Attribute("Version")?.Value;
 
             var langsFile = @"E:\ModPlus Updates\Langs.xml";
-            Console.WriteLine($"Write to {langsFile}");
-            XElement xDoc = XElement.Load(langsFile);
-            foreach (XElement xElement in xDoc.Elements("lang"))
+            if (File.Exists(langsFile))
             {
-                xElement.Attribute("Version")?.SetValue(version);
+                Console.WriteLine($"Write to {langsFile}");
+                XElement xDoc = XElement.Load(langsFile);
+                foreach (XElement xElement in xDoc.Elements("lang"))
+                {
+                    xElement.Attribute("Version")?.SetValue(version);
+                }
+
+                xDoc.Save(langsFile);
+                Console.WriteLine("Done!");
             }
-            xDoc.Save(langsFile);
+            else Console.WriteLine($"File is missing: {langsFile}");
+
+            Console.WriteLine("Push to site? [Y/N]");
+            var push = Console.ReadLine();
+            if (push?.ToUpper() == "Y")
+            {
+                var ftpClient = new FtpClient
+                {
+                    UserName = "imperi20_updater",
+                    Host = "imperi20.ftp.ukraine.com.ua",
+                    Password = "ANvnn89v6HE9"
+                };
+                foreach (KeyValuePair<string, string> pair in langs)
+                {
+                    var file = Path.Combine(outputDir, pair.Value);
+                    if (File.Exists(file))
+                    {
+                        Console.WriteLine($"Uploading file: {file}");
+                        ftpClient.UploadFile("/Languages/", file);
+                    }
+                    else Console.WriteLine($"File is missing: {file}");
+                }
+
+                if (File.Exists(langsFile))
+                {
+                    ftpClient.UploadFile("/", langsFile);
+                } else Console.WriteLine($"File is missing: {langsFile}");
+            }
+
             Console.WriteLine("Done!");
             Console.Read();
         }
