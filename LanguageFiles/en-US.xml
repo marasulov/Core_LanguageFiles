@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.7.3">
+<ModPlus Name="en-US" Version="1.7.7.4">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2284,7 +2284,7 @@
     <msg45>Check the "Current file" for dwg-file, however, it failed to recognize the current location of the file directory</msg45>
     <msg46>Specify the dwg file to copy the block</msg46>
     <msg47>Selecting a file to add a block</msg47>
-    <msg48>The selected file must be saved in AutoCAD 2010 version!</msg48>
+    <msg48>The selected file must be saved in AutoCAD 2013 version!</msg48>
     <msg49>The specified file must be located in a subfolder of the folder</msg49>
     <msg50>Create a new dwg database file</msg50>
     <msg51>Do not create a file in the root of the</msg51>
@@ -2293,7 +2293,7 @@
     <msg54>The current values of the attributes are filled with the default values specified when the block was created\nIf you continue, the values of the attributes will be filled with values from the selected block insert!\nGet the values of the attributes from the selected block insert?</msg54>
     <msg55>The current file is not located in the dwg-database directory!</msg55>
     <msg56>Unable to recognize the location directory of the current file</msg56>
-    <msg57>The version of the current file does not correspond to the version of AutoCAD 2010!\nSince ModPlus plugin works with AutoCAD 2010 version and above,\nthe file should be saved to AutoCAD 2010 version</msg57>
+    <msg57>The version of the current file does not correspond to the version of AutoCAD 2013!\nSince ModPlus plugin works with AutoCAD 2013 version and above,\nthe file should be saved to AutoCAD 2013 version</msg57>
     <msg58>Save the entered data as "Last entered data"?</msg58>
     <msg59>Selecting a drawing to add to the database</msg59>
     <msg60>The selected file contains proxy objects and can not be added to the database!\nDelete all proxy objects and try again</msg60>
@@ -2346,10 +2346,10 @@
     <r6>Let the blocks understandable names and descriptions, so that the user does not have to guess what it is and why</r6>
     <r7>If you took a block from some resource, then be sure to specify the source!</r7>
     <r8>Do not be lazy to think over the path to the block in the database</r8>
-    <r9>Also on the files with blocks are imposed restrictions, namely - all the added drawings with blocks should be saved in the version of AutoCAD 2010</r9>
+    <r9>Also on the files with blocks are imposed restrictions, namely - all the added drawings with blocks should be saved in the version of AutoCAD 2013</r9>
     <r10>The default function assumes that the drawings added to the local (user) database will be added to the global database, which is accessible to all users.</r10>
     <r11>Therefore, some restrictions are added to the attached drawings:</r11>
-    <r12>The drawings that are added to the database must be saved in AutoCAD 2010</r12>
+    <r12>The drawings that are added to the database must be saved in AutoCAD 2013</r12>
     <r13>In the attached drawing, Proxy primitives should not be used</r13>
     <r14>Drawings made in poor quality (for example, with multileaders from lines and text, etc.) will not be taken to the public database</r14>
     <r15>Also try to follow the recommendations:</r15>
@@ -2377,7 +2377,7 @@
     <pp16>Specify the default values for the attributes. These values will be added to the block when it is inserted.</pp16>
     <pp17>By default, the values of the attributes that were set as the "default value" when the attribute is created are populated. You can fill the attribute values with the values of the currently selected block.</pp17>
     <pp18>Dwg-file of the drawing</pp18>
-    <pp19>To add to the database, the file must be saved in AutoCAD 2010 version!</pp19>
+    <pp19>To add to the database, the file must be saved in AutoCAD 2013 version!</pp19>
     <pp20>If you have already located the file in the subfolder of the ModPlus/Data/DwgBase folder, then you can "Select" it.</pp20>
     <pp21>If the drawing file is not located in the subfolder of the ModPlus/Data/DwgBase folder, then you can "Copy" it to it.</pp21>
     <pp22>If you are adding an open drawing currently located in the subfolder of the ModPlus/Data/DwgBase folder, check the "Current file" check box.</pp22>
