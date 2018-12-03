@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.7.4">
+<ModPlus Name="en-US" Version="1.7.7.6">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2233,6 +2233,10 @@
     <h69>Add drawing</h69>
     <h70>Property</h70>
     <h71>Value</h71>
+    <h72>Video instruction for working with the database</h72>
+    <h73>Feedback</h73>
+    <h74>Please leave an email address, a link to a VK page, Facebook, Telegram or other options for contacting you. Your contacts may be needed to inform you if the blocks (drawings) you send need to be adjusted</h74>
+    <h75>You did not specify contacts for feedback. If the blocks (drawings) you send need adjustment, then we will not be able to inform you about it!\nCollect archive anyway?</h75>
     <bt1>ModPlus base</bt1>
     <bt2>User base</bt2>
     <insert>Insert</insert>
