@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.7.6">
+<ModPlus Name="en-US" Version="1.7.7.7">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2153,6 +2153,7 @@
     <h45>Duplicate schedule</h45>
     <h46>Copy values of sheet parameters</h46>
     <h47>Create copies of schedules</h47>
+    <h48>Sheets selected:</h48>
     <start>Start</start>
     <end>End</end>
     <cb1>Duplicate</cb1>
