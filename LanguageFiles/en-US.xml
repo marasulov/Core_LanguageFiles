@@ -3316,6 +3316,11 @@
     <h124>Third size group</h124>
     <h125>Crossed by a Cut plane</h125>
     <h126>Belonging to the current level</h126>
+    <h127>FP joint bars</h127>
+    <h128>Select foundation plates</h128>
+    <h129>Foundation plates</h129>
+    <h130>Thickness</h130>
+    <h131>Groups of walls in contact with the foundation plate:</h131>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
@@ -3348,6 +3353,9 @@
     <m25>No groups have been created for reinforcement!</m25>
     <m26>Select walls</m26>
     <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the Function cannot be opened in the Family Editor! It is recommended that before using the function, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
+    <m28>Select foundation plates</m28>
+    <m29>The selected foundation plate (id: {0}) has no mates with selected walls</m29>
+    <m30>Attention! Reinforcement settings for foundation plate joint bars will be reset! Continue?</m30>
     <p1>Search is not processed walls intersecting with the selected walls</p1>
     <p2>Initializing the geometry of the walls</p2>
     <p3>Search for intersections of walls</p3>
@@ -3432,5 +3440,6 @@
     <t48>The details of the reinforcement of the intersection will be established with the horizontal reinforcement of the walls - by the smallest or the largest step of horizontal reinforcement of the walls participating in the intersection</t48>
     <t49>The number of rows of vertical reinforcement (in a row is two bars "along" the opening)</t49>
     <t50>The number of rows of horizontal reinforcement (in a row is two bars "along" the opening)</t50>
+    <t51>Selecting a foundation plate directly below the selected walls. Foundation plate selection available after wall selection, analysis and grouping. You can select one or more plates. In the properties of the base plates should be included properties "Structural"</t51>
   </mprWallsReinforcement>
 </ModPlus>
