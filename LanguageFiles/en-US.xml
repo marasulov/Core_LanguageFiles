@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.8.0">
+<ModPlus Name="en-US" Version="1.8.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3453,4 +3453,21 @@
     <t50>The number of rows of horizontal reinforcement (in a row is two bars "along" the opening)</t50>
     <t51>Selecting a foundation plate directly below the selected walls. Foundation plate selection available after wall selection, analysis and grouping. You can select one or more plates. In the properties of the base plates should be included properties "Structural"</t51>
   </mprWallsReinforcement>
+  <mrBatchSheetExport LocalName="Batch Sheets Export"
+                      Description="The function allows you to export all specified sheets to dwg/dxf">
+    <t1>Select all sheets</t1>
+    <t2>Deselect all sheets</t2>
+    <t3>Invert selection</t3>
+    <t4>If the check mark is not set and there will be files with the same name in the destination folder, then the suffix will be added to the name of the sheet being exported</t4>
+    <h1>Export to:</h1>
+    <h2>AutoCAD file version:</h2>
+    <h3>Overwrite existing files</h3>
+    <h4>Export</h4>
+    <h5>Specify the folder for saving exported files</h5>
+    <h6>Cancel</h6>
+    <h7>Export to</h7>
+    <h8>Sheet export:</h8>
+    <m1>No sheets selected for export!</m1>
+    <m2>Before exporting sheets, it is strongly recommended to save the project!\nSave the project?</m2>
+  </mrBatchSheetExport>
 </ModPlus>
