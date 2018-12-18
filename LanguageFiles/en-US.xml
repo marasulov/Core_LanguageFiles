@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.7.7.7">
+<ModPlus Name="en-US" Version="1.7.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -694,8 +694,19 @@
     <WallFoundation>Wall foundation</WallFoundation>
     <Room>Room</Room>
     <Element>Element</Element>
+    <RoutePoint>Route point</RoutePoint>
+    <Route>Route</Route>
+    <PlumbingFixture>Plumbing fixture</PlumbingFixture>
+    <Equipment>Equipment</Equipment>
+    <Pipe>Pipe</Pipe>
+    <PipelineAccessory>Pipeline accessory</PipelineAccessory>
+    <PipeFitting>Pipe fitting</PipeFitting>
     <IfcObject>IFC object</IfcObject>
     <Rebar>Rebar</Rebar>
+    <Axis>Axis</Axis>
+    <Section>Section</Section>
+    <Elevation>Elevation</Elevation>
+    <Plate>Plate</Plate>
   </RengaDlls>
   <mpTxtNumCopy LocalName="Copy with numbering"
                 Description="Copies the selected text or block with an attribute containing a numeric value, changing the value to a specified numerical step"

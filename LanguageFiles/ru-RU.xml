@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="ru-RU" Version="1.7.7.7">
+<ModPlus Name="ru-RU" Version="1.7.8.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -693,8 +693,19 @@
     <WallFoundation>Ленточный фундамент</WallFoundation>
     <Room>Помещение</Room>
     <Element>Элемент</Element>
+    <RoutePoint>Точка маршрута</RoutePoint>
+    <Route>Маршрут</Route>
+    <PlumbingFixture>Сантехника</PlumbingFixture>
+    <Equipment>Оборудование</Equipment>
+    <Pipe>Труба</Pipe>
+    <PipelineAccessory>Аксессуар трубопровода</PipelineAccessory>
+    <PipeFitting>Деталь трубопровода</PipeFitting>
     <IfcObject>IFC объект</IfcObject>
     <Rebar>Арматурный стержень</Rebar>
+    <Axis>Ось</Axis>
+    <Section>Разрез</Section>
+    <Elevation>Уровень</Elevation>
+    <Plate>Пластина</Plate>
   </RengaDlls>
   <mpTxtNumCopy LocalName="Копирование с нумерацией"
                 Description="Копирует выбранный текст или блок с атрибутом, содержащий цифровое значение, с изменением значения на заданный числовой шаг"
