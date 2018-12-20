@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.8.0.0">
+<ModPlus Name="en-US" Version="1.9.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3470,4 +3470,14 @@
     <m1>No sheets selected for export!</m1>
     <m2>Before exporting sheets, it is strongly recommended to save the project!\nSave the project?</m2>
   </mrBatchSheetExport>
+  <mmOrderMarking LocalName="Order marking"
+                  Description="Adding numbering to the mark of elements with the possibility of marking in the specifications"
+                  FullDescription="When working in a view that is not a schedule view, the Function adds a numbered mark in the order in which the elements are created. When working in the schedule view, the Function adds a numbered mark in the order of the elements in the schedule (taking into account sorting). It is possible to set the prefix and suffix for the mark">
+    <h1>Mark prefix</h1>
+    <h2>Mark</h2>
+    <h3>Mark suffix</h3>
+    <h4>Execute</h4>
+    <h5>Clear</h5>
+    <m1>Select elements for numbered marking</m1>
+  </mmOrderMarking>
 </ModPlus>
