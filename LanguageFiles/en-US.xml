@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.9.2.0">
+<ModPlus Name="en-US" Version="1.9.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3187,6 +3187,7 @@
     <h14>Toggle all grids on the current view in 3D</h14>
     <h15>Invert Grids mode</h15>
     <h16>Toggle mode of 2D grids in 3D, 3D grids - in 2D</h16>
+    <m1>It is not possible to change the visibility for a category in the current view, as the view template is applied to the view</m1>
   </mprTools>
   <mrObjectsFilter LocalName="Filter"
                    Description="Filter selected objects by category">
