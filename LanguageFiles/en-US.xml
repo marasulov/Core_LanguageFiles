@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="1.9.3.0">
+<ModPlus Name="en-US" Version="2.0.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -162,7 +162,13 @@
     <header87>No installed versions of Renga, suitable for installing ModPlus</header87>
     <header88>Version of working libraries for Renga:</header88>
     <header89>Menu</header89>
-    <header90>Registration</header90>
+    <header90>LAN License Server</header90>
+    <header91>License Server IP Address:</header91>
+    <header92>License Server Port:</header92>
+    <header93>Check connection with license server</header93>
+    <header94>License server is not available</header94>
+    <header95>License server available</header95>
+    <header96>Connection check at:</header96>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -295,6 +301,8 @@
     <err20>File not found!</err20>
     <err21>Errors in loading ModPlus functions</err21>
     <err22>One or more errors occurred while loading functions. All errors are displayed in this document. Please send this document to the e-mail address modplus@mail.ru. This will help us to quickly understand the problem and eliminate it!</err22>
+    <err23>Invalid ip address</err23>
+    <err24>The maximum allowable value is 65535</err24>
     <msg1>No email address!</msg1>
     <msg2>Invalid mail address</msg2>
     <msg3>You did not enter anything</msg3>
@@ -2111,6 +2119,13 @@
     <h23>Select all</h23>
     <h24>You must enter an integer in the "Number in document"</h24>
     <h25>You must enter an integer in the "Number in volume"</h25>
+    <h26>Sorting:</h26>
+    <h27>Processing Search Results</h27>
+    <d1>Without sorting</d1>
+    <d2>Left to right and top to bottom</d2>
+    <d3>Left to right and bottom to top</d3>
+    <d4>Right to left and top to bottom</d4>
+    <d5>Right to left and bottom to top</d5>
     <apply>Apply</apply>
     <close>Close</close>
   </mpSheetNumbers>
