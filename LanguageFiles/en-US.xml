@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.0.0.0">
+<ModPlus Name="en-US" Version="2.0.0.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -486,6 +486,8 @@
     <msg27>Attention! The ModPlus plugin is located in the folder</msg27>
     <msg28>There is no write access to this folder, so the ModPlus plugin can not work. The auto-update module will be closed!</msg28>
     <msg29>Please install the plugin in a different folder, which will have write permissions. For example, D:/ModPlus</msg29>
+    <msg30>Your subscription expires</msg30>
+    <msg31>{0} days left until the subscription expires</msg31>
     <err1>Error reading file on server</err1>
     <err2>There are no updates for the configurator</err2>
     <err3>There are no updates for working files</err3>
