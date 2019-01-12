@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.0.0.1">
+<ModPlus Name="en-US" Version="2.0.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3204,7 +3204,22 @@
     <h14>Toggle all grids on the current view in 3D</h14>
     <h15>Invert Grids mode</h15>
     <h16>Toggle mode of 2D grids in 3D, 3D grids - in 2D</h16>
+    <h17>Rebars outside host</h17>
+    <h18>For rebars, the search is performed in two ways: if the layout type is set to “Single”, then a check is made for the location of the rebar in the host. For other variants of the layout type, a check is made for the protrusion of the reinforcement from the host. In the case of checking the reinforcement in the system (for example, area reinforcement) check is performed on the protrusion of the reinforcement from the host</h18>
     <m1>It is not possible to change the visibility for a category in the current view, as the view template is applied to the view</m1>
+    <m2>No rebars were found in the current project</m2>
+    <m3>Found in current project:</m3>
+    <m4>Rebars:</m4>
+    <m5>Rebars in system:</m5>
+    <m6>Run check</m6>
+    <m7>Result of checking:</m7>
+    <m8>Rebars that are out of the host or protrude from the host (when layout):</m8>
+    <m9>Select rebars</m9>
+    <m10>Rebars without host:</m10>
+    <m11>Rebars in the system, protruding from the host:</m11>
+    <m12>Select systems</m12>
+    <m13>Select all</m13>
+    <m14>Nothing found</m14>
   </mprTools>
   <mrObjectsFilter LocalName="Filter"
                    Description="Filter selected objects by category">
