@@ -3365,6 +3365,10 @@
     <h129>Foundation plates</h129>
     <h130>Thickness</h130>
     <h131>Groups of walls in contact with the foundation plate:</h131>
+    <h132>Reinforcement settings of plate joints</h132>
+    <h133>Joints by middle walls</h133>
+    <h134>Default reinforcement settings for FP joints</h134>
+    <h135>Joints type:</h135>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
