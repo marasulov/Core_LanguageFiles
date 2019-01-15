@@ -3369,6 +3369,8 @@
     <h133>Joints by middle walls</h133>
     <h134>Default reinforcement settings for FP joints</h134>
     <h135>Joints type:</h135>
+    <h136>Joints by outer walls</h136>
+    <h137>Use settings for joints by middle walls</h137>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
