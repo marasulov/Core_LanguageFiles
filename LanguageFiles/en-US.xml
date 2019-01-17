@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.0.1.0">
+<ModPlus Name="en-US" Version="2.1.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -26,6 +26,16 @@
     <h13>And believe - it's quite inexpensive!</h13>
     <h14>including tax of 5%</h14>
     <h15>Close after:</h15>
+    <h16>LAN License Server</h16>
+    <h17>License Server IP Address:</h17>
+    <h18>License Server Port:</h18>
+    <h19>Check connection with license server</h19>
+    <h20>License server is not available</h20>
+    <h21>License server available</h21>
+    <h22>Connection check at:</h22>
+    <h23>Stop connecting to the license server</h23>
+    <h24>Restore connection to the license server</h24>
+    <h25>Do not connect to the license server during the next launches</h25>
   </ModPlusAPI>
   <CUI>
     <group1>Annotations</group1>
