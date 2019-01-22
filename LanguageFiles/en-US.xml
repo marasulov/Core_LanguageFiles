@@ -3388,6 +3388,9 @@
     <h142>View intersection</h142>
     <h143>Deleting auxiliary geometry</h143>
     <h144>Detail offset from base plate sole:</h144>
+    <h145>First anchorage length, mm:</h145>
+    <h146>Second anchoring length, mm:</h146>
+    <h147>Reset</h147>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
@@ -3509,6 +3512,7 @@
     <t50>The number of rows of horizontal reinforcement (in a row is two bars "along" the opening)</t50>
     <t51>Selecting a foundation plate directly below the selected walls. Foundation plate selection available after wall selection, analysis and grouping. You can select one or more plates. In the properties of the base plates should be included properties "Structural"</t51>
     <t52>The maximum allowable value of the binding is calculated from the condition of the minimum allowable distance in the light according to section 10.3.5 of SP 63.13330 for the smallest wall width in the group</t52>
+    <t53>Reset all values ​​of the current default reinforcement settings to the default values ​​set in the plugin</t53>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="The function allows you to export all specified sheets to dwg/dxf">
