@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.1.3.0">
+<ModPlus Name="en-US" Version="2.2.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3559,4 +3559,57 @@
     <d4>Right to left and top to bottom</d4>
     <d5>Right to left and bottom to top</d5>
   </mmOrderMarking>
+  <mprCleaner LocalName="Model cleaning"
+              Description="Remove objects of certain categories from the model with the ability to remove unused elements">
+    <h1>Cleaning result</h1>
+    <h2>Search...</h2>
+    <h3>Check all</h3>
+    <h4>Uncheck all</h4>
+    <h5>Toggle selection</h5>
+    <h6>Clear</h6>
+    <h7>You have not selected anything</h7>
+    <h8>elements</h8>
+    <h9>Skip Revit failure messages</h9>
+    <w1>Remove all views (Area plans only)</w1>
+    <w2>Remove all Areas</w2>
+    <w3>Remove all Area Separation Lines</w3>
+    <w4>Remove all Constraints</w4>
+    <w5>Remove all views (Detail Views only)</w5>
+    <w6>Remove all views (Drafting Views only)</w6>
+    <w7>Remove all Patterns (Drafting)</w7>
+    <w8>Remove all Elevation Markers</w8>
+    <w9>Remove all views (Elevations only)</w9>
+    <w10>Remove all views (Engineering Plans only)</w10>
+    <w11>Remove all External Links</w11>
+    <w12>Remove all Filters</w12>
+    <w13>Remove (and Explode) all Groups</w13>
+    <w14>Remove all imported Line Patterns</w14>
+    <w15>Remove all views (Legends only)</w15>
+    <w16>Remove all Materials</w16>
+    <w17>Remove all Patterns (Model)</w17>
+    <w18>Remove all views (Floor plans only)</w18>
+    <w19>Remove all views (Reflected Ceiling Plans only)</w19>
+    <w20>Remove all Reference Planes</w20>
+    <w21>Remove all Materials (Render Materials only)</w21>
+    <w22>Remove all Rooms</w22>
+    <w23>Remove all Room Separation Lines</w23>
+    <w24>Remove all views (Schedules only)</w24>
+    <w25>Remove all Scope Boxes</w25>
+    <w26>Remove all views (Sections only)</w26>
+    <w27>Remove all Sheets (except open sheets)</w27>
+    <w28>Remove all views (3D Views only)</w28>
+    <w29>Remove all Unreferenced views (Area Plans only)</w29>
+    <w30>Remove all Unreferenced views (Detail Views only)</w30>
+    <w31>Remove all Unreferenced views (Drafting Views only)</w31>
+    <w32>Remove all Unreferenced views (Elevations Views only)</w32>
+    <w33>Remove all Unreferenced views (Engineering Views only)</w33>
+    <w34>Remove all Unreferenced views (Floor Plans only)</w34>
+    <w35>Remove all Unreferenced views (Reflected Ceiling Plans only)</w35>
+    <w36>Remove all Unreferenced views (Section only)</w36>
+    <w37>Remove all Unreferenced views (3D Views only)</w37>
+    <w38>Remove all unused elements</w38>
+    <w39>Remove all views (of any kind, except open views and sheets)</w39>
+    <w40>Remove all View Templates</w40>
+    <w41>Remove all element in workset</w41>
+  </mprCleaner>
 </ModPlus>
