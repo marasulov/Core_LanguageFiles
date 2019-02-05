@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.1.0">
+<ModPlus Name="en-US" Version="2.2.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2513,8 +2513,8 @@
     <msg2>Select an elements with rebar</msg2>
     <t1>Turn on rebar visibility</t1>
     <t2>Turn off rebar visibility</t2>
-    <h1>Torn on rebars visibility for:</h1>
-    <h2>Torn off rebars visibility for:</h2>
+    <h1>Turn on rebars visibility for:</h1>
+    <h2>Turn off rebars visibility for:</h2>
     <h3>Selected element</h3>
     <h4>Selected elements</h4>
     <h5>All elements on view</h5>
