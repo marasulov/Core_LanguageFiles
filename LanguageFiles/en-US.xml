@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.2.0">
+<ModPlus Name="en-US" Version="2.2.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1532,6 +1532,10 @@
     <h16>Search</h16>
     <h17>2 or more characters</h17>
     <h18>List of documents in the database</h18>
+    <h19>Document's status:</h19>
+    <h20>Acting</h20>
+    <h21>Inactive</h21>
+    <h22>No information or legislation</h22>
     <p1>Create a new document</p1>
     <p2>Document Number:</p2>
     <p3>Filling headers</p3>
@@ -1589,6 +1593,9 @@
     <h46>Required (estimated) anchoring length, mm:</h46>
     <h47>Generate report in MS Word</h47>
     <h48>In detail</h48>
+    <h49>Document status: Acting</h49>
+    <h50>Document status: Inactive</h50>
+    <h51>Document status: No information or legislation</h51>
     <msg1>Available in full version!</msg1>
     <msg2>No value in the "Length" field</msg2>
     <msg3>Not selected reinforcement</msg3>
@@ -1712,8 +1719,8 @@
     <h7>Filter by groups:</h7>
     <h8>Select a document:</h8>
     <h9>Open image</h9>
-    <h10>Document status: Valid</h10>
-    <h11>Document status: Not valid</h11>
+    <h10>Document status: Acting</h10>
+    <h11>Document status: Inactive</h11>
     <h12>Document status: No information or legislation</h12>
     <h13>Length, mm</h13>
     <h14>Measure between two points</h14>
