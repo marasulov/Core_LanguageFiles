@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.5.0">
+<ModPlus Name="en-US" Version="2.2.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1069,10 +1069,10 @@
     <h30>The selected text style is annotative. Consider the scale of the annotation</h30>
     <h31>Annotative</h31>
     <h32>New note</h32>
-    <h33>CHOOSE A SECTION:</h33>
-    <h34>OR CREATE NEW:</h34>
-    <h35>TEXT NOTES:</h35>
-    <h36>SELECTING A FILE</h36>
+    <h33>Choose a section:</h33>
+    <h34>Or create new:</h34>
+    <h35>Text notes:</h35>
+    <h36>Selecting a file</h36>
     <h37>Choose which file of user notes should be downloaded from the server:</h37>
     <h38>File name:</h38>
     <h39>Date of creation:</h39>
@@ -3416,6 +3416,9 @@
     <h145>First anchorage length, mm:</h145>
     <h146>Second anchoring length, mm:</h146>
     <h147>Reset</h147>
+    <h148>Anchorage length in plate, mm:</h148>
+    <h149>Base plate joints</h149>
+    <h150>Contiguous walls count</h150>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
@@ -3451,6 +3454,8 @@
     <m28>Select foundation plates</m28>
     <m29>The selected foundation plate (id: {0}) has no mates with selected walls</m29>
     <m30>Attention! Reinforcement settings for foundation plate joint bars will be reset! Continue?</m30>
+    <m31>Bend radius of rebar is less than the minimum allowable according to SP 63.13330.2012</m31>
+    <m32>The specified reinforcement settings will make it impossible to model the reinforcement details!</m32>
     <p1>Search is not processed walls intersecting with the selected walls</p1>
     <p2>Initializing the geometry of the walls</p2>
     <p3>Search for intersections of walls</p3>
@@ -3464,6 +3469,7 @@
     <p11>Calculation and modeling of reinforcement of the opening</p11>
     <p12>Revit rebars generation</p12>
     <p13>Combining the horizontal rebars of the reinforcement</p13>
+    <p14>Calculation and modeling of joints from the plate</p14>
     <dd1>V</dd1>
     <dd2>H</dd2>
     <dd3>inside</dd3>
@@ -3485,6 +3491,7 @@
     <c7>Chess order</c7>
     <c8>By the smallest step</c8>
     <c9>By the largest step</c9>
+    <c10>Move to both ends of the wall</c10>
     <t1>Select walls for later analysis</t1>
     <t2>In the selection filter, only walls with the following parameters fall:</t2>
     <t3>The wall is bounded by straight lines</t3>
@@ -3538,6 +3545,9 @@
     <t51>Selecting a foundation plate directly below the selected walls. Foundation plate selection available after wall selection, analysis and grouping. You can select one or more plates. In the properties of the base plates should be included properties "Structural"</t51>
     <t52>The maximum allowable value of the binding is calculated from the condition of the minimum allowable distance in the light according to section 10.3.5 of SP 63.13330 for the smallest wall width in the group</t52>
     <t53>Reset all values ​​of the current default reinforcement settings to the default values ​​set in the plugin</t53>
+    <t54>Copy the current plate joints reinforcement settings to all selected plates</t54>
+    <t55>Save the current plate joints reinforcement settings to the xml file</t55>
+    <t56>Load the joints reinforcement settings from the xml file and set for the current plate</t56>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="The function allows you to export all specified sheets to dwg/dxf">
