@@ -3469,7 +3469,8 @@
     <p11>Calculation and modeling of reinforcement of the opening</p11>
     <p12>Revit rebars generation</p12>
     <p13>Combining the horizontal rebars of the reinforcement</p13>
-    <p14>Calculation and modeling of joints from the plate</p14>
+    <p14>Calculation and modeling of joints from the plate by middle walls</p14>
+    <p15>Calculation and modeling of joints from the plate by outer walls</p15>
     <dd1>V</dd1>
     <dd2>H</dd2>
     <dd3>inside</dd3>
