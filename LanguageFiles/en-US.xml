@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.6.0">
+<ModPlus Name="en-US" Version="2.2.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2525,6 +2525,8 @@
     <h3>Selected element</h3>
     <h4>Selected elements</h4>
     <h5>All elements on view</h5>
+    <h6>View unobscured</h6>
+    <h7>View as solid</h7>
     <close>Close</close>
   </mmRebarSolidAndVisible>
   <mpESKD LocalName="ModPlus ESKD"
