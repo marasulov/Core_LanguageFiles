@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.7.0">
+<ModPlus Name="en-US" Version="2.2.7.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3645,4 +3645,28 @@
     <w40>Remove all View Templates</w40>
     <w41>Remove all element in workset</w41>
   </mprCleaner>
+  <mprColumnsReinforcement LocalName="Columns reinforcement"
+                           Description="Analysis, grouping and reinforcement of columns for specified conditions"
+                           FullDescription="">
+    <h1>Selection variants</h1>
+    <h2>Pick columns</h2>
+    <h3>Select all columns on current view</h3>
+    <h4>Select all columns in document</h4>
+    <h5>Reinforcement is possible only in structural columns</h5>
+    <h6>Select</h6>
+    <h7>Analyze</h7>
+    <h8>Total selected columns:</h8>
+    <h9>Of these successfully analyzed:</h9>
+    <h10>Create reinforcement</h10>
+    <h11>Group reinforcement settings</h11>
+    <m1>Pick columns</m1>
+    <p1>Analysis of the column:</p1>
+    <p2>Search for related elements:</p2>
+    <e1>Column analysis errors</e1>
+    <e2>Failed to initialize column</e2>
+    <e3>Failed to get solids</e3>
+    <e4>Failed to get main or union solid</e4>
+    <e5>Failed to get the top or bottom face</e5>
+    <e6>Failed to determine transverse profile</e6>
+  </mprColumnsReinforcement>
 </ModPlus>
