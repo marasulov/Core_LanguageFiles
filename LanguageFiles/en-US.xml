@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.7.1">
+<ModPlus Name="en-US" Version="2.2.7.2">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3421,6 +3421,8 @@
     <h148>Anchorage length in plate, mm:</h148>
     <h149>Base plate joints</h149>
     <h150>Contiguous walls count</h150>
+    <h151>Additional vertical reinforcement rebars</h151>
+    <h152>Indent from extreme vertical rebars</h152>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
