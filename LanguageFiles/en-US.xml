@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.7.5">
+<ModPlus Name="en-US" Version="2.2.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -854,6 +854,12 @@
     <h49>Multileader style:</h49>
     <h50>EDITOR SET LAYERS</h50>
     <h51>VIEWING SET LAYERS</h51>
+    <h52>Export</h52>
+    <h53>Import</h53>
+    <h54>Available in the full version of the function!</h54>
+    <h55>Specify the location to create the xml file</h55>
+    <h56>Specify the xml file to import standards</h56>
+    <h57>The selected file is not a standards storage file!</h57>
     <cb1>Layers of the current set</cb1>
     <cb2>Layers of the current set + layers of the drawing</cb2>
     <cb3>Layers</cb3>
