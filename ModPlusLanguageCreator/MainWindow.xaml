@@ -204,7 +204,10 @@
                                             </Grid.ColumnDefinitions>
                                             <TextBlock Grid.Column="0" Text="{Binding Path=Name}" VerticalAlignment="Center" Margin="1,1,3,1"></TextBlock>
                                             <TextBox Grid.Column="1" Text="{Binding Path=Value}" IsReadOnly="{Binding Path=IsReadOnly}"
-                                                     TextWrapping="Wrap"></TextBox>
+                                                     TextWrapping="Wrap" 
+                                                     GotKeyboardFocus="TextBox_OnGotKeyboardFocus"
+                                                     GotMouseCapture="TextBox_OnGotMouseCapture"
+                                                     PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"></TextBox>
                                         </Grid>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
@@ -220,7 +223,10 @@
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Text="{Binding Path=Tag}" Foreground="Gray" VerticalAlignment="Center" Margin="2,2,5,2"></TextBlock>
                                 <TextBox Grid.Column="1" Text="{Binding Path=Value}"
-                                         BorderThickness="1" BorderBrush="LightGray"></TextBox>
+                                         BorderThickness="1" BorderBrush="LightGray"
+                                         GotKeyboardFocus="TextBox_OnGotKeyboardFocus"
+                                         GotMouseCapture="TextBox_OnGotMouseCapture"
+                                         PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"></TextBox>
                             </Grid>
                         </DataTemplate>
                     </HierarchicalDataTemplate.ItemTemplate>
@@ -373,7 +379,10 @@
                                                      IsReadOnly="{Binding Path=IsReadOnly}"
                                                      TextWrapping="Wrap" x:Name="TbAttribute"
                                                      GotFocus="TbAttribute_OnGotFocus"
-                                                     KeyDown="TbAttribute_OnKeyDown"></TextBox>
+                                                     KeyDown="TbAttribute_OnKeyDown"
+                                                     GotKeyboardFocus="TextBox_OnGotKeyboardFocus"
+                                                     GotMouseCapture="TextBox_OnGotMouseCapture"
+                                                     PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"></TextBox>
                                         </Grid>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
@@ -414,7 +423,10 @@
                                 <TextBox Grid.Column="3" Text="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                          x:Name="TbItemValue" Margin="1" BorderThickness="1" BorderBrush="LightGray"
                                          GotFocus="TbItemValue_OnGotFocus"
-                                         KeyDown="TbItemValue_OnKeyDown"></TextBox>
+                                         KeyDown="TbItemValue_OnKeyDown"
+                                         GotKeyboardFocus="TextBox_OnGotKeyboardFocus"
+                                         GotMouseCapture="TextBox_OnGotMouseCapture"
+                                         PreviewMouseLeftButtonDown="SelectivelyIgnoreMouseButton"></TextBox>
                             </Grid>
                         </DataTemplate>
                     </HierarchicalDataTemplate.ItemTemplate>

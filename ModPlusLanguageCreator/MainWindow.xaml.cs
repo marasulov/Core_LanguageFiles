@@ -361,5 +361,29 @@ namespace ModPlusLanguageCreator
             if (hotKeys.GroupBy(n => n).Any(g => g.Count() > 1))
                 MessageBox.Show("You specified the same hotkeys! Please specify other values");
         }
+
+        private void TextBox_OnGotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (sender is TextBox tb)
+                tb.SelectAll();
+        }
+
+        private void TextBox_OnGotMouseCapture(object sender, MouseEventArgs e)
+        {
+            if (sender is TextBox tb)
+                tb.SelectAll();
+        }
+
+        private void SelectivelyIgnoreMouseButton(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is TextBox tb)
+            {
+                if (!tb.IsKeyboardFocusWithin)
+                {
+                    e.Handled = true;
+                    tb.Focus();
+                }
+            }
+        }
     }
 }
