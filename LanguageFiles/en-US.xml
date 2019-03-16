@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.2.8.0">
+<ModPlus Name="en-US" Version="2.2.9.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2548,6 +2548,8 @@
     <tab6>Properties palette</tab6>
     <tab7>ModPlus objects properties palette</tab7>
     <tab8>Views, sections</tab8>
+    <tab9>Tools</tab9>
+    <tab10>Search</tab10>
     <defl>Default</defl>
     <err1>Could not find file</err1>
     <err2>Failed to load linetype</err2>
@@ -2562,6 +2564,8 @@
     <msg6>Select Polyline:</msg6>
     <msg7>Delete the original polyline?</msg7>
     <msg8>Copy layer? [Yes/No]</msg8>
+    <msg9>Processed intellectual entities</msg9>
+    <msg10>Intellectual entities of the specified types are not found in the current space</msg10>
     <wrong>Invalid object!</wrong>
     <vc1>VARIOUS</vc1>
     <vc2>UNDEFINED</vc2>
@@ -2663,6 +2667,18 @@
     <h96>Base section style</h96>
     <h97>When you move one of the texts of Section, the second text will automatically shift to the same distance</h97>
     <h98>How to handle the "Layer" property in the "Create analog" command:</h98>
+    <h99>Search for intellectual entities</h99>
+    <h100>Specify types of entities to search</h100>
+    <h101>Check all</h101>
+    <h102>Uncheck all</h102>
+    <so1>Select</so1>
+    <sot1>All intellectual entities of the specified types in the current space will be selected</sot1>
+    <so2>Remove data</so2>
+    <sot2>All intellectual entities of the specified types in the current space will delete the extended data, which will turn the entities into ordinary blocks</sot2>
+    <so3>Explode</so3>
+    <sot3>All intellectual entities of the specified types in the current space will be explode</sot3>
+    <so4>Delete</so4>
+    <sot4>All intellectual entities of the specified types in the current space will be delete</sot4>
     <la1>Copy</la1>
     <la2>Do not copy</la2>
     <la3>To ask</la3>
@@ -3681,4 +3697,13 @@
     <e5>Failed to get the top or bottom face</e5>
     <e6>Failed to determine transverse profile</e6>
   </mprColumnsReinforcement>
+  <mpStripMtext LocalName="Clear formatting"
+                Description="Remove specified formatting from multiline text"
+                FullDescription="Function allows you to delete the formatting of multiline text, mleaders, dimensions, attributes of blocks and tables">
+    <h1>Select type of formatting to remove</h1>
+    <h2>Check all</h2>
+    <h3>Uncheck all</h3>
+    <h4>Accept</h4>
+    <m1>Select objects containing multiline text</m1>
+  </mpStripMtext>
 </ModPlus>
