@@ -3728,4 +3728,10 @@
     <s11>Overline</s11>
     <st11>Remove overline from text</st11>
   </mpStripMtext>
+  <mprSheetRenumber LocalName="Sheet numerator"
+                    Description="The function allows to renumber sheets in the project"
+                    FullDescription="Renumbering of sheets is carried out within one group of sheets. You can display all sheets by analogy with the current settings of the project manager or display all sheets in one group. There is an opportunity to change the position of sheets by moving them in the group, while maintaining the initial numbering of sheets in this group">
+    <m1>To launch function go to the project</m1>
+    <m2>Available in the full version of the function</m2>
+  </mprSheetRenumber>
 </ModPlus>
