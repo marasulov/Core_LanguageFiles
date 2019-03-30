@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.3.1.0">
+<ModPlus Name="en-US" Version="2.3.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -37,6 +37,9 @@
     <h24>Restore connection to the license server</h24>
     <h25>Do not connect to the license server during the next launches</h25>
     <h26>Send error report</h26>
+    <ru-RU>Russian (Russia)</ru-RU>
+    <en-US>English (USA)</en-US>
+    <de-DE>German (Germany)</de-DE>
   </ModPlusAPI>
   <CUI>
     <group1>Annotations</group1>
