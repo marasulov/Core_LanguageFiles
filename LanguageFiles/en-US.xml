@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.3.4.0">
+<ModPlus Name="en-US" Version="2.4.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3732,6 +3732,22 @@
     <st10>Remove columns from text</st10>
     <s11>Overline</s11>
     <st11>Remove overline from text</st11>
+    <s12>Paragraph</s12>
+    <st12>Remove paragraph breaks</st12>
+    <s13>Oblique</s13>
+    <st13>Remove oblique from text</st13>
+    <s14>Stacking</s14>
+    <st14>Convert stacking text to line text</st14>
+    <s15>Tracking</s15>
+    <st15>Remove space between characters</st15>
+    <s16>Underline</s16>
+    <st16>Turns underline off</st16>
+    <s17>Width</s17>
+    <st17>Reset width factor</st17>
+    <s18>Non-breaking space</s18>
+    <st18>Remove non-breaking spaces from text</st18>
+    <s19>Paragraph alignment</s19>
+    <st19>Remove paragraph alignments from text</st19>
   </mpStripMtext>
   <mprSheetRenumber LocalName="Sheet numerator"
                     Description="The function allows to renumber sheets in the project"
