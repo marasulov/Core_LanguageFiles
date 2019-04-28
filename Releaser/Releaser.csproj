@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\ModPlusUpdate\ModPlusUpdate\Helpers\FTPclient.cs">
+    <Compile Include="..\..\..\ModPlusService.com\ModPlusService\ModPlusUpdate\Helpers\FTPclient.cs">
       <Link>FTPclient.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
