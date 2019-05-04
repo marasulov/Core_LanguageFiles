@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.4.1.0">
+<ModPlus Name="en-US" Version="2.4.4.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -37,6 +37,10 @@
     <h24>Restore connection to the license server</h24>
     <h25>Do not connect to the license server during the next launches</h25>
     <h26>Send error report</h26>
+    <h27>There is no connection to the internet, the modplus.org website or the ModPlus web services</h27>
+    <h28>There is no connection to the internet, or the ModPlus web services</h28>
+    <m1>Enter your email address</m1>
+    <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
     <ru-RU>Russian (Russia)</ru-RU>
     <en-US>English (USA)</en-US>
     <de-DE>German (Germany)</de-DE>
@@ -1106,7 +1110,7 @@
     <h51>Accurately delete the selected note?</h51>
     <h52>Select multiline text:</h52>
     <h53>Not specified (or not created) file of user notes!</h53>
-    <h54>There is no access to the internet or modplus.org</h54>
+    <h54>There is no connection to the internet, the modplus.org website or the ModPlus web services</h54>
     <h55>Sending a file of user notes to the server</h55>
     <h56>Retrieving Authorization Data</h56>
     <h57>Reading directories on the server</h57>
