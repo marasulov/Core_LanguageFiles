@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.4.4.1">
+<ModPlus Name="en-US" Version="2.4.4.3">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -289,6 +289,7 @@
     <tt59>Disable all functions for the current version of the product</tt59>
     <tt60>Remove function</tt60>
     <tt61>Remove panel</tt61>
+    <tt62>Copied</tt62>
     <w1>Login</w1>
     <w2>Finding a function in the list</w2>
     <w3>Activation key</w3>
@@ -2683,6 +2684,7 @@
     <h100>Specify types of entities to search</h100>
     <h101>Check all</h101>
     <h102>Uncheck all</h102>
+    <h103>Style is not in the database</h103>
     <so1>Select</so1>
     <sot1>All intellectual entities of the specified types in the current space will be selected</sot1>
     <so2>Remove data</so2>
