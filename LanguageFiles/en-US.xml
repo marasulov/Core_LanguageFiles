@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.4.4.3">
+<ModPlus Name="en-US" Version="2.4.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3772,7 +3772,7 @@
     <h4>Reload the list of sheets</h4>
     <h5>The position of the sheets does not match the position of the sheets in the Project Browser</h5>
     <h6>Enable move renumbering</h6>
-    <h7>numbering setting for group</h7>
+    <h7>Numbering setting for group</h7>
     <h8>Prefix</h8>
     <h9>The initial value for the numbering of sheets in the group</h9>
     <h10>Suffix</h10>
@@ -3782,5 +3782,27 @@
     <h14>Apply</h14>
     <h15>Renumber sheets in a group according to the specified settings</h15>
     <h16>Renumbering by moving allows you to swap sheets in the group, while maintaining the original numbering in the group</h16>
+    <h17>Extended numbering settings for a group</h17>
+    <h18>You can create a scheme for the numbers of sheets using the three configurable parts and dividers between them. In each part, you can specify the prefix, suffix and number. The number can be made static or dynamic (increasing or decreasing). The whole sheet number, part or part number can be written to the specified parameter</h18>
+    <h19>Write the value of</h19>
+    <h20>in the parameter</h20>
+    <h21>Part</h21>
+    <h22>You must select at least one part</h22>
+    <h23>Errors occurred while setting parameter values</h23>
+    <h24>Parameter</h24>
+    <h25>not found in ViewSheet</h25>
+    <h26>Error while set parameter</h26>
+    <h27>for ViewSheet</h27>
+    <h28>Increment</h28>
+    <h29>Decrement</h29>
+    <h30>Limit</h30>
+    <h31>The upper limit of the number when decreasing. This is the number from which numbering will start, reaching zero</h31>
+    <p1>whole sheet number</p1>
+    <p2>1 part</p2>
+    <p3>number of 1 part</p3>
+    <p4>2 part</p4>
+    <p5>number of 2 part</p5>
+    <p6>3 part</p6>
+    <p7>number of 3 part</p7>
   </mprSheetRenumber>
 </ModPlus>
