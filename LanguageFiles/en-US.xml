@@ -3400,10 +3400,10 @@
     <h88>Location::</h88>
     <h89>Indentation of the first rebar, mm:</h89>
     <h90>Indentation of the last rebar, mm:</h90>
-    <h91>U-SHAPED REBARS IN THE WALL ENDS:</h91>
+    <h91>U-SHAPED REBARS IN THE WALL ENDS</h91>
     <h92>Detail length, mm:</h92>
     <h93>Calculate the length of the U-shaped rebar</h93>
-    <h94>CROSS HOLE (STIRRUPS):</h94>
+    <h94>CROSS HOLE (STIRRUPS)</h94>
     <h95>Stirrup type</h95>
     <h96>Turn the stirrups under 45° with the girth of the intersections of the main reinforcement</h96>
     <h97>Type of layout:</h97>
@@ -3462,6 +3462,14 @@
     <h150>Contiguous walls count</h150>
     <h151>Additional vertical reinforcement rebars</h151>
     <h152>Indent from extreme vertical rebars</h152>
+    <h153>TOP DIAGONAL REINFORCEMENT</h153>
+    <h154>BOTTOM DIAGONAL REINFORCEMENT</h154>
+    <h155>Rebar length:</h155>
+    <h156>U-SHAPED REBARS ALONG TOP WALL END</h156>
+    <h157>JOINTS</h157>
+    <h158>Joints of background vertical rebars</h158>
+    <h159>Joints of intersections vertical rebars</h159>
+    <h160>Joints type:</h160>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
@@ -3593,6 +3601,7 @@
     <t55>Save the current plate joints reinforcement settings to the xml file</t55>
     <t56>Load the joints reinforcement settings from the xml file and set for the current plate</t56>
     <t57>The minimum and maximum values ​​are calculated based on the specified diameters and vertical reinforcement step</t57>
+    <t58>Rebar length consists of two anchoring lengths</t58>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="The function allows you to export all specified sheets to dwg/dxf">
