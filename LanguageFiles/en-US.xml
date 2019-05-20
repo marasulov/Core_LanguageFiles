@@ -3470,6 +3470,7 @@
     <h158>Joints of background vertical rebars</h158>
     <h159>Joints of intersections vertical rebars</h159>
     <h160>Joints type:</h160>
+    <jtd1>Joints of background vertical rebars are not created. Rebars are cut on the top of the wall according to the specified value of cover from the rebars ends</jtd1>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
