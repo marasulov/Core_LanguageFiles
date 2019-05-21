@@ -3470,7 +3470,11 @@
     <h158>Joints of background vertical rebars</h158>
     <h159>Joints of intersections vertical rebars</h159>
     <h160>Joints type:</h160>
+    <h161>Nominal floor thickness, mm:</h161>
     <jtd1>Joints of background vertical rebars are not created. Rebars are cut on the top of the wall according to the specified value of cover from the rebars ends</jtd1>
+    <jtd2>Created straight joints of vertical rebars. The length of the anchorage is set from the top of the overlying floor or from the top of the wall. When the width of the overlying wall decreases, the reinforcement is bent</jtd2>
+    <jtd3>Vertical bar releases are created by analogy with straight releases, but with different anchorage lengths</jtd3>
+    <jtd4>Joints of vertical rebars with anchoring in the overlying floor are created. The length of the anchorage is counted from the side face of the wall. If the bends of the rebars can not be performed in two directions, the rebars are bent in one direction in different levels of the floor</jtd4>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
