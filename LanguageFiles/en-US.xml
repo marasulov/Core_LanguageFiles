@@ -3471,10 +3471,22 @@
     <h159>Joints of intersections vertical rebars</h159>
     <h160>Joints type:</h160>
     <h161>Nominal floor thickness, mm:</h161>
+    <h162>Create "Breaking in" joints</h162>
+    <h163>If there is an opening in the overlying wall, then</h163>
+    <h164>Do not create joints if the height of the overlying wall under the opening is less than or equal to two wall thicknesses (but not less than 400 mm)</h164>
+    <h165>If the floor above the wall is missing, then</h165>
+    <h166>Binding bends to the top of the floor (by the center of the rebar)</h166>
+    <h167>Binding bends to the bottom of the floor (by the center of the rebar)</h167>
+    <oa1>do not create joints</oa1>
+    <oa2>bend into floor (if available)</oa2>
+    <npa1>assume a floor conditionally existing</npa1>
+    <npa2>calculate anchoring length from the top of the wall</npa2>
     <jtd1>Joints of background vertical rebars are not created. Rebars are cut on the top of the wall according to the specified value of cover from the rebars ends</jtd1>
     <jtd2>Created straight joints of vertical rebars. The length of the anchorage is set from the top of the overlying floor or from the top of the wall. When the width of the overlying wall decreases, the reinforcement is bent</jtd2>
     <jtd3>Vertical bar releases are created by analogy with straight releases, but with different anchorage lengths</jtd3>
     <jtd4>Joints of vertical rebars with anchoring in the overlying floor are created. The length of the anchorage is counted from the side face of the wall. If the bends of the rebars can not be performed in two directions, the rebars are bent in one direction in different levels of the floor</jtd4>
+    <jtd5>Created straight joints of vertical rebars. The anchoring length is set from the top of the overlying floor or from the top of the wall</jtd5>
+    <jtd6>Straight joints of vertical rebars in the form of a "bottle" are created - the bends are bent to the center of intersection to the diameter of the rebar. The anchoring length is set from the top of the overlying floor or from the top of the wall</jtd6>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
@@ -3607,6 +3619,7 @@
     <t56>Load the joints reinforcement settings from the xml file and set for the current plate</t56>
     <t57>The minimum and maximum values ​​are calculated based on the specified diameters and vertical reinforcement step</t57>
     <t58>Rebar length consists of two anchoring lengths</t58>
+    <t59>When you turn on the "Breaking in" option, each first pair of joints along the wall will be created with the first anchoring length, every second pair - with the second anchoring length</t59>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="The function allows you to export all specified sheets to dwg/dxf">
