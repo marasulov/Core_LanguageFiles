@@ -3473,7 +3473,7 @@
     <h161>Nominal floor thickness, mm:</h161>
     <h162>Create "Breaking in" joints</h162>
     <h163>If there is an opening in the overlying wall, then</h163>
-    <h164>Do not create joints if the height of the overlying wall under the opening is less than or equal to two wall thicknesses (but not less than 400 mm)</h164>
+    <h164>Also apply to areas of the overlying wall whose height under the opening (or the height of the entire wall) is less than or equal to two wall widths (but not less than 400)</h164>
     <h165>If the floor above the wall is missing, then</h165>
     <h166>Binding bends to the top of the floor (by the center of the rebar)</h166>
     <h167>Binding bends to the bottom of the floor (by the center of the rebar)</h167>
