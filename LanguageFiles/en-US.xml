@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.4.5.0">
+<ModPlus Name="en-US" Version="2.4.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3482,7 +3482,7 @@
     <npa1>assume a floor conditionally existing</npa1>
     <npa2>calculate anchoring length from the top of the wall</npa2>
     <jtd1>Joints of background vertical rebars are not created. Rebars are cut on the top of the wall according to the specified value of cover from the rebars ends</jtd1>
-    <jtd2>Created straight joints of vertical rebars. The length of the anchorage is set from the top of the overlying floor or from the top of the wall. When the width of the overlying wall decreases, the reinforcement is bent</jtd2>
+    <jtd2>Created straight joints of vertical rebars. The length of the anchorage is set from the top of the overlying floor or from the top of the wall. When the width of the overlying wall decreases, the reinforcement is bent (if floor exist)</jtd2>
     <jtd3>Vertical bar releases are created by analogy with straight releases, but with different anchorage lengths</jtd3>
     <jtd4>Joints of vertical rebars with anchoring in the overlying floor are created. The length of the anchorage is counted from the side face of the wall. If the bends of the rebars can not be performed in two directions, the rebars are bent in one direction in different levels of the floor</jtd4>
     <jtd5>Created straight joints of vertical rebars. The anchoring length is set from the top of the overlying floor or from the top of the wall</jtd5>
