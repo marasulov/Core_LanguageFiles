@@ -4,9 +4,10 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+    using System.Net;
     using System.Reflection;
     using System.Xml.Linq;
-    using ModPlusUpdate.Helpers;
+    using FluentFTP;
 
     class Program
     {
@@ -47,19 +48,18 @@
             var push = Console.ReadLine();
             if (push?.ToUpper() == "Y")
             {
-                var ftpClient = new FtpClient
+                var ftpClient = new FtpClient("imperi20.ftp.ukraine.com.ua")
                 {
-                    UserName = "imperi20_updater",
-                    Host = "imperi20.ftp.ukraine.com.ua",
-                    Password = "ANvnn89v6HE9"
+                    Credentials = new NetworkCredential("imperi20_updater", "ANvnn89v6HE9")
                 };
+
                 foreach (KeyValuePair<string, string> pair in langs)
                 {
                     var file = Path.Combine(outputDir, pair.Value);
                     if (File.Exists(file))
                     {
                         Console.WriteLine($"Uploading file: {file}");
-                        ftpClient.UploadFile("/Languages/", file);
+                        ftpClient.UploadFile(file, $"/Languages/{new FileInfo(file).Name}" );
                     }
                     else Console.WriteLine($"File is missing: {file}");
                 }
@@ -67,9 +67,11 @@
                 if (File.Exists(langsFile))
                 {
                     Console.WriteLine($"Upload file: {langsFile}");
-                    ftpClient.UploadFile("/", langsFile);
-                } else Console.WriteLine($"File is missing: {langsFile}");
-            } else Console.WriteLine("Skip uploading");
+                    ftpClient.UploadFile(langsFile, $"/{new FileInfo(langsFile).Name}" );
+                } 
+                else Console.WriteLine($"File is missing: {langsFile}");
+            } 
+            else Console.WriteLine("Skip uploading");
 
             Console.WriteLine("Done!");
             Console.Read();
