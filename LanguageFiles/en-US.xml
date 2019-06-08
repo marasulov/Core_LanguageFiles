@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.4.6.0">
+<ModPlus Name="en-US" Version="2.4.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3056,6 +3056,7 @@
     <h28>Enter second point</h28>
     <h29>Distance between points is too small!</h29>
     <h30>A configuration with this name already exists! Please specify a different configuration name!</h30>
+    <h31>Note</h31>
     <attention>Attention!</attention>
     <edit>Edit</edit>
     <create>Create</create>
@@ -3087,6 +3088,9 @@
     <e19>Windows</e19>
     <e20>Doors</e20>
     <e21>Parts</e21>
+    <e22>Ceilings</e22>
+    <e23>Structural foundation</e23>
+    <n1>Only on Section Views</n1>
   </mprDimByLine>
   <mprDimBias LocalName="Dim offset"
               Description="Automatic movement of the dimension value that falls on the dimension lines"
