@@ -41,6 +41,11 @@
     <h28>There is no connection to the internet, or the ModPlus web services</h28>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
+    <l1>Single-user licenses for functions</l1>
+    <l2>Single-user subscriptions</l2>
+    <l3>Multi-user subscriptions</l3>
+    <u1>Authorization</u1>
+    <u2>Log in to your modplus.org account to synchronize your purchases with the current version of ModPlus. After authorization, you will be able to use the full versions of the functions according to your purchased licenses</u2>
     <ru-RU>Russian (Russia)</ru-RU>
     <en-US>English (USA)</en-US>
     <de-DE>German (Germany)</de-DE>
