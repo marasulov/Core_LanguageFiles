@@ -46,6 +46,30 @@
     <l3>Multi-user subscriptions</l3>
     <u1>Authorization</u1>
     <u2>Log in to your modplus.org account to synchronize your purchases with the current version of ModPlus. After authorization, you will be able to use the full versions of the functions according to your purchased licenses</u2>
+    <u3>Failed to connect to ModPlus web services. There may be no internet connection or a proxy is used that is not configured in the ModPlus Configurator. If this computer is supposed to work without access to the internet, you can get an Activation key with data on your licenses. To do this, copy the Registration key listed below and get the Activation key using a special section in your personal account on the website modplus.org</u3>
+    <u4>Registration key</u4>
+    <u5>Activation key</u5>
+    <u6>User data</u6>
+    <u7>Blocked!</u7>
+    <u8>Your account is blocked! Contact support for details</u8>
+    <u9>Hello, </u9>
+    <u10>Your login:</u10>
+    <u11>Your email:</u11>
+    <u12>Your account information was used on</u12>
+    <u13>computers</u13>
+    <u14>If your account information is used on more than 5 computers, your account will be blocked automatically!</u14>
+    <u15>Log out of account</u15>
+    <u16>Function:</u16>
+    <u17>Product:</u17>
+    <u18>Version:</u18>
+    <u19>Subscribe for:</u19>
+    <u20>Subscription validity period:</u20>
+    <u21>Subscription start date:</u21>
+    <u22>Subscription expiration date:</u22>
+    <s1>Active</s1>
+    <s2>Subscription has not started</s2>
+    <s3>Subscription expires</s3>
+    <s4>Subscription expired</s4>
     <ru-RU>Russian (Russia)</ru-RU>
     <en-US>English (USA)</en-US>
     <de-DE>German (Germany)</de-DE>
