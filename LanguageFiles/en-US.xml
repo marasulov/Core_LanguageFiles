@@ -66,6 +66,22 @@
     <u20>Subscription validity period:</u20>
     <u21>Subscription start date:</u21>
     <u22>Subscription expiration date:</u22>
+    <u23>Number of workplaces:</u23>
+    <u24>Subscription activation key:</u24>
+    <u25>Your account does not have single-user licenses for functions or subscriptions. Make a purchase on the modplus.org website</u25>
+    <u26>Go back</u26>
+    <u27>All ModPlus functions</u27>
+    <u28>User name</u28>
+    <u29>User login</u29>
+    <u30>User email</u30>
+    <u31>Block status</u31>
+    <u32>Information about single-user licenses and subscriptions</u32>
+    <u33>The activation key entered does not match the registration key data</u33>
+    <u34>The entered activation key format is invalid - could not get data from the key. Make sure you have entered the activation key completely and that it does not contain spaces</u34>
+    <u35>An unexpected error occurred while trying to read data from the entered activation key</u35>
+    <u36>No activation key entered</u36>
+    <u37>not blocked</u37>
+    <u38>blocked</u38>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
@@ -826,7 +842,7 @@
     <kw2>Mark</kw2>
     <kw3>Entity</kw3>
   </mpMultiCopy>
-  <mpTxtCenter LocalName="Text by center" 
+  <mpTxtCenter LocalName="Text by center"
                Description="The function allows you to create a single line text or align the existing one in the middle between two specified points">
     <msg1>Specify the first point or [Existing]</msg1>
     <msg2>Existing</msg2>
