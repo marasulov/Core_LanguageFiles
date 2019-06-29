@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.4.7.0">
+<ModPlus Name="en-US" Version="2.5.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -82,6 +82,7 @@
     <u36>No activation key entered</u36>
     <u37>not blocked</u37>
     <u38>blocked</u38>
+    <u39>Personal account</u39>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
@@ -238,6 +239,9 @@
     <header100>View the license agreement in a notebook</header100>
     <header101>An error occurred while opening the text of the license agreement. You can read the license agreement on the site https://modplus.org/ru/licenseagreement</header101>
     <header102>No connection to internet or ModPlus web services</header102>
+    <header103>Personal account</header103>
+    <header104>Hello, </header104>
+    <header105>Open personal account</header105>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -563,6 +567,8 @@
     <msg30>Your subscription expires</msg30>
     <msg31>{0} days left until the subscription expires</msg31>
     <msg32>An access error occurred while attempting to update. Restart the auto-update module with administrator rights?</msg32>
+    <msg33>User data has been updated</msg33>
+    <msg34>User data was updated on the site, but could not download them</msg34>
     <err1>Error reading file on server</err1>
     <err2>There are no updates for the configurator</err2>
     <err3>There are no updates for working files</err3>
@@ -645,6 +651,7 @@
     <h53>Add [mpAddVertexToWipeout] and Remove [mpRemoveVertexFromWipeout] vertices of wipeout</h53>
     <h54>MP:Add vertex</h54>
     <h55>MP:Remove vertex</h55>
+    <h56>Personal account</h56>
     <cb1>Icon</cb1>
     <cb2>Title</cb2>
     <border1>Border by color</border1>
@@ -729,6 +736,7 @@
     <h10>The key is binding to the physical disk:</h10>
     <h11>The key is binding to a Google Account:</h11>
     <h12>Settings</h12>
+    <h13>Personal account</h13>
     <border1>Border by color</border1>
     <border2>Glow by color</border2>
     <border3>Border + glow by color</border3>
