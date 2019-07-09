@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.5.0.0">
+<ModPlus Name="en-US" Version="2.6.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -569,6 +569,7 @@
     <msg32>An access error occurred while attempting to update. Restart the auto-update module with administrator rights?</msg32>
     <msg33>User data has been updated</msg33>
     <msg34>User data was updated on the site, but could not download them</msg34>
+    <msg35>No updates available</msg35>
     <err1>Error reading file on server</err1>
     <err2>There are no updates for the configurator</err2>
     <err3>There are no updates for working files</err3>
@@ -1858,6 +1859,8 @@
     <h10>ModPlus: Entity on layer:</h10>
     <h11>moved front</h11>
     <h12>moved back</h12>
+    <h13>Save the current position of layers in the drawing</h13>
+    <h14>Load and apply the layer position stored in the current drawing. Layers that have been added after the position is saved will be moved to the end of the list</h14>
   </mpDrawOrderByLayer>
   <mpDocTemplates LocalName="Templates. Stage P"
                   Description="The function allows you to create templates of the text part of the section according to &quot;Resolution of the Russian Federation No.87&quot; with the title page according to GOST R 21.1101-2013">
@@ -2738,6 +2741,7 @@
     <h101>Check all</h101>
     <h102>Uncheck all</h102>
     <h103>Style is not in the database</h103>
+    <h104>One or more entities are located on the locked layer, they cannot be updated</h104>
     <so1>Select</so1>
     <sot1>All intellectual entities of the specified types in the current space will be selected</sot1>
     <so2>Remove data</so2>
