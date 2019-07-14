@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.6.1.0">
+<ModPlus Name="en-US" Version="2.6.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -642,7 +642,7 @@
     <h42>The main settings of the ModPlus plugin - themes, menu on/off, context menu settings for the mini-functions. It also allows you to find out your registration key without running the Configurator</h42>
     <h43>Fields</h43>
     <h44>Fields editor</h44>
-    <h45>The editor of the fields used to fill in stamps</h45>
+    <h45>The editor of the fields used to fill in title blocks</h45>
     <h46>On product icon</h46>
     <h47>Off product icon</h47>
     <h48>ModPlus palette</h48>
@@ -1027,7 +1027,7 @@
   </mpLayerAuto>
   <mpFormats LocalName="Formats"
              Description="Function of inserting in the drawing formats according to GOST 2.301-68"
-             FullDescription="Formats are inserted in the form of a block with a special label in the extended data. A label in the extended data is required to define the formats with other functions (for example, &quot;Sheet Numbering&quot;). Therefore, you should not insert the formats with standard means of inserting a block into AutoCAD. The function allows you to add stamps to the format - for this you need to install and at least once started the function &quot;Stamps&quot;">
+             FullDescription="Formats are inserted in the form of a block with a special label in the extended data. A label in the extended data is required to define the formats with other functions (for example, &quot;Sheet Numbering&quot;). Therefore, you should not insert the formats with standard means of inserting a block into AutoCAD. The function allows you to add title blocks to the format - for this you need to install and at least once started the function &quot;Title blocks&quot;">
     <accept>Accept</accept>
     <no>No</no>
     <h1>Russia</h1>
@@ -1051,7 +1051,7 @@
     <h19>10 mm</h19>
     <h20>Text style:</h20>
     <h21>Format scale:</h21>
-    <h22>Stamp:</h22>
+    <h22>Title block:</h22>
     <h23>Use fields</h23>
     <h24>Launching the Fields function</h24>
     <h25>Main text height:</h25>
@@ -1062,9 +1062,9 @@
     <h30>Specify a dwg file as a logo</h30>
     <h31>Posts</h31>
     <h32>Edit the list of user posts</h32>
-    <h33>Add post to stamp</h33>
-    <h34>Remove post from stamp</h34>
-    <h35>Posts in the stamp</h35>
+    <h33>Add post to title block</h33>
+    <h34>Remove post from title block</h34>
+    <h35>Posts in the title block</h35>
     <h36>One line up</h36>
     <h37>One line down</h37>
     <h38>Length of the format (mm) x Height of the format (mm)</h38>
@@ -1072,7 +1072,7 @@
     <h40>Replace</h40>
     <h41>Create layout</h41>
     <h42>New layout name</h42>
-    <h43>Add to stamp:</h43>
+    <h43>Add to title block:</h43>
     <h44>Layout name</h44>
     <h45>Layout number</h45>
     <h46>Scale 1:1</h46>
@@ -1086,20 +1086,20 @@
     <err2>An error has occurred!</err2>
     <err3>Invalid characters in the layout name:</err3>
     <err4>The following characters are not allowed:</err4>
-    <err5>No file with stamps was found!\nRun the "Stamps" function to unpack a dwg file with stamps</err5>
+    <err5>No file with title blocks was found!\nRun the "Title blocks" function to unpack a dwg file with title blocks</err5>
     <err6>Length of the format is not entered</err6>
     <err7>Height of the format is not entered</err7>
     <err8>Length of the format must be at least 30 mm</err8>
     <err9>Height of the format should be not less than 15 mm</err9>
-    <err10>A stamp with a table style was not found in the stamp file</err10>
-    <err11>Run the "Stamps" function to overwrite the stamps file</err11>
-    <err12>The stamp does not correspond to the stamp ModPlus! Invalid number of cells</err12>
+    <err10>A title block with a table style was not found in the title block file</err10>
+    <err11>Run the "Title blocks" function to overwrite the title blocks file</err11>
+    <err12>The title block does not correspond to the title block ModPlus! Invalid number of cells</err12>
     <err13>The file was created in a later version of AutoCAD!</err13>
     <err14>Invalid block name</err14>
     <msg1>Value</msg1>
     <msg2>already contained in the list of standard values</msg2>
     <msg3>The list contains the same values!</msg3>
-    <msg4>Available with the full version of the "Stamps" function</msg4>
+    <msg4>Available with the full version of the "Title blocks" function</msg4>
     <msg5>You can not add more than</msg5>
     <msg6>posts</msg6>
     <msg7>In file</msg7>
@@ -1313,13 +1313,13 @@
     <msg3>Select dimensions for alignment of dimension lines</msg3>
     <msg4>Second point of the alignment line:</msg4>
   </mpDimJustif>
-  <mpStamps LocalName="Stamps"
-            Description="Function of inserting stamps (basic inscription) in the drawing (as AutoCAD tables) according to GOST/DSTU/STB, with field support"
-            FullDescription="Using the &quot;Field&quot; function allows you to add additional values to the document that you can insert into the stamp in the form of fields. This allows you to change the values in the stamp at once in all the stamps throughout the document">
+  <mpStamps LocalName="Title blocks"
+            Description="Function of inserting title blocks in the drawing (as AutoCAD tables) according to normative documentation, with field support"
+            FullDescription="Using the &quot;Field&quot; function allows you to add additional values to the document that you can insert into the title block in the form of fields. This allows you to change the values in the title block at once in all the title blocks throughout the document">
     <insert>Insert</insert>
     <no>No</no>
-    <h1>STAMPS</h1>
-    <h2>Name of stamp</h2>
+    <h1>Title blocks</h1>
+    <h2>Name of title block</h2>
     <h3>Normative documents for:</h3>
     <h4>Russia</h4>
     <h5>Ukraine</h5>
@@ -1329,16 +1329,15 @@
     <h9>Table name</h9>
     <h10>Normative document:</h10>
     <h11>Description:</h11>
-    <h12>Brief description (reference to the stamp in the normative document)</h12>
+    <h12>Brief description (reference to the title block in the normative document)</h12>
     <h13>Inactive</h13>
-    <h14>Inserting a stamp with Top-left binding</h14>
-    <h15>Inserting a stamp with Top-right binding</h15>
-    <h16>Inserting a stamp with Bottom-left binding</h16>
-    <h17>Inserting a stamp with Bottom-right binding</h17>
+    <h14>Inserting a title block with Top-left binding</h14>
+    <h15>Inserting a title block with Top-right binding</h15>
+    <h16>Inserting a title block with Bottom-left binding</h16>
+    <h17>Inserting a title block with Bottom-right binding</h17>
     <h18>Show image</h18>
     <h19>Hide image</h19>
-    <h20>STAMP SETTINGS</h20>
-    <h21>Stamp scale:</h21>
+    <h21>Title block scale:</h21>
     <h22>Text style:</h22>
     <h23>Main text height:</h23>
     <h24>Additional text height:</h24>
@@ -1350,16 +1349,16 @@
     <h30>Use fields</h30>
     <h31>Posts</h31>
     <h32>Edit the list of user posts</h32>
-    <h33>Add post to stamp</h33>
-    <h34>Remove post from stamp</h34>
-    <h35>Posts in the stamp</h35>
+    <h33>Add post to title block</h33>
+    <h34>Remove post from title block</h34>
+    <h35>Posts in the title block</h35>
     <h36>One line up</h36>
     <h37>One line down</h37>
     <h38>Launching "Fields" function</h38>
-    <h39>The height of the text in all cells of the stamp. The default is 2.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h39>
-    <h40>Additional text height. It is installed in such cells as "Document designation", "Stage", "Sheet", etc., which gives the stamp expressiveness and readability. The default is 3.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h40>
-    <h41>Specify the block defined in this drawing to insert it into the stamp as a logo</h41>
-    <h42>The specified dwg-file will be added to the current drawing in the form of a block, which will be inserted into the stamp as a logo. The file name will be the file name. If a block with this name already exists in the current drawing, the block from the drawing will be used</h42>
+    <h39>The height of the text in all cells of the title block. The default is 2.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h39>
+    <h40>Additional text height. It is installed in such cells as "Document designation", "Stage", "Sheet", etc., which gives the title block expressiveness and readability. The default is 3.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h40>
+    <h41>Specify the block defined in this drawing to insert it into the title block as a logo</h41>
+    <h42>The specified dwg-file will be added to the current drawing in the form of a block, which will be inserted into the title block as a logo. The file name will be the file name. If a block with this name already exists in the current drawing, the block from the drawing will be used</h42>
     <h43>POSTS</h43>
     <h44>Post</h44>
     <h45>FIELDS</h45>
@@ -1386,7 +1385,7 @@
     <h66>Save filled fields as standard</h66>
     <h67>Load</h67>
     <h68>Load saved field values</h68>
-    <h69>Add fields to stamp</h69>
+    <h69>Add fields to title block</h69>
     <h70>Set Default Values</h70>
     <h71>Get the value from the drawing</h71>
     <h72>DSTU B A.2.4-4: 2009</h72>
@@ -1397,11 +1396,11 @@
     <msg3>Value</msg3>
     <msg4>already contained in the list of standard values</msg4>
     <msg5>The list contains the same values!</msg5>
-    <msg6>Filled values updated in the current drawing\nDo not forget to call regeneration to update the values in the stamps</msg6>
+    <msg6>Filled values updated in the current drawing\nDo not forget to call regeneration to update the values in the title blocks</msg6>
     <msg7>Filled values added to the drawing</msg7>
     <msg8>Saved</msg8>
-    <msg9>Select stamp:</msg9>
-    <msg10>Wrong choice! This is not a stamp!</msg10>
+    <msg9>Select title block:</msg9>
+    <msg10>Wrong choice! This is not a title block!</msg10>
     <msg11>Specify the object to retrieve the text (text, multileader, table):</msg11>
     <msg12>Specify the cell:</msg12>
     <msg13>Add fields from file</msg13>
@@ -1412,7 +1411,7 @@
     <msg18>Could not copy table from resource file</msg18>
     <msg19>You can not add more than</msg19>
     <msg20>posts</msg20>
-    <msg21>The stamp does not correspond to the stamp ModPlus!\nInvalid number of cells</msg21>
+    <msg21>The title block does not correspond to the title block ModPlus!\nInvalid number of cells</msg21>
     <msg22>The "Organization" cell contains a logo\nReplace on field?</msg22>
     <msg23>Use dwg-file as a logo</msg23>
     <msg24>Insertion point:</msg24>
@@ -1876,7 +1875,7 @@
     <h10>Certificate of admission (SRO)</h10>
     <h11>Customer</h11>
     <h12>Get from fields</h12>
-    <h13>Get data from fields (see function "Stamps")</h13>
+    <h13>Get data from fields (see function "Title blocks")</h13>
     <h14>Templates</h14>
     <h15>Objects of capital constr.</h15>
     <h16>Linear Objects</h16>
@@ -2194,8 +2193,8 @@
     <mi8>Export Layout to Model</mi8>
   </mpLayoutManager>
   <mpSheetNumbers LocalName="Sheet numbering"
-                  Description="Function for setting the sheet number in the document and in the volume in ModPlus format and stamps"
-                  FullDescription="The function works in models and in sheets. First you need to get data that is read from the stamps and formats of the ModPlus plugin. After specifying new data, you just need to apply the changes">
+                  Description="Function for setting the sheet number in the document and in the volume in ModPlus format and title blocks"
+                  FullDescription="The function works in models and in sheets. First you need to get data that is read from the title blocks and formats of the ModPlus plugin. After specifying new data, you just need to apply the changes">
     <h1>SHEET NUMBERING</h1>
     <h2>Get data from current drawing</h2>
     <h3>In model</h3>
@@ -2212,7 +2211,7 @@
     <h14>You need to go to the "Model" tab</h14>
     <h15>Search by ModPlus Formats</h15>
     <h16>No field for number</h16>
-    <h17>No Stamp</h17>
+    <h17>No Title block</h17>
     <h18>No cell for name</h18>
     <h19>No Format</h19>
     <h20>No data from layout</h20>
