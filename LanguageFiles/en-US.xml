@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.6.2.0">
+<ModPlus Name="en-US" Version="2.7.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -653,6 +653,9 @@
     <h54>MP:Add vertex</h54>
     <h55>MP:Remove vertex</h55>
     <h56>Personal account</h56>
+    <h57>Help</h57>
+    <h58>Set Nested Objects layer [mpNestedEntLayer]</h58>
+    <h59>MP:Set Nested Objects Layer</h59>
     <cb1>Icon</cb1>
     <cb2>Title</cb2>
     <border1>Border by color</border1>
@@ -678,6 +681,7 @@
     <tt16>Enable/disable the context menu for the mini function "Viewport boundary in model space"</tt16>
     <tt17>To change the language in the palette, you need to restart AutoCAD</tt17>
     <tt18>Enable/disable the context menu for wipeouts, which allows you to add or remove vertices of wipeout</tt18>
+    <tt19>Enable/disable the context menu for the mini-function "Set Nested Objects layer"</tt19>
     <err1>This name is already in use! Create another</err1>
     <err2>You need to specify the display name of the block!</err2>
     <err3>You need to select a block in the list!</err3>
@@ -708,6 +712,7 @@
     <msg21>Specify the position of the new vertex</msg21>
     <msg22>Specify the vertex to remove</msg22>
     <msg23>Unable to access AutoCAD Editor! Running another command.\nComplete the command and try again</msg23>
+    <msg24>Attention! Changing the language in the palette, panel in Ribbon for ESKD and functions context menu will occur only after restarting AutoCAD</msg24>
     <p1>ATTENTION!</p1>
     <p2>Trying to load the plugin into an incompatible version of the AutoCAD!</p2>
     <p3>Download interrupt</p3>
@@ -738,6 +743,7 @@
     <h11>The key is binding to a Google Account:</h11>
     <h12>Settings</h12>
     <h13>Personal account</h13>
+    <h14>Attention! Changing the language on the ribbon will only happen after you restart Revit</h14>
     <border1>Border by color</border1>
     <border2>Glow by color</border2>
     <border3>Border + glow by color</border3>
@@ -3157,6 +3163,10 @@
     <h3>Automatic displacement of dimension text on dimension modify</h3>
     <h4>Coefficient of displacement (from 0,1 to 1,0):</h4>
     <h5>You must enter a number between 0.1 and 1.0!</h5>
+    <h6>Attention! Include this item only when you understand what you are doing. Dimensional text offset will be triggered in a large number of cases when editing. For example, when you move objects or change scale of the view</h6>
+    <h7>Perform dimension text offset for selected dimensions</h7>
+    <h8>Restore the position of the dimension text for the selected dimensions</h8>
+    <h9>Select dimensions</h9>
     <accept>Accept</accept>
   </mprDimBias>
   <mprExcelImport LocalName="Import from Excel"
@@ -3711,6 +3721,8 @@
     <h7>Initial value:</h7>
     <h8>Direction:</h8>
     <h9>Parameter name:</h9>
+    <h10>Perform numbering of elements in groups</h10>
+    <h11>Attention! To perform item numbering in groups, groups will be ungrouped and then re-created. These actions can create problems in your project. Use this item at your own risk</h11>
     <t1>The work of the function is possible only in the schedule in the sorting settings of which the property "Itemize every instance" is checked</t1>
     <m1>Select elements for numbered marking</m1>
     <m2>No items on current view schedule</m2>
