@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.7.1.0">
+<ModPlus Name="en-US" Version="2.8.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -102,6 +102,7 @@
     <group8>Insert</group8>
     <group9>ModPlus ESKD</group9>
     <group10>Parameters</group10>
+    <group11>Families</group11>
   </CUI>
   <Configurator LocalName="Configurator">
     <title1>ModPlus configurator</title1>
@@ -114,7 +115,6 @@
     <loading>LOADING...</loading>
     <progress1>Running a timer to check for running AutoCAD or Revit applications</progress1>
     <progress2>Checking the location of the directory with the plugin</progress2>
-    <progress3>Adding entries to the registry</progress3>
     <progress4>Checking the default directories</progress4>
     <progress5>Unpacking the auto-update module (if necessary)</progress5>
     <progress6>Checking the configuration file</progress6>
@@ -3905,4 +3905,32 @@
     <p6>3 part</p6>
     <p7>number of 3 part</p7>
   </mprSheetRenumber>
+  <mprFamilyDuplicateFixer LocalName="Fix families duplicates"
+                           Description="Automate Duplicate Family Correction"
+                           FullDescription="The function allows you to copy types from duplicate families to the main families, copy the values ​​of the parameters of types, update instances of families, and also delete duplicate families">
+    <h1>Copy missing family types</h1>
+    <h2>Copy parameter values of family types</h2>
+    <h3>Replace types of family instances</h3>
+    <h4>Delete duplicate families</h4>
+    <h5>Run</h5>
+    <h6>Add a couple of families "Duplicate-Main family"</h6>
+    <h7>Select Duplicate Family</h7>
+    <h8>Select the main family (into which the types will be copied)</h8>
+    <h9>Accept</h9>
+    <m1>No types were selected in the list of processed families!</m1>
+    <m2>Creating type "{0}" for family "{1}"</m2>
+    <m3>Copying parameter values ​​of frame type "{0}" from the family "{1}" to the family "{2}"</m3>
+    <m4>Replacing the type for an instance of the family "{0}" {1}</m4>
+    <e1>Type "{0}" was not created in the family "{1}"</e1>
+    <e2>The family "{0}" could not be loaded into the document</e2>
+    <e3>The parameter "{0}" was not found in the type "{1}" of the family "{2}"</e3>
+    <e4>Type "{0}" not found in family "{1}"</e4>
+    <e5>Failed to delete family "{0}" because instances of this family are present in the model</e5>
+    <t1>Direction of processing: the family on the left is a duplicate, the family on the right is the main family</t1>
+    <t2>Add to the processing list a couple of families that did not match the standard duplicate search</t2>
+    <t3>In the main family new types will be created that are present in the duplicate family and are absent in the main family</t3>
+    <t4>The parameter values ​​will be copied from the types of the duplicate family to the main family. Copying is performed when the types names match</t4>
+    <t5>Instances of duplicate families will be replaced by instances of the main family with the installation of a similar types</t5>
+    <t6>Duplicate families that do not have instances in the model will be deleted</t6>
+  </mprFamilyDuplicateFixer>
 </ModPlus>
