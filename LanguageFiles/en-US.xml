@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModPlus Name="en-US" Version="2.8.0.0">
+<ModPlus Name="en-US" Version="2.8.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3917,6 +3917,7 @@
     <h7>Select Duplicate Family</h7>
     <h8>Select the main family (into which the types will be copied)</h8>
     <h9>Accept</h9>
+    <h10>No matching families were found in the current category for which the selected family is a duplicate.\nAn additional check is performed by type parameters - a pair of similar families should have the same type parameters</h10>
     <m1>No types were selected in the list of processed families!</m1>
     <m2>Creating type "{0}" for family "{1}"</m2>
     <m3>Copying parameter values ​​of frame type "{0}" from the family "{1}" to the family "{2}"</m3>
