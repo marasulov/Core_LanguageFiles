@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.3.0">
+<ModPlus Name="en-US" Version="2.8.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3919,6 +3919,7 @@
     <h8>Select the main family (into which the types will be copied)</h8>
     <h9>Accept</h9>
     <h10>No matching families were found in the current category for which the selected family is a duplicate.&#x0a;An additional check is performed by type parameters - a pair of similar families should have the same type parameters</h10>
+    <h11>Copy parameter values of replaced family instance</h11>
     <m1>No types were selected in the list of processed families!</m1>
     <m2>Creating type "{0}" for family "{1}"</m2>
     <m3>Copying parameter values ​​of frame type "{0}" from the family "{1}" to the family "{2}"</m3>
@@ -3934,5 +3935,6 @@
     <t4>The parameter values ​​will be copied from the types of the duplicate family to the main family. Copying is performed when the types names match</t4>
     <t5>Instances of duplicate families will be replaced by instances of the main family with the installation of a similar types</t5>
     <t6>Duplicate families that do not have instances in the model will be deleted</t6>
+    <t7>The instance parameters values ​​will be copied from the replaced duplicate family to the replacement main family</t7>
   </mprFamilyDuplicateFixer>
 </ModPlus>
