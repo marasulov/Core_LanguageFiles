@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.4.0">
+<ModPlus Name="en-US" Version="2.8.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1439,6 +1439,8 @@
     <h12>Arc</h12>
     <h13>Spline</h13>
     <h14>Ellipse</h14>
+    <h15>Length:</h15>
+    <h16>Show object</h16>
   </mpSummLength>
   <mpSelSim LocalName="Select similar"
             Description="Functions allow you to select objects that are similar to sample objects from all objects in the drawing, or from a specific set"
