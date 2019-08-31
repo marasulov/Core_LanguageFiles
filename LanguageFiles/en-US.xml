@@ -3804,6 +3804,18 @@
     <h9>Of these successfully analyzed:</h9>
     <h10>Create reinforcement</h10>
     <h11>Group reinforcement settings</h11>
+    <h12>Grouping</h12>
+    <h13>By Level</h13>
+    <h14>By Height</h14>
+    <h15>Group</h15>
+    <h16>Count</h16>
+    <h17>Profile</h17>
+    <h18>Levels</h18>
+    <h19>Heights</h19>
+    <h20>Columns in group:</h20>
+    <h21>Level</h21>
+    <h22>Height</h22>
+    <h23>Group by:</h23>
     <m1>Pick columns</m1>
     <p1>Analysis of the column:</p1>
     <p2>Search for related elements:</p2>
