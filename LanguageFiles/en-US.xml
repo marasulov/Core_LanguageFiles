@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.5.0">
+<ModPlus Name="en-US" Version="2.8.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3726,6 +3726,8 @@
     <h9>Parameter name:</h9>
     <h10>Perform numbering of elements in groups</h10>
     <h11>Attention! To perform item numbering in groups, groups will be ungrouped and then re-created. These actions can create problems in your project. Use this item at your own risk</h11>
+    <h12>Instance parameter</h12>
+    <h13>Type parameter</h13>
     <t1>The work of the function is possible only in the schedule in the sorting settings of which the property "Itemize every instance" is checked</t1>
     <m1>Select elements for numbered marking</m1>
     <m2>No items on current view schedule</m2>
