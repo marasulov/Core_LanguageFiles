@@ -3819,10 +3819,18 @@
     <h22>Height</h22>
     <h23>Group by:</h23>
     <h24>Section</h24>
+    <h25>LONGITUDINAL REINFORCEMENT</h25>
+    <h26>Longitudinal (working) rebars</h26>
+    <h27>Working reinforcement cover:</h27>
+    <h28>Cover for the working reinforcement shall be not less than 20 mm or not less than the diameter of the reinforcement</h28>
+    <h29>The diameter of the longitudinal working rebars of precast columns it is recommended to appoint not less than 16 mm. For monolithic columns and for structural reinforcement may be applied bar diameter 12 mm</h29>
     <h73>Column reinforcement settings</h73>
     <h74>Replace with reinforcement settings of the group</h74>
     <h75>Leave the reinforcement settings</h75>
     <h76>Columns reinforcement</h76>
+    <h77>Rebar bar type:</h77>
+    <h78>Diameter, mm:</h78>
+    <h138>Reinforcement cover:</h138>
     <m1>Pick columns</m1>
     <m4>Deformed deformation type rebars</m4>
     <m5>Plain deformation type rebars</m5>
