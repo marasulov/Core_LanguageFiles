@@ -3551,6 +3551,9 @@
     <h165>If the floor above the wall is missing, then</h165>
     <h166>Binding bends to the top of the floor (by the center of the rebar)</h166>
     <h167>Binding bends to the bottom of the floor (by the center of the rebar)</h167>
+    <h168>Select walls by rectangle</h168>
+    <h169>Pick walls</h169>
+    <h170>Trim joints by solid of wall</h170>
     <oa1>do not create joints</oa1>
     <oa2>bend into floor (if available)</oa2>
     <npa1>assume a floor conditionally existing</npa1>
@@ -3598,6 +3601,7 @@
     <m30>Attention! Reinforcement settings for foundation plate joint bars will be reset! Continue?</m30>
     <m31>Bend radius of rebar is less than the minimum allowable according to SP 63.13330.2012</m31>
     <m32>The specified reinforcement settings will make it impossible to model the reinforcement details!</m32>
+    <m33>Attention! Repeated analysis will clear the current list of groups and the list of foundation plates! Repeat analysis?</m33>
     <p1>Search is not processed walls intersecting with the selected walls</p1>
     <p2>Initializing the geometry of the walls</p2>
     <p3>Search for intersections of walls</p3>
@@ -3625,6 +3629,8 @@
     <full>Available in full version!</full>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
+    <yes>Yes</yes>
+    <no>No</no>
     <c1>Move to the end of the wall</c1>
     <c2>Move to the middle of the wall</c2>
     <c3>Distribute vertical reinforcement</c3>
@@ -3694,6 +3700,9 @@
     <t57>The minimum and maximum values ​​are calculated based on the specified diameters and vertical reinforcement step</t57>
     <t58>Rebar length consists of two anchoring lengths</t58>
     <t59>When you turn on the "Breaking in" option, each first pair of joints along the wall will be created with the first anchoring length, every second pair - with the second anchoring length</t59>
+    <t60>If the joints exceed the height of the overlying wall, they will be cut off along the upper face of the wall, taking into account the specified ends cover of the rebars</t60>
+    <t61>The selection variant applies to the selection of foundation plates</t61>
+    <t62>If the creation of U-shaped rebars at the ends of the walls is turned on and the extreme vertical rebars fall onto the U-shaped rebars, these vertical rebars will be shifted to the beginning of the bending of U-shaped rebars</t62>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="The function allows you to export all specified sheets to dwg/dxf">
