@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.6.0">
+<ModPlus Name="en-US" Version="2.8.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3554,6 +3554,8 @@
     <h168>Select walls by rectangle</h168>
     <h169>Pick walls</h169>
     <h170>Trim joints by solid of wall</h170>
+    <h171>Number of additional pairs of rebars:</h171>
+    <h172>Rebars step:</h172>
     <oa1>do not create joints</oa1>
     <oa2>bend into floor (if available)</oa2>
     <npa1>assume a floor conditionally existing</npa1>
