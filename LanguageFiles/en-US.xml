@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.7.0">
+<ModPlus Name="en-US" Version="2.8.11.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3156,6 +3156,10 @@
     <e21>Parts</e21>
     <e22>Ceilings</e22>
     <e23>Structural foundation</e23>
+    <e24>Curtain walls (contour)</e24>
+    <e25>Curtain grid lines</e25>
+    <e26>Curtain wall panels</e26>
+    <e27>Curtain wall mullion</e27>
     <n1>Only on Section Views</n1>
   </mprDimByLine>
   <mprDimBias LocalName="Dim offset"
