@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.11.0">
+<ModPlus Name="en-US" Version="2.8.12.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1031,6 +1031,8 @@
     <h32>ModPlus: The object is moved to the layer:</h32>
     <h33>Error of AutoLayers function:</h33>
     <h34>objects were assigned layers</h34>
+    <h35>For lines:</h35>
+    <h36>For polylines:</h36>
   </mpLayerAuto>
   <mpFormats LocalName="Formats"
              Description="Function of inserting in the drawing formats according to GOST 2.301-68"
