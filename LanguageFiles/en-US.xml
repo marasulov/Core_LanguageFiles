@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.13.0">
+<ModPlus Name="en-US" Version="2.8.20.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -995,8 +995,8 @@
     <msg2>New angle of rotation attributes:</msg2>
   </mpRotAtt>
   <mpLayerAuto LocalName="Auto layers"
-               Description="Function is used to automatically add a layer to the created objects (dimensions, text, multileaders, hatch, tables, viewports)"
-               FullDescription="The function processes the creation, copying, pasting and other commands when working with AutoCAD objects - dimensions, text, multileaders, hatching, tables, viewports - and sets the layer specified in the function settings for them. There is an option to specify the specified layers for the selected objects">
+               Description="Function is used to automatically add a layer to the created objects"
+               FullDescription="The function processes the creation, copying, pasting and other commands when working with AutoCAD objects - dimensions, text, multileaders, hatching, tables, viewports, lines, polylines, xLines, rays, circles, ellipses, splines, arcs - and sets the layer specified in the function settings for them. There is an option to specify the specified layers for the selected objects">
     <save>Save</save>
     <h1>AUTO LAYERS</h1>
     <h2>Set the layers</h2>
@@ -1034,6 +1034,12 @@
     <h34>objects were assigned layers</h34>
     <h35>For lines:</h35>
     <h36>For polylines:</h36>
+    <h37>For rays:</h37>
+    <h38>For xLines:</h38>
+    <h39>For circles:</h39>
+    <h40>For ellipses:</h40>
+    <h41>For splines:</h41>
+    <h42>For arcs:</h42>
   </mpLayerAuto>
   <mpFormats LocalName="Formats"
              Description="Function of inserting in the drawing formats according to GOST 2.301-68"
