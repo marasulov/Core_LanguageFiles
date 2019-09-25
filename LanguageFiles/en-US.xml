@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.20.0">
+<ModPlus Name="en-US" Version="2.8.24.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -40,6 +40,12 @@
     <h26>Send error report</h26>
     <h27>There is no connection to the internet, the modplus.org website or the ModPlus web services</h27>
     <h28>There is no connection to the internet, or the ModPlus web services</h28>
+    <h29>Licenses</h29>
+    <h30>Settings backup</h30>
+    <h31>Upload all</h31>
+    <h32>Download all</h32>
+    <h33>Upload configuration data to the server</h33>
+    <h34>Download configuration data from the server</h34>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
     <l1>Single-user licenses for functions</l1>
@@ -85,6 +91,8 @@
     <u38>blocked</u38>
     <u39>Personal account</u39>
     <u40>Create an account</u40>
+    <bi1>Configuration file</bi1>
+    <bid1>The configuration file contains the basic settings for your version of ModPlus, such as the adaptation, information about the connection plugins and retain information a lot of plugins (marked checkboxes, selected items in lists, etc.)</bid1>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
@@ -1098,6 +1106,7 @@
     <h51>Remove selected post</h51>
     <h52>Layout</h52>
     <h53>Use dwg-file as a logo</h53>
+    <h54>Set the current layer</h54>
     <err1>The configuration file is corrupt!\nRun the ModPlus Configurator</err1>
     <err2>An error has occurred!</err2>
     <err3>Invalid characters in the layout name:</err3>
@@ -1123,6 +1132,7 @@
     <msg9>Choose the replacement format:</msg9>
     <msg10>Wrong choice!</msg10>
     <msg11>Insertion point:</msg11>
+    <msg12>Empty sheet name is not allowed!</msg12>
   </mpFormats>
   <mpNotes LocalName="Notes"
            Description="Function for working with frequently-used notes">
@@ -2201,6 +2211,7 @@
     <h26>RENAME LAYOUT</h26>
     <h27>Current layout name:</h27>
     <h28>New layout name:</h28>
+    <h29>Following characters are not permitted in the layout name</h29>
     <mi1>Open</mi1>
     <mi2>Delete</mi2>
     <mi3>Rename</mi3>
