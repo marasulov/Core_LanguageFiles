@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.24.0">
+<ModPlus Name="en-US" Version="2.8.25.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1852,6 +1852,7 @@
     <h38>In the form of polyline</h38>
     <h39>The insertion options "By two points" and "In the form of polyline" are only available for linear products (products whose length is required). The insertion option will use if it is active and selected. When using either of the two options, you do not need to pre-specify the length of the product in the window. The "By two point" insert option is available when you select the "Side view" or "Top view" display option. The insertion option "In the form of polyline" is available when selecting the "Front view (section)" display option</h39>
     <h40>Document's status:</h40>
+    <h41>Block scale:</h41>
     <rb1>Side view</rb1>
     <rb2>Front view (section)</rb2>
     <rb3>Top view</rb3>
