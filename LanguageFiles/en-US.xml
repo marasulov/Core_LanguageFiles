@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.8.25.0">
+<ModPlus Name="en-US" Version="2.9.25.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -91,8 +91,36 @@
     <u38>blocked</u38>
     <u39>Personal account</u39>
     <u40>Create an account</u40>
+    <b1>The number of local files:</b1>
+    <b2>Open folder</b2>
+    <b3>Date of the last backup:</b3>
+    <b4>Files are successfully uploaded to the server</b4>
+    <b5>Files have been successfully downloaded from the server</b5>
+    <b6>Uploading to the server:</b6>
+    <b7>Download from server:</b7>
+    <b8>On the server, there are already stored data! Rewrite?</b8>
+    <b9>The number of files on the server:</b9>
+    <b10>Local data will be overwritten! Continue?</b10>
+    <b11>Delete all data</b11>
+    <b12>Attention! All saved data on the server will be permanently deleted! Are you sure you want to continue?</b12>
+    <b13>All files on server deleted</b13>
+    <b14>All existing files on the server will be overwritten. Continue?</b14>
     <bi1>Configuration file</bi1>
     <bid1>The configuration file contains the basic settings for your version of ModPlus, such as the adaptation, information about the connection plugins and retain information a lot of plugins (marked checkboxes, selected items in lists, etc.)</bid1>
+    <bi2>External dimensions on plan</bi2>
+    <bid2>Configuration of plugin for the Revit "External dimensions on plan"</bid2>
+    <bi3>Dimensions by line</bi3>
+    <bid3>Configuration of plugin for the Revit "Dimensions by line"</bid3>
+    <bi4>Walls Reinforcement</bi4>
+    <bid4>Default reinforcement settings of plugin for the Revit "Walls Reinforcement"</bid4>
+    <bi5>Columns Reinforcement</bi5>
+    <bid5>Default reinforcement settings of plugin for the Revit "Columns Reinforcement"</bid5>
+    <bi6>Standards</bi6>
+    <bid6>Custom standards are added to the plugin for the AutoCAD "Standards"</bid6>
+    <bi7>Notes</bi7>
+    <bid7>Custom notes are added to the plugin for the AutoCAD "Notes". The notes file is taken along the path specified in the plugin. When downloading from the server, the file is located in the folder specified in the plugin, or in the standard user settings folder. Attention! Only one note file is saved on the server, regardless of the file name!</bid7>
+    <bi8>ESKD</bi8>
+    <bid8>Custom styles of intellectual entities created in a plugin for AutoCAD "ESKD"</bid8>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
@@ -160,8 +188,6 @@
     <header11>Theme of the Configurator:</header11>
     <header12>Window borders:</header12>
     <header13>Separator:</header13>
-    <header14>Configuration file</header14>
-    <header15>Location of the configuration file:</header15>
     <header16>Registration</header16>
     <header17>Contacts:</header17>
     <header18>CHANGE STORY</header18>
@@ -261,12 +287,6 @@
     <ps1>Connecting to internet does not use a proxy</ps1>
     <ps2>When connecting to the internet, the following proxy is used:</ps2>
     <ps3>Manual proxy configuration</ps3>
-    <key1>Save to file</key1>
-    <key2>Load from file</key2>
-    <key3>Check keys</key3>
-    <key4>Delete keys</key4>
-    <key5>Upload on server</key5>
-    <key6>Download from server</key6>
     <openPath>Open directory</openPath>
     <b1>Install and enable all</b1>
     <b2>Install</b2>
@@ -331,8 +351,6 @@
     <tt42>Enable/disable display of open drawings in a separate floating menu</tt42>
     <tt43>Enable/disable the ModPlus palette</tt43>
     <tt44>Separator of integer and fractional part of numbers</tt44>
-    <tt45>Upload configuration file to ModPlus web server</tt45>
-    <tt46>Download configuration file from ModPlus web server</tt46>
     <tt47>Reload list of physical disks</tt47>
     <tt48>Deleting the configuration file, entries in the registry</tt48>
     <tt49>Go to the website</tt49>
@@ -418,6 +436,7 @@
     <msg29>Admin Rights Required</msg29>
     <msg30>Activation keys of functions successfully downloaded and applied</msg30>
     <msg31>Failed to get the list of functions from the server! Only local functions will be loaded</msg31>
+    <msg32>The configuration file has been replaced. Configurator will be restart</msg32>
     <ftp1>Downloading the configuration file from the server</ftp1>
     <ftp2>Retrieving Authorization Data...</ftp2>
     <ftp3>Reading directories on the server...</ftp3>
