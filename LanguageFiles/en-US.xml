@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.9.25.0">
+<ModPlus Name="en-US" Version="2.9.26.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1165,12 +1165,6 @@
     <h6>Add to Mtext</h6>
     <h7>For user notes:</h7>
     <h8>Edit</h8>
-    <h9>Working with server</h9>
-    <h10>You must specify a mail address in the settings window</h10>
-    <h11>Available in the full version of the function</h11>
-    <h12>Upload the current user notes file to the server</h12>
-    <h13>Download a file of user notes from the server</h13>
-    <h14>Events with the server...</h14>
     <h15>Notes</h15>
     <h16>User</h16>
     <h17>User notes file</h17>
@@ -1210,30 +1204,8 @@
     <h51>Accurately delete the selected note?</h51>
     <h52>Select multiline text:</h52>
     <h53>Not specified (or not created) file of user notes!</h53>
-    <h54>There is no connection to the internet, the modplus.org website or the ModPlus web services</h54>
-    <h55>Sending a file of user notes to the server</h55>
-    <h56>Retrieving Authorization Data</h56>
-    <h57>Reading directories on the server</h57>
-    <h58>Create a directory for the user</h58>
-    <h59>Creating a directory for a function</h59>
-    <h60>The server already has a saved file</h60>
-    <h61>Overwrite it?</h61>
-    <h62>Sending a file to the server</h62>
-    <h63>The file is saved on the server!</h63>
-    <h64>Undo Upload File</h64>
-    <h65>Downloading the user notes file from the server</h65>
-    <h66>Reading the directory for the user on the server</h66>
-    <h67>The directory for the specified mail address was not found on the server!\nThe directory is created when the user notes file is uploaded to the server</h67>
-    <h68>Reading the directory for a function on the server</h68>
-    <h69>Reading files in the function directory</h69>
-    <h70>Folder for the location of the downloaded file</h70>
-    <h71>There is already a file in the specified folder</h71>
-    <h72>There are no user notes files on the server!\nFirst they need to be uploaded to the server</h72>
-    <h73>Cancel Download</h73>
     <h74>Specify the insertion point:</h74>
     <h75>MP:Save as a note</h75>
-    <h76>Upload</h76>
-    <h77>Download</h77>
   </mpNotes>
   <mpMeshes LocalName="Meshes"
 			Description="Selection and calculation of the mass of rebar according to normative documents">
