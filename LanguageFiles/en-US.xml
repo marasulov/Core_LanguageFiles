@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.9.26.0">
+<ModPlus Name="en-US" Version="2.10.26.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4026,4 +4026,13 @@
     <t6>Duplicate families that do not have instances in the model will be deleted</t6>
     <t7>The instance parameters values ​​will be copied from the replaced duplicate family to the replacement main family</t7>
   </mprFamilyDuplicateFixer>
+  <mprFastViewCut LocalName="Cropping view"
+                  Description="Quickly create a crop view by specifying a rectangular crop area">
+    <h1>Impossible to work in view template</h1>
+    <h2>Impossible to work in Legends</h2>
+    <h3>Impossible to work in Schedules</h3>
+    <h4>Impossible to work in Drafting Views</h4>
+    <h5>Specify a rectangular area to create crop borders</h5>
+    <h6>Could not get a valid rectangular area. Try again</h6>
+  </mprFastViewCut>
 </ModPlus>
