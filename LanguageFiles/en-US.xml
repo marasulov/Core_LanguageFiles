@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.10.27.0">
+<ModPlus Name="en-US" Version="2.10.28.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -565,6 +565,7 @@
     <tt3>Open Modplus Configurator</tt3>
     <tt4>Modplus Auto Update Module Settings</tt4>
     <tt5>ModPlus plugin auto-update module</tt5>
+    <tt6>When you check the box, the auto-update module will no longer report the possibility to install this function if it is not available. Use the ModPlus Configurator to install the functions marked with the “Do not remind” flag</tt6>
     <msg1>The auto-update module should be located in the ModPlus plugin folder!\nIf the folder is correct, you should run the Configurator to update the data in the registry</msg1>
     <msg2>The auto update module has been updated</msg2>
     <msg3>The operation of the module is limited, because AutoCad, Revit or Renga is open</msg3>
