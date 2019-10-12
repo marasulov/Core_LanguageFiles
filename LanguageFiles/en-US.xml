@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.10.26.0">
+<ModPlus Name="en-US" Version="2.10.27.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -537,6 +537,7 @@
     <h33>Could not access server files</h33>
     <h34>Database</h34>
     <h35>Dwg base</h35>
+    <h36>Do not show notifications if the update contains unimportant changes (bug fixes)</h36>
     <b1>Install from file</b1>
     <b2>Install from folder</b2>
     <b3>Check all</b3>
