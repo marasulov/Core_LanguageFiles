@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.10.28.0">
+<ModPlus Name="en-US" Version="2.10.29.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3757,6 +3757,8 @@
     <h11>Attention! To perform item numbering in groups, groups will be ungrouped and then re-created. These actions can create problems in your project. Use this item at your own risk</h11>
     <h12>Instance parameter</h12>
     <h13>Type parameter</h13>
+    <h14>Parameter</h14>
+    <h15>has the "Read Only" property for the following elements</h15>
     <t1>The work of the function is possible only in the schedule in the sorting settings of which the property "Itemize every instance" is checked</t1>
     <m1>Select elements for numbered marking</m1>
     <m2>No items on current view schedule</m2>
@@ -3856,6 +3858,11 @@
     <h30>Parameter</h30>
     <h31>The number of rods in width:</h31>
     <h32>The number of rods in depth:</h32>
+    <h33>Edit spaces</h33>
+    <h34>The cross-sectional area of ​​the column, sq.mm:</h34>
+    <h35>Cross-sectional area of ​​reinforcement, sq.mm:</h35>
+    <h36>Reinforcement percentage:</h36>
+    <h37>The cross-sectional area of ​​longitudinal reinforcement is not recommended to assign more than 5% of the cross-sectional area of ​​the column</h37>
     <h73>Column reinforcement settings</h73>
     <h74>Replace with reinforcement settings of the group</h74>
     <h75>Leave the reinforcement settings</h75>
