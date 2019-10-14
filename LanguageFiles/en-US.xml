@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.10.29.0">
+<ModPlus Name="en-US" Version="2.10.31.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -538,6 +538,9 @@
     <h34>Database</h34>
     <h35>Dwg base</h35>
     <h36>Do not show notifications if the update contains unimportant changes (bug fixes)</h36>
+    <h37>When sending a request to the ModPlus web service, an access lock occurred. Contact your local network administrator for access to http://modplusservice.com services</h37>
+    <h38>Do not show this notification again</h38>
+    <h39>Support libraries have been updated</h39>
     <b1>Install from file</b1>
     <b2>Install from folder</b2>
     <b3>Check all</b3>
@@ -3863,6 +3866,9 @@
     <h35>Cross-sectional area of ​​reinforcement, sq.mm:</h35>
     <h36>Reinforcement percentage:</h36>
     <h37>The cross-sectional area of ​​longitudinal reinforcement is not recommended to assign more than 5% of the cross-sectional area of ​​the column</h37>
+    <h38>Spaces between the centers of the rods along the width of the column:</h38>
+    <h39>Spaces between the centers of the rods along the depth of the column:</h39>
+    <h40>Attention! When changing the diameter, cover or number of rods, the distances between the rods will be reset to equivalent values!</h40>
     <h73>Column reinforcement settings</h73>
     <h74>Replace with reinforcement settings of the group</h74>
     <h75>Leave the reinforcement settings</h75>
