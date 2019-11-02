@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="2.11.31.0">
+<ModPlus Name="en-US" Version="3.0.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -21,9 +21,9 @@
     <h7>Separator of the integer and fractional part:</h7>
     <h8>Dot</h8>
     <h9>Comma</h9>
-    <h10>Did you like the function? Do you consider it useful?</h10>
+    <h10>Did you like the plugin? Do you consider it useful?</h10>
     <h11>But do not like to see this window every time?</h11>
-    <h12>Just buy yourself this function!</h12>
+    <h12>Just buy yourself this plugin!</h12>
     <h13>And believe - it's quite inexpensive!</h13>
     <h14>including tax of 5%</h14>
     <h15>Close after:</h15>
@@ -48,11 +48,11 @@
     <h34>Download configuration data from the server</h34>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
-    <l1>Single-user licenses for functions</l1>
+    <l1>Single-user licenses for plugins</l1>
     <l2>Single-user subscriptions</l2>
     <l3>Multi-user subscriptions</l3>
     <u1>Authorization</u1>
-    <u2>Log in to your modplus.org account to synchronize your purchases with the current version of ModPlus. After authorization, you will be able to use the full versions of the functions according to your purchased licenses</u2>
+    <u2>Log in to your modplus.org account to synchronize your purchases with the current version of ModPlus. After authorization, you will be able to use the full versions of the plugins according to your purchased licenses</u2>
     <u3>Failed to connect to ModPlus web services. There may be no internet connection or a proxy is used that is not configured in the ModPlus Configurator. If this computer is supposed to work without access to the internet, you can get an Activation key with data on your licenses. To do this, copy the Registration key listed below and get the Activation key using a special section in your personal account on the website modplus.org</u3>
     <u4>Registration key</u4>
     <u5>Activation key</u5>
@@ -66,7 +66,7 @@
     <u13>computers</u13>
     <u14>If your account information is used on more than 5 computers, your account will be blocked automatically!</u14>
     <u15>Log out of account</u15>
-    <u16>Function:</u16>
+    <u16>Plugin:</u16>
     <u17>Product:</u17>
     <u18>Version:</u18>
     <u19>Subscribe for:</u19>
@@ -75,9 +75,9 @@
     <u22>Subscription expiration date:</u22>
     <u23>Number of workplaces:</u23>
     <u24>Subscription activation key:</u24>
-    <u25>Your account does not have single-user licenses for functions or subscriptions. Make a purchase on the modplus.org website</u25>
+    <u25>Your account does not have single-user licenses for plugins or subscriptions. Make a purchase on the modplus.org website</u25>
     <u26>Go back</u26>
-    <u27>All ModPlus functions</u27>
+    <u27>All ModPlus plugins</u27>
     <u28>User name</u28>
     <u29>User login</u29>
     <u30>User email</u30>
@@ -178,9 +178,9 @@
     <header1>Authorization</header1>
     <header2>Supported products</header2>
     <header3>Activation keys</header3>
-    <header4>Functions</header4>
+    <header4>Plugins</header4>
     <header5>Menu for:</header5>
-    <header6>Active functions</header6>
+    <header6>Active plugins</header6>
     <header7>Display:</header7>
     <header8>General</header8>
     <header9>Language:</header9>
@@ -191,7 +191,7 @@
     <header16>Registration</header16>
     <header17>Contacts:</header17>
     <header18>CHANGE STORY</header18>
-    <header19>Function</header19>
+    <header19>Plugin</header19>
     <header20>Product</header20>
     <header21>Product version</header21>
     <header22>Activation key</header22>
@@ -219,7 +219,7 @@
     <header44>Go to the forum</header44>
     <header45>Send e-mail</header45>
     <header46>Show this window at startup</header46>
-    <header47>Display functions for:</header47>
+    <header47>Display plugins for:</header47>
     <header48>version:</header48>
     <header49>There is no connection to modplus.org or to ModPlus web services. Displaying only the local list</header49>
     <header50>Paid</header50>
@@ -227,9 +227,9 @@
     <header52>In developing</header52>
     <header53>Database:</header53>
     <header54>Dwg base:</header54>
-    <header55>Functions loaded:</header55>
-    <header56>If there is no function in the list of active functions, then adding this function to the ribbon and in the menu is provided by the internal mechanisms of the plugin</header56>
-    <header57>Note: functions that are not connected to the ModPlus plugin (Configuration tab) will not be added when building a ribbon and menus!</header57>
+    <header55>Plugins loaded:</header55>
+    <header56>If there is no plugin in the list of active plugins, then adding this plugin to the ribbon and in the menu is provided by the internal mechanisms of the plugin</header56>
+    <header57>Note: plugins that are not connected to the ModPlus plugin (Configuration tab) will not be added when building a ribbon and menus!</header57>
     <header58>No installed versions of AutoCAD, suitable for installing ModPlus</header58>
     <header59>No installed versions of Revit, suitable for installing ModPlus</header59>
     <header60>Supported version of the product:</header60>
@@ -243,7 +243,7 @@
     <header68>There is no connection to https://modplus.org</header68>
     <header69>There is no access to the internet, modplus.org or ModPlus web services</header69>
     <header70>Display only:</header70>
-    <header71>Show only unused functions</header71>
+    <header71>Show only unused plugins</header71>
     <header72>Proxy settings</header72>
     <header73>Status:</header73>
     <header74>Configure the proxy manually</header74>
@@ -323,29 +323,29 @@
     <tt14>Delete all keys</tt14>
     <tt15>Upload the key file to the ModPlus web server</tt15>
     <tt16>Download the key file from the ModPlus web server</tt16>
-    <tt17>Update the list of functions</tt17>
+    <tt17>Update the list of plugins</tt17>
     <tt18>The list displays only those versions of the specified product that are in the PC</tt18>
-    <tt19>Install and enable all functions for the current version of the product</tt19>
+    <tt19>Install and enable all plugins for the current version of the product</tt19>
     <tt20>Connect to ModPlus plugin</tt20>
-    <tt21>Watch the video for the function</tt21>
-    <tt22>Go to the store to purchase the full version of the function</tt22>
-    <tt23>Download and install the function</tt23>
-    <tt24>To get the activation key, go to modplus.org and buy the function</tt24>
+    <tt21>Watch the video for the plugin</tt21>
+    <tt22>Go to the store to purchase the full version of the plugin</tt22>
+    <tt23>Download and install the plugin</tt23>
+    <tt24>To get the activation key, go to modplus.org and buy the plugin</tt24>
     <tt25>Check the entered key</tt25>
-    <tt26>Do not remind about this function when checking for new functions</tt26>
-    <tt27>The configurator installs the functions and databases that are relevant at the time of installation!</tt27>
+    <tt26>Do not remind about this plugin when checking for new plugins</tt26>
+    <tt27>The configurator installs the plugins and databases that are relevant at the time of installation!</tt27>
     <tt28>To update features and databases, use the auto-update module</tt28>
     <tt29>The configurator and the auto-update module installs only the dwg database pointer file!</tt29>
-    <tt30>Dwg files downloaded with "Dwg base" function on user request or manually on modplus.org</tt30>
+    <tt30>Dwg files downloaded with "Dwg base" plugin on user request or manually on modplus.org</tt30>
     <tt31>Clear menu</tt31>
     <tt32>Change size</tt32>
     <tt33>Create group</tt33>
     <tt34>Remove group</tt34>
-    <tt35>Add function to group</tt35>
-    <tt36>Delete function from group</tt36>
+    <tt35>Add plugin to group</tt35>
+    <tt36>Delete plugin from group</tt36>
     <tt37>Move up</tt37>
     <tt38>Move down</tt38>
-    <tt39>Update functions list</tt39>
+    <tt39>Update plugins list</tt39>
     <tt40>Enable/disable ribbon</tt40>
     <tt41>Enable/disable floating menu</tt41>
     <tt42>Enable/disable display of open drawings in a separate floating menu</tt42>
@@ -362,13 +362,13 @@
     <tt55>Download configuration file from ftp server</tt55>
     <tt56>Copy to clipboard</tt56>
     <tt57>Add panel for small buttons</tt57>
-    <tt58>The panel should contain only two or three functions!</tt58>
-    <tt59>Disable all functions for the current version of the product</tt59>
-    <tt60>Remove function</tt60>
+    <tt58>The panel should contain only two or three plugins!</tt58>
+    <tt59>Disable all plugins for the current version of the product</tt59>
+    <tt60>Remove plugin</tt60>
     <tt61>Remove panel</tt61>
     <tt62>Copied</tt62>
     <w1>Login</w1>
-    <w2>Finding a function in the list</w2>
+    <w2>Finding a plugin in the list</w2>
     <w3>Activation key</w3>
     <w4>You need to enter login!</w4>
     <w5>Events with the server ...</w5>
@@ -401,8 +401,8 @@
     <err18>No login specified on the "Registration" tab!</err18>
     <err19>The configuration file is corrupt! Restart the configurator</err19>
     <err20>File not found!</err20>
-    <err21>Errors in loading ModPlus functions</err21>
-    <err22>One or more errors occurred while loading functions. All errors are displayed in this document. Please send this document to the e-mail address modplus@mail.ru. This will help us to quickly understand the problem and eliminate it!</err22>
+    <err21>Errors in loading ModPlus plugins</err21>
+    <err22>One or more errors occurred while loading plugins. All errors are displayed in this document. Please send this document to the e-mail address modplus@mail.ru. This will help us to quickly understand the problem and eliminate it!</err22>
     <err23>Invalid ip address</err23>
     <err24>The maximum allowable value is 65535</err24>
     <msg1>No email address!</msg1>
@@ -414,13 +414,13 @@
     <msg7>You did not create an adaptation menu for AutoCAD! When you load AutoCAD, the ribbon, palette, and/or the floating ModPlus menu will be empty!\nExactly exit?</msg7>
     <msg8>You did not connect the ModPlus plug-in to any version of Revit!\nExactly exit?</msg8>
     <msg9>You did not create an adaptation menu for Revit! When you load a Revit ribbon will be empty!\nExactly exit?</msg9>
-    <msg10>You have not installed any databases! The functions in the "Products" section will not work!\nExactly exit?</msg10>
+    <msg10>You have not installed any databases! The plugins in the "Products" section will not work!\nExactly exit?</msg10>
     <msg11>When you added the required data to the AutoCAD configuration file, an error occurred:\n{0}\nRun the Configurator as administrator and try again.\nFor more information on modifying the configuration file, see modplus.org in the Help section.\nConfiguration can still add an entry to the registry to load the ModPlus plug-in, but the plug-in can not earn\nAdd the registry entry?</msg11>
     <msg12>When you added the required data to the Revit configuration file, an error occurred:\n{0}\nRun the Configurator as administrator and try again.\nFor more information on modifying the configuration file, see modplus.org in the Help section.\nConfiguration can still add an entry to the registry to load the ModPlus plug-in, but the plug-in can not earn\nAdd the registry entry?</msg12>
     <msg13>All keys will be erased! Continue?</msg13>
     <msg14>All keys deleted</msg14>
     <msg15>Enter your email address</msg15>
-    <msg16>All missing functions for the specified product version will be installed and enabled\nContinue?</msg16>
+    <msg16>All missing plugins for the specified product version will be installed and enabled\nContinue?</msg16>
     <msg17>It's valid activation key</msg17>
     <msg18>It's NOT valid activation key</msg18>
     <msg19>Attention! After downloading the configuration file from the server Configurator is restarted!\nContinue?</msg19>
@@ -434,8 +434,8 @@
     <msg27>Please install the plugin in a different folder, which will have write permissions. For example, D:/ModPlus</msg27>
     <msg28>Try again with registering the request URL?</msg28>
     <msg29>Admin Rights Required</msg29>
-    <msg30>Activation keys of functions successfully downloaded and applied</msg30>
-    <msg31>Failed to get the list of functions from the server! Only local functions will be loaded</msg31>
+    <msg30>Activation keys of plugins successfully downloaded and applied</msg30>
+    <msg31>Failed to get the list of plugins from the server! Only local plugins will be loaded</msg31>
     <msg32>The configuration file has been replaced. Configurator will be restart</msg32>
     <ftp1>Downloading the configuration file from the server</ftp1>
     <ftp2>Retrieving Authorization Data...</ftp2>
@@ -458,23 +458,23 @@
     <ftp19>There is no saved key file on the server!</ftp19>
     <ftp20>Downloading the key file</ftp20>
     <ftp21>Installing the keys</ftp21>
-    <ftp22>Installation of the function:</ftp22>
+    <ftp22>Installation of the plugin:</ftp22>
     <ftp23>Create temporary folder</ftp23>
     <ftp24>Downloading a file from the server to a temporary folder</ftp24>
-    <ftp25>Unpacking the function</ftp25>
+    <ftp25>Unpacking the plugin</ftp25>
     <ftp26>Deleting a temporary folder</ftp26>
     <ftp27>Timeout: failed to download the file from the server\nTry again</ftp27>
-    <ftp28>The function {0} was not installed! You may have entered an incorrect address in the download settings!\nPlease try again. If the error repeats, then inform us on modplus.org\nYou can download installation files from the site and install them manually using the auto-update module!</ftp28>
-    <ftp29>The following functions: {0} were not installed! You may have entered an incorrect address in the download settings!\nPlease try again. If the error repeats, then inform us on modplus.org\nYou can download installation files from the site and install them manually using the auto-update module!</ftp29>
+    <ftp28>The plugin {0} was not installed! You may have entered an incorrect address in the download settings!\nPlease try again. If the error repeats, then inform us on modplus.org\nYou can download installation files from the site and install them manually using the auto-update module!</ftp28>
+    <ftp29>The following plugins: {0} were not installed! You may have entered an incorrect address in the download settings!\nPlease try again. If the error repeats, then inform us on modplus.org\nYou can download installation files from the site and install them manually using the auto-update module!</ftp29>
     <ftp30>Sending the configuration file to the server</ftp30>
     <ftp31>The server already has a saved configuration file! Overwrite?</ftp31>
     <ftp32>The configuration file saved on the server</ftp32>
     <ftp33>Delete the current configuration file</ftp33>
     <ftp34>Restart The Configurator</ftp34>
     <reg1>Your registration key is generated based on the user name (Login) and serial number of the SPECIFIED physical disk. This means that the plugin does not need to be on the specified physical disk - enough that this disk is in the system while the plugin is running!</reg1>
-    <reg2>For example: you can connect a removable disk or a USB flash drive to your computer. Selecting it in the list (and, accordingly, entering the user name), you will receive a unique registration key, tied to this flash drive. Now your paid functions purchased for this key will work on ANY COMPUTER if you have the desired removable disk or flash drive (and, accordingly, with the same user name). You only need to run the configurator and specify the physical disk in the list</reg2>
+    <reg2>For example: you can connect a removable disk or a USB flash drive to your computer. Selecting it in the list (and, accordingly, entering the user name), you will receive a unique registration key, tied to this flash drive. Now your paid plugins purchased for this key will work on ANY COMPUTER if you have the desired removable disk or flash drive (and, accordingly, with the same user name). You only need to run the configurator and specify the physical disk in the list</reg2>
     <reg3>Your registration key is generated based on the user name and the number of your Google account. For the program to be able to obtain the number of your Google account, you must allow access to the main information of your account by clicking the "Bind" button. Your data (mail and password) are not transmitted anywhere and are not saved anywhere!</reg3>
-    <reg4>As with the case of a hard drive binding, you can use the functions you purchased on ANY computer! It is enough just to bind to your Google account!</reg4>
+    <reg4>As with the case of a hard drive binding, you can use the plugins you purchased on ANY computer! It is enough just to bind to your Google account!</reg4>
     <installed>Installed</installed>
     <missing>Missing!</missing>
     <cui1>You must select a group</cui1>
@@ -482,15 +482,15 @@
     <cui3>A group with this name already exists</cui3>
     <cui4>Enter a name for the new group</cui4>
     <cui5>At least one group must be created</cui5>
-    <cui6>You must select the function in the list of active functions</cui6>
-    <cui7>The selected active function has subfunctions, so it can only be added to the group!</cui7>
+    <cui6>You must select the plugin in the list of active plugins</cui6>
+    <cui7>The selected active plugin has sub-plugins, so it can only be added to the group!</cui7>
     <cui8>Above nowhere!</cui8>
     <cui9>Below is nowhere!</cui9>
     <cui10>Nothing is selected!</cui10>
     <cui11>Enter a new name for the group</cui11>
     <cui12>The menu will be built according to the standard scheme\nThe existing menu will be erased!\nContinue?</cui12>
     <cui13>Are you sure you want to clear the menu?</cui13>
-    <rp>Renga version supported by the function:</rp>
+    <rp>Renga version supported by the plugin:</rp>
     <rpany>Any</rpany>
   </Configurator>
   <AutoUpdater LocalName="Auto Updates Module">
@@ -500,8 +500,8 @@
     <version>Version</version>
     <product>Product</product>
     <productVersion>Product version</productVersion>
-    <function>Function</function>
-    <functionVersion>Function version</functionVersion>
+    <function>Plugin</function>
+    <functionVersion>Plugin version</functionVersion>
     <h1>Updates</h1>
     <h2>Errors</h2>
     <h3>The configurator needs to be started!</h3>
@@ -515,10 +515,10 @@
     <h11>If you do not have access to the internet, you can install or update the plugin components manually. To do this, you must download the plugin installation files (with the .mpif extension) from modplus.org and use one of the following options:</h11>
     <h12>Install or update from the specified .mpif installation file</h12>
     <h13>Install or update from the specified folder where the .mpif installation files are located</h13>
-    <h14>ModPlus: new functions</h14>
-    <h15>New functions are available in the ModPlus plugin!</h15>
-    <h16>Check the functions in the list that you wish to install</h16>
-    <h17>Function version:</h17>
+    <h14>ModPlus: new plugins</h14>
+    <h15>New plugins are available in the ModPlus plugin!</h15>
+    <h16>Check the plugins in the list that you wish to install</h16>
+    <h17>Plugin version:</h17>
     <h18>Product version:</h18>
     <h19>Do not remind</h19>
     <h20>anymore</h20>
@@ -526,7 +526,7 @@
     <h22>Autoloading module with Windows (recommended!)</h22>
     <h23>Update check period:</h23>
     <h24>If updates are available:</h24>
-    <h25>When installing new functions:</h25>
+    <h25>When installing new plugins:</h25>
     <h26>Double-click on the tray icon:</h26>
     <h27>The ModPlus auto-update module is already running!</h27>
     <h28>ModPlus installation file (* .mpif) | * .mpif</h28>
@@ -563,12 +563,12 @@
     <cm5>Open Configurator</cm5>
     <cm6>Settings</cm6>
     <cm7>Close</cm7>
-    <tt1>Check for updates and new functions</tt1>
+    <tt1>Check for updates and new plugins</tt1>
     <tt2>View change history on modplus.org</tt2>
     <tt3>Open Modplus Configurator</tt3>
     <tt4>Modplus Auto Update Module Settings</tt4>
     <tt5>ModPlus plugin auto-update module</tt5>
-    <tt6>When you check the box, the auto-update module will no longer report the possibility to install this function if it is not available. Use the ModPlus Configurator to install the functions marked with the “Do not remind” flag</tt6>
+    <tt6>When you check the box, the auto-update module will no longer report the possibility to install this plugin if it is not available. Use the ModPlus Configurator to install the plugins marked with the “Do not remind” flag</tt6>
     <msg1>The auto-update module should be located in the ModPlus plugin folder!\nIf the folder is correct, you should run the Configurator to update the data in the registry</msg1>
     <msg2>The auto update module has been updated</msg2>
     <msg3>The operation of the module is limited, because AutoCad, Revit or Renga is open</msg3>
@@ -583,15 +583,15 @@
     <msg12>Updates plugin modules are available\nUpdate?</msg12>
     <msg13>Updates of plugin components are installed:</msg13>
     <msg14>Installing the update:</msg14>
-    <msg15>Functions updates are available:</msg15>
+    <msg15>Plugins updates are available:</msg15>
     <msg16>To update, you need to close Revit</msg16>
-    <msg17>Functions updates available\nUpdate?</msg17>
-    <msg18>Updated functions are installed:</msg18>
-    <msg19>New functions are available:</msg19>
+    <msg17>Plugins updates available\nUpdate?</msg17>
+    <msg18>Updated plugins are installed:</msg18>
+    <msg19>New plugins are available:</msg19>
     <msg20>To install, you need to close AutoCAD</msg20>
     <msg21>To install, you need to close Revit</msg21>
     <msg22>To install, you need to close the ModPlus configurator</msg22>
-    <msg23>New functions are installed:</msg23>
+    <msg23>New plugins are installed:</msg23>
     <msg24>To update, you need to close Revit</msg24>
     <msg25>To update, you need to close Renga</msg25>
     <msg26>To install, you need to close AutoCAD</msg26>
@@ -614,7 +614,7 @@
     <err8>Error downloading configurator updates</err8>
     <err9>Error while downloading working files updates</err9>
     <err10>Error while downloading database updates</err10>
-    <err11>Error while downloading functions updates</err11>
+    <err11>Error while downloading plugins updates</err11>
     <err12>Error while updating data in the configuration file</err12>
     <err13>Error while unpacking updates</err13>
     <err14>No entry was found in the registry. Run the configurator</err14>
@@ -625,8 +625,8 @@
     <err19>There is no access to the internet or modplus.org site</err19>
     <err20>Not found Modplus Configurator!</err20>
     <p1>Downloading and installing the module update...</p1>
-    <p2>Update function:</p2>
-    <p3>Function installation:</p3>
+    <p2>Update plugin:</p2>
+    <p3>Plugin installation:</p3>
   </AutoUpdater>
   <AutocadDlls LocalName="Working libraries for AutoCAD">
     <accept>Accept</accept>
@@ -650,7 +650,7 @@
     <h16>ADAPTATION</h16>
     <h17>Ribbon</h17>
     <h18>Palette</h18>
-    <h19>Functions</h19>
+    <h19>Plugins</h19>
     <h20>Drawings</h20>
     <h21>Floating menu</h21>
     <h22>collapse to:</h22>
@@ -671,9 +671,9 @@
     <h37>Enable product identification icon</h37>
     <h38>When you turn on the identification icon for all primitives that have extended data with information about the product, a conditional icon in the form of a blue I-beam will be displayed. The icon is displayed in the upper right corner relative to the rectangle primitive described. The size of the icon changes after regeneration, depending on the size of the visible part of the screen</h38>
     <h39>Disable product identification icon</h39>
-    <h40>Calling the "Field" function</h40>
+    <h40>Calling the "Field" plugin</h40>
     <h41>ModPlus settings</h41>
-    <h42>The main settings of the ModPlus plugin - themes, menu on/off, context menu settings for the mini-functions. It also allows you to find out your registration key without running the Configurator</h42>
+    <h42>The main settings of the ModPlus plugin - themes, menu on/off, context menu settings for the mini-plugins. It also allows you to find out your registration key without running the Configurator</h42>
     <h43>Fields</h43>
     <h44>Fields editor</h44>
     <h45>The editor of the fields used to fill in title blocks</h45>
@@ -704,18 +704,18 @@
     <tt5>Load plugin in AutoCAD with minimal details on the command line</tt5>
     <tt6>Enable/disable ribbon</tt6>
     <tt7>Enable/disable palette</tt7>
-    <tt8>Enabling/disabling the "Functions" tab in the palette</tt8>
+    <tt8>Enabling/disabling the "Plugins" tab in the palette</tt8>
     <tt9>Enabling/disabling the "Drawings" tab in the palette</tt9>
     <tt10>Enable/disable floating menu</tt10>
     <tt11>Enable/disable the display of open drawings in the floating menu</tt11>
     <tt12>Enable/disable the display window of open drawings</tt12>
-    <tt13>Enable/disable the context menu for the mini-function "Set Nested Objects to ByBlock"</tt13>
-    <tt14>Enable/disable the context menu for the mini-function "Frequently Used Blocks"</tt14>
+    <tt13>Enable/disable the context menu for the mini-plugin "Set Nested Objects to ByBlock"</tt13>
+    <tt14>Enable/disable the context menu for the mini-plugin "Frequently Used Blocks"</tt14>
     <tt15>Configure a list of frequently used blocks</tt15>
-    <tt16>Enable/disable the context menu for the mini function "Viewport boundary in model space"</tt16>
+    <tt16>Enable/disable the context menu for the mini plugin "Viewport boundary in model space"</tt16>
     <tt17>To change the language in the palette, you need to restart AutoCAD</tt17>
     <tt18>Enable/disable the context menu for wipeouts, which allows you to add or remove vertices of wipeout</tt18>
-    <tt19>Enable/disable the context menu for the mini-function "Set Nested Objects layer"</tt19>
+    <tt19>Enable/disable the context menu for the mini-plugin "Set Nested Objects layer"</tt19>
     <err1>This name is already in use! Create another</err1>
     <err2>You need to specify the display name of the block!</err2>
     <err3>You need to select a block in the list!</err3>
@@ -746,7 +746,7 @@
     <msg21>Specify the position of the new vertex</msg21>
     <msg22>Specify the vertex to remove</msg22>
     <msg23>Unable to access AutoCAD Editor! Running another command.\nComplete the command and try again</msg23>
-    <msg24>Attention! Changing the language in the palette, panel in Ribbon for ESKD and functions context menu will occur only after restarting AutoCAD</msg24>
+    <msg24>Attention! Changing the language in the palette, panel in Ribbon for ESKD and plugins context menu will occur only after restarting AutoCAD</msg24>
     <p1>ATTENTION!</p1>
     <p2>Trying to load the plugin into an incompatible version of the AutoCAD!</p2>
     <p3>Download interrupt</p3>
@@ -754,14 +754,14 @@
     <p5>Loading working libraries...</p5>
     <p6>Loading databases...</p6>
     <p7>Initializing the configuration file:</p7>
-    <p8>Loading functions...</p8>
+    <p8>Loading plugins...</p8>
     <p9>ModPlus plugin load is completed. Elapsed time (ms):</p9>
     <p10>Have a nice work!</p10>
     <p11>Download library:</p11>
     <p12>Loading the database file:</p12>
     <p13>The database file could not be found:</p13>
     <p14>The folder Data is not found!</p14>
-    <p15>Loading function:</p15>
+    <p15>Loading plugin:</p15>
   </AutocadDlls>
   <RevitDlls LocalName="Working libraries for Revit">
     <h1>MODPLUS SETTINGS</h1>
@@ -880,7 +880,7 @@
   </mpTxtNumCopy>
   <mpMultiCopy LocalName="Multi copy"
                Description="Multiple copies of selected primitives with a certain step"
-               FullDescription="The function supports two types of copying:\nmarkup - copies primitives with a specified distance between them along the specified line;\ndivide - copies primitives by dividing the specified line by the number of segments entered.\nThere is a possibility to select an entity (line, polyline, spline) to set the copy path.">
+               FullDescription="Plugin supports two types of copying:\nmarkup - copies primitives with a specified distance between them along the specified line;\ndivide - copies primitives by dividing the specified line by the number of segments entered.\nThere is a possibility to select an entity (line, polyline, spline) to set the copy path.">
     <msg1>Select entities:</msg1>
     <msg2>Specify distance or [Divide]</msg2>
     <msg3>Enter the number of segments or [Mark]</msg3>
@@ -892,7 +892,7 @@
     <kw3>Entity</kw3>
   </mpMultiCopy>
   <mpTxtCenter LocalName="Text by center"
-               Description="The function allows you to create a single line text or align the existing one in the middle between two specified points">
+               Description="Plugin allows you to create a single line text or align the existing one in the middle between two specified points">
     <msg1>Specify the first point or [Existing]</msg1>
     <msg2>Existing</msg2>
     <msg3>Enter text:</msg3>
@@ -904,7 +904,7 @@
     <msg9>Specify the second point:</msg9>
   </mpTxtCenter>
   <mpStandards LocalName="Standards"
-               Description="Function allows you to create, store and add layer sets, text styles, dimensional styles and multileader styles">
+               Description="Plugin allows you to create, store and add layer sets, text styles, dimensional styles and multileader styles">
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <copy>Copy</copy>
@@ -947,7 +947,7 @@
     <h36>Specify the file from which you want to copy the standards:</h36>
     <h37>Specify the standards that you want to copy:</h37>
     <h38>Settings</h38>
-    <h39>Editing settings is only available in the full version of the function</h39>
+    <h39>Editing settings is only available in the full version of the plugin</h39>
     <h40>Create groups for sets of layers</h40>
     <h41>Auto-load standards when creating a drawing</h41>
     <h42>Auto-load standards when opening a drawing</h42>
@@ -962,7 +962,7 @@
     <h51>VIEWING SET LAYERS</h51>
     <h52>Export</h52>
     <h53>Import</h53>
-    <h54>Available in the full version of the function!</h54>
+    <h54>Available in the full version of the plugin!</h54>
     <h55>Specify the location to create the xml file</h55>
     <h56>Specify the xml file to import standards</h56>
     <h57>The selected file is not a standards storage file!</h57>
@@ -1005,7 +1005,7 @@
     <l9>Mp_Text</l9>
   </mpStandards>
   <mpMultiScale LocalName="Multi scale"
-                Description="Function allows you to scale each of the selected objects relative to themselves"
+                Description="Plugin allows you to scale each of the selected objects relative to themselves"
                 FullDescription="Each selected entity will be scaled relative to the specified point - Left Bottom, Right Bottom, Left Top, Right Top or Center. The scale point is determined by the rectangle describing the entity (Bounding Box)">
     <msg1>Copy</msg1>
     <msg2>Select objects:</msg2>
@@ -1022,13 +1022,13 @@
     <kw9>CRight</kw9>
   </mpMultiScale>
   <mpRotAtt LocalName="Rotation angle of attributes"
-            Description="Function is used to change the rotation angle of attributes in the selected blocks">
+            Description="Plugin is used to change the rotation angle of attributes in the selected blocks">
     <msg1>Select blocks:</msg1>
     <msg2>New angle of rotation attributes:</msg2>
   </mpRotAtt>
   <mpLayerAuto LocalName="Auto layers"
-               Description="Function is used to automatically add a layer to the created objects"
-               FullDescription="The function processes the creation, copying, pasting and other commands when working with AutoCAD objects - dimensions, text, multileaders, hatching, tables, viewports, lines, polylines, xLines, rays, circles, ellipses, splines, arcs - and sets the layer specified in the function settings for them. There is an option to specify the specified layers for the selected objects">
+               Description="Plugin is used to automatically add a layer to the created objects"
+               FullDescription="Plugin processes the creation, copying, pasting and other commands when working with AutoCAD objects - dimensions, text, multileaders, hatching, tables, viewports, lines, polylines, xLines, rays, circles, ellipses, splines, arcs - and sets the layer specified in the plugin settings for them. There is an option to specify the specified layers for the selected objects">
     <save>Save</save>
     <h1>AUTO LAYERS</h1>
     <h2>Set the layers</h2>
@@ -1041,7 +1041,7 @@
     <h9>For viewports:</h9>
     <h10>Excluding commands</h10>
     <h11>Learn More</h11>
-    <h12>The function of the function is based on the processing of the command completion event. However, not all commands create new objects and can also cause errors when working with this function. You can edit the list of excluding yourself</h12>
+    <h12>The function of the plugin is based on the processing of the command completion event. However, not all commands create new objects and can also cause errors when working with this plugin. You can edit the list of excluding yourself</h12>
     <h13>More details on</h13>
     <h14>forum</h14>
     <h15>Remove a command from the list</h15>
@@ -1062,7 +1062,7 @@
     <h30>Saved!</h30>
     <h31>Select objects:</h31>
     <h32>ModPlus: The object is moved to the layer:</h32>
-    <h33>Error of AutoLayers function:</h33>
+    <h33>Error of AutoLayers plugin:</h33>
     <h34>objects were assigned layers</h34>
     <h35>For lines:</h35>
     <h36>For polylines:</h36>
@@ -1074,8 +1074,8 @@
     <h42>For arcs:</h42>
   </mpLayerAuto>
   <mpFormats LocalName="Formats"
-             Description="Function of inserting in the drawing formats according to GOST 2.301-68"
-             FullDescription="Formats are inserted in the form of a block with a special label in the extended data. A label in the extended data is required to define the formats with other functions (for example, &quot;Sheet Numbering&quot;). Therefore, you should not insert the formats with standard means of inserting a block into AutoCAD. The function allows you to add title blocks to the format - for this you need to install and at least once started the function &quot;Title blocks&quot;">
+             Description="Plugin of inserting in the drawing formats according to GOST 2.301-68"
+             FullDescription="Formats are inserted in the form of a block with a special label in the extended data. A label in the extended data is required to define the formats with other plugins (for example, &quot;Sheet Numbering&quot;). Therefore, you should not insert the formats with standard means of inserting a block into AutoCAD. Plugin allows you to add title blocks to the format - for this you need to install and at least once started the plugin &quot;Title blocks&quot;">
     <accept>Accept</accept>
     <no>No</no>
     <h1>Russia</h1>
@@ -1101,7 +1101,7 @@
     <h21>Format scale:</h21>
     <h22>Title block:</h22>
     <h23>Use fields</h23>
-    <h24>Launching the Fields function</h24>
+    <h24>Launching the "Fields" plugin</h24>
     <h25>Main text height:</h25>
     <h26>Additional text height:</h26>
     <h27>Logo</h27>
@@ -1124,7 +1124,7 @@
     <h44>Layout name</h44>
     <h45>Layout number</h45>
     <h46>Scale 1:1</h46>
-    <h47>If you uncheck the box, the scale of the format will correspond to the scale indicated in the main window of the function</h47>
+    <h47>If you uncheck the box, the scale of the format will correspond to the scale indicated in the main window of the plugin</h47>
     <h49>Post</h49>
     <h50>Add new post</h50>
     <h51>Remove selected post</h51>
@@ -1135,20 +1135,20 @@
     <err2>An error has occurred!</err2>
     <err3>Invalid characters in the layout name:</err3>
     <err4>The following characters are not allowed:</err4>
-    <err5>No file with title blocks was found!\nRun the "Title blocks" function to unpack a dwg file with title blocks</err5>
+    <err5>No file with title blocks was found!\nRun the "Title blocks" plugin to unpack a dwg file with title blocks</err5>
     <err6>Length of the format is not entered</err6>
     <err7>Height of the format is not entered</err7>
     <err8>Length of the format must be at least 30 mm</err8>
     <err9>Height of the format should be not less than 15 mm</err9>
     <err10>A title block with a table style was not found in the title block file</err10>
-    <err11>Run the "Title blocks" function to overwrite the title blocks file</err11>
+    <err11>Run the "Title blocks" plugin to overwrite the title blocks file</err11>
     <err12>The title block does not correspond to the title block ModPlus! Invalid number of cells</err12>
     <err13>The file was created in a later version of AutoCAD!</err13>
     <err14>Invalid block name</err14>
     <msg1>Value</msg1>
     <msg2>already contained in the list of standard values</msg2>
     <msg3>The list contains the same values!</msg3>
-    <msg4>Available with the full version of the "Title blocks" function</msg4>
+    <msg4>Available with the full version of the "Title blocks" plugin</msg4>
     <msg5>You can not add more than</msg5>
     <msg6>posts</msg6>
     <msg7>In file</msg7>
@@ -1159,7 +1159,7 @@
     <msg12>Empty sheet name is not allowed!</msg12>
   </mpFormats>
   <mpNotes LocalName="Notes"
-           Description="Function for working with frequently-used notes">
+           Description="Plugin for working with frequently-used notes">
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <h1>Settings</h1>
@@ -1282,7 +1282,7 @@
     <h63>The length of mesh should be no more than</h63>
   </mpMeshes>
   <mpTables LocalName="Tables"
-			Description="Function of inserting AutoCAD tables into the drawing according to GOST/DSTU/STB or from the specified file">
+			Description="Plugin of inserting AutoCAD tables into the drawing according to GOST/DSTU/STB or from the specified file">
     <insert>Insert</insert>
     <all>All</all>
     <h1>TABLES</h1>
@@ -1336,8 +1336,8 @@
     <msg4>Second point of the alignment line:</msg4>
   </mpDimJustif>
   <mpStamps LocalName="Title blocks"
-            Description="Function of inserting title blocks in the drawing (as AutoCAD tables) according to normative documentation, with field support"
-            FullDescription="Using the &quot;Field&quot; function allows you to add additional values to the document that you can insert into the title block in the form of fields. This allows you to change the values in the title block at once in all the title blocks throughout the document">
+            Description="Plugin of inserting title blocks in the drawing (as AutoCAD tables) according to normative documentation, with field support"
+            FullDescription="Using the &quot;Field&quot; plugin allows you to add additional values to the document that you can insert into the title block in the form of fields. This allows you to change the values in the title block at once in all the title blocks throughout the document">
     <insert>Insert</insert>
     <no>No</no>
     <h1>Title blocks</h1>
@@ -1376,7 +1376,7 @@
     <h35>Posts in the title block</h35>
     <h36>One line up</h36>
     <h37>One line down</h37>
-    <h38>Launching "Fields" function</h38>
+    <h38>Launching "Fields" plugin</h38>
     <h39>The height of the text in all cells of the title block. The default is 2.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h39>
     <h40>Additional text height. It is installed in such cells as "Document designation", "Stage", "Sheet", etc., which gives the title block expressiveness and readability. The default is 3.5, which corresponds to ESKD GOST 2.304-81 "Drawing fonts"</h40>
     <h41>Specify the block defined in this drawing to insert it into the title block as a logo</h41>
@@ -1458,8 +1458,8 @@
     <h16>Show object</h16>
   </mpSummLength>
   <mpSelSim LocalName="Select similar"
-            Description="Functions allow you to select objects that are similar to sample objects from all objects in the drawing, or from a specific set"
-            FullDescription="Before using the function, you need to configure the conditions by which similar objects will be searched for - the same type, the same layer, the same color, etc. For some types, there are additional matching conditions. For example, the same text heights, blocks with the same name, etc.">
+            Description="Plugins allow you to select objects that are similar to sample objects from all objects in the drawing, or from a specific set"
+            FullDescription="Before using the plugin, you need to configure the conditions by which similar objects will be searched for - the same type, the same layer, the same color, etc. For some types, there are additional matching conditions. For example, the same text heights, blocks with the same name, etc.">
     <h1>SELECT SIMILAR</h1>
     <h2>GENERAL SETTINGS</h2>
     <h3>Add sample objects to the final set (select similar from the selected)</h3>
@@ -1605,7 +1605,7 @@
     <err4>Invalid Input</err4>
   </mpCalc>
   <mpDBviewer LocalName="Normative base"
-              Description="Function for viewing the normative base of the plugin">
+              Description="Plugin for viewing the normative base">
     <cancel>Cancel</cancel>
     <cb1>Metal</cb1>
     <cb2>Concrete</cb2>
@@ -1641,7 +1641,7 @@
   </mpDBviewer>
   <mpArmature LocalName="Reinforcement"
               Description="Working with assortments of reinforcement - obtaining various information and calculations"
-              FullDescription="The function requires plug-in databases. The function allows you to obtain various information and calculation data (area, weight, anchoring, etc.) for a large number of different assortments">
+              FullDescription="Plugin requires plug-in databases. Plugin allows you to obtain various information and calculation data (area, weight, anchoring, etc.) for a large number of different assortments">
     <cancel>Cancel</cancel>
     <h1>REINFORCEMENT</h1>
     <h2>Norm. document</h2>
@@ -1728,8 +1728,8 @@
     <msg1>Select annotative entities:</msg1>
   </mpRemoveAnnotScale>
   <mpTotals LocalName="Totals"
-            Description="Function for quickly creating Totals with the possibility of obtaining values from the drawing"
-            FullDescription="The function collects data from tables inserted into the current document. The list of reference documents is collected according to the regulatory documents that are present in the plugin database">
+            Description="Plugin for quickly creating Totals with the possibility of obtaining values from the drawing"
+            FullDescription="Plugin collects data from tables inserted into the current document. The list of reference documents is collected according to the regulatory documents that are present in the plugin database">
     <insert>Insert table</insert>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
@@ -1739,7 +1739,7 @@
     <h3>Belarus</h3>
     <h4>Settings</h4>
     <h5>Create a file automatically</h5>
-    <h6>If this option is enabled and the current document is saved, the shared data file (Drawing name_Totals.xml) will be automatically created in the current drawing location directory when the function starts</h6>
+    <h6>If this option is enabled and the current document is saved, the shared data file (Drawing name_Totals.xml) will be automatically created in the current drawing location directory when the plugin starts</h6>
     <h7>Inserting tables</h7>
     <h8>Table scale:</h8>
     <h9>Text height:</h9>
@@ -1781,8 +1781,8 @@
     <h45>No blocks found in the current space!</h45>
     <h46>Error reading settings!</h46>
     <h47>In the table file not found a table with a table style</h47>
-    <h48>Run the "Tables" function to overwrite the table file</h48>
-    <h49>No file with tables found!\nYou need to start the "Tables" function</h49>
+    <h48>Run the "Tables" plugin to overwrite the table file</h48>
+    <h49>No file with tables found!\nYou need to start the "Tables" plugin</h49>
     <h50>Finding data in layout:</h50>
     <h51>The view screen is cropped by an unhandled object!</h51>
     <h52>Viewport №</h52>
@@ -1797,8 +1797,8 @@
     <h61>You must select one or more drawings in the list of open drawings or set the checkbox "Search only in current drawing"</h61>
   </mpTotals>
   <mpProductInsert LocalName="Product insert"
-                   Description="The function of inserting products from the ModPlus database as blocks containing extended data"
-                   FullDescription="The function creates AutoCAD blocks based on data from the plugin database. Extended data is added to the blocks, which allows processing these blocks with other functions and creating a specification based on them\nThe function also allows you to add extended data to ordinary AutoCAD entities\nImportant! Blocks must be inserted with this function or copy already inserted, otherwise (when inserted by normal means AutoCAD), extended data will not be added!">
+                   Description="Plugin of inserting products from the ModPlus database as blocks containing extended data"
+                   FullDescription="Plugin creates AutoCAD blocks based on data from the database. Extended data is added to the blocks, which allows processing these blocks with other plugins and creating a specification based on them\nPlugin also allows you to add extended data to ordinary AutoCAD entities\nImportant! Blocks must be inserted with this plugin or copy already inserted, otherwise (when inserted by normal means AutoCAD), extended data will not be added!">
     <close>Close</close>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
@@ -1808,7 +1808,7 @@
     <cb3>Wood/Plastics</cb3>
     <cb4>Materials</cb4>
     <cb5>Other</cb5>
-    <h1>Edit the list of documents used by the function</h1>
+    <h1>Edit the list of documents used by the plugin</h1>
     <h2>Open the database search bar</h2>
     <h3>Search</h3>
     <h4>2 characters or more</h4>
@@ -1869,8 +1869,8 @@
     <msg11>Second point</msg11>
   </mpProductInsert>
   <mpDrawOrderByLayer LocalName="Draworder by layer"
-                      Description="The function serves to change the draworder according to the layers"
-                      FullDescription="The function processes the layers marked with check marks in the window, changing the drawing order according to the order of the marked layers. There is a mode &quot;Auto&quot;, which automatically changes the order of drawing objects on one of the two specified layers when creating or editing">
+                      Description="Plugin serves to change the draworder according to the layers"
+                      FullDescription="Plugin processes the layers marked with check marks in the window, changing the drawing order according to the order of the marked layers. There is a mode &quot;Auto&quot;, which automatically changes the order of drawing objects on one of the two specified layers when creating or editing">
     <h1>DRAWORDER BY LAYER</h1>
     <h2>Reverse list</h2>
     <h3>Select all</h3>
@@ -1887,7 +1887,7 @@
     <h14>Load and apply the layer position stored in the current drawing. Layers that have been added after the position is saved will be moved to the end of the list</h14>
   </mpDrawOrderByLayer>
   <mpDocTemplates LocalName="Templates. Stage P"
-                  Description="The function allows you to create templates of the text part of the section according to &quot;Resolution of the Russian Federation No.87&quot; with the title page according to GOST R 21.1101-2013">
+                  Description="Plugin allows you to create templates of the text part of the section according to &quot;Resolution of the Russian Federation No.87&quot; with the title page according to GOST R 21.1101-2013">
     <h1>TEMPLATES. STAGE P</h1>
     <h2>Common Properties</h2>
     <h3>Project Name</h3>
@@ -1900,7 +1900,7 @@
     <h10>Certificate of admission (SRO)</h10>
     <h11>Customer</h11>
     <h12>Get from fields</h12>
-    <h13>Get data from fields (see function "Title blocks")</h13>
+    <h13>Get data from fields (see plugin "Title blocks")</h13>
     <h14>Templates</h14>
     <h15>Objects of capital constr.</h15>
     <h16>Linear Objects</h16>
@@ -1913,7 +1913,7 @@
     <h23>Open a Word file</h23>
   </mpDocTemplates>
   <mpPrPosition LocalName="Product position"
-                Description="The function adds/removes a position to the selected products and allows position marking of the item">
+                Description="Plugin adds/removes a position to the selected products and allows position marking of the item">
     <h1>Select entities that are ModPlus products</h1>
     <h2>Delete</h2>
     <h3>Element</h3>
@@ -1926,8 +1926,8 @@
     <h10>Insertion point</h10>
   </mpPrPosition>
   <mpPrToTable LocalName="Products to table"
-               Description="The function allows you to fill the specification table with the selected ModPlus products"
-               FullDescription="The function collects data for the specification from the extended product data (blocks created by the &quot;Insert product&quot; function, or AutoCAD primitives with the expanded data added by the &quot;Insert product&quot; function), as well as from blocks that have attributes for the specification. It is possible to specify a line from which the table will be populated">
+               Description="Plugin allows you to fill the specification table with the selected ModPlus products"
+               FullDescription="Plugin collects data for the specification from the extended product data (blocks created by the &quot;Insert product&quot; plugin, or AutoCAD primitives with the expanded data added by the &quot;Specifications&quot; plugin), as well as from blocks that have attributes for the specification. It is possible to specify a line from which the table will be populated">
     <yes>Yes</yes>
     <no>No</no>
     <h1>Select entities that are ModPlus products</h1>
@@ -1942,14 +1942,14 @@
   </mpPrToTable>
   <mpDimBreak LocalName="Dim break"
               Description="Break the selected linear dimension into two or more new"
-              FullDescription="The function allows you to break the selected linear dimension into two or more linear dimensions by dynamically specifying a new point that will be common for the two new dimensions">
+              FullDescription="Plugin allows you to break the selected linear dimension into two or more linear dimensions by dynamically specifying a new point that will be common for the two new dimensions">
     <h1>Select linear dimension</h1>
     <h2>Wrong choice!</h2>
     <h3>Break point</h3>
   </mpDimBreak>
   <mpBlkReplace LocalName="Block replace"
-                Description="The function allows quick replacement of blocks in the drawing with a sample block"
-                FullDescription="The function works in two modes: Replace selected - allows you to replace all selected blocks with one sample block; Replace similar - allows you to replace all occurrences of one block with one sample block. Allows you to delete the description of the replaced block from the drawing database. By analogy with the command &quot;PURGE&quot;. There are various settings">
+                Description="Plugin allows quick replacement of blocks in the drawing with a sample block"
+                FullDescription="Plugin works in two modes: Replace selected - allows you to replace all selected blocks with one sample block; Replace similar - allows you to replace all occurrences of one block with one sample block. Allows you to delete the description of the replaced block from the drawing database. By analogy with the command &quot;PURGE&quot;. There are various settings">
     <h1>Select replaced block</h1>
     <wrong>Wrong choice!</wrong>
     <h2>Select replacing block</h2>
@@ -1958,7 +1958,7 @@
     <h5>Delete replaced blocks from the drawing database?</h5>
     <yes>Yes</yes>
     <no>No</no>
-    <h6>Function work variant</h6>
+    <h6>Plugin work variant</h6>
     <k1>seLected</k1>
     <k2>Similar</k2>
     <k3>seTtings</k3>
@@ -1975,11 +1975,11 @@
     <h17>All settings are automatically saved</h17>
   </mpBlkReplace>
   <mpPlinesEdit LocalName="Polylines"
-                Description="Collection of various functions for working with polylines">
+                Description="Collection of various plugins for working with polylines">
     <h1>POLYLINES</h1>
-    <h2>Function works with 3D polylines</h2>
-    <h3>Function works with 2D polylines</h3>
-    <h4>Function works with LW polylines</h4>
+    <h2>Plugin works with 3D polylines</h2>
+    <h3>Plugin works with 2D polylines</h3>
+    <h4>Plugin works with LW polylines</h4>
     <h5>Add Panel to Ribbon</h5>
     <h6>Color of auxiliary geometry:</h6>
     <h7>The ModPlus tab is not found</h7>
@@ -1998,7 +1998,7 @@
     <h20>Rotate:</h20>
     <h21>TOLERANCES</h21>
     <h22>P is the point of the polyline</h22>
-    <h23>- The function works by checking both conditions</h23>
+    <h23>- Plugin works by checking both conditions</h23>
     <h24>H is the maximum deviation from the straight line:</h24>
     <h25>a - angle tolerance:</h25>
     <accept>Accept</accept>
@@ -2028,7 +2028,7 @@
     <d7>Dynamically adding a vertex to the specified polyline</d7>
     <l8>Drawing a rectangle by three points</l8>
     <l9>Removing Arc Segments from a Polyline</l9>
-    <d9>Remove polyline arc segments by replacing them with linear segments. There are several options for the function: the number of segments, the length of segments, the height of segments (chord deviation), the length of the chord</d9>
+    <d9>Remove polyline arc segments by replacing them with linear segments. There are several options for the plugin: the number of segments, the length of segments, the height of segments (chord deviation), the length of the chord</d9>
     <l10>Building the middle line</l10>
     <d10>The construction of a middle line (as polyline) between two specified curves (segments, polylines or splines)</d10>
     <wrong>Wrong choice!</wrong>
@@ -2064,8 +2064,8 @@
     <k30>Simplify the polyline?\nThe points on the same straight line will be deleted</k30>
   </mpPlinesEdit>
   <mpSpecifications LocalName="Specifications"
-                    Description="Function for the formation and filling of general specifications"
-                    FullDescription="The function allows you to add items to the context menu of AutoCAD, allowing you to expand the ability to work with the specifications: Context menu for tables: Add product from the database - allows you to add products from the plugin database directly into the AutoCAD table; Context menu for blocks: Add/change attributes for the specification - allows you to add attributes to the blocks for the specification (see details in the help)">
+                    Description="Plugin for the formation and filling of general specifications"
+                    FullDescription="Plugin allows you to add items to the context menu of AutoCAD, allowing you to expand the ability to work with the specifications: Context menu for tables: Add product from the database - allows you to add products from the plugin database directly into the AutoCAD table; Context menu for blocks: Add/change attributes for the specification - allows you to add attributes to the blocks for the specification (see details in the help)">
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <h1>SPECIFICATIONS</h1>
@@ -2074,7 +2074,7 @@
     <h4>Belarus</h4>
     <h5>Settings</h5>
     <h6>CONTEXTUAL MENUS</h6>
-    <h7>Available in the full version of the function</h7>
+    <h7>Available in the full version of the plugin</h7>
     <h8>Context menu for tables:</h8>
     <h9>Add product from the database</h9>
     <h10>Context menu for blocks:</h10>
@@ -2115,7 +2115,7 @@
     <h45>Mass</h45>
     <h46>Note</h46>
     <h47>Steel</h47>
-    <h48>Edit the list of documents used by the function</h48>
+    <h48>Edit the list of documents used by the plugin</h48>
     <h49>Open the database search bar</h49>
     <h50>Search</h50>
     <h51>2 characters or more</h51>
@@ -2141,16 +2141,16 @@
     <cb3>Manual input</cb3>
     <cb4>Top left</cb4>
     <cb5>Top right</cb5>
-    <k1>The current specification is not saved! Data will be lost!\nAre you sure you want to exit the function?</k1>
+    <k1>The current specification is not saved! Data will be lost!\nAre you sure you want to exit the plugin?</k1>
     <k2>Select entities that are ModPlus products</k2>
     <k3>Delete the selected item?</k3>
     <k4>Specification</k4>
     <k5>An error occurred while generating the key for the current drawing</k5>
     <k6>The current specification is not saved and will be lost irrevocably!\nContinue?</k6>
     <k7>The specification will be permanently deleted!\nContinue?</k7>
-    <k8>There is no file with tables! You need to run the "Tables" function to create it</k8>
+    <k8>There is no file with tables! You need to run the "Tables" plugin to create it</k8>
     <k9>Could not copy table from resource file</k9>
-    <k10>The file is created by the function "Specification" (mpSpecifications), which is part of the ModPlus plugin.\nDO NOT change this file manually. This can lead to errors in the function!</k10>
+    <k10>The file is created by the plugin "Specification" (mpSpecifications), which is part of the ModPlus plugin.\nDO NOT change this file manually. This can lead to errors in the plugin!</k10>
     <k11>Insertion point</k11>
     <k12>You did not enter anything!</k12>
     <k13>MP:Add product from database</k13>
@@ -2219,8 +2219,8 @@
     <mi8>Export Layout to Model</mi8>
   </mpLayoutManager>
   <mpSheetNumbers LocalName="Sheet numbering"
-                  Description="Function for setting the sheet number in the document and in the volume in ModPlus format and title blocks"
-                  FullDescription="The function works in models and in sheets. First you need to get data that is read from the title blocks and formats of the ModPlus plugin. After specifying new data, you just need to apply the changes">
+                  Description="Plugin for setting the sheet number in the document and in the volume in ModPlus format and title blocks"
+                  FullDescription="Plugin works in models and in sheets. First you need to get data that is read from the title blocks and formats of the ModPlus plugin. After specifying new data, you just need to apply the changes">
     <h1>SHEET NUMBERING</h1>
     <h2>Get data from current drawing</h2>
     <h3>In model</h3>
@@ -2257,7 +2257,7 @@
     <close>Close</close>
   </mpSheetNumbers>
   <mprSheetCopy LocalName="Sheet copy"
-                Description="The function allows you to make copies of the specified sheets with different settings"
+                Description="Plugin allows you to make copies of the specified sheets with different settings"
                 FullDescription="The selected sheets can be copied without views and with views. You can specify whether to copy legends and schedules. A unique numbering system allows you not to change the number for a copy of the sheet, if you specify a prefix or suffix to obtain a unique number">
     <h1>SHEET COPY</h1>
     <h2>Search by name/number</h2>
@@ -2316,7 +2316,7 @@
   </mprSheetCopy>
   <mpDwgBase LocalName="Dwg base"
              Description="Base of various blocks and drawings"
-             FullDescription="The dwg database allows you to insert both blocks and finished drawings (for example, details view). The dwg database is filled with users. The function requires access to the internet">
+             FullDescription="The dwg database allows you to insert both blocks and finished drawings (for example, details view). The dwg database is filled with users. Plugin requires access to the internet">
     <h1>Sending user blocks and drawings to the modplus.org server</h1>
     <h2>Search by database</h2>
     <h3>Search</h3>
@@ -2343,7 +2343,7 @@
     <h24>Change block data</h24>
     <h25>Change drawing data</h25>
     <h26>Sending base to the server</h26>
-    <h27>Specify one or more files from your dwg database. The function will archive these files and create an index file for the items stored in these files</h27>
+    <h27>Specify one or more files from your dwg database. Plugin will archive these files and create an index file for the items stored in these files</h27>
     <h28>Files in the user base:</h28>
     <h29>Elements that are stored in the file:</h29>
     <h30>The path to the file:</h30>
@@ -2363,7 +2363,7 @@
     <h44>This is a 3D block</h44>
     <h45>Check if the specified block is three-dimensional</h45>
     <h46>Name:</h46>
-    <h47>The name of the block that is displayed in the function window</h47>
+    <h47>The name of the block that is displayed in the plugin window</h47>
     <h48>Brief description of the block</h48>
     <h49>Normative document:</h49>
     <h50>Normative document - source</h50>
@@ -2497,7 +2497,7 @@
     <a3>Name</a3>
     <a4>Mass</a4>
     <a5>Note</a5>
-    <r1>The default function assumes that the blocks added to the local (user) database will be added to the global database that is available to all users.</r1>
+    <r1>The default plugin assumes that the blocks added to the local (user) database will be added to the global database that is available to all users.</r1>
     <r2>Therefore, try to follow the recommendations:</r2>
     <r3>The added block should be useful in the work. No matter what professional orientation it will be</r3>
     <r4>Do not use a wide variety of layers in the blocks, if this is not necessary. The best option is to use the standard layers of the ModPlus plugin</r4>
@@ -2506,7 +2506,7 @@
     <r7>If you took a block from some resource, then be sure to specify the source!</r7>
     <r8>Do not be lazy to think over the path to the block in the database</r8>
     <r9>Also on the files with blocks are imposed restrictions, namely - all the added drawings with blocks should be saved in the version of AutoCAD 2013</r9>
-    <r10>The default function assumes that the drawings added to the local (user) database will be added to the global database, which is accessible to all users.</r10>
+    <r10>The default plugin assumes that the drawings added to the local (user) database will be added to the global database, which is accessible to all users.</r10>
     <r11>Therefore, some restrictions are added to the attached drawings:</r11>
     <r12>The drawings that are added to the database must be saved in AutoCAD 2013</r12>
     <r13>In the attached drawing, Proxy primitives should not be used</r13>
@@ -2529,7 +2529,7 @@
     <pp9>For example, the path "Блоки/Каталог1/Каталог2/Каталог3" will yield the following result:</pp9>
     <pp10>Each conditional subdirectory must be separated by a "/"</pp10>
     <pp11>Adding attributes for the specifications to the block </pp11>
-    <pp12>Attributes will be added to the block when it is inserted by this function.</pp12>
+    <pp12>Attributes will be added to the block when it is inserted by this plugin.</pp12>
     <pp13>All attributes will be invisible. You can change their value in the block properties after inserting.</pp13>
     <pp14>You can fill in the default values.</pp14>
     <pp15>Existing block attributes</pp15>
@@ -2540,7 +2540,7 @@
     <pp20>If you have already located the file in the subfolder of the ModPlus/Data/DwgBase folder, then you can "Select" it.</pp20>
     <pp21>If the drawing file is not located in the subfolder of the ModPlus/Data/DwgBase folder, then you can "Copy" it to it.</pp21>
     <pp22>If you are adding an open drawing currently located in the subfolder of the ModPlus/Data/DwgBase folder, check the "Current file" check box.</pp22>
-    <pp23>The name of the drawing that is displayed in the function window</pp23>
+    <pp23>The name of the drawing that is displayed in the plugin window</pp23>
     <pp24>Brief Description of the Drawing</pp24>
     <pp25>Who added the drawing to the dwg database</pp25>
     <pp26>If you are not the author of the drawing, then indicate the source from where this drawing was taken, so as not to offend its creator</pp26>
@@ -2619,7 +2619,7 @@
                           LocalName1="Disable visibility"
                           Description1="Disable the state of the visibility of the rebar (view unobscured and view as solid)"
                           LocalName2="Elements selection settings"
-                          Description2="Settings options for the selection of elements containing reinforcement for functions">
+                          Description2="Settings options for the selection of elements containing reinforcement for plugins">
     <msg1>Select an element with rebar</msg1>
     <msg2>Select an elements with rebar</msg2>
     <t1>Turn on rebar visibility</t1>
@@ -2634,7 +2634,7 @@
     <close>Close</close>
   </mmRebarSolidAndVisible>
   <mpESKD LocalName="ModPlus ESKD"
-          Description="A collection of functions that creates intellectual objects (custom entities) for drawing up drawings according to the rules of ESKD">
+          Description="A collection of plugins that creates intellectual objects (custom entities) for drawing up drawings according to the rules of ESKD">
     <tab1>Lines</tab1>
     <tab2>Settings</tab2>
     <tab3>Axes</tab3>
@@ -2671,9 +2671,9 @@
     <h5>of the selected objects</h5>
     <h6>Palette work is stopped</h6>
     <h7>Maximum limit of the selected objects</h7>
-    <h8>can be changed in the function</h8>
+    <h8>can be changed in the plugin</h8>
     <h9>settings</h9>
-    <h10>functions</h10>
+    <h10>plugins</h10>
     <h11>Properties of ModPlus objects</h11>
     <h12>System</h12>
     <h13>New User Style</h13>
@@ -2993,7 +2993,7 @@
   </whshScheduleLookup>
   <mprCADmanager LocalName="CAD manager"
                  Description="Manage all imports of dwg files in the current document"
-                 FullDescription="The function displays all types of inserted dwg files - both belonging to the types and not belonging to the views. It is possible to search in the list, copy the identifier of the dwg-insert or view, open the view containing the dwg-insert, and delete the dwg-insertion">
+                 FullDescription="Plugin displays all types of inserted dwg files - both belonging to the types and not belonging to the views. It is possible to search in the list, copy the identifier of the dwg-insert or view, open the view containing the dwg-insert, and delete the dwg-insertion">
     <h1>CAD manager</h1>
     <h2>Copied!</h2>
     <h3>Sorting:</h3>
@@ -3037,7 +3037,7 @@
   </mprCADmanager>
   <mprExteriorPlanDimensions LocalName="External dimensions on plan"
                              Description="External dimensions on the floor plan"
-                             FullDescription="The function allows you to put in one click the external dimensions on the floor plan. The function only processes horizontal and vertical walls and axes. The outer dimensions are set according to the current working configuration, which indicates the sides of dimensioning and setting of dimensional chains"
+                             FullDescription="Plugin allows you to put in one click the external dimensions on the floor plan. Plugin only processes horizontal and vertical walls and axes. The outer dimensions are set according to the current working configuration, which indicates the sides of dimensioning and setting of dimensional chains"
                              LocalName1="External dimensions. Settings"
                              Description1="Working configuration settings for external dimensions in the floor plan">
     <h1>External dimensions settings</h1>
@@ -3106,7 +3106,7 @@
   </mprExteriorPlanDimensions>
   <mprDimByLine LocalName="Dimensions by line"
                 Description="Placing dimensions along the specified line"
-                FullDescription="The function allows you to place dimensions on the plan or section view along the conditional line formed by the two indicated points. Elements that will be dimensioned and ways of dimensioning (in the center and/or on the extreme sides) are specified in the working configuration"
+                FullDescription="Plugin allows you to place dimensions on the plan or section view along the conditional line formed by the two indicated points. Elements that will be dimensioned and ways of dimensioning (in the center and/or on the extreme sides) are specified in the working configuration"
                 LocalName1="Dimensions by line. Settings"
                 Description1="Working configuration settings for dimensions by line">
     <h1>Configuration name</h1>
@@ -3194,8 +3194,8 @@
     <accept>Accept</accept>
   </mprDimBias>
   <mprExcelImport LocalName="Import from Excel"
-                  Description="Function allows you to insert a table from Excel into a Revit drafting view"
-                  FullDescription="Function supports the conversion of basic properties of cells (size, borders, color) and text (font, size, position, color). Function writes information about the imported table to the current project. Function allows you to monitor the changed source data in real time">
+                  Description="Plugin allows you to insert a table from Excel into a Revit drafting view"
+                  FullDescription="Plugin supports the conversion of basic properties of cells (size, borders, color) and text (font, size, position, color). Plugin writes information about the imported table to the current project. Plugin allows you to monitor the changed source data in real time">
     <h1>Import from Excel</h1>
     <h2>Table:</h2>
     <h3>Status:</h3>
@@ -3224,8 +3224,8 @@
     <b6>Abort update</b6>
     <b7>Convert</b7>
     <b8>Insert</b8>
-    <w1>In the limited version of the function you can not add more than 3 tables</w1>
-    <w2>In the limited version of the function, only the first three sheets of the selected Excel file are available</w2>
+    <w1>In the limited version of the plugin you can not add more than 3 tables</w1>
+    <w2>In the limited version of the plugin, only the first three sheets of the selected Excel file are available</w2>
     <m1>File successfully read</m1>
     <m2>Could not read file</m2>
     <m3>Conversion of sheet</m3>
@@ -3236,7 +3236,7 @@
     <m8>All data on the selected drafting view will be deleted! Continue?</m8>
     <m9>You must specify a name for the new drafting view</m9>
     <m10>Drafting view with this name is already present in the document</m10>
-    <m11>To run the function, go to the project</m11>
+    <m11>To run the plugin, go to the project</m11>
     <m12>Do you want to open the created view?</m12>
     <m13>Source file not found!</m13>
     <m14>The selected table and the associated drafting view will be permanently deleted! Continue?</m14>
@@ -3248,7 +3248,7 @@
   </mprExcelImport>
   <mprInteriorPlanDimensions LocalName="Internal dimensions on plan"
                              Description="Internal dimensions on the floor plan"
-                             FullDescription="Function only works with vertical and horizontal walls in the plan and does not process the curtain walls">
+                             FullDescription="Plugin only works with vertical and horizontal walls in the plan and does not process the curtain walls">
     <h1>Internal dimensions on plan</h1>
     <h2>Axis dimensioning</h2>
     <h3>Openings dimensioning</h3>
@@ -3286,16 +3286,16 @@
     <s11>Creating final dimension chains</s11>
   </mprInteriorPlanDimensions>
   <mprNestedFamilyParamsTransfer LocalName="Associate nested family parameters"
-                                 Description="Function allows you to simplify the work of establishing a associating between the parameters of nested families with the parameters of the parent family"
-                                 FullDescription="Using the function, you can create new parameters in the parent family based on one or more parameters of nested families. There is a possibility to set a mask for the name of the created parameter by adding a prefix or suffix. The function also allows you to set and delete a link to existing parameters of the parent family">
-    <msg1>The function is only available in the Family Editor</msg1>
-    <msg2>Attention! There are no standard types in the current family! Correct operation Function is not possible!</msg2>
-    <msg3>You can choose the option "Continue and create type" - then the function will create a type with the name:</msg3>
+                                 Description="Plugin allows you to simplify the work of establishing a associating between the parameters of nested families with the parameters of the parent family"
+                                 FullDescription="Using the plugin, you can create new parameters in the parent family based on one or more parameters of nested families. There is a possibility to set a mask for the name of the created parameter by adding a prefix or suffix. Plugin also allows you to set and delete a link to existing parameters of the parent family">
+    <msg1>Plugin is only available in the Family Editor</msg1>
+    <msg2>Attention! There are no standard types in the current family! Correct operation plugin is not possible!</msg2>
+    <msg3>You can choose the option "Continue and create type" - then the plugin will create a type with the name:</msg3>
     <msg4>If you do not want to create a new type, then you need to do the following:</msg4>
     <msg5>1. Select the option "Back to family editor"</msg5>
     <msg6>2. Open the standard "Family Types" dialog box</msg6>
     <msg7>3. Create a new type and delete it immediately</msg7>
-    <msg8>4. Run this Function again</msg8>
+    <msg8>4. Run this plugin again</msg8>
     <msg9>Can not remove parameter</msg9>
     <msg10>In the current family, there already exists a parameter named</msg10>
     <msg11>Select further action:</msg11>
@@ -3336,7 +3336,7 @@
     <cancel>Cancel</cancel>
   </mprNestedFamilyParamsTransfer>
   <mprTools LocalName="Tools"
-            Description="A collection of small auxiliary functions">
+            Description="A collection of small auxiliary plugins">
     <Hide>Hide</Hide>
     <Show>Show</Show>
     <ttShow>Show all items of the specified category in the current view</ttShow>
@@ -3404,7 +3404,7 @@
   </mrObjectsFilter>
   <mprWallsReinforcement LocalName="Walls reinforcement"
                          Description="Analysis, grouping and reinforcement according to given conditions of walls and openings"
-                         FullDescription="The function works only with walls located in one level. The function analyzes the walls, allowing you to find three types of intersections (corner, end and cross) and openings. Flexible grouping allows you to specify exactly what type of reinforcement should be made. You can perform reinforcement only for the specified groups - walls, intersections or openings. The function can work even on an empty template">
+                         FullDescription="Plugin works only with walls located in one level. Plugin analyzes the walls, allowing you to find three types of intersections (corner, end and cross) and openings. Flexible grouping allows you to specify exactly what type of reinforcement should be made. You can perform reinforcement only for the specified groups - walls, intersections or openings. Plugin can work even on an empty template">
     <h1>SETTINGS</h1>
     <h2>PLUGIN WINDOW:</h2>
     <h3>Transparency of the window</h3>
@@ -3631,7 +3631,7 @@
     <m24>You did not specify for which groups to create reinforcement!</m24>
     <m25>No groups have been created for reinforcement!</m25>
     <m26>Select walls</m26>
-    <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the Function cannot be opened in the Family Editor! It is recommended that before using the function, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
+    <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the plugin cannot be opened in the Family Editor! It is recommended that before using the plugin, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
     <m28>Select foundation plates</m28>
     <m29>The selected foundation plate (id: {0}) has no mates with selected walls</m29>
     <m30>Attention! Reinforcement settings for foundation plate joint bars will be reset! Continue?</m30>
@@ -3744,7 +3744,7 @@
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
-                      Description="The function allows you to export all specified sheets to dwg/dxf">
+                      Description="Plugin allows you to export all specified sheets to dwg/dxf">
     <t1>Select all sheets</t1>
     <t2>Deselect all sheets</t2>
     <t3>Invert selection</t3>
@@ -3762,7 +3762,7 @@
   </mrBatchSheetExport>
   <mmOrderMarking LocalName="Order marking"
                   Description="Adding numbering to the mark of elements with the possibility of marking in the schedules"
-                  FullDescription="When working in a view that is not a schedule view, the Function adds a numbered mark in the order in which the elements are created. When working in the schedule view, the Function adds a numbered mark in the order of the elements in the schedule (taking into account sorting). It is possible to set the prefix and suffix for the mark">
+                  FullDescription="When working in a view that is not a schedule view, plugin adds a numbered mark in the order in which the elements are created. When working in the schedule view, plugin adds a numbered mark in the order of the elements in the schedule (taking into account sorting). It is possible to set the prefix and suffix for the mark">
     <h1>Mark prefix</h1>
     <h2>Mark</h2>
     <h3>Mark suffix</h3>
@@ -3778,7 +3778,7 @@
     <h13>Type parameter</h13>
     <h14>Parameter</h14>
     <h15>has the "Read Only" property for the following elements</h15>
-    <t1>The work of the function is possible only in the schedule in the sorting settings of which the property "Itemize every instance" is checked</t1>
+    <t1>The work of the plugin is possible only in the schedule in the sorting settings of which the property "Itemize every instance" is checked</t1>
     <m1>Select elements for numbered marking</m1>
     <m2>No items on current view schedule</m2>
     <o1>Ascending</o1>
@@ -3934,7 +3934,7 @@
   </mprColumnsReinforcement>
   <mpStripMtext LocalName="Clear formatting"
                 Description="Remove specified formatting from multiline text"
-                FullDescription="Function allows you to delete the formatting of multiline text, mleaders, dimensions, attributes of blocks and tables">
+                FullDescription="Plugin allows you to delete the formatting of multiline text, mleaders, dimensions, attributes of blocks and tables">
     <h1>Select type of formatting to remove</h1>
     <h2>Check all</h2>
     <h3>Uncheck all</h3>
@@ -3980,10 +3980,10 @@
     <st19>Remove paragraph alignments from text</st19>
   </mpStripMtext>
   <mprSheetRenumber LocalName="Sheet numerator"
-                    Description="The function allows to renumber sheets in the project"
+                    Description="Plugin allows to renumber sheets in the project"
                     FullDescription="Renumbering of sheets is carried out within one group of sheets. You can display all sheets by analogy with the current settings of the project manager or display all sheets in one group. There is an opportunity to change the position of sheets by moving them in the group, while maintaining the initial numbering of sheets in this group">
-    <m1>To launch function go to the project</m1>
-    <m2>Available in the full version of the function</m2>
+    <m1>To launch plugin go to the project</m1>
+    <m2>Available in the full version of the plugin</m2>
     <l1>Display by groups</l1>
     <l2>Display all</l2>
     <all>All sheets</all>
@@ -4028,7 +4028,7 @@
   </mprSheetRenumber>
   <mprFamilyDuplicateFixer LocalName="Fix families duplicates"
                            Description="Automate Duplicate Family Correction"
-                           FullDescription="The function allows you to copy types from duplicate families to the main families, copy the values ​​of the parameters of types, update instances of families, and also delete duplicate families">
+                           FullDescription="Plugin allows you to copy types from duplicate families to the main families, copy the values ​​of the parameters of types, update instances of families, and also delete duplicate families">
     <h1>Copy missing family types</h1>
     <h2>Copy parameter values of family types</h2>
     <h3>Replace types of family instances</h3>
