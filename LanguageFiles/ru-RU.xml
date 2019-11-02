@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="3.0.0.0">
+<ModPlus Name="ru-RU" Version="3.0.1.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -184,7 +184,7 @@
     <header7>Отображать:</header7>
     <header8>Основные</header8>
     <header9>Язык:</header9>
-    <header10>Тема плагина:</header10>
+    <header10>Тема плагинов:</header10>
     <header11>Тема конфигуратора:</header11>
     <header12>Границы окон:</header12>
     <header13>Разделитель:</header13>

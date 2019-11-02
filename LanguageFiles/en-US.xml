@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.0.0.0">
+<ModPlus Name="en-US" Version="3.0.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -184,8 +184,8 @@
     <header7>Display:</header7>
     <header8>General</header8>
     <header9>Language:</header9>
-    <header10>Theme of the plugin:</header10>
-    <header11>Theme of the Configurator:</header11>
+    <header10>Theme of plugins:</header10>
+    <header11>Theme of Configurator:</header11>
     <header12>Window borders:</header12>
     <header13>Separator:</header13>
     <header16>Registration</header16>
