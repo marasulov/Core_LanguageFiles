@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.1.0">
+<ModPlus Name="en-US" Version="3.1.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4095,5 +4095,6 @@
     <m9>Copying a Drafting Views from "{0}" to a document "{1}"</m9>
     <m10>Copying a Image Views from "{0}" to a document "{1}"</m10>
     <m11>Copying a Revisions from "{0}" to a document "{1}"</m11>
+    <m12>Copying completed!</m12>
   </mprCopySheetsToOpenDocuments>
 </ModPlus>
