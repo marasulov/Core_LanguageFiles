@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.2.0">
+<ModPlus Name="en-US" Version="3.1.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -507,7 +507,7 @@
     <h3>The configurator needs to be started!</h3>
     <h4>You need to start the configurator to update the adaptation menu!</h4>
     <h5>Run the update after you close AutoCAD, Revit, or Configurator</h5>
-    <h6>On modplus.org site published a new news</h6>
+    <h6>On the site modplus.org published news</h6>
     <h7>In VK group "ModPlus for AutoCad and Revit" a new record was published</h7>
     <h8>Go to record</h8>
     <h9>Do not miss! This can be useful!</h9>
