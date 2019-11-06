@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LanguageFiles", "LanguageFiles\LanguageFiles.shproj", "{59EE89C8-4BCD-4B4D-97AC-8DAFD1DCA8D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModPlusLanguageCreator", "ModPlusLanguageCreator\ModPlusLanguageCreator.csproj", "{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Releaser", "Releaser\Releaser.csproj", "{50979918-64FF-4751-B781-38B0C99EB9F7}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -22,10 +20,6 @@ Global
 		{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1BA66BB-6CC9-4B34-9EDC-CA4920A5DCF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50979918-64FF-4751-B781-38B0C99EB9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50979918-64FF-4751-B781-38B0C99EB9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50979918-64FF-4751-B781-38B0C99EB9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50979918-64FF-4751-B781-38B0C99EB9F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
