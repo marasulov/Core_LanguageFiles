@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.4.0">
+<ModPlus Name="en-US" Version="3.1.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1074,7 +1074,7 @@
     <h42>For arcs:</h42>
   </mpLayerAuto>
   <mpFormats LocalName="Formats"
-             Description="Plugin of inserting in the drawing formats according to GOST 2.301-68"
+             Description="Plugin of inserting in the drawing formats according to GOST 2.301-68/ISO 216"
              FullDescription="Formats are inserted in the form of a block with a special label in the extended data. A label in the extended data is required to define the formats with other plugins (for example, &quot;Sheet Numbering&quot;). Therefore, you should not insert the formats with standard means of inserting a block into AutoCAD. Plugin allows you to add title blocks to the format - for this you need to install and at least once started the plugin &quot;Title blocks&quot;">
     <accept>Accept</accept>
     <no>No</no>
