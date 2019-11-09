@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.3.0">
+<ModPlus Name="en-US" Version="3.1.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1131,6 +1131,9 @@
     <h52>Layout</h52>
     <h53>Use dwg-file as a logo</h53>
     <h54>Set the current layer</h54>
+    <h55>Compliance with GOST table</h55>
+    <h56>The sizes of formats at multiplicity more than 1 are taken by multiplication of the parties of a format with multiplicity 1 on size of multiplicity that corresponds to limiting deviations in table 3 (paragraph 6). When you check the box, the sizes of the formats will be taken in full accordance with table 2 (paragraph 5)</h56>
+    <h57>Format</h57>
     <err1>The configuration file is corrupt!\nRun the ModPlus Configurator</err1>
     <err2>An error has occurred!</err2>
     <err3>Invalid characters in the layout name:</err3>
