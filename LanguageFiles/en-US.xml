@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.6.2">
+<ModPlus Name="en-US" Version="3.1.6.3">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2433,9 +2433,9 @@
     <msg21>Perhaps you have an archive opened</msg21>
     <msg22>Could not find the file to send. Perhaps you deleted it?</msg22>
     <msg23>There is no access to the internet or modplus.org!</msg23>
-    <msg24>Retrieving Authorization Data</msg24>
+    <msg24>Sending</msg24>
     <msg25>Uploading a file to the server</msg25>
-    <msg26>File upload to server is complete</msg26>
+    <msg26>Notification submission</msg26>
     <msg27>File</msg27>
     <msg28>was sent to the modplus.org server</msg28>
     <msg29>Once the file is verified, we will add its contents to the public database</msg29>
