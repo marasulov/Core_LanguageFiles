@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.6.0">
+<ModPlus Name="en-US" Version="3.1.6.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2311,7 +2311,7 @@
     <h47>Create copies of schedules</h47>
     <h48>Sheets selected:</h48>
     <h49>Duplicate text notes</h49>
-    <h50>New name:</h50>
+    <h50>Duplicate name:</h50>
     <h51>Search and replace in new sheet names</h51>
     <h52>To find:</h52>
     <h53>Replaced by:</h53>
