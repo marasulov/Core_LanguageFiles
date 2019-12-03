@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.6.4">
+<ModPlus Name="en-US" Version="3.1.6.5">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -439,6 +439,7 @@
     <msg30>Activation keys of plugins successfully downloaded and applied</msg30>
     <msg31>Failed to get the list of plugins from the server! Only local plugins will be loaded</msg31>
     <msg32>The configuration file has been replaced. Configurator will be restart</msg32>
+    <msg33>Error accessing the file system! Restart Configurator with administrator privileges?</msg33>
     <ftp1>Downloading the configuration file from the server</ftp1>
     <ftp2>Retrieving Authorization Data...</ftp2>
     <ftp3>Reading directories on the server...</ftp3>
