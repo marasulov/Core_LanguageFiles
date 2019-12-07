@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.6.5">
+<ModPlus Name="en-US" Version="3.1.6.6">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1722,7 +1722,7 @@
     <p3>Filling data</p3>
   </mpArmature>
   <mpTxtCopyPaste LocalName="Fast text copy"
-                  Description="Fast copying of single line or multiline text content">
+                  Description="Fast copying of single line or multiline text content, mleaders or table cells">
     <msg1>Select the source text:</msg1>
     <msg2>Select source text or [Delete]</msg2>
     <msg3>Wrong choice!</msg3>
@@ -1933,7 +1933,7 @@
   </mpPrPosition>
   <mpPrToTable LocalName="Products to table"
                Description="Plugin allows you to fill the specification table with the selected ModPlus products"
-               FullDescription="Plugin collects data for the specification from the extended product data (blocks created by the &quot;Insert product&quot; plugin, or AutoCAD primitives with the expanded data added by the &quot;Specifications&quot; plugin), as well as from blocks that have attributes for the specification. It is possible to specify a line from which the table will be populated">
+               FullDescription="Plugin collects data for the specification from the extended product data (blocks created by the &quot;Insert product&quot; plugin, or AutoCAD primitives with the expanded data added by the &quot;Insert product&quot; plugin), as well as from blocks that have attributes for the specification. It is possible to specify a line from which the table will be populated">
     <yes>Yes</yes>
     <no>No</no>
     <h1>Select entities that are ModPlus products</h1>
