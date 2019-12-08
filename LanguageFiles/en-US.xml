@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.6.6">
+<ModPlus Name="en-US" Version="3.1.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -280,6 +280,8 @@
     <header105>Open personal account</header105>
     <h106>Your version of ModPlus is hacked!</h106>
     <h107>ModPlus software detected files modified by third parties! Configurator operation will be interrupted!</h107>
+    <h108>Import customization menu from xml file</h108>
+    <h109>Export customization menu to xml file</h109>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -440,6 +442,8 @@
     <msg31>Failed to get the list of plugins from the server! Only local plugins will be loaded</msg31>
     <msg32>The configuration file has been replaced. Configurator will be restart</msg32>
     <msg33>Error accessing the file system! Restart Configurator with administrator privileges?</msg33>
+    <msg34>The current menu for AutoCAD will be overwritten!</msg34>
+    <msg35>The current menu for Revit will be overwritten!</msg35>
     <ftp1>Downloading the configuration file from the server</ftp1>
     <ftp2>Retrieving Authorization Data...</ftp2>
     <ftp3>Reading directories on the server...</ftp3>
