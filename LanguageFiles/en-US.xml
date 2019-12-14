@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.1.7.0">
+<ModPlus Name="en-US" Version="3.2.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4117,4 +4117,119 @@
     <m11>Copying a Revisions from "{0}" to a document "{1}"</m11>
     <m12>Copying completed!</m12>
   </mprCopySheetsToOpenDocuments>
+  <mprWorksets LocalName="Worksets"
+               Description="Manage, create, and apply worksets"
+               FullDescription="The plugin allows you to create workset configurations that you can use to create worksets in a document. Configurations can be imported and exported. For each workset in the configuration, you can specify the conditions for applying the workset to an element">
+    <yes>Yes</yes>
+    <no>No</no>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <and>AND</and>
+    <or>OR</or>
+    <h1>Create worksets</h1>
+    <h2>Create worksets and apply them by filters</h2>
+    <h3>Apply worksets by filters</h3>
+    <h4>Search (enter * to display only selected items)</h4>
+    <h5>Selected categories:</h5>
+    <h6>Instruction</h6>
+    <h7>Parameter name:</h7>
+    <h8>Condition:</h8>
+    <h9>Values:</h9>
+    <h10>Open file</h10>
+    <h11>Read settings</h11>
+    <h12>Each row is a group</h12>
+    <h13>Separator items in a row:</h13>
+    <h14>First value is the name of the group</h14>
+    <h15>Each group is separated by an empty line</h15>
+    <h16>Group name is preceded by a symbol:</h16>
+    <h17>Preview</h17>
+    <h18>Select a group to import worksets:</h18>
+    <h19>Filter elements by category:</h19>
+    <h20>Filter elements by parameters:</h20>
+    <h21>Copy filter settings to all worksets of the current group</h21>
+    <h22>Copy filter settings to all worksets of all groups</h22>
+    <h23>Handling work sets in a group</h23>
+    <h24>Add prefix:</h24>
+    <h25>Prefix</h25>
+    <h26>Add suffix:</h26>
+    <h27>Suffix</h27>
+    <h28>Sought value</h28>
+    <h29>replaced by:</h29>
+    <h30>New value</h30>
+    <h31>Only process checked worksets</h31>
+    <h32>Check all</h32>
+    <h33>Uncheck all</h33>
+    <h34>Inverse</h34>
+    <h35>Available in the full version of the plugin</h35>
+    <h36>Result</h36>
+    <h37>Import worksets</h37>
+    <h38>Group export</h38>
+    <h39>Group</h39>
+    <h40>Enter name</h40>
+    <h41>Enter new name</h41>
+    <h42>Enter name of group</h42>
+    <h43>Import configuration</h43>
+    <h44>Export configuration</h44>
+    <h45>Create worksets</h45>
+    <h46>Applying worksets</h46>
+    <h47>Select categories</h47>
+    <h48>Equality parameters</h48>
+    <t1>Rename configuration</t1>
+    <t2>Create new configuration</t2>
+    <t3>Import configuration</t3>
+    <t4>Export configuration</t4>
+    <t5>Remove configuration</t5>
+    <t6>Rename group</t6>
+    <t7>Add new workset</t7>
+    <t8>Import group</t8>
+    <t9>Export group</t9>
+    <t10>Remove group</t10>
+    <t11>Remove workset</t11>
+    <t12>Create new group</t12>
+    <t13>Uncheck all categories</t13>
+    <t14>Add new item</t14>
+    <t15>Remove selected item</t15>
+    <t16>Open in notepad</t16>
+    <t17>This workset name is already in use</t17>
+    <t18>Empty workset name is not valid</t18>
+    <msg1>Remove?</msg1>
+    <msg2>The current configuration "{0}" will be permanently deleted!</msg2>
+    <msg3>Group "{0}" will be permanently deleted!</msg3>
+    <msg4>Copy filter settings?</msg4>
+    <msg5>Apply filters will be overwritten for all worksets of all groups in the current configuration. This action cannot be undone!</msg5>
+    <msg6>Apply filters will be overwritten for all worksets in the current group. This action cannot be undone!</msg6>
+    <msg7>Need to enter name</msg7>
+    <msg8>Name "{0}" already used</msg8>
+    <msg9>Delete selected item?</msg9>
+    <msg10>No configuration selected!</msg10>
+    <msg11>Nothing selected!</msg11>
+    <msg12>Creating worksets is only possible in documents configured for collaboration (workshared)</msg12>
+    <msg13>A workset with the name "{0}" already exists in the current document</msg13>
+    <msg14>Workset "{0}" created</msg14>
+    <msg15>No workset "{0}" found</msg15>
+    <msg16>No apply conditions are set for the workset "{0}"</msg16>
+    <msg17>Element id={0} did not have a "Workset" parameter</msg17>
+    <msg18>The workset "{0}" is applied to {1} elements: {2}</msg18>
+    <i1>You can enter multiple valid values in the "Values" field, separated by a comma. A parameter is considered to satisfy the condition if its value matches at least one valid value.</i1>
+    <i2>The condition "Presence of parameter" means that the element will be processed if there is such a parameter, regardless of the parameter value.</i2>
+    <i3>String parameters are checked only by the conditions "Equal", "Not equal", "Contains".</i3>
+    <i4>Numeric parameters are checked by all conditions except "Contains".</i4>
+    <i5>The "Contains" condition checks that the element parameter contains at least one of the valid values.</i5>
+    <i6>String values are case-insensitive.</i6>
+    <i7>Parameters of type "on/off" are checked as an integer (0-off, 1-on).</i7>
+    <c1>Equal</c1>
+    <c2>More</c2>
+    <c3>Less</c3>
+    <c4>More or equal</c4>
+    <c5>Less or equal</c5>
+    <c6>Not equal</c6>
+    <c7>Contains</c7>
+    <c8>Presence of parameter</c8>
+    <ie1>Text file</ie1>
+    <ie2>Excel file</ie2>
+    <ie3>Xml file</ie3>
+    <ie4>Current Revit document</ie4>
+    <rp1>Each row contains a list of worksets</rp1>
+    <rp2>Each row contains a working set</rp2>
+  </mprWorksets>
 </ModPlus>
