@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.2.2.0">
+<ModPlus Name="en-US" Version="3.2.2.1">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4234,6 +4234,6 @@
     <ie3>Xml file</ie3>
     <ie4>Current Revit document</ie4>
     <rp1>Each row contains a list of worksets</rp1>
-    <rp2>Each row contains a working set</rp2>
+    <rp2>Each row contains a workset</rp2>
   </mprWorksets>
 </ModPlus>
