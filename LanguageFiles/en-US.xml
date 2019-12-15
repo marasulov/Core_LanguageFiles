@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.2.0.0">
+<ModPlus Name="en-US" Version="3.2.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -121,6 +121,8 @@
     <bid7>Custom notes are added to the plugin for the AutoCAD "Notes". The notes file is taken along the path specified in the plugin. When downloading from the server, the file is located in the folder specified in the plugin, or in the standard user settings folder. Attention! Only one note file is saved on the server, regardless of the file name!</bid7>
     <bi8>ESKD</bi8>
     <bid8>Custom styles of intellectual entities created in a plugin for AutoCAD "ESKD"</bid8>
+    <bi9>Worksets</bi9>
+    <bid9>Custom Workset Configurations</bid9>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
