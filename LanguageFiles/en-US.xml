@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.2.1.0">
+<ModPlus Name="en-US" Version="3.2.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -48,6 +48,8 @@
     <h34>Download configuration data from the server</h34>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
+    <m3>Attention! The use of social networks for authorization is possible only after linking social network accounts to a personal account on the site! Otherwise, when you try to log in through social networks, a new account will be created on the site, and you will lose your license data!</m3>
+    <m4>Don't show again</m4>
     <l1>Single-user licenses for plugins</l1>
     <l2>Single-user subscriptions</l2>
     <l3>Multi-user subscriptions</l3>
