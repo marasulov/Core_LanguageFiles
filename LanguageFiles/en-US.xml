@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.2.2.1">
+<ModPlus Name="en-US" Version="3.2.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1730,12 +1730,13 @@
     <p3>Filling data</p3>
   </mpArmature>
   <mpTxtCopyPaste LocalName="Fast text copy"
-                  Description="Fast copying of single line or multiline text content, mleaders or table cells">
-    <msg1>Select the source text:</msg1>
-    <msg2>Select source text or [Delete]</msg2>
+                  Description="Fast copying of single line or multiline text content, mleaders, dimensions or table cells">
+    <msg1>Select the source entity (text, mleader, table or dimension):</msg1>
+    <msg2>Select source entity (text, mleader, table or dimension) or [Delete]:</msg2>
     <msg3>Wrong choice!</msg3>
-    <msg4>Delete the source text?</msg4>
-    <msg5>Select the text to replace the content</msg5>
+    <msg4>Delete source entity (for tables - cell content)?</msg4>
+    <msg5>Select entity (text, mleader or table) to replace the content</msg5>
+    <msg6>Specify a table cell:</msg6>
   </mpTxtCopyPaste>
   <mpRemoveAnnotScale LocalName="Clear scales"
                       Description="Clears the list of annotative scales in the selected annotative objects, leaving the current scale">
