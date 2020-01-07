@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.3.0.0">
+<ModPlus Name="en-US" Version="3.3.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -133,6 +133,16 @@
     <en-US>English (USA)</en-US>
     <de-DE>German (Germany)</de-DE>
   </ModPlusAPI>
+  <Geometry>
+    <PropReadonly>Read only</PropReadonly>
+    <PropCanBeSelected>Can be selected</PropCanBeSelected>
+    <PropFirstPoint>First point</PropFirstPoint>
+    <PropFirstPointX>X of first point</PropFirstPointX>
+    <PropFirstPointY>Y of first point</PropFirstPointY>
+    <PropSecondPoint>Second point</PropSecondPoint>
+    <PropSecondPointX>X of second point</PropSecondPointX>
+    <PropSecondPointY>Y of second point</PropSecondPointY>
+  </Geometry>
   <CUI>
     <group1>Annotations</group1>
     <group2>Design</group2>
@@ -3210,8 +3220,8 @@
     <h1>Dim offset</h1>
     <h2>Automatic displacement of dimension text on dimension creation</h2>
     <h3>Automatic displacement of dimension text on dimension modify</h3>
-    <h4>Coefficient of displacement (from 0,1 to 1,0):</h4>
-    <h5>You must enter a number between 0.1 and 1.0!</h5>
+    <h4>Coefficient of displacement (from 0.1 to 2.0):</h4>
+    <h5>You must enter a number between 0.1 and 2.0!</h5>
     <h6>Attention! Include this item only when you understand what you are doing. Dimensional text offset will be triggered in a large number of cases when editing. For example, when you move objects or change scale of the view</h6>
     <h7>Perform dimension text offset for selected dimensions</h7>
     <h8>Restore the position of the dimension text for the selected dimensions</h8>
