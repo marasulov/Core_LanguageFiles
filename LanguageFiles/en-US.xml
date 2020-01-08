@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.3.1.0">
+<ModPlus Name="en-US" Version="3.3.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2284,17 +2284,17 @@
   <mprSheetCopy LocalName="Sheet copy"
                 Description="Plugin allows you to make copies of the specified sheets with different settings"
                 FullDescription="The selected sheets can be copied without views and with views. You can specify whether to copy legends and schedules. A unique numbering system allows you not to change the number for a copy of the sheet, if you specify a prefix or suffix to obtain a unique number">
-    <h1>SHEET COPY</h1>
+    <h1>Sheet copy</h1>
     <h2>Search by name/number</h2>
     <h3>Number of copies</h3>
     <h4>Select all sheets</h4>
-    <h5>GENERAL DUPLICATION SETTINGS</h5>
+    <h5>General duplication settings</h5>
     <h6>Copy without views</h6>
     <h7>Copy with views</h7>
     <h8>Set title block:</h8>
-    <h9>CONFIGURE THE NAME OF DUPLICATE SHEET</h9>
+    <h9>Configure the name of duplicate sheet</h9>
     <h10>When creating a new name, add the numbering in</h10>
-    <h11>SCHEDULE DUPLICATION SETTINGS</h11>
+    <h11>Schedule duplication settings</h11>
     <h12>Failed to generate name for schedule duplicate</h12>
     <h13>Number prefix</h13>
     <h14>Number</h14>
@@ -2308,7 +2308,7 @@
     <h22>Do not add numbering if possible</h22>
     <h23>If you add a prefix or suffix to the sheet number or sheet name to get a unique sheet number or sheet name, then the numbering will not be added</h23>
     <h24>Available in full version</h24>
-    <h25>VIEW DUPLICATION SETTINGS</h25>
+    <h25>View duplication settings</h25>
     <h26>View copy option:</h26>
     <h27>View template:</h27>
     <h28>Duplicate Legends</h28>
@@ -2340,6 +2340,7 @@
     <h54>Only in marked sheets</h54>
     <h55>Case sensitive</h55>
     <h56>Search and replace</h56>
+    <h57>In the view name find and replace</h57>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <start>Start</start>
