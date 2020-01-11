@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.3.2.0">
+<ModPlus Name="en-US" Version="3.3.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -134,14 +134,46 @@
     <de-DE>German (Germany)</de-DE>
   </ModPlusAPI>
   <Geometry>
-    <PropReadonly>Read only</PropReadonly>
-    <PropCanBeSelected>Can be selected</PropCanBeSelected>
-    <PropFirstPoint>First point</PropFirstPoint>
-    <PropFirstPointX>X of first point</PropFirstPointX>
-    <PropFirstPointY>Y of first point</PropFirstPointY>
-    <PropSecondPoint>Second point</PropSecondPoint>
-    <PropSecondPointX>X of second point</PropSecondPointX>
-    <PropSecondPointY>Y of second point</PropSecondPointY>
+    <g1>Read only</g1>
+    <g2>Can be selected</g2>
+    <g3>First point</g3>
+    <g4>X of first point</g4>
+    <g5>Y of first point</g5>
+    <g6>Second point</g6>
+    <g7>X of second point</g7>
+    <g8>Y of second point</g8>
+    <g9>Center point</g9>
+    <g10>X of center point</g10>
+    <g11>Y of center point</g11>
+    <g12>Third point</g12>
+    <g13>X of third point</g13>
+    <g14>Y of third point</g14>
+    <g15>Radius</g15>
+    <g16>Radius point</g16>
+    <g17>Fill color</g17>
+    <g18>First radius</g18>
+    <g19>First radius point</g19>
+    <g20>Second radius</g20>
+    <g21>Second radius point</g21>
+    <g22>Origin point</g22>
+    <g23>X of origin point</g23>
+    <g24>Y of origin point</g24>
+    <g25>Contents</g25>
+    <g26>Font size</g26>
+    <g27>Color</g27>
+    <g28>Rotate</g28>
+    <g29>Horizontal text alignment</g29>
+    <g30>Vertical text alignment</g30>
+    <g31>Vertical offset</g31>
+    <g32>Horizontal offset</g32>
+    <g33>Border color</g33>
+    <g34>Border thickness</g34>
+    <g35>Stroke dash array</g35>
+    <a1>Center</a1>
+    <a2>Left</a2>
+    <a3>Right</a3>
+    <a4>Top</a4>
+    <a5>Bottom</a5>
   </Geometry>
   <CUI>
     <group1>Annotations</group1>
@@ -3877,6 +3909,7 @@
     <w39>Remove all views (of any kind, except open views and sheets)</w39>
     <w40>Remove all View Templates</w40>
     <w41>Remove all element in workset</w41>
+    <m1>The model must be saved to remove external links</m1>
   </mprCleaner>
   <mprColumnsReinforcement LocalName="Columns reinforcement"
                            Description="Analysis, grouping and reinforcement of columns for specified conditions"
@@ -4289,4 +4322,9 @@
     <msg4>You have not selected any family file!</msg4>
     <msg5>No values selected to change!</msg5>
   </zfiFamilyRenameTool>
+  <mprPatterns LocalName="Fill patterns"
+               Description="Fill patterns manager with the ability to import, export, edit and create"
+               FullDescription="It is possible to edit the type of existing fill patterns, to increase or decrease the scale of existing fill patterns. There is batch import from pat files and batch export to pat files. New fill patterns can be created using standard tools with offset and angle, using the conversion of drafting views, and with using a graphical editor">
+    <m1>Create</m1>
+  </mprPatterns>
 </ModPlus>
