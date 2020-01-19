@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="3.4.0.0">
+<ModPlus Name="ru-RU" Version="3.4.1.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -188,6 +188,7 @@
     <group9>ModPlus ЕСКД</group9>
     <group10>Параметры</group10>
     <group11>Семейства</group11>
+    <group12>Управление</group12>
   </CUI>
   <Configurator LocalName="Конфигуратор">
     <title1>Конфигуратор ModPlus</title1>

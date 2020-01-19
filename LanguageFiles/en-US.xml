@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.4.0.0">
+<ModPlus Name="en-US" Version="3.4.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -188,6 +188,7 @@
     <group9>ModPlus ESKD</group9>
     <group10>Parameters</group10>
     <group11>Families</group11>
+    <group12>Manage</group12>
   </CUI>
   <Configurator LocalName="Configurator">
     <title1>ModPlus configurator</title1>
