@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.3.5.0">
+<ModPlus Name="en-US" Version="3.4.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -169,6 +169,7 @@
     <g33>Border color</g33>
     <g34>Border thickness</g34>
     <g35>Stroke dash array</g35>
+    <g36>Length</g36>
     <a1>Center</a1>
     <a2>Left</a2>
     <a3>Right</a3>
@@ -4409,6 +4410,12 @@
     <h42>New pattern name</h42>
     <h43>Import from pat file:</h43>
     <h44>Import pat:</h44>
+    <h45>Pattern units:</h45>
+    <h46>View scale: 1:</h46>
+    <h47>Scale multiple:</h47>
+    <h48>Rotation:</h48>
+    <h49>Flip horizontal</h49>
+    <h50>Flip vertical</h50>
     <t1>Restore original pattern state</t1>
     <t2>Offset defines the distance between parallel lines. Offset is not displayed in the geometry editor. Offset affects the conditional boundaries of the pattern</t2>
     <t3>Shift moves the pattern of dashes and spaces along the length of each new parallel line. Shift is ignored if the line is solid</t3>
@@ -4436,5 +4443,8 @@
     <m22>Pick the opposite point of the rectangle that is the border of the pattern</m22>
     <m23>Select items to create pattern</m23>
     <m24>Process pat files in subfolders?</m24>
+    <m25>Pattern width too small</m25>
+    <m26>Pattern width too big</m26>
+    <m27>Failed to convert elements to pattern</m27>
   </mprPatterns>
 </ModPlus>
