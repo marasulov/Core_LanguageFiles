@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.4.1.0">
+<ModPlus Name="en-US" Version="3.4.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4114,6 +4114,7 @@
     <h10>No matching families were found in the current category for which the selected family is a duplicate.&#x0a;An additional check is performed by type parameters - a pair of similar families should have the same type parameters</h10>
     <h11>Copy parameter values of replaced family instance</h11>
     <h12>Set family type from source family</h12>
+    <h13>The list of main families displays families of the same category as the selected duplicate family, whose types are interchangeable. At the same time, the number and names of type parameters must be the same.</h13>
     <m1>No types were selected in the list of processed families!</m1>
     <m2>Creating type "{0}" for family "{1}"</m2>
     <m3>Copying parameter values ​​of frame type "{0}" from the family "{1}" to the family "{2}"</m3>
@@ -4148,6 +4149,10 @@
     <h2>Destination documents</h2>
     <h3>Settings</h3>
     <h4>Start copying</h4>
+    <h5>Sheet Copy Errors</h5>
+    <h6>There were errors copying the following sheets. Copying of these sheets has been interrupted. You can try to copy them manually</h6>
+    <h7>Sheet</h7>
+    <h8>Error</h8>
     <co1>Copy Title Blocks</co1>
     <co2>Copy Schedules</co2>
     <co3>Copy Legends</co3>
