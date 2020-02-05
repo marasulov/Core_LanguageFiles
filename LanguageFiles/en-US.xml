@@ -4487,4 +4487,48 @@
     <e1>Slab analysis errors</e1>
     <e2>Failed to initialize slab</e2>
   </mprSlabsReinforcement>
+  <mprCopyElementsToOpenDocuments LocalName="Copy elements to the documents"
+                                  Description="Batch elements copying to the opened documents"
+                                  FullDescription="Batch copying of the current document's selected elements to the specified opened documents">
+    <h1>Elements selected:</h1>
+    <h2>From:</h2>
+    <h3>To:</h3>
+    <h4>Copying options</h4>
+    <h5>View Log</h5>
+    <h6>Transfer elements</h6>
+    <h7>Save as</h7>
+    <co1>Allow duplicates</co1>
+    <co2>Refuse duplicates</co2>
+    <co3>Ask user</co3>
+    <m1>{0} - Error! The error occurred during an element retrieving process. Id: "{1}". Message: "{2}".</m1>
+    <m2>{0} - The element collecting process has been started ({1}).</m2>
+    <m3>{0} - The element collecting process has been finished ({1}).</m3>
+    <m4>{0} - Error! The element collecting process has stopped with a critical error ({1}).</m4>
+    <m5>{0} - Start elements copying from "{1}" to "{2}".</m5>
+    <m6>{0} - Finish elements copying from "{1}" to "{2}".</m6>
+    <m7>{0} - Error! The error (message: "{3}") occured during the copying process of an element "{1}" of category "{2}".</m7>
+    <m8>Copying options: "{0}".</m8>
+    <m9>{0} - Warning! The document ({1}) is not workshared one. The worksets will not be copied.</m9>
+    <m10>Worksets</m10>
+    <m11> (Type)</m11>
+    <m12>Browser Organization</m12>
+    <m13>Dimension Types</m13>
+    <m14>Fill Patterns</m14>
+    <m15>Parameter Filters</m15>
+    <m16>Line patterns</m16>
+    <m17>Loadable Families</m17>
+    <m18>Phase Filters</m18>
+    <m19>Print Settings</m19>
+    <m20>Revisions</m20>
+    <m21>Revision Settings</m21>
+    <m22>TextNote Types</m22>
+    <m23>View Family Types</m23>
+    <m24>Views</m24>
+    <m25>Parameters</m25>
+    <m26>Shared parameters</m26>
+    <m26>Categories</m26>
+    <m27>Elements copying</m27>
+    <m28>All groups</m28>
+    <m29>Views (Templates)</m29>
+  </mprCopyElementsToOpenDocuments>
 </ModPlus>
