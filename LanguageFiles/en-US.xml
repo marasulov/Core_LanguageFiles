@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.4.8.0">
+<ModPlus Name="en-US" Version="3.4.9.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2522,7 +2522,6 @@
     <msg54>The current values of the attributes are filled with the default values specified when the block was created\nIf you continue, the values of the attributes will be filled with values from the selected block insert!\nGet the values of the attributes from the selected block insert?</msg54>
     <msg55>The current file is not located in the dwg-database directory!</msg55>
     <msg56>Unable to recognize the location directory of the current file</msg56>
-    <msg57>The version of the current file does not correspond to the version of AutoCAD 2013!\nSince ModPlus plugin works with AutoCAD 2013 version and above,\nthe file should be saved to AutoCAD 2013 version</msg57>
     <msg58>Save the entered data as "Last entered data"?</msg58>
     <msg59>Selecting a drawing to add to the database</msg59>
     <msg60>The selected file contains proxy objects and can not be added to the database!\nDelete all proxy objects and try again</msg60>
