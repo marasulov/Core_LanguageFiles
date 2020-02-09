@@ -4562,7 +4562,7 @@
     <m4>{0} - Error! The element collecting process has stopped with a critical error ({1}).</m4>
     <m5>{0} - Start elements copying from "{1}" to "{2}".</m5>
     <m6>{0} - Finish elements copying from "{1}" to "{2}".</m6>
-    <m7>{0} - Error! The error (message: "{3}") occured during the copying process of an element "{1}" of category "{2}".</m7>
+    <m7>{0} - Error! The error (message: "{4}") occured during the copying process of an element "{1} (id: {2})" of category "{3}".</m7>
     <m8>Copying options: "{0}".</m8>
     <m9>{0} - Warning! The document ({1}) is not workshared one. The worksets will not be copied.</m9>
     <m10>Worksets</m10>
@@ -4586,5 +4586,8 @@
     <m27>Elements copying</m27>
     <m28>All groups</m28>
     <m29>Views (Templates)</m29>
+    <m30>Copying finished</m30>
+    <m31>Elements copied: {0};{1}Errors: {2};{3}View log for details</m31>
+    <m32>Cancel</m32>
   </mprCopyElementsToOpenDocuments>
 </ModPlus>
