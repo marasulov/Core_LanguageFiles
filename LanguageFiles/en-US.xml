@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.5.0.0">
+<ModPlus Name="en-US" Version="3.5.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4552,7 +4552,11 @@
     <h4>Copying options</h4>
     <h5>View Log</h5>
     <h6>Transfer elements</h6>
-    <h7>Save as</h7>
+    <h7>Open in Notepad</h7>
+    <h8>Expand all</h8>
+    <h9>Collapse all</h9>
+    <h10>Check all</h10>
+    <h11>Uncheck all</h11>
     <co1>Allow duplicates</co1>
     <co2>Refuse duplicates</co2>
     <co3>Ask user</co3>
