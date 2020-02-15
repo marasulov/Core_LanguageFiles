@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.5.1.0">
+<ModPlus Name="en-US" Version="3.5.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -170,11 +170,36 @@
     <g34>Border thickness</g34>
     <g35>Stroke dash array</g35>
     <g36>Length</g36>
+    <g37>Z index</g37>
+    <g38>Keep sides ratio</g38>
+    <g39>Top left point</g39>
+    <g40>X of top left point</g40>
+    <g41>Y of top left point</g41>
+    <g42>Top right point</g42>
+    <g43>Bottom right point</g43>
+    <g44>X of bottom right point</g44>
+    <g45>Y of bottom right point</g45>
+    <g46>Bottom left point</g46>
+    <g47>Top side point</g47>
+    <g48>Bottom side point</g48>
+    <g49>Left side point</g49>
+    <g50>Right side point</g50>
     <a1>Center</a1>
     <a2>Left</a2>
     <a3>Right</a3>
     <a4>Top</a4>
     <a5>Bottom</a5>
+    <c1>Create line</c1>
+    <c2>Create circle</c2>
+    <c3>Create arc</c3>
+    <c4>Create ellipse</c4>
+    <c5>Create text</c5>
+    <c6>Create rectangle</c6>
+    <c7>Place image</c7>
+    <c8>Delete selected geometry</c8>
+    <c9>Move selected geometry</c9>
+    <c10>Zoom all</c10>
+    <c11>Approximate selected geometry</c11>
   </Geometry>
   <CUI>
     <group1>Annotations</group1>
@@ -4409,7 +4434,7 @@
     <h19>Pattern width:</h19>
     <h20>Pattern height:</h20>
     <h21>Snap to grid</h21>
-    <h22>Snap to line grip points</h22>
+    <h22>Snap to grip points</h22>
     <h23>Create and edit geometry</h23>
     <h24>Selected item properties</h24>
     <h25>Offset:</h25>
@@ -4438,6 +4463,7 @@
     <h48>Rotation:</h48>
     <h49>Flip horizontal</h49>
     <h50>Flip vertical</h50>
+    <h51>Curve approximation accuracy:</h51>
     <t1>Restore original pattern state</t1>
     <t2>Offset defines the distance between parallel lines. Offset is not displayed in the geometry editor. Offset affects the conditional boundaries of the pattern</t2>
     <t3>Shift moves the pattern of dashes and spaces along the length of each new parallel line. Shift is ignored if the line is solid</t3>
