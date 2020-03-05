@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.4.7.0">
+<ModPlus Name="en-US" Version="3.5.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -170,11 +170,36 @@
     <g34>Border thickness</g34>
     <g35>Stroke dash array</g35>
     <g36>Length</g36>
+    <g37>Z index</g37>
+    <g38>Keep sides ratio</g38>
+    <g39>Top left point</g39>
+    <g40>X of top left point</g40>
+    <g41>Y of top left point</g41>
+    <g42>Top right point</g42>
+    <g43>Bottom right point</g43>
+    <g44>X of bottom right point</g44>
+    <g45>Y of bottom right point</g45>
+    <g46>Bottom left point</g46>
+    <g47>Top side point</g47>
+    <g48>Bottom side point</g48>
+    <g49>Left side point</g49>
+    <g50>Right side point</g50>
     <a1>Center</a1>
     <a2>Left</a2>
     <a3>Right</a3>
     <a4>Top</a4>
     <a5>Bottom</a5>
+    <c1>Create line</c1>
+    <c2>Create circle</c2>
+    <c3>Create arc</c3>
+    <c4>Create ellipse</c4>
+    <c5>Create text</c5>
+    <c6>Create rectangle</c6>
+    <c7>Place image</c7>
+    <c8>Delete selected geometry</c8>
+    <c9>Move selected geometry</c9>
+    <c10>Zoom all</c10>
+    <c11>Approximate selected geometry</c11>
   </Geometry>
   <CUI>
     <group1>Annotations</group1>
@@ -2195,6 +2220,8 @@
     <h66>Density, kg/m³:</h66>
     <h67>Save the entered dimension values</h67>
     <h68>Not all data entered</h68>
+    <h69>Add</h69>
+    <h70>Add and close</h70>
     <cb1>Add from base</cb1>
     <cb2>Add subsection</cb2>
     <cb3>Manual input</cb3>
@@ -2522,7 +2549,6 @@
     <msg54>The current values of the attributes are filled with the default values specified when the block was created\nIf you continue, the values of the attributes will be filled with values from the selected block insert!\nGet the values of the attributes from the selected block insert?</msg54>
     <msg55>The current file is not located in the dwg-database directory!</msg55>
     <msg56>Unable to recognize the location directory of the current file</msg56>
-    <msg57>The version of the current file does not correspond to the version of AutoCAD 2013!\nSince ModPlus plugin works with AutoCAD 2013 version and above,\nthe file should be saved to AutoCAD 2013 version</msg57>
     <msg58>Save the entered data as "Last entered data"?</msg58>
     <msg59>Selecting a drawing to add to the database</msg59>
     <msg60>The selected file contains proxy objects and can not be added to the database!\nDelete all proxy objects and try again</msg60>
@@ -2575,10 +2601,8 @@
     <r6>Let the blocks understandable names and descriptions, so that the user does not have to guess what it is and why</r6>
     <r7>If you took a block from some resource, then be sure to specify the source!</r7>
     <r8>Do not be lazy to think over the path to the block in the database</r8>
-    <r9>Also on the files with blocks are imposed restrictions, namely - all the added drawings with blocks should be saved in the version of AutoCAD 2013</r9>
     <r10>The default plugin assumes that the drawings added to the local (user) database will be added to the global database, which is accessible to all users.</r10>
     <r11>Therefore, some restrictions are added to the attached drawings:</r11>
-    <r12>The drawings that are added to the database must be saved in AutoCAD 2013</r12>
     <r13>In the attached drawing, Proxy primitives should not be used</r13>
     <r14>Drawings made in poor quality (for example, with multileaders from lines and text, etc.) will not be taken to the public database</r14>
     <r15>Also try to follow the recommendations:</r15>
@@ -3545,7 +3569,7 @@
     <h67>Basic (main) length of anchoring, mm:</h67>
     <h68>Coefficient α:</h68>
     <h69>Required (estimated) anchoring length, mm:</h69>
-    <h70>Anchoring lengthДлина анкеровки:</h70>
+    <h70>Anchoring length:</h70>
     <h71>Intersection reinforcement settings</h71>
     <h72>Opening reinforcement settings</h72>
     <h73>Wall reinforcement settings</h73>
@@ -4019,6 +4043,9 @@
     <t15>Display in the model the previous column in the list</t15>
     <t16>Display in the model the column selected in the list</t16>
     <t17>Display in the model the next column in the list</t17>
+    <t40>Copy the reinforcement settings of the current group to all selected groups</t40>
+    <t41>Save the reinforcement settings of current group in the xml file</t41>
+    <t42>Load the reinforcement settings from the xml file and set it for the current group</t42>
   </mprColumnsReinforcement>
   <mpStripMtext LocalName="Clear formatting"
                 Description="Remove specified formatting from multiline text"
@@ -4285,6 +4312,14 @@
     <msg16>No apply conditions are set for the workset "{0}"</msg16>
     <msg17>Element id={0} did not have a "Workset" parameter</msg17>
     <msg18>The workset "{0}" is applied to {1} elements: {2}</msg18>
+    <msg19>An error "{0}" occurred while setting the workset to elements: {1}</msg19>
+    <msg20>No worksets configuration created</msg20>
+    <msg21>Worksets configuration not selected</msg21>
+    <msg22>No worksets groups created in current configuration</msg22>
+    <msg23>The selected file is not a configuration data storage file and cannot be imported!</msg23>
+    <msg24>You are trying to import a worksets group storage file</msg24>
+    <msg25>The selected file is not a file for storing data about a group of worksets and cannot be imported!</msg25>
+    <msg26>You are trying to import a configuration storage file</msg26>
     <i1>You can enter multiple valid values in the "Values" field, separated by a comma. A parameter is considered to satisfy the condition if its value matches at least one valid value.</i1>
     <i2>The condition "Presence of parameter" means that the element will be processed if there is such a parameter, regardless of the parameter value.</i2>
     <i3>String parameters are checked only by the conditions "Equal", "Not equal", "Contains".</i3>
@@ -4333,6 +4368,10 @@
     <h21>Select folder</h21>
     <h22>Select folder including subfolders</h22>
     <h23>Revit families</h23>
+    <h24>Instance/type</h24>
+    <h25>Instance parameter</h25>
+    <h26>Type parameter</h26>
+    <h27>Formula</h27>
     <p1>Parameter names</p1>
     <p2>Parameter values</p2>
     <p3>Type names</p3>
@@ -4408,7 +4447,7 @@
     <h19>Pattern width:</h19>
     <h20>Pattern height:</h20>
     <h21>Snap to grid</h21>
-    <h22>Snap to line grip points</h22>
+    <h22>Snap to grip points</h22>
     <h23>Create and edit geometry</h23>
     <h24>Selected item properties</h24>
     <h25>Offset:</h25>
@@ -4437,6 +4476,7 @@
     <h48>Rotation:</h48>
     <h49>Flip horizontal</h49>
     <h50>Flip vertical</h50>
+    <h51>Curve approximation accuracy:</h51>
     <t1>Restore original pattern state</t1>
     <t2>Offset defines the distance between parallel lines. Offset is not displayed in the geometry editor. Offset affects the conditional boundaries of the pattern</t2>
     <t3>Shift moves the pattern of dashes and spaces along the length of each new parallel line. Shift is ignored if the line is solid</t3>
@@ -4482,10 +4522,108 @@
     <h9>Of these successfully analyzed:</h9>
     <h10>Create reinforcement</h10>
     <h11>Reinforcement settings</h11>
+    <h12>Thickness</h12>
+    <h13>Elevation at Bottom</h13>
+    <h14>Basic (background) reinforcement</h14>
+    <h15>Additional reinforcement</h15>
+    <h16>Ends reinforcement</h16>
+    <h17>Framing holes</h17>
+    <h18>Number of background reinforcement meshes</h18>
+    <h19>Offset of the outermost rod (along the axis of the rod) from the edge of the slab:</h19>
+    <h20>Settings</h20>
+    <h21>PLUGIN WINDOW:</h21>
+    <h22>Over the windows</h22>
+    <h23>First mesh (top)</h23>
+    <h24>Second mesh (bottom)</h24>
+    <h25>Longitudinal rebars (towards span):</h25>
+    <h26>Transverse rebars:</h26>
+    <h27>Rebar cover (from the top edge of the slab):</h27>
+    <h28>Rebar cover (from the bottom edge of the slab):</h28>
+    <h29>Bottom mesh reinforcement settings repeat the top mesh reinforcement settings</h29>
+    <h30>The way to create background reinforcement:</h30>
+    <h31>Additional rebar step move to:</h31>
+    <h32>Create:</h32>
+    <h33>REINFORCEMENT BY DEFAULT:</h33>
+    <h34>Reinforcement by default</h34>
+
+    <h61>Calculation of anchoring by SP 52-101-2003</h61>
+    <h62>Diameter:</h62>
+    <h63>Sectional area, mm²:</h63>
+    <h64>Concrete class:</h64>
+    <h65>Type of the surface of reinforcement:</h65>
+    <h66>Estimated tensile strength, MPa:</h66>
+    <h67>Basic (main) length of anchoring, mm:</h67>
+    <h68>Coefficient α:</h68>
+    <h69>Required (estimated) anchoring length, mm:</h69>
+    <h70>Anchoring length:</h70>
+
+    <h76>Slab reinforcement</h76>
+    <h77>Rebar bar type:</h77>
+    <h78>Diameter, mm:</h78>
+    <h79>Step, mm:</h79>
+
+    <h84>Cover from the rebars ends, mm:</h84>
+
+    <h110>Create Reinforcement</h110>
+
+    <h141>Do not close the window after creating reinforcement</h141>
+
+    <h173>Straight rebars:</h173>
+
+    <h183>Reset all values ​​to "Auto"</h183>
+    <h184>Preferred Rebar Shapes</h184>
+
     <m1>Pick slabs</m1>
+
+    <m13>Reinforcement cover</m13>
+
+    <m24>You did not specify what type of reinforcement to create!</m24>
+    <m25>You have not selected any slabs to create reinforcement!</m25>
+
+    <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the plugin cannot be opened in the Family Editor! It is recommended that before using the plugin, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
+
     <p1>Analysis of the slab:</p1>
+    <p2>Calculation and modeling of background reinforcement</p2>
+    <p2>Calculation and modeling of additional reinforcement</p2>
+    <p3>Calculation and modeling of ends reinforcement</p3>
+    <p4>Calculation and modeling of holes framing</p4>
+    <p8>Removing the reinforcement created earlier</p8>
+
+    <p12>Revit rebars generation</p12>
+
     <e1>Slab analysis errors</e1>
     <e2>Failed to initialize slab</e2>
+    <e3>Failed to get slab thickness from parameter</e3>
+    <e4>Could not get solid from slab geometry</e4>
+    <e5>Failed to get top and/or bottom face from slab geometry</e5>
+    <e6>The normal of the top or bottom face of the slab should be aligned with the Z axis</e6>
+    <e7>Failed to get outer contours from slab geometry</e7>
+
+    <m23>Reinforcement settings copied</m23>
+    <create>Create</create>
+    <rn>Rebar ⌀</rn>
+    <mm>mm</mm>
+    <full>Available in full version!</full>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <auto>Auto</auto>
+
+    <br1>Individual rebars</br1>
+    <br2>Area reinforcement</br2>
+    <as1>to the edge of the slab</as1>
+    <as2>to the middle of the slab</as2>
+
+    <t1>According to SP 63.13330.2012, p. 10.3.5 - the minimum distance in the light between the rebars should be at least the largest diameter of the rod, as well as at least 25 mm for the lower reinforcement and 30 mm for the upper reinforcement; p. 10.3.8 - the largest distance between the axes of the rods should not be more than 200 mm with a plate cross-section height h &lt;= 150 mm and no more than 1,5h and 400 mm with a cross-section height h> 150 mm</t1>
+
+    <t40>Copy the reinforcement settings of the current slab to all selected slabs</t40>
+    <t41>Save the reinforcement settings of current slab in the xml file</t41>
+    <t42>Load the reinforcement settings from the xml file and set it for the current slab</t42>
+    <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
+    <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</t44>
+    
+    <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
+    <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
+    <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
   </mprSlabsReinforcement>
   <mprCopyElementsToOpenDocuments LocalName="Copy elements to the documents"
                                   Description="Batch elements copying to the opened documents"
@@ -4496,7 +4634,11 @@
     <h4>Copying options</h4>
     <h5>View Log</h5>
     <h6>Transfer elements</h6>
-    <h7>Save as</h7>
+    <h7>Open in Notepad</h7>
+    <h8>Expand all</h8>
+    <h9>Collapse all</h9>
+    <h10>Check all</h10>
+    <h11>Uncheck all</h11>
     <co1>Allow duplicates</co1>
     <co2>Refuse duplicates</co2>
     <co3>Ask user</co3>
