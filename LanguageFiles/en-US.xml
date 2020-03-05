@@ -4533,5 +4533,31 @@
     <m30>Copying finished</m30>
     <m31>Elements copied: {0};{1}Errors: {2};{3}View log for details</m31>
     <m32>Cancel</m32>
+    <m33>Search</m33>
+    <m34>Area plan</m34>
+    <m35>Ceiling plan</m35>
+    <m36>Column schedule</m36>
+    <m37>Cost report</m37>
+    <m38>Detail</m38>
+    <m39>Drafting view</m39>
+    <m40>Drawing sheet</m40>
+    <m41>Elevation</m41>
+    <m42>Engineering plan</m42>
+    <m43>Floor plan</m43>
+    <m44>Internal</m44>
+    <m45>Legend</m45>
+    <m46>Loads report</m46>
+    <m47>Panel schedule</m47>
+    <m48>Pressure loss report</m48>
+    <m49>Project browser</m49>
+    <m50>Rendering</m50>
+    <m51>Report</m51>
+    <m52>Schedule</m52>
+    <m53>Section</m53>
+    <m54>System browser</m54>
+    <m55>Systems analysis report</m55>
+    <m56>3D</m56>
+    <m57>Walkthrough</m57>
+    <m58>Undefined</m58>
   </mprCopyElementsToOpenDocuments>
 </ModPlus>
