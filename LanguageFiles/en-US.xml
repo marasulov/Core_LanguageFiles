@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.5.7.0">
+<ModPlus Name="en-US" Version="3.5.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -125,6 +125,8 @@
     <bid8>Custom styles of intellectual entities created in a plugin for AutoCAD "ESKD"</bid8>
     <bi9>Worksets</bi9>
     <bid9>Custom Workset Configurations</bid9>
+    <bi10>Slabs Reinforcement</bi10>
+    <bid10>Default reinforcement settings of plugin for the Revit "Slabs Reinforcement"</bid10>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
@@ -4527,7 +4529,7 @@
     <h14>Basic (background) reinforcement</h14>
     <h15>Additional reinforcement</h15>
     <h16>Ends reinforcement</h16>
-    <h17>Framing holes</h17>
+    <h17>Framing openings</h17>
     <h18>Number of background reinforcement meshes</h18>
     <h19>Offset of the outermost rod (along the axis of the rod) from the edge of the slab:</h19>
     <h20>Settings</h20>
@@ -4535,16 +4537,29 @@
     <h22>Over the windows</h22>
     <h23>First mesh (top)</h23>
     <h24>Second mesh (bottom)</h24>
-    <h25>Longitudinal rebars (towards span):</h25>
-    <h26>Transverse rebars:</h26>
-    <h27>Rebar cover (from the top edge of the slab):</h27>
-    <h28>Rebar cover (from the bottom edge of the slab):</h28>
+    <h25>Longitudinal rebars (Major direction):</h25>
+    <h26>Transverse rebars (Minor direction):</h26>
+    <h27>Top rebar cover (from the top edge of the slab):</h27>
+    <h28>Bottom rebar cover (from the bottom edge of the slab):</h28>
     <h29>Bottom mesh reinforcement settings repeat the top mesh reinforcement settings</h29>
     <h30>The way to create background reinforcement:</h30>
     <h31>Additional rebar step move to:</h31>
     <h32>Create:</h32>
     <h33>REINFORCEMENT BY DEFAULT:</h33>
-    <h34>Reinforcement by default</h34>
+    <h34>Slab reinforcement</h34>
+    <h35>Use the "Area Reinforcement" element for:</h35>
+    <h36>Each direction in each mesh</h36>
+    <h37>Each direction</h37>
+    <h38>Total background reinforcement</h38>
+    <h39>General reinforcement settings</h39>
+    <h40>Slabs</h40>
+    <h41>Openings in selected slab</h41>
+    <h42>Size</h42>
+    <h43>In the processed slabs (Floor) a rebar cover</h43>
+    <h44>set to zero</h44>
+    <h45>set based on the reinforcement settings</h45>
+    <h46>Delete reinforcement previously created by the plugin</h46>
+    <h47>Zoom all</h47>
 
     <h61>Calculation of anchoring by SP 52-101-2003</h61>
     <h62>Diameter:</h62>
@@ -4556,6 +4571,9 @@
     <h68>Coefficient α:</h68>
     <h69>Required (estimated) anchoring length, mm:</h69>
     <h70>Anchoring length:</h70>
+    <h71>Step of U-shaped rebar in the slab ends, in case of difference in the steps of the background reinforcement meshes, set by</h71>
+    <h72>rebars of top mesh</h72>
+    <h73>rebars of bottom mesh</h73>
 
     <h76>Slab reinforcement</h76>
     <h77>Rebar bar type:</h77>
@@ -4564,11 +4582,32 @@
 
     <h84>Cover from the rebars ends, mm:</h84>
 
+    <h92>Detail length, mm:</h92>
+    <h93>Calculate the length of the U-shaped rebar</h93>
+
+    <h104>Anchoring length, mm:</h104>
+    <h105>Calculate anchoring length</h105>
+
+    <h109>Straight rods in the longitudinal direction</h109>
     <h110>Create Reinforcement</h110>
+    <h111>Indent from the opening:</h111>
+    <h112>Rows count:</h112>
+    <h113>Displace when hit by reinforcement bars</h113>
+    <h114>Straight rods in the transverse direction</h114>
+    <h115>U-shaped rods in the longitudinal direction</h115>
+    <h116>U-shaped rods in the transverse direction</h116>
+    <h117>Anchoring (detail) length, mm:</h117>
+    <h118>Detail step, mm:</h118>
 
     <h141>Do not close the window after creating reinforcement</h141>
 
+    <h153>Diagonal reinforcement</h153>
+
+    <h155>Rebar length:</h155>
+
     <h173>Straight rebars:</h173>
+
+    <h180>U-shaped rebars:</h180>
 
     <h183>Reset all values ​​to "Auto"</h183>
     <h184>Preferred Rebar Shapes</h184>
@@ -4584,9 +4623,9 @@
 
     <p1>Analysis of the slab:</p1>
     <p2>Calculation and modeling of background reinforcement</p2>
-    <p2>Calculation and modeling of additional reinforcement</p2>
-    <p3>Calculation and modeling of ends reinforcement</p3>
-    <p4>Calculation and modeling of holes framing</p4>
+    <p3>Calculation and modeling of additional reinforcement</p3>
+    <p4>Calculation and modeling of ends reinforcement</p4>
+    <p5>Calculation and modeling of hole framing</p5>
     <p8>Removing the reinforcement created earlier</p8>
 
     <p12>Revit rebars generation</p12>
@@ -4598,6 +4637,18 @@
     <e5>Failed to get top and/or bottom face from slab geometry</e5>
     <e6>The normal of the top or bottom face of the slab should be aligned with the Z axis</e6>
     <e7>Failed to get outer contours from slab geometry</e7>
+    <e8>Failed to get contour for area reinforcement</e8>
+
+    <m1>Enter a value from</m1>
+    <m2>to</m2>
+
+    <m6>For rebar</m6>
+    <m7>value of the property "Standard bend diameter"</m7>
+    <m8>does not comply with the norms of SP 63.13330.2012</m8>
+    <m9>The minimum value of the bending diameter for the rebar</m9>
+    <m10>with diameter</m10>
+    <m11>must be:</m11>
+    <m12>The value of the property will be changed</m12>
 
     <m23>Reinforcement settings copied</m23>
     <create>Create</create>
@@ -4614,13 +4665,25 @@
     <as2>to the middle of the slab</as2>
 
     <t1>According to SP 63.13330.2012, p. 10.3.5 - the minimum distance in the light between the rebars should be at least the largest diameter of the rod, as well as at least 25 mm for the lower reinforcement and 30 mm for the upper reinforcement; p. 10.3.8 - the largest distance between the axes of the rods should not be more than 200 mm with a plate cross-section height h &lt;= 150 mm and no more than 1,5h and 400 mm with a cross-section height h> 150 mm</t1>
+    <t2>Check and offset when hit on the rods of the background reinforcement is made for the first (nearest) rod, which does not guarantee the correct displacement of the second or third rod. The minimum permissible distance between the rods in the light is taken into account - 30 mm</t2>
+    <t3>The reinforcement previously created by the plugin is deleted depending on the newly created reinforcement. For example, if you choose to create only the main (background) reinforcement, then previously created U-shaped rods along the contour of the slab will not be deleted</t3>
 
+    <t37>Copy the reinforcement settings of the current opening to selected openings</t37>
+    <t38>Save the reinforcement settings of current opening in the xml file</t38>
+    <t39>Load the reinforcement settings from the xml file and set it for the current opening</t39>
     <t40>Copy the reinforcement settings of the current slab to all selected slabs</t40>
     <t41>Save the reinforcement settings of current slab in the xml file</t41>
     <t42>Load the reinforcement settings from the xml file and set it for the current slab</t42>
     <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
     <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</t44>
-    
+
+    <t46>Detail length is defined by the inner edge of the rebar</t46>
+
+    <t49>The number of rows of longitudinal direction reinforcement (in a row is two bars "along" the opening)</t49>
+    <t50>The number of rows of transverse direction reinforcement (in a row is two bars "along" the opening)</t50>
+
+    <t58>Rebar length consists of two anchoring lengths</t58>
+
     <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
     <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
