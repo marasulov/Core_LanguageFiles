@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.5.9.0">
+<ModPlus Name="en-US" Version="3.5.10.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1498,6 +1498,9 @@
     <h72>DSTU B A.2.4-4: 2009</h72>
     <h73>STB 2255-2012</h73>
     <h74>Update in drawing</h74>
+    <h75>You can use line breaks in boxes 2,3 and 9. To add line breaks use Enter</h75>
+    <h76>Date</h76>
+    <h77>Date is added if there is a surename in the line</h77>
     <msg1>The configuration file is corrupt!\nRun the ModPlus Configurator</msg1>
     <msg2>An error has occurred!</msg2>
     <msg3>Value</msg3>
