@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.5.10.0">
+<ModPlus Name="en-US" Version="3.5.11.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4565,6 +4565,8 @@
     <h45>set based on the reinforcement settings</h45>
     <h46>Delete reinforcement previously created by the plugin</h46>
     <h47>Zoom all</h47>
+    <h48>Copy to all checked openings of the current slab</h48>
+    <h49>Copy to all checked openings of all checked slabs</h49>
 
     <h61>Calculation of anchoring by SP 52-101-2003</h61>
     <h62>Diameter:</h62>
@@ -4707,6 +4709,10 @@
     <h9>Collapse all</h9>
     <h10>Check all</h10>
     <h11>Uncheck all</h11>
+    <h12>Show guid of shared parameters</h12>
+    <h13>Other settings</h13>
+    <h14>Types</h14>
+    <h15>Other elements</h15>
     <co1>Allow duplicates</co1>
     <co2>Refuse duplicates</co2>
     <co3>Ask user</co3>
@@ -4736,7 +4742,6 @@
     <m24>Views</m24>
     <m25>Parameters</m25>
     <m26>Shared parameters</m26>
-    <m26>Categories</m26>
     <m27>Elements copying</m27>
     <m28>All groups</m28>
     <m29>Views (Templates)</m29>
@@ -4769,5 +4774,6 @@
     <m56>3D</m56>
     <m57>Walkthrough</m57>
     <m58>Undefined</m58>
+    <m59>Categories</m59>
   </mprCopyElementsToOpenDocuments>
 </ModPlus>
