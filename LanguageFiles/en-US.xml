@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.6.1.0">
+<ModPlus Name="en-US" Version="3.6.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3294,6 +3294,8 @@
     <h8>Restore the position of the dimension text for the selected dimensions</h8>
     <h9>Select dimensions</h9>
     <h10>Do not show this notification again</h10>
+    <h11>If possible, move dimensional text down rather than to the side</h11>
+    <h12>If an offset is required for the text of a dimension chain segment and the offset can be performed towards the adjacent segment, then the text will be moved not only to the side, but also down</h12>
     <accept>Accept</accept>
   </mprDimBias>
   <mprExcelImport LocalName="Import from Excel"
