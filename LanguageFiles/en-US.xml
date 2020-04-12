@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.6.2.0">
+<ModPlus Name="en-US" Version="3.6.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4345,6 +4345,7 @@
     <c6>Not equal</c6>
     <c7>Contains</c7>
     <c8>Presence of parameter</c8>
+    <c9>Not contains</c9>
     <ie1>Text file</ie1>
     <ie2>Excel file</ie2>
     <ie3>Xml file</ie3>

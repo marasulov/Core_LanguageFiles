@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="3.6.2.0">
+<ModPlus Name="ru-RU" Version="3.6.3.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -4345,6 +4345,7 @@
     <c6>Не равно</c6>
     <c7>Содержит</c7>
     <c8>Наличие параметра</c8>
+    <c9>Не содержит</c9>
     <ie1>Текстовый файл</ie1>
     <ie2>Excel файл</ie2>
     <ie3>Xml файл</ie3>
