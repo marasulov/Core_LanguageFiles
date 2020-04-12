@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.6.3.0">
+<ModPlus Name="en-US" Version="3.6.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4332,9 +4332,9 @@
     <msg26>You are trying to import a configuration storage file</msg26>
     <i1>You can enter multiple valid values in the "Values" field, separated by a comma. A parameter is considered to satisfy the condition if its value matches at least one valid value.</i1>
     <i2>The condition "Presence of parameter" means that the element will be processed if there is such a parameter, regardless of the parameter value.</i2>
-    <i3>String parameters are checked only by the conditions "Equal", "Not equal", "Contains".</i3>
+    <i3>String parameters are checked only by the conditions "Equal", "Not equal", "Contains", "Not contains".</i3>
     <i4>Numeric parameters are checked by all conditions except "Contains".</i4>
-    <i5>The "Contains" condition checks that the element parameter contains at least one of the valid values.</i5>
+    <i5>The "Contains" condition checks that the element parameter contains at least one of the valid values. The condition "Not contains", respectively, checks that the parameter does not contain at least one of the values.</i5>
     <i6>String values are case-insensitive.</i6>
     <i7>Parameters of type "on/off" are checked as an integer (0-off, 1-on).</i7>
     <c1>Equal</c1>
