@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.6.4.0">
+<ModPlus Name="en-US" Version="3.6.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -645,12 +645,16 @@
     <cm5>Open Configurator</cm5>
     <cm6>Settings</cm6>
     <cm7>Close</cm7>
+    <cm8>Open ModPlus folder</cm8>
+    <cm9>Open UserData folder</cm9>
     <tt1>Check for updates and new plugins</tt1>
     <tt2>View change history on modplus.org</tt2>
     <tt3>Open Modplus Configurator</tt3>
     <tt4>Modplus Auto Update Module Settings</tt4>
     <tt5>ModPlus plugin auto-update module</tt5>
     <tt6>When you check the box, the auto-update module will no longer report the possibility to install this plugin if it is not available. Use the ModPlus Configurator to install the plugins marked with the “Do not remind” flag</tt6>
+    <tt7>Open the location folder of the installed version of ModPlus</tt7>
+    <tt8>Open user data storage folder</tt8>
     <msg1>The auto-update module should be located in the ModPlus plugin folder!\nIf the folder is correct, you should run the Configurator to update the data in the registry</msg1>
     <msg2>The auto update module has been updated</msg2>
     <msg3>The operation of the module is limited, because AutoCad, Revit or Renga is open</msg3>
@@ -3772,6 +3776,7 @@
     <cancel>Cancel</cancel>
     <yes>Yes</yes>
     <no>No</no>
+    <saved>Saved</saved>
     <c1>Move to the end of the wall</c1>
     <c2>Move to the middle of the wall</c2>
     <c3>Distribute vertical reinforcement</c3>
@@ -3847,6 +3852,7 @@
     <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
     <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
+    <t66>Save current reinforcement settings as default reinforcement settings</t66>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="Plugin allows you to export all specified sheets to dwg/dxf">
@@ -4653,6 +4659,7 @@
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <auto>Auto</auto>
+    <saved>Saved</saved>
     <br1>Individual rebars</br1>
     <br2>Area reinforcement</br2>
     <as1>to the edge of the slab</as1>
@@ -4660,6 +4667,7 @@
     <t1>According to SP 63.13330.2012, p. 10.3.5 - the minimum distance in the light between the rebars should be at least the largest diameter of the rod, as well as at least 25 mm for the lower reinforcement and 30 mm for the upper reinforcement; p. 10.3.8 - the largest distance between the axes of the rods should not be more than 200 mm with a plate cross-section height h &lt;= 150 mm and no more than 1,5h and 400 mm with a cross-section height h> 150 mm</t1>
     <t2>Check and offset when hit on the rods of the background reinforcement is made for the first (nearest) rod, which does not guarantee the correct displacement of the second or third rod. The minimum permissible distance between the rods in the light is taken into account - 30 mm</t2>
     <t3>The reinforcement previously created by the plugin is deleted depending on the newly created reinforcement. For example, if you choose to create only the main (background) reinforcement, then previously created U-shaped rods along the contour of the slab will not be deleted</t3>
+    <t4>Save current reinforcement settings as default reinforcement settings</t4>
     <t37>Copy the reinforcement settings of the current hole to selected holes</t37>
     <t38>Save the reinforcement settings of current hole in the xml file</t38>
     <t39>Load the reinforcement settings from the xml file and set it for the current hole</t39>
