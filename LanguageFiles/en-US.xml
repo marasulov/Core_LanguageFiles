@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.6.5.0">
+<ModPlus Name="en-US" Version="3.6.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -357,6 +357,9 @@
     <h107>ModPlus software detected files modified by third parties! Configurator operation will be interrupted!</h107>
     <h108>Import customization menu from xml file</h108>
     <h109>Export customization menu to xml file</h109>
+    <h110>Year:</h110>
+    <h111>Component:</h111>
+    <h112>Number of updates:</h112>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -446,6 +449,7 @@
     <tt60>Remove plugin</tt60>
     <tt61>Remove panel</tt61>
     <tt62>Copied</tt62>
+    <tt63>Go to the description of the component on the site</tt63>
     <w1>Login</w1>
     <w2>Finding a plugin in the list</w2>
     <w3>Activation key</w3>
@@ -559,6 +563,7 @@
     <reg4>As with the case of a hard drive binding, you can use the plugins you purchased on ANY computer! It is enough just to bind to your Google account!</reg4>
     <installed>Installed</installed>
     <missing>Missing!</missing>
+    <all>All</all>
     <cui1>You must select a group</cui1>
     <cui2>Are you sure you want to delete the group</cui2>
     <cui3>A group with this name already exists</cui3>
