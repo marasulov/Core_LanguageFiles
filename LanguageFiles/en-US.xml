@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.7.0.0">
+<ModPlus Name="en-US" Version="3.7.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3473,6 +3473,22 @@
     <Components>Components</Components>
     <ReferencePlanes>Reference planes</ReferencePlanes>
     <StructuralFraming>Structural Framing</StructuralFraming>
+    <StructuralFoundation>Structural Foundation</StructuralFoundation>
+    <AllAnalytical>Analytical All</AllAnalytical>
+    <BeamAnalytical>Analytical Beams</BeamAnalytical>
+    <BraceAnalytical>Analytical Braces</BraceAnalytical>
+    <ColumnAnalytical>Analytical Columns</ColumnAnalytical>
+    <FloorAnalytical>Analytical Floors</FloorAnalytical>
+    <FoundationSlabAnalytical>Analytical Foundation Slabs</FoundationSlabAnalytical>
+    <IsolatedFoundationAnalytical>Analytical Isolated Foundations</IsolatedFoundationAnalytical>
+    <LinksAnalytical>Analytical Links</LinksAnalytical>
+    <AnalyticalNodes>Analytical Nodes</AnalyticalNodes>
+    <WallFoundationAnalytical>Analytical Wall Foundations</WallFoundationAnalytical>
+    <WallAnalytical>Analytical Walls</WallAnalytical>
+    <BoundaryConditions>Boundary Conditions</BoundaryConditions>
+    <InternalLoads>Structural Internal Loads</InternalLoads>
+    <LoadCases>Structural Load Cases</LoadCases>
+    <Loads>Structural Loads</Loads>
     <h1>Notching distance</h1>
     <h2>Notching distance, mm</h2>
     <h3>Automatically change the Notching distance for the elements of the Structural framing</h3>
@@ -3895,12 +3911,12 @@
     <h7>Initial value:</h7>
     <h8>Direction:</h8>
     <h9>Parameter name:</h9>
-    <h10>Perform numbering of elements in groups</h10>
-    <h11>Attention! To perform item numbering in groups, groups will be ungrouped and then re-created. These actions can create problems in your project. Use this item at your own risk</h11>
     <h12>Instance parameter</h12>
     <h13>Type parameter</h13>
     <h14>Parameter</h14>
     <h15>has the "Read Only" property for the following elements</h15>
+    <h16>It is not possible to change the instance parameter for an element located in a group if the parameter "Values ​​can vary by group instances" is not enabled for the parameter or it is not the "Mark" system parameter</h16>
+    <h17>Errors occurred while changing the parameter values ​​of the listed items</h17>
     <t1>The work of the plugin is possible only in the schedule in the sorting settings of which the property "Itemize every instance" is checked</t1>
     <m1>Select elements for numbered marking</m1>
     <m2>No items on current view schedule</m2>
