@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.7.2.0">
+<ModPlus Name="en-US" Version="3.7.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1379,14 +1379,15 @@
 			Description="Plugin of inserting AutoCAD tables into the drawing according to GOST/DSTU/STB or from the specified file">
     <insert>Insert</insert>
     <all>All</all>
+    <favorite>Favorite</favorite>
     <h1>TABLES</h1>
     <h2>ModPlus tables</h2>
     <h3>Normative documents for:</h3>
     <h4>Russia</h4>
     <h5>Ukraine</h5>
     <h6>Belarus</h6>
-    <h7>Weed of normative document:</h7>
-    <h8>Selecting the normative document</h8>
+    <h7>Tables filter:</h7>
+    <h8>Choosing a table filtering option</h8>
     <h9>Table name</h9>
     <h10>Normative document:</h10>
     <h11>Description:</h11>
@@ -1413,6 +1414,8 @@
     <h32>TABLES FROM FILE</h32>
     <h33>Drawing file</h33>
     <h34>Select a file</h34>
+    <h35>Add to Favorite Tables List</h35>
+    <h36>Remove from Favorite Tables List</h36>
     <msg1>Could not copy file to disk!\nThere may be no administrator rights</msg1>
     <msg2>Could not copy table</msg2>
     <msg3>In the "Tables from file" section, the file is incompatible with this version of AutoCAD!</msg3>
