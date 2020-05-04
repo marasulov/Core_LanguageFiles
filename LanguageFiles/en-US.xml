@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.7.3.0">
+<ModPlus Name="en-US" Version="3.7.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1380,6 +1380,7 @@
     <insert>Insert</insert>
     <all>All</all>
     <favorite>Favorite</favorite>
+    <current>Current</current>
     <h1>TABLES</h1>
     <h2>ModPlus tables</h2>
     <h3>Normative documents for:</h3>
@@ -1416,6 +1417,8 @@
     <h34>Select a file</h34>
     <h35>Add to Favorite Tables List</h35>
     <h36>Remove from Favorite Tables List</h36>
+    <h37>Layer:</h37>
+    <h38>Layer locked!</h38>
     <msg1>Could not copy file to disk!\nThere may be no administrator rights</msg1>
     <msg2>Could not copy table</msg2>
     <msg3>In the "Tables from file" section, the file is incompatible with this version of AutoCAD!</msg3>
