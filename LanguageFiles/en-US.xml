@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.7.5.0">
+<ModPlus Name="en-US" Version="3.7.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2424,6 +2424,7 @@
     <h55>Case sensitive</h55>
     <h56>Search and replace</h56>
     <h57>In the view name find and replace</h57>
+    <h58>Duplicate raster images (+ PDF)</h58>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <start>Start</start>
@@ -4254,8 +4255,11 @@
     <co7>Copy Generic Annotations</co7>
     <co8>Copy Guide Grids</co8>
     <co9>Copy and Set Sheet Revisions</co9>
+    <co10>Copy raster images (+ PDF)</co10>
     <yes>Yes</yes>
     <no>No</no>
+    <copy>Create copy</copy>
+    <exist>Use exist</exist>
     <m1>You must open at last two documents</m1>
     <m2>You need to select the sheets to copy!</m2>
     <m3>You need to select the destination documents!</m3>
@@ -4268,6 +4272,10 @@
     <m10>Copying a Image Views from "{0}" to a document "{1}"</m10>
     <m11>Copying a Revisions from "{0}" to a document "{1}"</m11>
     <m12>Copying completed!</m12>
+    <m13>Destination document "{0}" has Legend "{1}"</m13>
+    <m14>Choose one of the options - use an existing Legend from the destination document or create and use a copy of the Legend from the source document</m14>
+    <m15>Destination document "{0}" has Drafting View "{1}"</m15>
+    <m16>Choose one of the options - use an existing Drafting View from the destination document or create and use a copy of the Draftin View from the source document</m16>
   </mprCopySheetsToOpenDocuments>
   <mprWorksets LocalName="Worksets"
                Description="Manage, create, and apply worksets"
