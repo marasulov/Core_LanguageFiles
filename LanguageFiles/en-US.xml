@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="3.7.7.0">
+<ModPlus Name="en-US" Version="4.0.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -46,6 +46,16 @@
     <h32>Download all</h32>
     <h33>Upload configuration data to the server</h33>
     <h34>Download configuration data from the server</h34>
+    <h35>Unique user identifier in the site database</h35>
+    <h36>Web License Server</h36>
+    <h37>License server id:</h37>
+    <h38>Email for user identification:</h38>
+    <h39>License server with identifier "{0}" is not available (disconnected or blocked) or it is not possible to connect to web services</h39>
+    <h40>Check user access</h40>
+    <h41>User "{0}" has access to license server "{1}"</h41>
+    <h42>User "{0}" does not have access to license server "{1}"</h42>
+    <h43>Check access to the license server, the entered data for identification and contact your system administrator</h43>
+    <h44>License server</h44>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
     <m3>Attention! The use of social networks for authorization is possible only after linking social network accounts to a personal account on the site! Otherwise, when you try to log in through social networks, a new account will be created on the site, and you will lose your license data!</m3>
@@ -360,6 +370,14 @@
     <h110>Year:</h110>
     <h111>Component:</h111>
     <h112>Number of updates:</h112>
+    <h113>Web License Server</h113>
+    <h114>License server id:</h114>
+    <h115>Email for user identification:</h115>
+    <h116>License server with identifier "{0}" is not available (disconnected or blocked) or it is not possible to connect to web services</h116>
+    <h117>Check user access</h117>
+    <h118>User "{0}" has access to license server "{1}"</h118>
+    <h119>User "{0}" does not have access to license server "{1}"</h119>
+    <h120>Check access to the license server, the entered data for identification and contact your system administrator</h120>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -729,11 +747,7 @@
     <h4>REGISTRATION</h4>
     <h5>Language:</h5>
     <h6>Theme:</h6>
-    <h7>Window borders:</h7>
     <h8>Separator:</h8>
-    <h9>Registration key:</h9>
-    <h10>The key is binding to the physical disk:</h10>
-    <h11>The key is binding to a Google Account:</h11>
     <h12>Settings</h12>
     <h13>General</h13>
     <h14>Context menu</h14>
@@ -783,11 +797,6 @@
     <h59>MP:Set Nested Objects Layer</h59>
     <cb1>Icon</cb1>
     <cb2>Title</cb2>
-    <border1>Border by color</border1>
-    <border2>Glow by color</border2>
-    <border3>Border + glow by color</border3>
-    <border4>Shadow</border4>
-    <border5>No borders</border5>
     <tt1>Separator of integer and fractional part of numbers</tt1>
     <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
     <tt3>You must enter your Login in the "Registration" tab! (ModPlus Configurator)</tt3>
@@ -861,7 +870,6 @@
     <h4>REGISTRATION</h4>
     <h5>Language:</h5>
     <h6>Theme:</h6>
-    <h7>Window borders:</h7>
     <h8>Separator:</h8>
     <h9>Registration key:</h9>
     <h10>The key is binding to the physical disk:</h10>
@@ -869,11 +877,6 @@
     <h12>Settings</h12>
     <h13>Personal account</h13>
     <h14>Attention! Changing the language on the ribbon will only happen after you restart Revit</h14>
-    <border1>Border by color</border1>
-    <border2>Glow by color</border2>
-    <border3>Border + glow by color</border3>
-    <border4>Shadow</border4>
-    <border5>No borders</border5>
     <tt1>Separator of integer and fractional part of numbers</tt1>
     <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
     <tt3>You must enter your Login in the "Registration" tab! (ModPlus Configurator)</tt3>
@@ -888,16 +891,9 @@
     <h4>REGISTRATION</h4>
     <h5>Language:</h5>
     <h6>Theme:</h6>
-    <h7>Window borders:</h7>
-    <h9>Registration key:</h9>
-    <h10>The key is binding to the physical disk:</h10>
-    <h11>The key is binding to a Google Account:</h11>
-    <h12>Settings</h12>
-    <border1>Border by color</border1>
-    <border2>Glow by color</border2>
-    <border3>Border + glow by color</border3>
-    <border4>Shadow</border4>
-    <border5>No borders</border5>
+    <h7>Personal account</h7>
+    <h8>Separator:</h8>
+    <h9>Settings</h9>
     <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
     <tt3>You must enter your Login in the "Registration" tab! (ModPlus Configurator)</tt3>
     <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
