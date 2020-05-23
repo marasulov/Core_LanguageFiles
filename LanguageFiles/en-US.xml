@@ -4620,7 +4620,7 @@
     <t42>Load the reinforcement settings from the xml file and set it for the current slab</t42>
     <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
     <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</t44>
-    
+
     <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
     <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
@@ -4702,4 +4702,32 @@
     <m57>Walkthrough</m57>
     <m58>Undefined</m58>
   </mprCopyElementsToOpenDocuments>
+  <mprMepElementsBender LocalName="MEP elements clash solver"
+                        Description="Solves MEP elements clashes"
+                        FullDescription="Solves MEP elements clashes">
+    <h1>Settings</h1>
+    <h2>Bending directions</h2>
+    <m1>Offset, mm</m1>
+    <m2>Angle, °</m2>
+    <m3>Categories</m3>
+    <m4>Vertical</m4>
+    <m5>Horizontal</m5>
+    <m6>Up</m6>
+    <m7>Down</m7>
+    <m8>Left</m8>
+    <m9>Right</m9>
+    <m10>Alignment elements</m10>
+    <m11>Elements selected</m11>
+    <m12>Bend</m12>
+    <m13>Apply</m13>
+    <m14>Cancel</m14>
+    <m15>Duct</m15>
+    <m16>Pipe</m16>
+    <m17>Conduit</m17>
+    <m18>Cable tray</m18>
+    <m19>Choose an alignment elements</m19>
+    <m20>Create elements bending</m20>
+    <m21>The alignment elements were not chosen</m21>
+    <m22>Elements doesn't match selected categories: {0}</m22>
+  </mprMepElementsBender>
 </ModPlus>
