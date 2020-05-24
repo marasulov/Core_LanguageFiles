@@ -4822,4 +4822,32 @@
     <m61>{0} - The types collecting process has been finished ({1}).</m61>
     <m62>there was a critical Revit warning that required confirmation from the user. Disable warning suppression and try copying again</m62>
   </mprCopyElementsToOpenDocuments>
+  <mprMepElementsBender LocalName="MEP elements clash solver"
+                        Description="Solves MEP elements clashes"
+                        FullDescription="Solves MEP elements clashes">
+    <h1>Settings</h1>
+    <h2>Bending directions</h2>
+    <m1>Offset, mm</m1>
+    <m2>Angle, °</m2>
+    <m3>Categories</m3>
+    <m4>Vertical</m4>
+    <m5>Horizontal</m5>
+    <m6>Up</m6>
+    <m7>Down</m7>
+    <m8>Left</m8>
+    <m9>Right</m9>
+    <m10>Alignment elements</m10>
+    <m11>Elements selected</m11>
+    <m12>Bend</m12>
+    <m13>Apply</m13>
+    <m14>Cancel</m14>
+    <m15>Duct</m15>
+    <m16>Pipe</m16>
+    <m17>Conduit</m17>
+    <m18>Cable tray</m18>
+    <m19>Choose an alignment elements</m19>
+    <m20>Create elements bending</m20>
+    <m21>The alignment elements were not chosen</m21>
+    <m22>Elements doesn't match selected categories: {0}</m22>
+  </mprMepElementsBender>
 </ModPlus>
