@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.0.0.0">
+<ModPlus Name="en-US" Version="4.2.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2421,6 +2421,10 @@
     <h56>Search and replace</h56>
     <h57>In the view name find and replace</h57>
     <h58>Duplicate raster images (+ PDF)</h58>
+    <h59>Crop view</h59>
+    <h60>Crop Region Visible</h60>
+    <h61>Annotation crop</h61>
+    <h62>By default, when you create a dependent view, the "Crop View", "Crop Region Visible", and "Annotation crop" properties are enabled. You can specify which of these properties to disable</h62>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <start>Start</start>
@@ -4836,8 +4840,7 @@
     <m7>Down</m7>
     <m8>Left</m8>
     <m9>Right</m9>
-    <m10>Alignment elements</m10>
-    <m11>Elements selected</m11>
+    <m10>Intersected elements</m10>
     <m12>Bend</m12>
     <m13>Apply</m13>
     <m14>Cancel</m14>
