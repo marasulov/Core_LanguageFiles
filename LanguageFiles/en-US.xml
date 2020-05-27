@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.2.1.0">
+<ModPlus Name="en-US" Version="4.2.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -453,11 +453,11 @@
     <tt44>Separator of integer and fractional part of numbers</tt44>
     <tt47>Reload list of physical disks</tt47>
     <tt48>Deleting the configuration file, entries in the registry</tt48>
-    <tt49>Go to the website</tt49>
-    <tt50>Go to group in VK</tt50>
-    <tt51>Go to group on Facebook</tt51>
-    <tt52>Youtube Playlist</tt52>
-    <tt53>Google+ Community</tt53>
+    <tt49>Official website</tt49>
+    <tt50>Group in VK</tt50>
+    <tt51>Group in Facebook</tt51>
+    <tt52>Youtube chanel</tt52>
+    <tt53>Group in Telegram</tt53>
     <tt54>Send e-mail</tt54>
     <tt55>Download configuration file from ftp server</tt55>
     <tt56>Copy to clipboard</tt56>
@@ -4853,5 +4853,11 @@
     <m20>Create elements bending</m20>
     <m21>The alignment elements were not chosen</m21>
     <m22>Elements doesn't match selected categories: {0}</m22>
+    <m23>An error occurred while creating an element bend. It is likely that the entered offset and angle do not allow bending.</m23>
+    <m24>Original error text:</m24>
+    <m25>Choose the option for further work, taking into account the applied changes:</m25>
+    <o1>Accept changes and continue</o1>
+    <o2>Discard changes and continue</o2>
+    <o3>Abort process</o3>
   </mprMepElementsBender>
 </ModPlus>
