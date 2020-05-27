@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.2.2.0">
+<ModPlus Name="en-US" Version="4.2.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -254,6 +254,7 @@
     <progress17>Search Autodesk products</progress17>
     <progress18>Checking and starting the welcome screen</progress18>
     <progress19>Close the splash screen</progress19>
+    <progress20>Retrieving user data</progress20>
     <tab1>Configuration</tab1>
     <tab2>Customize</tab2>
     <tab3>Settings</tab3>

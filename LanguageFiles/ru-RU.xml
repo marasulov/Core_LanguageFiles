@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.2.2.0">
+<ModPlus Name="ru-RU" Version="4.2.3.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -254,6 +254,7 @@
     <progress17>Поиск продуктов Autodesk</progress17>
     <progress18>Проверка и запуск окна приветствия</progress18>
     <progress19>Закрытие окна-заставки</progress19>
+    <progress20>Получение данных пользователя</progress20>
     <tab1>Конфигурация</tab1>
     <tab2>Адаптация</tab2>
     <tab3>Настройки</tab3>
