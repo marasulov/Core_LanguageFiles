@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.2.3.0">
+<ModPlus Name="en-US" Version="4.2.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4538,6 +4538,10 @@
     <h49>Flip horizontal</h49>
     <h50>Flip vertical</h50>
     <h51>Curve approximation accuracy:</h51>
+    <h52>Preview icons</h52>
+    <h53>Nothing selected!</h53>
+    <h54>Graphics pattern editor</h54>
+    <h55>Creation from drafting view</h55>
     <t1>Restore original pattern state</t1>
     <t2>Offset defines the distance between parallel lines. Offset is not displayed in the geometry editor. Offset affects the conditional boundaries of the pattern</t2>
     <t3>Shift moves the pattern of dashes and spaces along the length of each new parallel line. Shift is ignored if the line is solid</t3>
