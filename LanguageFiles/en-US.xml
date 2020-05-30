@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.2.5.0">
+<ModPlus Name="en-US" Version="4.2.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -226,6 +226,7 @@
     <group10>Parameters</group10>
     <group11>Families</group11>
     <group12>Manage</group12>
+    <group13>Systems</group13>
   </CUI>
   <Configurator LocalName="Configurator">
     <title1>ModPlus configurator</title1>
@@ -4834,7 +4835,7 @@
   </mprCopyElementsToOpenDocuments>
   <mprMepElementsBender LocalName="MEP elements clash solver"
                         Description="Solves MEP elements clashes"
-                        FullDescription="Solves MEP elements clashes">
+                        FullDescription="Plugin allows you to create a bypass of MEP elements without constantly selecting them from the plugin window: for this, you first need to select the intersected elements (i.e. those elements that need to be bypassed), and then just select the necessary elements in the model. In this case, the plugin will automatically add items to the list of processed">
     <h1>Settings</h1>
     <h2>Bending directions</h2>
     <m1>Offset, mm</m1>
