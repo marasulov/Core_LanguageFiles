@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.4.2.0">
+<ModPlus Name="en-US" Version="4.4.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -312,8 +312,6 @@
     <header50>Paid</header50>
     <header51>Uninstalled</header51>
     <header52>In developing</header52>
-    <header53>Database:</header53>
-    <header54>Dwg base:</header54>
     <header55>Plugins loaded:</header55>
     <header56>If there is no plugin in the list of active plugins, then adding this plugin to the ribbon and in the menu is provided by the internal mechanisms of the plugin</header56>
     <header57>Note: plugins that are not connected to the ModPlus plugin (Configuration tab) will not be added when building a ribbon and menus!</header57>
@@ -435,10 +433,6 @@
     <tt24>To get the activation key, go to modplus.org and buy the plugin</tt24>
     <tt25>Check the entered key</tt25>
     <tt26>Do not remind about this plugin when checking for new plugins</tt26>
-    <tt27>The configurator installs the plugins and databases that are relevant at the time of installation!</tt27>
-    <tt28>To update features and databases, use the auto-update module</tt28>
-    <tt29>The configurator and the auto-update module installs only the dwg database pointer file!</tt29>
-    <tt30>Dwg files downloaded with "Dwg base" plugin on user request or manually on modplus.org</tt30>
     <tt31>Clear menu</tt31>
     <tt32>Change size</tt32>
     <tt33>Create group</tt33>
@@ -517,7 +511,6 @@
     <msg7>You did not create an adaptation menu for AutoCAD! When you load AutoCAD, the ribbon, palette, and/or the floating ModPlus menu will be empty!\nExactly exit?</msg7>
     <msg8>You did not connect the ModPlus plug-in to any version of Revit!\nExactly exit?</msg8>
     <msg9>You did not create an adaptation menu for Revit! When you load a Revit ribbon will be empty!\nExactly exit?</msg9>
-    <msg10>You have not installed any databases! The plugins in the "Products" section will not work!\nExactly exit?</msg10>
     <msg11>When you added the required data to the AutoCAD configuration file, an error occurred:\n{0}\nRun the Configurator as administrator and try again.\nFor more information on modifying the configuration file, see modplus.org in the Help section.\nConfiguration can still add an entry to the registry to load the ModPlus plug-in, but the plug-in can not earn\nAdd the registry entry?</msg11>
     <msg12>When you added the required data to the Revit configuration file, an error occurred:\n{0}\nRun the Configurator as administrator and try again.\nFor more information on modifying the configuration file, see modplus.org in the Help section.\nConfiguration can still add an entry to the registry to load the ModPlus plug-in, but the plug-in can not earn\nAdd the registry entry?</msg12>
     <msg13>All keys will be erased! Continue?</msg13>
