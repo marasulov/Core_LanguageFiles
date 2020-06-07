@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.4.0.0">
+<ModPlus Name="en-US" Version="4.4.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -892,40 +892,123 @@
     <h8>Separator:</h8>
     <h9>Settings</h9>
     <h10>Attention! Change of language in the main menu and context menus will occur after Renga reboot</h10>
+    <undef>Undefined</undef>
     <tt2>To work with the modplus.org server, enter your e-mail address. A mail address is required to identify you on the server. It is recommended to use the e-mail address specified at the registration on modplus.org</tt2>
     <tt3>You must enter your Login in the "Registration" tab! (ModPlus Configurator)</tt3>
     <tt4>The specified mail address did not pass the verification!\nOr you have made a mistake in specifying the mail address or you have an very unique mail hoster =)</tt4>
+    <AirAccessory>Air Accessory</AirAccessory>
+    <AirDuct>Air Duct</AirDuct>
+    <AirEquipment>Air Equipment</AirEquipment>
+    <AirFitting>Air Fitting</AirFitting>
     <AssemblyInstance>Assembly</AssemblyInstance>
-    <Undefined>Unknown</Undefined>
-    <Level>Level</Level>
-    <Wall>Wall</Wall>
-    <Column>Column</Column>
-    <Beam>Beam</Beam>
-    <Floor>Floor</Floor>
-    <Opening>Opening</Opening>
-    <Roof>Roof</Roof>
-    <Ramp>Ramp</Ramp>
-    <Stair>Stair</Stair>
-    <Door>Door</Door>
-    <Window>Window</Window>
-    <Railing>Railing</Railing>
-    <IsolatedFoundation>Isolated foundation</IsolatedFoundation>
-    <WallFoundation>Wall foundation</WallFoundation>
-    <Room>Room</Room>
-    <Element>Element</Element>
-    <RoutePoint>Route point</RoutePoint>
-    <Route>Route</Route>
-    <PlumbingFixture>Plumbing fixture</PlumbingFixture>
-    <Equipment>Equipment</Equipment>
-    <Pipe>Pipe</Pipe>
-    <PipelineAccessory>Pipeline accessory</PipelineAccessory>
-    <PipeFitting>Pipe fitting</PipeFitting>
-    <IfcObject>IFC object</IfcObject>
-    <Rebar>Rebar</Rebar>
     <Axis>Axis</Axis>
-    <Section>Section</Section>
+    <Beam>Beam</Beam>
+    <Column>Column</Column>
+    <Dimension>Dimension</Dimension>
+    <DistributionBoard>Distribution Board</DistributionBoard>
+    <Door>Door</Door>
+    <Element>Element</Element>
     <Elevation>Elevation</Elevation>
+    <Equipment>Equipment</Equipment>
+    <Floor>Floor</Floor>
+    <Hatch>Hatch</Hatch>
+    <IfcObject>IFC object</IfcObject>
+    <IsolatedFoundation>Isolated foundation</IsolatedFoundation>
+    <Level>Level</Level>
+    <LightFixture>Light Fixture</LightFixture>
+    <Line3D>Line3D</Line3D>
+    <LineElectricalCircuit>LineElectricalCircuit</LineElectricalCircuit>
+    <Opening>Opening</Opening>
+    <Pipe>Pipe</Pipe>
+    <PipeFitting>Pipe fitting</PipeFitting>
+    <PipelineAccessory>Pipeline accessory</PipelineAccessory>
     <Plate>Plate</Plate>
+    <PlumbingFixture>Plumbing fixture</PlumbingFixture>
+    <Railing>Railing</Railing>
+    <Ramp>Ramp</Ramp>
+    <Rebar>Rebar</Rebar>
+    <Roof>Roof</Roof>
+    <Room>Room</Room>
+    <Route>Route</Route>
+    <RoutePoint>Route point</RoutePoint>
+    <Section>Section</Section>
+    <Stair>Stair</Stair>
+    <TextShape>Text Shape</TextShape>
+    <Undefined>Unknown</Undefined>
+    <Wall>Wall</Wall>
+    <Window>Window</Window>
+    <WallFoundation>Wall foundation</WallFoundation>
+    <WiringAccessory>Wiring Accessory</WiringAccessory>
+    <PropertyType_Undefined>Undefined</PropertyType_Undefined>
+    <PropertyType_Double>Double</PropertyType_Double>
+    <PropertyType_String>String</PropertyType_String>
+    <PropertyType_Angle>Angle</PropertyType_Angle>
+    <PropertyType_Area>Area</PropertyType_Area>
+    <PropertyType_Boolean>Boolean</PropertyType_Boolean>
+    <PropertyType_Enumeration>Enumeration</PropertyType_Enumeration>
+    <PropertyType_Integer>PropertyType_Integer</PropertyType_Integer>
+    <PropertyType_Length>Length</PropertyType_Length>
+    <PropertyType_Logical>Logical</PropertyType_Logical>
+    <PropertyType_Mass>Mass</PropertyType_Mass>
+    <PropertyType_Volume>Volume</PropertyType_Volume>
+    <Logical_False>False</Logical_False>
+    <Logical_True>True</Logical_True>
+    <Logical_Indeterminate>Indeterminate</Logical_Indeterminate>
+    <QuantityType_Unknown>Unknown</QuantityType_Unknown>
+    <QuantityType_Count>Count</QuantityType_Count>
+    <QuantityType_Length>Length</QuantityType_Length>
+    <QuantityType_Area>Area</QuantityType_Area>
+    <QuantityType_Volume>Volume</QuantityType_Volume>
+    <QuantityType_Mass></QuantityType_Mass>
+    <Area>Area</Area>
+    <Count>Count</Count>
+    <CrossSectionArea>Cross section area</CrossSectionArea>
+    <CrossSectionOverallHeight>Cross section overall height</CrossSectionOverallHeight>
+    <CrossSectionOverallWidth>Cross section overall width</CrossSectionOverallWidth>
+    <GrossCeilingArea>Gross ceiling area</GrossCeilingArea>
+    <GrossFloorArea>Gross floor area</GrossFloorArea>
+    <GrossPerimeter>Gross perimeter</GrossPerimeter>
+    <GrossVolume>Gross volume</GrossVolume>
+    <GrossWallArea>Gross wall area</GrossWallArea>
+    <InnerSurfaceArea>Inner surface area</InnerSurfaceArea>
+    <InnerSurfaceExternalArea>Inner surface external area</InnerSurfaceExternalArea>
+    <InnerSurfaceInternalArea>Inner surface internal area</InnerSurfaceInternalArea>
+    <NetArea>Net area</NetArea>
+    <NetCeilingArea>Net ceiling area</NetCeilingArea>
+    <NetFloorArea>Net floor area</NetFloorArea>
+    <NetFootprintArea>Net footprint area</NetFootprintArea>
+    <NetMass>Net mass</NetMass>
+    <NetPerimeter>Net perimeter</NetPerimeter>
+    <NetSideArea>Net side area</NetSideArea>
+    <NetVolume>Net volume</NetVolume>
+    <NetWallArea>Net wall area</NetWallArea>
+    <NominalArea>Nominal area</NominalArea>
+    <NominalHeight>Nominal height</NominalHeight>
+    <NominalLength>Nominal length</NominalLength>
+    <NominalThickness>Nominal thickness</NominalThickness>
+    <NominalWidth>Nominal width</NominalWidth>
+    <NumberOfRiser>Number of riser</NumberOfRiser>
+    <NumberOfTreads>Number of treads</NumberOfTreads>
+    <OuterSurfaceArea>Outer surface area</OuterSurfaceArea>
+    <OverallDepth>Overall depth</OverallDepth>
+    <OverallHeight>Overall height</OverallHeight>
+    <OverallLength>Overall length</OverallLength>
+    <OverallWidth>Overall width</OverallWidth>
+    <ParentRoomLevel>Parent room level</ParentRoomLevel>
+    <ParentRoomNumber>Parent room number</ParentRoomNumber>
+    <Perimeter>Perimeter</Perimeter>
+    <ReinforcementUnitCount>Reinforcement unit count</ReinforcementUnitCount>
+    <RelativeObjectBaselineBottomElevation>Object baseline bottom elevation</RelativeObjectBaselineBottomElevation>
+    <RelativeObjectBaselineTopElevation>Object baseline top elevation</RelativeObjectBaselineTopElevation>
+    <RelativeObjectBottomElevation>Object bottom elevation</RelativeObjectBottomElevation>
+    <RelativeObjectTopElevation>Object top elevation</RelativeObjectTopElevation>
+    <RiserHeight>Riser height</RiserHeight>
+    <SumConductorsLengths>Total length of conductors</SumConductorsLengths>
+    <TotalRebarLength>Total length of reinforcing bars</TotalRebarLength>
+    <TotalRebarMass>Total mass of reinforcing bars</TotalRebarMass>
+    <TotalSurfaceArea>Total surface area</TotalSurfaceArea>
+    <TreadLength>Tread length</TreadLength>
+    <Volume>Volume</Volume>
   </RengaDlls>
   <mpTxtNumCopy LocalName="Copy with numbering"
                 Description="Copies the selected text or block with an attribute containing a numeric value, changing the value to a specified numerical step"
@@ -4879,9 +4962,10 @@
     <h10>Search</h10>
     <h11>Found {0} objects</h11>
     <h12>Nothing found</h12>
+    <h13>Show</h13>
     <m1>Equal</m1>
     <m2>Contain</m2>
-    <t1>Indicate in what units of measurement the quantities from the objects will be taken, as well as the accuracy of comparing the numerical values ​​when searching for the quantities</t1>
+    <t1>Indicate in what units of values from the objects will be taken, and the accuracy of comparing the numerical values</t1>
     <t2>Specify a match option for string values: whether the string to be checked must match the search value completely or the string to be checked may contain the search value</t2>
     <t3>You can specify multiple values for the search by separating them with an asterisk. For example, “200*300”.</t3>
     <t4>If several values are specified, the “OR” option will work. For example, when searching by the value “200*300”, a match of “200” or “300” will be satisfactory.</t4>
@@ -4893,6 +4977,7 @@
     <t10>You can specify the specific name of the property or parameter in which you want to validate the entered value. For example, the string “Note=Concrete” with the “Search in properties” checkbox selected indicates that objects matching the search condition should have the “Note” property with the value “Concrete”. Name validation is also handled based on the “String Match Type”.</t10>
     <t11>To search by the condition of empty values, you need to specify only the name of the property or parameter. For example, the line “Note=” with the checkbox “Search in properties” checked, indicates that objects satisfying the search condition should have the property “Note” with an empty value.</t11>
     <t12>Checking all string values is not case sensitive.</t12>
+    <t13>Show found objects on a 3D scene</t13>
     <all>All</all>
     <qh1>Length:</qh1>
     <qh2>Area:</qh2>

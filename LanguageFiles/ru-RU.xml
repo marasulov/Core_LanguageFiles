@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.4.0.0">
+<ModPlus Name="ru-RU" Version="4.4.2.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -892,40 +892,122 @@
     <h8>Разделитель:</h8>
     <h9>Настройки</h9>
     <h10>Внимание! Смена языка в главном меню и контекстных меню произойдет после перезагрузки Renga</h10>
+    <undef>Не определено</undef>
     <tt2>Для работы с сервером modplus.org укажите адрес вашей почты. Адрес почты требуется для идентификации Вас на сервере. Рекомендуется использовать адрес почты указанный при регистрации на сайте modplus.org</tt2>
     <tt3>Нужно ввести Логин во вкладке "Регистрация"! (Конфигуратор ModPlus)</tt3>
     <tt4>Указанный адрес почты не прошел проверку!\nИли вы ошиблись в указании адреса почты или у вас оооочень уникальный хостер почты =)</tt4>
+    <AirAccessory>Аксессуар воздуховода</AirAccessory>
+    <AirDuct>Воздуховод</AirDuct>
+    <AirEquipment>Воздушное оборудование</AirEquipment>
+    <AirFitting>Деталь воздуховода</AirFitting>
     <AssemblyInstance>Сборка</AssemblyInstance>
-    <Undefined>Неизвестный</Undefined>
-    <Level>Уровень</Level>
-    <Wall>Стена</Wall>
-    <Column>Колонна</Column>
-    <Beam>Балка</Beam>
-    <Floor>Перекрытие</Floor>
-    <Opening>Проем</Opening>
-    <Roof>Крыша</Roof>
-    <Ramp>Пандус</Ramp>
-    <Stair>Лестница</Stair>
-    <Door>Дверь</Door>
-    <Window>Окно</Window>
-    <Railing>Ограждение</Railing>
-    <IsolatedFoundation>Столбчатый фундамент</IsolatedFoundation>
-    <WallFoundation>Ленточный фундамент</WallFoundation>
-    <Room>Помещение</Room>
-    <Element>Элемент</Element>
-    <RoutePoint>Точка маршрута</RoutePoint>
-    <Route>Маршрут</Route>
-    <PlumbingFixture>Сантехника</PlumbingFixture>
-    <Equipment>Оборудование</Equipment>
-    <Pipe>Труба</Pipe>
-    <PipelineAccessory>Аксессуар трубопровода</PipelineAccessory>
-    <PipeFitting>Деталь трубопровода</PipeFitting>
-    <IfcObject>IFC объект</IfcObject>
-    <Rebar>Арматурный стержень</Rebar>
     <Axis>Ось</Axis>
-    <Section>Разрез</Section>
+    <Beam>Балка</Beam>
+    <Column>Колонна</Column>
+    <Dimension>Размер</Dimension>
+    <DistributionBoard>Электрический распределительный щит</DistributionBoard>
+    <Door>Дверь</Door>
+    <Element>Элемент</Element>
     <Elevation>Фасад</Elevation>
+    <Equipment>Оборудование</Equipment>
+    <Floor>Перекрытие</Floor>
+    <Hatch>Штриховка</Hatch>
+    <IfcObject>IFC объект</IfcObject>
+    <IsolatedFoundation>Столбчатый фундамент</IsolatedFoundation>
+    <Level>Уровень</Level>
+    <LightFixture>Осветительный прибор</LightFixture>
+    <Line3D>Линия модели</Line3D>
+    <LineElectricalCircuit>Электрическая линия</LineElectricalCircuit>
+    <Opening>Проем</Opening>
+    <Pipe>Труба</Pipe>
+    <PipeFitting>Деталь трубопровода</PipeFitting>
+    <PipelineAccessory>Аксессуар трубопровода</PipelineAccessory>
     <Plate>Пластина</Plate>
+    <PlumbingFixture>Сантехнический прибор</PlumbingFixture>
+    <Railing>Ограждение</Railing>
+    <Ramp>Пандус</Ramp>
+    <Rebar>Арматурный стержень</Rebar>
+    <Roof>Крыша</Roof>
+    <Room>Помещение</Room>
+    <Route>Трасса</Route>
+    <RoutePoint>Точка трассировки</RoutePoint>
+    <Section>Разрез</Section>
+    <Stair>Лестница</Stair>
+    <TextShape>Текст модели</TextShape>
+    <Undefined>Неизвестный</Undefined>
+    <Wall>Стена</Wall>
+    <WallFoundation>Ленточный фундамент</WallFoundation>
+    <Window>Окно</Window>
+    <WiringAccessory>Электроустановочное изделие</WiringAccessory>
+    <PropertyType_Undefined>Не определено</PropertyType_Undefined>
+    <PropertyType_Double>Действительное число</PropertyType_Double>
+    <PropertyType_String>Строка</PropertyType_String>
+    <PropertyType_Angle>Угол</PropertyType_Angle>
+    <PropertyType_Area>Площадь</PropertyType_Area>
+    <PropertyType_Boolean>Булевый</PropertyType_Boolean>
+    <PropertyType_Enumeration>Перечисление</PropertyType_Enumeration>
+    <PropertyType_Integer>Целое число</PropertyType_Integer>
+    <PropertyType_Length>Длина</PropertyType_Length>
+    <PropertyType_Logical>Логическое</PropertyType_Logical>
+    <PropertyType_Mass>Масса</PropertyType_Mass>
+    <PropertyType_Volume>Объём</PropertyType_Volume>
+    <Logical_False>Нет</Logical_False>
+    <Logical_True>Да</Logical_True>
+    <Logical_Indeterminate>Неопределенный</Logical_Indeterminate>
+    <QuantityType_Unknown>Неизвестный</QuantityType_Unknown>
+    <QuantityType_Count>Количество</QuantityType_Count>
+    <QuantityType_Length>Длина</QuantityType_Length>
+    <QuantityType_Area>Площадь</QuantityType_Area>
+    <QuantityType_Volume>Объём</QuantityType_Volume>
+    <Area>Площадь</Area>
+    <Count>Количество</Count>
+    <CrossSectionArea>Площадь поперечного сечения</CrossSectionArea>
+    <CrossSectionOverallHeight>Габаритная высота поперечного сечения</CrossSectionOverallHeight>
+    <CrossSectionOverallWidth>Габаритная ширина поперечного сечения</CrossSectionOverallWidth>
+    <GrossCeilingArea>Полная площадь потолка</GrossCeilingArea>
+    <GrossFloorArea>Полная площадь пола</GrossFloorArea>
+    <GrossPerimeter>Полный периметр</GrossPerimeter>
+    <GrossVolume>Полный объём</GrossVolume>
+    <GrossWallArea>Полная площадь стен</GrossWallArea>
+    <InnerSurfaceArea>Площадь внутренней поверхности</InnerSurfaceArea>
+    <InnerSurfaceExternalArea>Наружная площадь внутренней поверхности</InnerSurfaceExternalArea>
+    <InnerSurfaceInternalArea>Внутренняя площадь внутренней поверхности</InnerSurfaceInternalArea>
+    <NetArea>Чистая площадь</NetArea>
+    <NetCeilingArea>Чистая площадь потолка</NetCeilingArea>
+    <NetFloorArea>Чистая площадь пола</NetFloorArea>
+    <NetFootprintArea>Чистая площадь основания</NetFootprintArea>
+    <NetMass>Чистая масса</NetMass>
+    <NetPerimeter>Чистый периметр</NetPerimeter>
+    <NetSideArea>Чистая площадь продольного сечения</NetSideArea>
+    <NetVolume>Чистый объём</NetVolume>
+    <NetWallArea>Чистая площадь стен</NetWallArea>
+    <NominalArea>Номинальная площадь</NominalArea>
+    <NominalHeight>Номинальная высота</NominalHeight>
+    <NominalLength>Номинальная длина</NominalLength>
+    <NominalThickness>Номинальная толщина</NominalThickness>
+    <NominalWidth>Номинальная ширина</NominalWidth>
+    <NumberOfRiser>Количество подступёнков</NumberOfRiser>
+    <NumberOfTreads>Количество ступеней</NumberOfTreads>
+    <OuterSurfaceArea>Площадь внешней поверхности</OuterSurfaceArea>
+    <OverallDepth>Габаритная глубина</OverallDepth>
+    <OverallHeight>Габаритная высота</OverallHeight>
+    <OverallLength>Габаритная длина</OverallLength>
+    <OverallWidth>Габаритная ширина</OverallWidth>
+    <ParentRoomLevel>Уровень родительской комнаты</ParentRoomLevel>
+    <ParentRoomNumber>Номер родительской комнаты</ParentRoomNumber>
+    <Perimeter>Периметр</Perimeter>
+    <ReinforcementUnitCount>Количество единиц арматуры</ReinforcementUnitCount>
+    <RelativeObjectBaselineBottomElevation>Относительная высота низа базовой линии объекта</RelativeObjectBaselineBottomElevation>
+    <RelativeObjectBaselineTopElevation>Относительная высота верха базовой линии объекта</RelativeObjectBaselineTopElevation>
+    <RelativeObjectBottomElevation>Относительная высота низа объекта</RelativeObjectBottomElevation>
+    <RelativeObjectTopElevation>Относительная высота верха объекта</RelativeObjectTopElevation>
+    <RiserHeight>Высота подступёнка</RiserHeight>
+    <SumConductorsLengths>Сумма длин проводников</SumConductorsLengths>
+    <TotalRebarLength>Общая длина арматуры</TotalRebarLength>
+    <TotalRebarMass>Общая масса арматуры</TotalRebarMass>
+    <TotalSurfaceArea>Общая площадь поверхности</TotalSurfaceArea>
+    <TreadLength>Ширина проступи</TreadLength>
+    <Volume>Объём</Volume>
   </RengaDlls>
   <mpTxtNumCopy LocalName="Копирование с нумерацией"
                 Description="Копирует выбранный текст или блок с атрибутом, содержащий цифровое значение, с изменением значения на заданный числовой шаг"
@@ -4879,9 +4961,10 @@
     <h10>Искать</h10>
     <h11>Найдено {0} объектов</h11>
     <h12>Ничего не найдено</h12>
+    <h13>Показать</h13>
     <m1>Равно</m1>
     <m2>Содержит</m2>
-    <t1>Укажите в каких единицах измерений будут браться расчетные характеристики из объектов, а также точность сравнения числовых значений при поиске по расчетным характеристикам</t1>
+    <t1>Укажите в каких единицах измерений будут браться значения из объектов, а также точность сравнения числовых значений</t1>
     <t2>Укажите вариант совпадения для строковых значений: должна ли проверяемая строка полностью соответствовать поисковому значению или проверяемая строка может содержать поисковое значение</t2>
     <t3>Вы можете указывать несколько значений для поиска, разделяя их звездочкой. Например, «200*300».</t3>
     <t4>Если задано несколько значений, будет срабатывать вариант работы «ИЛИ». Например, при поиске по значению «200*300» совпадение по «200» или по «300» будет являться удовлетворяющим.</t4>
@@ -4893,6 +4976,7 @@
     <t10>Можно указывать конкретное имя свойства или параметра, в котором требуется проверить введенное значение. Например, строка «Примечание=Бетон» с установленной галочкой «Искать в свойствах» указывает, что удовлетворяющие условию поиска объекты должны иметь свойство «Примечание» со значением «Бетон». Проверка имени также обрабатывается с учетом значения «Тип совпадения строк».</t10>
     <t11>Чтобы выполнить поиск по условию пустых значений, нужно указать только имя свойства или параметра. Например, строка «Примечание=» с установленной галочкой «Искать в свойствах» указывает, что удовлетворяющие условию поиска объекты должны иметь свойство «Примечание» с пустым значением.</t11>
     <t12>Проверка всех строковых значений не чувствительна к регистру.</t12>
+    <t13>Показать найденные объекта на 3D сцене</t13>
     <all>Все</all>
     <qh1>Длина:</qh1>
     <qh2>Площадь:</qh2>
