@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.4.3.0">
+<ModPlus Name="en-US" Version="4.5.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2837,22 +2837,26 @@
     <tab8>Views, sections</tab8>
     <tab9>Tools</tab9>
     <tab10>Search</tab10>
+    <tab11>Level marks</tab11>
     <defl>Default</defl>
     <err1>Could not find file</err1>
     <err2>Failed to load linetype</err2>
-    <err3>The value can not be empty!</err3>
-    <err4>Invalid value! Enter the number!</err4>
     <err5>Error getting data from the registry! Run the Configurator to update the data in the registry</err5>
     <msg1>Specify the insertion point:</msg1>
     <msg2>Specify an endpoint:</msg2>
     <msg3>Select a block that is an intellectual ModPlus entity</msg3>
-    <msg4>Editing the values when double-clicking on the place at the moment is not implemented. Use the built-in value editor (see Settings) or the Properties palette</msg4>
     <msg5>Specify next point:</msg5>
     <msg6>Select Polyline:</msg6>
     <msg7>Delete the original polyline?</msg7>
     <msg8>Copy layer? [Yes/No]</msg8>
     <msg9>Processed intellectual entities</msg9>
     <msg10>Intellectual entities of the specified types are not found in the current space</msg10>
+    <msg11>Specify the base point:</msg11>
+    <msg12>Specify the level point:</msg12>
+    <msg13>Specify the position point of the Level Mark:</msg13>
+    <msg14>Select Level Marks:</msg14>
+    <msg15>Select reference Level Mark:</msg15>
+    <msg16>Remove objects from the selection:</msg16>
     <wrong>Invalid object!</wrong>
     <vc1>VARIOUS</vc1>
     <vc2>UNDEFINED</vc2>
@@ -2901,14 +2905,14 @@
     <h43>The scale of the line type that is set for the axis will vary in proportion to the basic scale of the axis. For example, if you set the axis scale to 1:1 and scale the line type to 2, then if you set the axis scale to 1:100, the line type scale becomes 200</h43>
     <h44>Save the values of the last created axes and continue the values of the new created axes</h44>
     <h45>When creating axis, the value of the first marker will be stored in the current document and automatically continue for each new axis</h45>
-    <h46>To edit axis values by double-clicking, use the built-in editor</h46>
-    <h47>Double-clicking the left mouse button on the axis will use the built-in editor of the values of the ModPlus plug-in. Otherwise, the standard text editor AutoCAD</h47>
+    <h46>Show helper lines</h46>
+    <h47>When you select a Level Mark, auxiliary lines from the base point to the level point and from the level point to the level mark will be shown</h47>
     <h48>Break Line</h48>
     <h49>General</h49>
     <h50>Style:</h50>
     <h51>Geometry</h51>
     <h52>Style of intellectual entity</h52>
-    <h53>Basic style for the break line</h53>
+    <h53>Basic style for Break Line</h53>
     <h54>Style name</h54>
     <h55>Style description</h55>
     <h56>Create break line according to GOST 2.303-68</h56>
@@ -2922,8 +2926,8 @@
     <h64>Content</h64>
     <h65>Creating a straight axis according to GOST 21.101-97</h65>
     <h66>Creating an intellectual object based on an anonymous block describing the straight axis in accordance with GOST 21.101-97, by specifying two points</h66>
-    <h67>Edit axis values</h67>
-    <h68>Basic style for a straight axis</h68>
+    <h67>Edit Axis values</h67>
+    <h68>Basic style for Straight Axis</h68>
     <h69>The selected style will be permanently deleted! Continue?</h69>
     <h70>Style group</h70>
     <h71>contains styles with the same name</h71>
@@ -2933,7 +2937,7 @@
     <h75>Creating an intellectual object based on an anonymous block describing the ground line</h75>
     <h76>Ground line from polyline</h76>
     <h77>Converting the selected polyline to the ground line</h77>
-    <h78>Basic style for the Ground line</h78>
+    <h78>Basic style for Ground line</h78>
     <h79>Section</h79>
     <h80>Creating a section designation according to GOST 2.305-68</h80>
     <h81>Creating an intellectual object based on an anonymous block describing the section according to GOST 2.305-68</h81>
@@ -2946,12 +2950,10 @@
     <h88>Display auxiliary section line</h88>
     <h89>When you select a section, an auxiliary line will be displayed that passes through all points of the section</h89>
     <h90>Dependent text movement</h90>
-    <h91>To edit section values ​​by double-click use the built-in editor.</h91>
-    <h92>Double-clicking with the left mouse button on the section will use the built-in value editor Mod Plus Plus. Otherwise, the AutoCAD standard text editor will be used.</h92>
     <h93>Restore text position</h93>
-    <h94>Edit section values</h94>
+    <h94>Edit Section values</h94>
     <h95>MP:Create analog</h95>
-    <h96>Base section style</h96>
+    <h96>Base style for Section</h96>
     <h97>When you move one of the texts of Section, the second text will automatically shift to the same distance</h97>
     <h98>How to handle the "Layer" property in the "Create analog" command:</h98>
     <h99>Search for intellectual entities</h99>
@@ -2960,6 +2962,15 @@
     <h102>Uncheck all</h102>
     <h103>Style is not in the database</h103>
     <h104>One or more entities are located on the locked layer, they cannot be updated</h104>
+    <h105>Level mark</h105>
+    <h106>Creating a elevation in accordance with GOST 21.101-97</h106>
+    <h107>Creating an intellectual object based on an anonymous block describing the elevation according to GOST 21.101-97</h107>
+    <h108>Base style for Level Mark</h108>
+    <h109>Edit Level Mark values</h109>
+    <h110>Align Level Marks</h110>
+    <h111>Vertical alignment of Level Marks</h111>
+    <h112>Combining the starting points</h112>
+    <h113>This command allows you to align the Level Marks according to various conditions</h113>
     <so1>Select</so1>
     <sot1>All intellectual entities of the specified types in the current space will be selected</sot1>
     <so2>Remove data</so2>
@@ -2988,140 +2999,119 @@
     <glfst3>The distance between groups of strokes</glfst3>
     <close>Close</close>
     <accept>Accept</accept>
-    <p1>BreakLine type:</p1>
+    <collapse>Collapse</collapse>
+    <next>Continue</next>
+    <p1>BreakLine type</p1>
     <d1>BreakLine type: linear, curved or cylindrical</d1>
-    <p2>Projections per object:</p2>
-    <p2-1>Projections per object (a):</p2-1>
+    <p2>Projections per object</p2>
     <d2>For linear break value of the projection is specified in mm For curved break the value of the projection is specified in % of the length between the main points. For cylindrical break value of the projection is not being used</d2>
-    <p3>Break width:</p3>
-    <p3-1>Break width (w):</p3-1>
+    <p3>Break width</p3>
     <d3>Break width in mm. Only for linear type BreakLine</d3>
-    <p4>Break height:</p4>
-    <p4-1>Break height (h):</p4-1>
+    <p4>Break height</p4>
     <d4>Break height in mm. Only for linear type BreakLine</d4>
-    <p5>Scale:</p5>
+    <p5>Scale</p5>
     <d5>BreakLine scale</d5>
     <d5-1>Axis scale</d5-1>
-    <p6>Linetype scale:</p6>
+    <p6>Linetype scale</p6>
     <d6>The scale of the linetype specified in the properties of block</d6>
-    <p7>Layer:</p7>
+    <p7>Layer</p7>
     <d7>Entity layer</d7>
-    <p8>Markers position:</p8>
+    <p8>Markers position</p8>
     <d8>Position of markers: from two sides, from above or from below</d8>
-    <p9>Fracture:</p9>
-    <p9-1>Fracture (b):</p9-1>
+    <p9>Fracture</p9>
     <d9>Fracture height of axis</d9>
-    <p10>Markers diameter:</p10>
-    <p10-1>Markers diameter (d):</p10-1>
+    <p10>Markers diameter</p10>
     <d10>Diameter of axis markers</d10>
-    <p11>Markers count:</p11>
+    <p11>Markers count</p11>
     <d11>Number of axis markers</d11>
-    <p12>First marker type:</p12>
+    <p12>First marker type</p12>
     <d12>Type of axis first marker</d12>
-    <p13>Second marker type:</p13>
+    <p13>Second marker type</p13>
     <d13>Type of axis second marker</d13>
-    <p14>Third marker type:</p14>
+    <p14>Third marker type</p14>
     <d14>Type of axis third marker</d14>
-    <p15>Bottom fracture offset:</p15>
-    <p15-1>Bottom fracture offset (a):</p15-1>
+    <p15>Bottom fracture offset</p15>
     <d15>Offset of bottom axis fracture</d15>
-    <p16>Top fracture offset:</p16>
+    <p16>Top fracture offset</p16>
     <d16>Offset of top axis fracture</d16>
-    <p16-1>Top fracture offset (a):</p16-1>
-    <p16-2>Fracture offset:</p16-2>
+    <p16-2>Fracture offset</p16-2>
     <d16-2>Offset of top or bottom axis fracture</d16-2>
-    <p17>Text style:</p17>
+    <p17>Text style</p17>
     <d17>Text style for axis text elements</d17>
-    <p18>Text height:</p18>
-    <p18-1>Text height (h):</p18-1>
+    <p18>Text height</p18>
     <d18>Text height of axis text elements</d18>
-    <p19>Axis line type:</p19>
-    <d19>Axis line type</d19>
-    <p20>First value prefix:</p20>
-    <d20>The prefix of the first value:</d20>
+    <p19>Axis line type</p19>
+    <p20>First value prefix</p20>
     <p21>First value suffix:</p21>
-    <d21>The suffix of the first value:</d21>
-    <p22>First value:</p22>
-    <d22>First value</d22>
-    <p23>Second value prefix:</p23>
-    <d23>The prefix of the second value:</d23>
-    <p24>Second value suffix:</p24>
-    <d24>The suffix of the second value:</d24>
-    <p25>Second value:</p25>
-    <d25>Second value</d25>
-    <p26>Third value prefix:</p26>
-    <d26>The prefix of the third value:</d26>
-    <p27>Third value suffix:</p27>
-    <d27>The suffix of the third value:</d27>
-    <p28>Third value:</p28>
-    <d28>Third value</d28>
-    <p29>Arrows size:</p29>
-    <p29-1>Arrows size (c):</p29-1>
-    <d29>Arrows size</d29>
-    <p30>Bottom orient marker value:</p30>
-    <d30>The value of the bottom orient marker</d30>
-    <p31>Top orient marker value:</p31>
-    <d31>The value of the top orient marker</d31>
-    <p32>Bottom orient marker:</p32>
+    <p22>First value</p22>
+    <p23>Second value prefix</p23>
+    <p24>Second value suffix</p24>
+    <p25>Second value</p25>
+    <p26>Third value prefix</p26>
+    <p27>Third value suffix</p27>
+    <p28>Third value</p28>
+    <p29>Arrows size</p29>
+    <p30>Bottom orient marker value</p30>
+    <p31>Top orient marker value</p31>
+    <p32>Bottom orient marker</p32>
     <d32>Visibility of the bottom orient marker</d32>
-    <p33>Top orient marker:</p33>
+    <p33>Top orient marker</p33>
     <d33>Visibility of the top orient marker</d33>
-    <p34>Orient marker type:</p34>
+    <p34>Orient marker type</p34>
     <d34>Type of axis orient marker</d34>
-    <p35>Line type:</p35>
+    <p35>Line type</p35>
     <d35>Line type of main polyline</d35>
-    <p36>First stroke indent:</p36>
-    <p36-1>First stroke indent (a):</p36-1>
+    <p36>First stroke indent</p36>
     <d36>Indent the first stroke in each segment of the ground line</d36>
-    <p37>Stroke length:</p37>
-    <p37-1>Stroke length (l):</p37-1>
-    <d37>Stroke length:</d37>
-    <p38>Distance between strokes:</p38>
-    <p38-1>Distance between strokes (b):</p38-1>
-    <d38>Distance between strokes</d38>
-    <p39>Tilt angle of the stroke:</p39>
-    <p39-1>Tilt angle of the stroke (α):</p39-1>
-    <d39>Tilt angle of the stroke</d39>
-    <p40>Indent group of strokes:</p40>
-    <p40-1>Indent group of strokes (c):</p40-1>
-    <d40>Indent group of strokes</d40>
-    <p41>Text style:</p41>
-    <d41>Text style for section text elements</d41>
-    <p42>Middle stroke length:</p42>
-    <p42-1>Middle stroke length (a):</p42-1>
+    <p37>Stroke length</p37>
+    <p38>Distance between strokes</p38>
+    <p39>Tilt angle of the stroke</p39>
+    <p40>Indent group of strokes</p40>
+    <p41>Text style</p41>
+    <d41>Text style for Section text elements</d41>
+    <d41-1>Text style for Level Mark text elements</d41-1>
+    <p42>Middle stroke length</p42>
     <d42>The length of the middle stroke to the point of fracture</d42>
-    <p43>Stroke thickness:</p43>
-    <p43-1>Stroke thickness (w):</p43-1>
+    <p43>Stroke thickness</p43>
     <d43>Thickness of all section strokes</d43>
-    <p44>Stroke length:</p44>
-    <p44-1>Stroke length (b):</p44-1>
+    <p44>Stroke length</p44>
     <d44>The length of the main strokes of the section</d44>
-    <p45>Shelf indent:</p45>
-    <p45-1>Shelf indent (c):</p45-1>
+    <p45>Shelf indent</p45>
     <d45>Shelf indent along the stroke in percent</d45>
-    <p46>Shelf length:</p46>
-    <p46-1>Shelf length (d):</p46-1>
-    <d46>Shelf length</d46>
-    <p47>Arrow length:</p47>
-    <p47-1>Arrow length (e):</p47-1>
-    <d47>Arrow length</d47>
-    <p48>Arrow thickness:</p48>
-    <p48-1>Arrow thickness (t):</p48-1>
-    <d48>Arrow thickness</d48>
-    <p49>Text height:</p49>
-    <p49-1>Text height (h1):</p49-1>
-    <d49>Text height</d49>
-    <p50>Small text height:</p50>
-    <p50-1>Small text height (h2):</p50-1>
-    <d50>Small text height</d50>
-    <p51>Designation:</p51>
-    <d51>Designation</d51>
-    <p52>Designation prefix:</p52>
-    <d52>Designation prefix</d52>
-    <p53>Sheet number:</p53>
+    <p46>Shelf length</p46>
+    <p47>Arrow length</p47>
+    <p48>Arrow thickness</p48>
+    <p49>Text height</p49>
+    <p50>Small text height</p50>
+    <p51>Designation</p51>
+    <p52>Designation prefix</p52>
+    <p53>Sheet number</p53>
     <d53>Sheet number</d53>
-    <p54>Sheet number position:</p54>
+    <p54>Sheet number position</p54>
     <d54>Sheet number position: on both sides, bottom, top</d54>
+    <p55>Object line</p55>
+    <d55>Whether to draw a line from the Level Mark to the measurement object</d55>
+    <p56>Object line offset</p56>
+    <d56>Offset of the object line from the measurement object</d56>
+    <p57>Bottom shelf length</p57>
+    <d57>The length of the bottom shelf from the edge of the shelf from the side of the measurement object to the arrow of the Level mark</d57>
+    <p58>Bottom shelf ledge</p58>
+    <d58>Ledge of the bottom shelf from the Level Mark arrow to the edge of the shelf on the opposite side of the measurement object</d58>
+    <p59>Arrow height</p59>
+    <p60>Arrow thickness</p60>
+    <p61>Text indent</p61>
+    <p62>Vertical text offset</p62>
+    <p63>Shelf ledge</p63>
+    <d63>Level Mark shelf ledge relative to the longest text</d63>
+    <p64>Show plus</p64>
+    <d64>Show plus if the measured value is greater than zero. This property is ignored if the text is redefined</d64>
+    <p65>Measured value</p65>
+    <p66>Redefining the text</p66>
+    <p67>Accuracy</p67>
+    <d67>Accuracy of the measured value. Sets the number of decimal places</d67>
+    <p68>Note</p68>
+    <p69>Scale of measurement</p69>
+    <d69>Sets a value in the range from 0.000001 to 1000000 by which the distance measured in the drawing is multiplied</d69>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
