@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.5.0.0">
+<ModPlus Name="en-US" Version="4.5.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2831,9 +2831,9 @@
     <tab2>Settings</tab2>
     <tab3>Axes</tab3>
     <tab4>Styles and settings</tab4>
-    <tab5>Working with styles and settings of ModPlus objects</tab5>
+    <tab5>Working with styles and settings of ModPlus intellectual entities</tab5>
     <tab6>Properties palette</tab6>
-    <tab7>ModPlus objects properties palette</tab7>
+    <tab7>ModPlus intellectual entities properties palette</tab7>
     <tab8>Views, sections</tab8>
     <tab9>Tools</tab9>
     <tab10>Search</tab10>
@@ -2844,7 +2844,7 @@
     <err5>Error getting data from the registry! Run the Configurator to update the data in the registry</err5>
     <msg1>Specify the insertion point:</msg1>
     <msg2>Specify an endpoint:</msg2>
-    <msg3>Select a block that is an intellectual ModPlus entity</msg3>
+    <msg3>Select a block that is an ModPlus intellectual entity</msg3>
     <msg5>Specify next point:</msg5>
     <msg6>Select Polyline:</msg6>
     <msg7>Delete the original polyline?</msg7>
@@ -2882,24 +2882,24 @@
     <h20>Property description:</h20>
     <h21>General settings</h21>
     <h22>When creating an entity, set the scale from the style</h22>
-    <h23>If checked, then when creating the entity, the scale will be applied to it, set in the current style, regardless of the annotative scale of the drawing. Otherwise, the annotative scale of the drawing will be applied to the entity</h23>
+    <h23>If checked, then when creating the intellectual entity, the scale will be applied to it, set in the current style, regardless of the annotative scale of the drawing. Otherwise, the annotative scale of the drawing will be applied to the entity</h23>
     <h24>When creating an entity, set the layer from the style</h24>
-    <h25>If checked, then when creating the entity, it will be applied layer, installed in the current style, regardless of the current layer of the drawing. Otherwise, the current layer of the drawing will be applied to the entity</h25>
+    <h25>If checked, then when creating the intellectual entity, it will be applied layer, installed in the current style, regardless of the current layer of the drawing. Otherwise, the current layer of the drawing will be applied to the entity</h25>
     <h26>If there is no layer in the current document specified in the style:</h26>
     <h27>Apply current layer</h27>
-    <h28>When you create a entity, the current drawing layer is applied to it</h28>
+    <h28>When you create a intellectual entity, the current drawing layer is applied to it</h28>
     <h29>Create and apply a layer from the style</h29>
-    <h30>In the current document, a layer set in style will be created and applied to the entity</h30>
+    <h30>In the current document, a layer set in style will be created and applied to the intellectual entity</h30>
     <h31>When creating an entity, set the text style from the style</h31>
-    <h32>If checked, then when you create the entity, a text style will be applied to it, set in the current style, regardless of the current text style of the drawing. Otherwise, the current text style of the drawing will be applied to the entity</h32>
+    <h32>If checked, then when you create the intellectual entity, a text style will be applied to it, set in the current style, regardless of the current text style of the drawing. Otherwise, the current text style of the drawing will be applied to the entity</h32>
     <h33>If there is no text style specified in the style in the current document:</h33>
     <h34>Apply current text style</h34>
-    <h35>When creating an entity, the current text style of the drawing will be applied to it</h35>
+    <h35>When creating an intellectual entity, the current text style of the drawing will be applied to it</h35>
     <h36>Create and apply a text style from the style</h36>
     <h37>In the current document, a text style will be created and applied to the entity, set in style</h37>
-    <h38>The maximum limit of the selected objects when the property palette stops working. This setting is needed to speed up the work in the AutoCAD environment by disabling the reading of object properties. For example, if you need to select 1000 objects to copy to another drawing, then processing the properties of all these objects is not necessary</h38>
-    <h39>Maximum limit of the selected objects (0 - always work):</h39>
-    <h40>Entities settings</h40>
+    <h38>The maximum limit of the selected entities when the property palette stops working. This setting is needed to speed up the work in the AutoCAD environment by disabling the reading of object properties. For example, if you need to select 1000 objects to copy to another drawing, then processing the properties of all these objects is not necessary</h38>
+    <h39>Maximum limit of the selected entities (0 - always work):</h39>
+    <h40>Intellectual entities settings</h40>
     <h41>Straight axis</h41>
     <h42>Change the scale of the line type in proportion to the scale of the entity</h42>
     <h43>The scale of the line type that is set for the axis will vary in proportion to the basic scale of the axis. For example, if you set the axis scale to 1:1 and scale the line type to 2, then if you set the axis scale to 1:100, the line type scale becomes 200</h43>
@@ -2925,7 +2925,7 @@
     <h63>Creating an intellectual object based on an anonymous block describing a cylindrical break, by specifying two points</h63>
     <h64>Content</h64>
     <h65>Creating a straight axis according to GOST 21.101-97</h65>
-    <h66>Creating an intellectual object based on an anonymous block describing the straight axis in accordance with GOST 21.101-97, by specifying two points</h66>
+    <h66>Creating an intellectual entity based on an anonymous block describing the straight axis in accordance with GOST 21.101-97, by specifying two points</h66>
     <h67>Edit Axis values</h67>
     <h68>Basic style for Straight Axis</h68>
     <h69>The selected style will be permanently deleted! Continue?</h69>
@@ -2934,13 +2934,13 @@
     <h72>Rename the styles so that there are no identical names</h72>
     <h73>Ground line</h73>
     <h74>Creating a ground marking line</h74>
-    <h75>Creating an intellectual object based on an anonymous block describing the ground line</h75>
+    <h75>Creating an intellectual entity based on an anonymous block describing the ground line</h75>
     <h76>Ground line from polyline</h76>
     <h77>Converting the selected polyline to the ground line</h77>
     <h78>Basic style for Ground line</h78>
     <h79>Section</h79>
     <h80>Creating a section designation according to GOST 2.305-68</h80>
-    <h81>Creating an intellectual object based on an anonymous block describing the section according to GOST 2.305-68</h81>
+    <h81>Creating an intellectual entity based on an anonymous block describing the section according to GOST 2.305-68</h81>
     <h82>Broken section</h82>
     <h83>Section from polyline</h83>
     <h84>Creating a broken section designation according to GOST 2.305-68</h84>
@@ -2964,7 +2964,7 @@
     <h104>One or more entities are located on the locked layer, they cannot be updated</h104>
     <h105>Level mark</h105>
     <h106>Creating a elevation in accordance with GOST 21.101-97</h106>
-    <h107>Creating an intellectual object based on an anonymous block describing the elevation according to GOST 21.101-97</h107>
+    <h107>Creating an intellectual entity based on an anonymous block describing the elevation according to GOST 21.101-97</h107>
     <h108>Base style for Level Mark</h108>
     <h109>Edit Level Mark values</h109>
     <h110>Align Level Marks</h110>
