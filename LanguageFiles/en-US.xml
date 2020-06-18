@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.6.1.0">
+<ModPlus Name="en-US" Version="4.7.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4981,6 +4981,24 @@
     <q11>Cubic centimeters</q11>
     <q12>Cubic meters</q12>
   </mrSearchBy>
+  <mpNotes LocalName="Notes"
+           Description="Plugin for working with frequently-used notes">
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <h1>Settings</h1>
+    <h3>Double click on a note</h3>
+    <h4>For standard notes:</h4>
+    <h5>Insert</h5>
+    <h6>Add to exist text</h6>
+    <h7>For user notes:</h7>
+    <h8>Edit</h8>
+    <h15>Notes</h15>
+    <h28>Text Width:</h28>
+    <h29>Text type:</h29>
+    <h41>User notes file is not found</h41>
+    <h49>Select text</h49>
+    <h74>Specify the insertion point:</h74>
+  </mpNotes>
   <mprContextFilter LocalName="Context filter"
                     Description=""
                     FullDescription="">
