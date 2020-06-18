@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.6.0.0">
+<ModPlus Name="ru-RU" Version="4.6.1.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -3540,7 +3540,7 @@
     <Roofs>Крыши</Roofs>
     <Ceilings>Потолки</Ceilings>
     <Elevations>Фасады</Elevations>
-    <Sections>Сечения</Sections>
+    <Sections>Разрезы</Sections>
     <Components>Компоненты</Components>
     <ReferencePlanes>Опорные плоскости</ReferencePlanes>
     <StructuralFraming>Каркас несущий</StructuralFraming>
