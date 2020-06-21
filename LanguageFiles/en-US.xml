@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.7.3.0">
+<ModPlus Name="en-US" Version="4.8.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -137,6 +137,8 @@
     <bid9>Custom Workset Configurations</bid9>
     <bi10>Slabs Reinforcement</bi10>
     <bid10>Default reinforcement settings of plugin for the Revit "Slabs Reinforcement"</bid10>
+    <bi11>Context filter</bi11>
+    <bid11>User preset storage file for the "Context Filter" plugin (Revit)</bid11>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
@@ -5000,8 +5002,33 @@
     <h74>Specify the insertion point:</h74>
   </mprNotes>
   <mprContextFilter LocalName="Context filter"
-                    Description=""
-                    FullDescription="">
-
+                    Description="Filter elements by parameters, which works as a context menu"
+                    FullDescription="The filter is started by left-clicking with the Ctrl key pressed. The filter has three processing levels - all elements of the model, elements in the current view, or selected elements. There is the ability to use presets for quick filter use.">
+    <h1>Presets</h1>
+    <h2>Search</h2>
+    <h3>Apply preset to current list</h3>
+    <h4>Category search</h4>
+    <h5>Select checked elements</h5>
+    <h6>Isolate checked elements</h6>
+    <h7>Isolate all except selected items</h7>
+    <h8>Clear the list</h8>
+    <h9>Save or update preset</h9>
+    <h10>Save as new</h10>
+    <h11>Preset name</h11>
+    <h12>Preset description (not necessary)</h12>
+    <h13>Save the current list of checked parameters as a new preset</h13>
+    <h14>Change current preset</h14>
+    <h15>Enter the name of the preset!</h15>
+    <h16>The specified preset name is already in use! Enter a different name</h16>
+    <h17>[No value]</h17>
+    <h18>To use the Context filter, press the left mouse button while holding down the Ctrl key</h18>
+    <h19>Run the filter when loading Revit</h19>
+    <h20>Run filter</h20>
+    <h21>Stop filter</h21>
+    <fo1>All elements</fo1>
+    <fo2>All elements in view</fo2>
+    <fo3>Selected elements</fo3>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
   </mprContextFilter>
 </ModPlus>
