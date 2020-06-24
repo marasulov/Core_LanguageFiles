@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.5.0">
+<ModPlus Name="en-US" Version="4.8.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5003,7 +5003,7 @@
   </mprNotes>
   <mprContextFilter LocalName="Context filter"
                     Description="Filter elements by parameters, which works as a context menu"
-                    FullDescription="The filter is started by left-clicking with the Ctrl key pressed. The filter has three processing levels - all elements of the model, elements in the current view, or selected elements. There is the ability to use presets for quick filter use.">
+                    FullDescription="The filter is launched in one of three ways: by left-clicking the mouse while holding down the Ctrl key, by sequential pressing of keys, or by pressing a key combination. The filter has three processing levels - all elements of the model, elements in the current view, or selected elements. There is the ability to use presets for quick filter use.">
     <h1>Presets</h1>
     <h2>Search</h2>
     <h3>Apply preset to current list</h3>
