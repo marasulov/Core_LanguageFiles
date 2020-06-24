@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.4.0">
+<ModPlus Name="en-US" Version="4.8.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5021,10 +5021,16 @@
     <h15>Enter the name of the preset!</h15>
     <h16>The specified preset name is already in use! Enter a different name</h16>
     <h17>[No value]</h17>
-    <h18>To use the Context filter, press the left mouse button while holding down the Ctrl key</h18>
+    <h18>Specify one of three options to call the context filter dialog and run it</h18>
     <h19>Run the filter when loading Revit</h19>
     <h20>Run filter</h20>
     <h21>Stop filter</h21>
+    <h22>Use Ctrl + LMB</h22>
+    <h23>Use sequence</h23>
+    <h24>Use combination</h24>
+    <h25>The context filter dialog is called by left-clicking the mouse while holding down the Ctrl key. In this case, there may be some restrictions on working in Revit associated with the use of this combination of buttons. For example, when you try to add other elements to the set of selected items</h25>
+    <h26>The context filter dialog is called by successive pressing of the indicated keys. The default sequence is “F, F”. The time interval between keystrokes is not taken into account. When specifying a sequence, consider the assigned Revit hotkeys</h26>
+    <h27>The context filter dialog is called by pressing the specified key combination. The default key combination is “Shift + F”. When specifying a different combination, consider existing combinations (Ctrl + C, Ctrl + V and others)</h27>
     <fo1>All elements</fo1>
     <fo2>All elements in view</fo2>
     <fo3>Selected elements</fo3>
