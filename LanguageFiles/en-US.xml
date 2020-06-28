@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.6.0">
+<ModPlus Name="en-US" Version="4.8.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3610,7 +3610,7 @@
   <mprWallsReinforcement LocalName="Walls reinforcement"
                          Description="Analysis, grouping and reinforcement according to given conditions of walls and openings"
                          FullDescription="Plugin works only with walls located in one level. Plugin analyzes the walls, allowing you to find three types of intersections (corner, end and cross) and openings. Flexible grouping allows you to specify exactly what type of reinforcement should be made. You can perform reinforcement only for the specified groups - walls, intersections or openings. Plugin can work even on an empty template">
-    <h1>SETTINGS</h1>
+    <h1>Settings</h1>
     <h2>PLUGIN WINDOW:</h2>
     <h3>Transparency of the window</h3>
     <h4>Over the windows</h4>
@@ -3685,7 +3685,7 @@
     <h73>Wall reinforcement settings</h73>
     <h74>Replace with reinforcement settings of the group</h74>
     <h75>Leave the reinforcement settings</h75>
-    <h76>VERTICAL REINFORCEMENT</h76>
+    <h76>Vertical reinforcement</h76>
     <h77>Rebar bar type:</h77>
     <h78>Diameter, mm:</h78>
     <h79>Step, mm:</h79>
@@ -3696,36 +3696,36 @@
     <h84>Cover from the rebars ends, mm:</h84>
     <h85>Create the reinforcement above the last opening at a height of the wall above the opening more (mm):</h85>
     <h86>Do not create the reinforcement under the opening if the height of the wall under the opening is less than or equal to two wall thicknesses (but not less than 400 mm)</h86>
-    <h87>HORIZONTAL REINFORCEMENT</h87>
+    <h87>Horizontal reinforcement</h87>
     <h88>Location::</h88>
     <h89>Indentation of the first rebar, mm:</h89>
     <h90>Indentation of the last rebar, mm:</h90>
-    <h91>U-SHAPED REBARS IN THE WALL ENDS</h91>
+    <h91>U-shaped rebars in the wall ends</h91>
     <h92>Detail length, mm:</h92>
     <h93>Calculate the length of the U-shaped rebar</h93>
-    <h94>CROSS HOLE (STIRRUPS)</h94>
+    <h94>Cross hole (Stirrups)</h94>
     <h95>Stirrup type</h95>
     <h96>Turn the stirrups under 45° with the girth of the intersections of the main reinforcement</h96>
     <h97>Type of layout:</h97>
     <h98>Horizontal step, mm:</h98>
     <h99>Vertical step, mm:</h99>
-    <h100>CORNER INTERSECTIONS:</h100>
+    <h100>Corner intersections</h100>
     <h101>Step of details:</h101>
     <h102>Type of reinforcement:</h102>
     <h103>Detail №1</h103>
     <h104>Anchoring length, mm:</h104>
     <h105>Calculate anchoring length</h105>
     <h106>Detail №2</h106>
-    <h107>T-SHAPED INTERSECTIONS:</h107>
-    <h108>CROSS INTERSECTIONS:</h108>
-    <h109>VERTICAL REBARS</h109>
+    <h107>T-shaped intersections</h107>
+    <h108>Cross intersections</h108>
+    <h109>Vertical rebars</h109>
     <h110>Create Reinforcement</h110>
     <h111>Indent from the opening:</h111>
     <h112>Rows count:</h112>
     <h113>Displace when hit by vertical reinforcement bars</h113>
-    <h114>HORIZONTAL REBARS</h114>
-    <h115>U-SHAPED REBARS ALONG VERTICAL</h115>
-    <h116>U-SHAPED REBARS ALONG HORIZONTAL</h116>
+    <h114>Horizontal rebars</h114>
+    <h115>U-shaped rebars along vertical</h115>
+    <h116>U-shaped rebars along horizontal</h116>
     <h117>Anchoring (detail) length, mm:</h117>
     <h118>Detail step, mm:</h118>
     <h119>Default reinforcement settings for walls</h119>
@@ -3762,11 +3762,11 @@
     <h150>Contiguous walls count</h150>
     <h151>Additional vertical reinforcement rebars</h151>
     <h152>Indent from extreme vertical rebars</h152>
-    <h153>TOP DIAGONAL REINFORCEMENT</h153>
-    <h154>BOTTOM DIAGONAL REINFORCEMENT</h154>
+    <h153>Top diagonal reinforcement</h153>
+    <h154>Bottom diagonal reinforcement</h154>
     <h155>Rebar length:</h155>
-    <h156>U-SHAPED REBARS ALONG TOP WALL END</h156>
-    <h157>JOINTS</h157>
+    <h156>U-shaped rebars along top wall end</h156>
+    <h157>Joints</h157>
     <h158>Joints of background vertical rebars</h158>
     <h159>Joints of intersections vertical rebars</h159>
     <h160>Joints type:</h160>
@@ -3795,6 +3795,11 @@
     <h183>Reset all values ​​to "Auto"</h183>
     <h184>Preferred Rebar Shapes</h184>
     <h185>Failed to set parameter values ​​for some elements. Below are the elements codes (id), parameter names, and set values:</h185>
+    <h186>Horizontal tied stirrups</h186>
+    <h187>Only in walls that do not have end intersections with other walls</h187>
+    <h188>In walls up to, mm long:</h188>
+    <h189>Do not create horizontal bars for background reinforcement</h189>
+    <h190>Number of rod pairs covered:</h190>
     <auto>Auto</auto>
     <oa1>do not create joints</oa1>
     <oa2>bend into floor (if available)</oa2>
