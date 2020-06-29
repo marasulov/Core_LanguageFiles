@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.7.0">
+<ModPlus Name="en-US" Version="4.8.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2974,6 +2974,11 @@
     <h111>Vertical alignment of Level Marks</h111>
     <h112>Combining the starting points</h112>
     <h113>This command allows you to align the Level Marks according to various conditions</h113>
+    <h114>Waterproofing</h114>
+    <h115>Creating a waterproofing marking line</h115>
+    <h116>Creating an intellectual entity based on an anonymous block describing the waterproofing line</h116>
+    <h117>Waterproofing from polyline</h117>
+    <h118>Convert selected polyline to waterproofing line</h118>
     <so1>Select</so1>
     <sot1>All intellectual entities of the specified types in the current space will be selected</sot1>
     <so2>Remove data</so2>
@@ -3000,6 +3005,8 @@
     <glfst1>Distance between strokes</glfst1>
     <glfst2>Half the distance between groups of strokes</glfst2>
     <glfst3>The distance between groups of strokes</glfst3>
+    <wpfst1>Half distance between strokes</wpfst1>
+    <wpfst2>No offset</wpfst2>
     <close>Close</close>
     <accept>Accept</accept>
     <collapse>Collapse</collapse>
@@ -3066,6 +3073,7 @@
     <d35>Line type of main polyline</d35>
     <p36>First stroke indent</p36>
     <d36>Indent the first stroke in each segment of the ground line</d36>
+    <d36-1>Indent the first stroke in each segment of the waterproofing line</d36-1>
     <p37>Stroke length</p37>
     <p38>Distance between strokes</p38>
     <p39>Tilt angle of the stroke</p39>
@@ -3115,6 +3123,8 @@
     <p68>Note</p68>
     <p69>Scale of measurement</p69>
     <d69>Sets a value in the range from 0.000001 to 1000000 by which the distance measured in the drawing is multiplied</d69>
+    <p70>Line thickness</p70>
+    <p71>Text rotation angle</p71>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
