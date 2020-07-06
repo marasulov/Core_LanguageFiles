@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.9.0">
+<ModPlus Name="en-US" Version="4.8.10.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3797,7 +3797,7 @@
     <h175>U-shaped rebars in the wall ends:</h175>
     <h176>U-shaped rebars along top wall end:</h176>
     <h177>C-shaped cross holes (stirrups):</h177>
-    <h178>C-shaped cross holes (stirrups):</h178>
+    <h178>S-shaped cross holes (stirrups):</h178>
     <h179>L-shaped rebars:</h179>
     <h180>U-shaped rebars:</h180>
     <h181>Girth rebars:</h181>
@@ -3850,7 +3850,7 @@
     <m22>The list of openings contains openings whose reinforcement settings have been changed manually and differ from the reinforcement settings of the group</m22>
     <m23>Reinforcement settings copied</m23>
     <m24>You did not specify for which groups to create reinforcement!</m24>
-    <m25>No groups have been created for reinforcement!</m25>
+    <m25>No groups were selected for creating reinforcement!</m25>
     <m26>Select walls</m26>
     <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the plugin cannot be opened in the Family Editor! It is recommended that before using the plugin, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
     <m28>Select foundation plates</m28>
@@ -4114,7 +4114,7 @@
     <h22>Height</h22>
     <h23>Group by:</h23>
     <h24>Section</h24>
-    <h25>LONGITUDINAL REINFORCEMENT</h25>
+    <h25>Longitudinal reinforcement</h25>
     <h26>Longitudinal (working) rebars</h26>
     <h27>Working reinforcement cover:</h27>
     <h28>Cover for the working reinforcement shall be not less than 20 mm or not less than the diameter of the reinforcement</h28>
@@ -4130,19 +4130,82 @@
     <h38>Spaces between the centers of the rods along the width of the column:</h38>
     <h39>Spaces between the centers of the rods along the depth of the column:</h39>
     <h40>Attention! When changing the diameter, cover or number of rods, the distances between the rods will be reset to equivalent values!</h40>
+    <h41>Longitudinal reinforcement joints</h41>
+    <h42>Transverse reinforcement (layout)</h42>
+    <h43>Transverse reinforcement (types)</h43>
+    <h45>The number of corner rods:</h45>
+    <h46>Number of intermediate rods:</h46>
+    <h47>Joints of longitudinal reinforcement of lower and middle columns with the same (or slight difference) cross-section of the overlying columns</h47>
+    <h48>Joints of longitudinal reinforcement of lower and middle columns with a large cross section (≥ 100 mm on each side) to the overlying column with a smaller cross section</h48>
+    <h49>Joints of longitudinal reinforcement of the top columns</h49>
+    <h50>Settings</h50>
+    <h51>PLUGIN WINDOW:</h51>
+    <h52>Over the windows</h52>
+    <h53>DISPLAY IN THE MODEL:</h53>
+    <h54>Scaling factor:</h54>
+    <h55>REINFORCEMENT BY DEFAULT:</h55>
+
+    <h61>Calculation of anchoring by SP 52-101-2003</h61>
+    <h62>Diameter:</h62>
+    <h63>Sectional area, mm²:</h63>
+    <h64>Concrete class:</h64>
+    <h65>Type of the surface of reinforcement:</h65>
+    <h66>Estimated tensile strength, MPa:</h66>
+    <h67>Basic (main) length of anchoring, mm:</h67>
+    <h68>Coefficient α:</h68>
+    <h69>Required (estimated) anchoring length, mm:</h69>
+    <h70>Anchoring length:</h70>
+
     <h73>Column reinforcement settings</h73>
     <h74>Replace with reinforcement settings of the group</h74>
     <h75>Leave the reinforcement settings</h75>
     <h76>Columns reinforcement</h76>
     <h77>Rebar bar type:</h77>
     <h78>Diameter, mm:</h78>
+
+    <h84>Cover from the rebars ends, mm:</h84>
+
+    <h104>Anchoring length of straight joint, mm:</h104>
+    <h105>Calculate anchoring length</h105>
+    <h106>Floor anchoring length, mm:</h106>
+
+    <h119>Default reinforcement settings</h119>
+
     <h138>Reinforcement cover:</h138>
+
+    <h141>Do not close the window after creating reinforcement</h141>
+
+    <h147>Reset</h147>
+    
+    <h160>Joints type:</h160>
+
+    <h165>If the floor above the column is missing, then</h165>
+
+    <h173>Straight rebars:</h173>
+    <h174>L-shaped rebars (when creating bends of vertical rebars):</h174>
+    <h177>C-shaped cross holes (stirrups):</h177>
+    <h178>S-shaped cross holes (stirrups):</h178>
+    <h181>Girth rebars:</h181>
+    <h183>Reset all values ​​to "Auto"</h183>
+    <h184>Preferred Rebar Shapes</h184>
+    <h185>Failed to set parameter values ​​for some elements. Below are the elements codes (id), parameter names, and set values:</h185>
+    <npa1>do not create joint</npa1>
+    <npa2>create straight joints</npa2>
+    <npa3>assume a floor conditionally existing</npa3>
     <pt1>Circle</pt1>
     <pt2>Ellipse</pt2>
     <pt3>Rectangle</pt3>
     <pt4>Square</pt4>
     <pt5>Undefined</pt5>
+    <jt1>Longitudinal reinforcement joints are not created. The rods are cut off at the top of the column according to the specified value of the cover layer from the ends of the reinforcement</jt1>
+    <jt2>Straight joints of longitudinal reinforcement bars are created. The anchor length is set from the top of the overlying floor or from the top of the column if there is no floor. The position of the rods of the longitudinal reinforcement of the overlying columns is not taken into account</jt2>
+    <jt3>Joints of longitudinal reinforcement bars with a bend in the overlying column are created. The anchor length is set from the top of the overlying floor or from the top of the column if there is no floor.</jt3>
+    <jt4>Joints are created in the form of additional rods of the specified diameter</jt4>
+    <jt5>Straight joints of longitudinal reinforcement bars are created. The anchor length is set from the top of the overlying floor or from the top of the column if there is no floor</jt5>
+    <jt6>Joints of longitudinal reinforcement bars with anchoring in the overlying floor are created. The anchor length is calculated from the side face of the column</jt6>
     <m1>Pick columns</m1>
+    <m2>Enter a value from</m2>
+    <m3>to</m3>
     <m4>Deformed deformation type rebars</m4>
     <m5>Plain deformation type rebars</m5>
     <m6>For rebar</m6>
@@ -4152,16 +4215,32 @@
     <m10>with diameter</m10>
     <m11>must be:</m11>
     <m12>The value of the property will be changed</m12>
+    <m13>Reinforcement cover</m13>
+
     <m20>The list of columns contains columns whose reinforcement settings have been changed manually and differ from the settings of the reinforcement group</m20>
     <m23>Reinforcement settings copied</m23>
+    <m25>No groups were selected for creating reinforcement!</m25>
+    <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the plugin cannot be opened in the Family Editor! It is recommended that before using the plugin, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
     <create>Create</create>
     <rn>Rebar ⌀</rn>
     <mm>mm</mm>
     <full>Available in full version!</full>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
+    <yes>Yes</yes>
+    <no>No</no>
+    <saved>Saved</saved>
+    <parameters>Parameters</parameters>
+    <name>Name</name>
+    <value>Value</value>
+    <copy>Copy</copy>
+    <paste>Paste</paste>
+    <auto>Auto</auto>
     <p1>Analysis of the column:</p1>
     <p2>Search for related elements:</p2>
+    <p8>Removing the reinforcement created earlier</p8>
+    <p9>Calculation and modeling of longitudinal reinforcement</p9>
+    <p10>Calculation and modeling of transverse reinforcement</p10>
     <e1>Column analysis errors</e1>
     <e2>Failed to initialize column</e2>
     <e3>Failed to get solids</e3>
@@ -4180,6 +4259,12 @@
     <t40>Copy the reinforcement settings of the current group to all selected groups</t40>
     <t41>Save the reinforcement settings of current group in the xml file</t41>
     <t42>Load the reinforcement settings from the xml file and set it for the current group</t42>
+    <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
+    <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</t44>
+
+    <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
+    <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
+    <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
   </mprColumnsReinforcement>
   <mpStripMtext LocalName="Clear formatting"
                 Description="Remove specified formatting from multiline text"
@@ -5046,10 +5131,13 @@
     <h25>The context filter dialog is called by left-clicking the mouse while holding down the Ctrl key. In this case, there may be some restrictions on working in Revit associated with the use of this combination of buttons. For example, when you try to add other elements to the set of selected items</h25>
     <h26>The context filter dialog is called by successive pressing of the indicated keys. The default sequence is “F, F”. The time interval between keystrokes is not taken into account. When specifying a sequence, consider the assigned Revit hotkeys</h26>
     <h27>The context filter dialog is called by pressing the specified key combination. The default key combination is “Shift + F”. When specifying a different combination, consider existing combinations (Ctrl + C, Ctrl + V and others)</h27>
+    <h28>Exclude checked elements from the current selection</h28>
     <fo1>All elements</fo1>
     <fo2>All elements in view</fo2>
     <fo3>Selected elements</fo3>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
+    <and>AND</and>
+    <or>OR</or>
   </mprContextFilter>
 </ModPlus>
