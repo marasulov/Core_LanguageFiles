@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.10.0">
+<ModPlus Name="en-US" Version="4.8.12.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4164,10 +4164,19 @@
     <h78>Diameter, mm:</h78>
 
     <h84>Cover from the rebars ends, mm:</h84>
+    <h85>The main step of the transverse reinforcement, mm:</h85>
+    <h86>Indent from the top of the column, mm:</h86>
+    <h87>Thickening of longitudinal reinforcement in the upper zone of the column</h87>
+    <h88>Thickening distance, mm:</h88>
+    <h89>Thickening distance, fraction:</h89>
+    <h90>Thickening of longitudinal reinforcement in the lower zone of the column</h90>
+    <h91>If there are incoming joints, set the thickening distance of the lower zone along the length of joints</h91>
 
     <h104>Anchoring length of straight joint, mm:</h104>
     <h105>Calculate anchoring length</h105>
     <h106>Floor anchoring length, mm:</h106>
+    <h107>Anchoring length per column, mm</h107>
+    <h108>Anchoring length in the overlying column, mm</h108>
 
     <h119>Default reinforcement settings</h119>
 
@@ -4178,8 +4187,11 @@
     <h147>Reset</h147>
     
     <h160>Joints type:</h160>
+    <h161>Nominal floor thickness, mm:</h161>
 
     <h165>If the floor above the column is missing, then</h165>
+    <h166>Binding bends to the top of the floor (by the center of the rebar)</h166>
+    <h167>Binding bends to the bottom of the floor (by the center of the rebar)</h167>
 
     <h173>Straight rebars:</h173>
     <h174>L-shaped rebars (when creating bends of vertical rebars):</h174>
@@ -4189,6 +4201,7 @@
     <h183>Reset all values ​​to "Auto"</h183>
     <h184>Preferred Rebar Shapes</h184>
     <h185>Failed to set parameter values ​​for some elements. Below are the elements codes (id), parameter names, and set values:</h185>
+    <err1>No overlying floor found or distance to overlying column is 0</err1>
     <npa1>do not create joint</npa1>
     <npa2>create straight joints</npa2>
     <npa3>assume a floor conditionally existing</npa3>
@@ -4898,6 +4911,8 @@
     <t4>Save current reinforcement settings as default reinforcement settings</t4>
     <t5>If the option is enabled, then the upper and lower rebar cover will be applied when creating background reinforcement meshes, without taking into account the diameters of other reinforcement. If the option is disabled, the rebar cover will be applied for all types of reinforcement being created, and the position of the background reinforcement meshes relative to the upper and lower faces of the slab will be calculated from the established conditions</t5>
     <t6>U-shaped rods will be created with the rod step of the upper mesh of the background reinforcement. If the background reinforcement is not created in the plate, the U-shaped rods will be created with the specified step</t6>
+    <t7>Check all openings in the list</t7>
+    <t8>Uncheck all openings in the list</t8>
     <t37>Copy the reinforcement settings of the current hole to selected holes</t37>
     <t38>Save the reinforcement settings of current hole in the xml file</t38>
     <t39>Load the reinforcement settings from the xml file and set it for the current hole</t39>
@@ -5132,6 +5147,7 @@
     <h26>The context filter dialog is called by successive pressing of the indicated keys. The default sequence is “F, F”. The time interval between keystrokes is not taken into account. When specifying a sequence, consider the assigned Revit hotkeys</h26>
     <h27>The context filter dialog is called by pressing the specified key combination. The default key combination is “Shift + F”. When specifying a different combination, consider existing combinations (Ctrl + C, Ctrl + V and others)</h27>
     <h28>Exclude checked elements from the current selection</h28>
+    <h29>Do not close the filter after applying the action</h29>
     <fo1>All elements</fo1>
     <fo2>All elements in view</fo2>
     <fo3>Selected elements</fo3>
