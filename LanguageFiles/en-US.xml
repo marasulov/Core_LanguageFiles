@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.12.0">
+<ModPlus Name="en-US" Version="4.8.14.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3810,6 +3810,7 @@
     <h188>In walls up to, mm long:</h188>
     <h189>Do not create horizontal bars for background reinforcement</h189>
     <h190>Number of rod pairs covered:</h190>
+    <h191>Consider details at ends and intersections</h191>
     <auto>Auto</auto>
     <oa1>do not create joints</oa1>
     <oa2>bend into floor (if available)</oa2>
@@ -3971,6 +3972,7 @@
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
     <t66>Save current reinforcement settings as default reinforcement settings</t66>
     <t67>Group walls, intersections and openings according to the current grouping settings</t67>
+    <t68>When this option is enabled, stirrups will not be created at intersections of walls and at the ends of walls where details are created (for example, U-shaped details)</t68>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="Plugin allows you to export all specified sheets to dwg/dxf">
@@ -4858,6 +4860,10 @@
     <h180>U-shaped rebars:</h180>
     <h183>Reset all values ​​to "Auto"</h183>
     <h184>Preferred Rebar Shapes</h184>
+    <h185>Create:</h185>
+    <h186>Longitudinal and transverse reinforcement</h186>
+    <h187>Only longitudinal reinforcement</h187>
+    <h188>Only transverse reinforcement</h188>
     <m1>Pick slabs</m1>
     <m13>Reinforcement cover</m13>
     <m24>You did not specify what type of reinforcement to create!</m24>
@@ -4911,7 +4917,7 @@
     <t4>Save current reinforcement settings as default reinforcement settings</t4>
     <t5>If the option is enabled, then the upper and lower rebar cover will be applied when creating background reinforcement meshes, without taking into account the diameters of other reinforcement. If the option is disabled, the rebar cover will be applied for all types of reinforcement being created, and the position of the background reinforcement meshes relative to the upper and lower faces of the slab will be calculated from the established conditions</t5>
     <t6>U-shaped rods will be created with the rod step of the upper mesh of the background reinforcement. If the background reinforcement is not created in the plate, the U-shaped rods will be created with the specified step</t6>
-    <t7>Check all openings in the list</t7>
+    <t7>Check all openings in the list available for processing</t7>
     <t8>Uncheck all openings in the list</t8>
     <t37>Copy the reinforcement settings of the current hole to selected holes</t37>
     <t38>Save the reinforcement settings of current hole in the xml file</t38>
