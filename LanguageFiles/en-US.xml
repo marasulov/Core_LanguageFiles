@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.14.0">
+<ModPlus Name="en-US" Version="4.8.15.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4231,6 +4231,10 @@
     <m11>must be:</m11>
     <m12>The value of the property will be changed</m12>
     <m13>Reinforcement cover</m13>
+    <m14>Attention!</m14>
+    <m15>Changing the number of longitudinal reinforcement bars will remove the transverse reinforcement types.</m15>
+    <m16>It is recommended to lay out the transverse reinforcement after the number and diameters of the longitudinal reinforcement bars have been determined.</m16>
+    <m17>Change the number of longitudinal reinforcement bars while deleting the transverse reinforcement layout?</m17>
 
     <m20>The list of columns contains columns whose reinforcement settings have been changed manually and differ from the settings of the reinforcement group</m20>
     <m23>Reinforcement settings copied</m23>
@@ -4251,6 +4255,7 @@
     <copy>Copy</copy>
     <paste>Paste</paste>
     <auto>Auto</auto>
+    <add>Add</add>
     <p1>Analysis of the column:</p1>
     <p2>Search for related elements:</p2>
     <p8>Removing the reinforcement created earlier</p8>
@@ -4418,6 +4423,7 @@
     <h4>Impossible to work in Drafting Views</h4>
     <h5>Specify a rectangular area to create crop borders</h5>
     <h6>Could not get a valid rectangular area. Try again</h6>
+    <h7>Work on sheets is currently unavailable. Use the plugin on specific views</h7>
   </mprFastViewCut>
   <mprCopySheetsToOpenDocuments LocalName="Copy sheets to documents"
                                 Description="Batch copy sheets to open documents"
