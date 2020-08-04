@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.15.0">
+<ModPlus Name="en-US" Version="4.8.16.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -56,6 +56,7 @@
     <h42>User "{0}" does not have access to license server "{1}"</h42>
     <h43>Check access to the license server, the entered data for identification and contact your system administrator</h43>
     <h44>License server</h44>
+    <h45>The version of the component or plugin in which the error occurred differs from the current version. No bug report will be sent. Please update to the current version using the auto-update module or web-installer</h45>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
     <m3>Attention! The use of social networks for authorization is possible only after linking social network accounts to a personal account on the site! Otherwise, when you try to log in through social networks, a new account will be created on the site, and you will lose your license data!</m3>
@@ -4146,6 +4147,9 @@
     <h53>DISPLAY IN THE MODEL:</h53>
     <h54>Scaling factor:</h54>
     <h55>REINFORCEMENT BY DEFAULT:</h55>
+    <h56>Displacement</h56>
+    <h57>Girth</h57>
+    <h58>Remove selected shape</h58>
 
     <h61>Calculation of anchoring by SP 52-101-2003</h61>
     <h62>Diameter:</h62>
@@ -4231,10 +4235,6 @@
     <m11>must be:</m11>
     <m12>The value of the property will be changed</m12>
     <m13>Reinforcement cover</m13>
-    <m14>Attention!</m14>
-    <m15>Changing the number of longitudinal reinforcement bars will remove the transverse reinforcement types.</m15>
-    <m16>It is recommended to lay out the transverse reinforcement after the number and diameters of the longitudinal reinforcement bars have been determined.</m16>
-    <m17>Change the number of longitudinal reinforcement bars while deleting the transverse reinforcement layout?</m17>
 
     <m20>The list of columns contains columns whose reinforcement settings have been changed manually and differ from the settings of the reinforcement group</m20>
     <m23>Reinforcement settings copied</m23>
