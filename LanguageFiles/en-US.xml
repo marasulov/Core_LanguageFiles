@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.16.0">
+<ModPlus Name="en-US" Version="4.8.17.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3992,12 +3992,12 @@
     <m1>No sheets selected for export!</m1>
     <m2>Before exporting sheets, it is strongly recommended to save the project!\nSave the project?</m2>
   </mrBatchSheetExport>
-  <mmOrderMarking LocalName="Order marking"
-                  Description="Adding numbering to the mark of elements with the possibility of marking in the schedules"
-                  FullDescription="When working in a view that is not a schedule view, plugin adds a numbered mark in the order in which the elements are created. When working in the schedule view, plugin adds a numbered mark in the order of the elements in the schedule (taking into account sorting). It is possible to set the prefix and suffix for the mark">
-    <h1>Mark prefix</h1>
-    <h2>Mark</h2>
-    <h3>Mark suffix</h3>
+  <mmOrderMarking LocalName="Numbering"
+                  Description="Adding numbering to the specified parameter of elements with the possibility of numbering in the schedules"
+                  FullDescription="When working in a non-schedule view, you can specify the direction of numbering based on the arrangement of elements, or add numbering in the order in which elements were created. When working in a schedule, the plugin adds numbering in the order of items in the schedule (taking into account sorting). The schedule property &quot;Itemized every instance&quot; affects the speed of the plugin. It is possible to set the prefix and suffix for the number">
+    <h1>Prefix</h1>
+    <h2>Number</h2>
+    <h3>Suffix</h3>
     <h4>Execute</h4>
     <h5>Clear</h5>
     <h6>Settings</h6>
@@ -4135,7 +4135,7 @@
     <h40>Attention! When changing the diameter, cover or number of rods, the distances between the rods will be reset to equivalent values!</h40>
     <h41>Longitudinal reinforcement joints</h41>
     <h42>Transverse reinforcement (layout)</h42>
-    <h43>Transverse reinforcement (types)</h43>
+    <h43>Transverse reinforcement (shapes)</h43>
     <h45>The number of corner rods:</h45>
     <h46>Number of intermediate rods:</h46>
     <h47>Joints of longitudinal reinforcement of lower and middle columns with the same (or slight difference) cross-section of the overlying columns</h47>
@@ -4150,6 +4150,7 @@
     <h56>Displacement</h56>
     <h57>Girth</h57>
     <h58>Remove selected shape</h58>
+    <h59>Specify the diameter and rebar bar type of rebar that will be set by default for added transverse reinforcement shapes</h59>
 
     <h61>Calculation of anchoring by SP 52-101-2003</h61>
     <h62>Diameter:</h62>
