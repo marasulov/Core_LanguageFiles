@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.17.0">
+<ModPlus Name="en-US" Version="4.8.18.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3374,6 +3374,7 @@
     <e26>Curtain wall panels</e26>
     <e27>Curtain wall mullion</e27>
     <e28>IFC rebars</e28>
+    <e29>Foundation slabs</e29>
     <n1>Only on Section Views</n1>
   </mprDimByLine>
   <mprDimBias LocalName="Dim offset"
@@ -4151,7 +4152,7 @@
     <h57>Girth</h57>
     <h58>Remove selected shape</h58>
     <h59>Specify the diameter and rebar bar type of rebar that will be set by default for added transverse reinforcement shapes</h59>
-
+    <h60>Step of transverse reinforcement in areas of thickening, mm:</h60>
     <h61>Calculation of anchoring by SP 52-101-2003</h61>
     <h62>Diameter:</h62>
     <h63>Sectional area, mm²:</h63>
@@ -4162,6 +4163,7 @@
     <h68>Coefficient α:</h68>
     <h69>Required (estimated) anchoring length, mm:</h69>
     <h70>Anchoring length:</h70>
+    <h71>The main step of the transverse reinforcement is recommended to be taken equal to 15d, and the step of the transverse reinforcement in the areas of thickening is 10d. Where d is the diameter of the longitudinal (working) reinforcement</h71>
 
     <h73>Column reinforcement settings</h73>
     <h74>Replace with reinforcement settings of the group</h74>
