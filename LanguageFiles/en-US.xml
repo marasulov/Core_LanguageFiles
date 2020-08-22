@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.10.0.0">
+<ModPlus Name="en-US" Version="4.10.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4250,6 +4250,7 @@
     <rn>Rebar ⌀</rn>
     <mm>mm</mm>
     <full>Available in full version!</full>
+    <full2>Limited version only has one form available</full2>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <yes>Yes</yes>
