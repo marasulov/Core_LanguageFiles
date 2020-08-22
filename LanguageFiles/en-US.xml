@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.8.18.0">
+<ModPlus Name="en-US" Version="4.10.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -57,6 +57,8 @@
     <h43>Check access to the license server, the entered data for identification and contact your system administrator</h43>
     <h44>License server</h44>
     <h45>The version of the component or plugin in which the error occurred differs from the current version. No bug report will be sent. Please update to the current version using the auto-update module or web-installer</h45>
+    <h46>In ModPlus errors occurred</h46>
+    <h47>Send errors report</h47>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
     <m3>Attention! The use of social networks for authorization is possible only after linking social network accounts to a personal account on the site! Otherwise, when you try to log in through social networks, a new account will be created on the site, and you will lose your license data!</m3>
@@ -314,7 +316,7 @@
     <header49>There is no connection to modplus.org or to ModPlus web services. Displaying only the local list</header49>
     <header50>Paid</header50>
     <header51>Uninstalled</header51>
-    <header52>In developing</header52>
+    <header53>Free</header53>
     <header55>Plugins loaded:</header55>
     <header56>If there is no plugin in the list of active plugins, then adding this plugin to the ribbon and in the menu is provided by the internal mechanisms of the plugin</header56>
     <header57>Note: plugins that are not connected to the ModPlus plugin (Configuration tab) will not be added when building a ribbon and menus!</header57>
@@ -428,7 +430,7 @@
     <tt16>Download the key file from the ModPlus web server</tt16>
     <tt17>Update the list of plugins</tt17>
     <tt18>The list displays only those versions of the specified product that are in the PC</tt18>
-    <tt19>Install and enable all plugins for the current version of the product</tt19>
+    <tt19>Install and enable all plugins currently visible in the list for the current version of the product</tt19>
     <tt20>Connect to ModPlus plugin</tt20>
     <tt21>Watch the video for the plugin</tt21>
     <tt22>Go to the store to purchase the full version of the plugin</tt22>
@@ -519,7 +521,7 @@
     <msg13>All keys will be erased! Continue?</msg13>
     <msg14>All keys deleted</msg14>
     <msg15>Enter your email address</msg15>
-    <msg16>All missing plugins for the specified product version will be installed and enabled\nContinue?</msg16>
+    <msg16>All missing plugins currently visible in the list for the specified product version will be installed and enabled\nContinue?</msg16>
     <msg17>It's valid activation key</msg17>
     <msg18>It's NOT valid activation key</msg18>
     <msg19>Attention! After downloading the configuration file from the server Configurator is restarted!\nContinue?</msg19>
@@ -4093,7 +4095,7 @@
   </mprCleaner>
   <mprColumnsReinforcement LocalName="Columns reinforcement"
                            Description="Analysis, grouping and reinforcement of columns for specified conditions"
-                           FullDescription="">
+                           FullDescription="Plugin allows you to process both individually selected columns and all columns in a view or in a document. Reinforcement is carried out taking into account the relative position of the columns above each other. Transverse reinforcement can be assembled using a variety of rebar shape options. Plugin can work even on an empty template">
     <h1>Selection variants</h1>
     <h2>Pick columns</h2>
     <h3>Select all columns on current view</h3>
@@ -4151,7 +4153,7 @@
     <h56>Displacement</h56>
     <h57>Girth</h57>
     <h58>Remove selected shape</h58>
-    <h59>Specify the diameter and rebar bar type of rebar that will be set by default for added transverse reinforcement shapes</h59>
+    <h59>Specify type of shapes hooks, parameters, diameter and rebar bar type of rebar that will be set by default for added transverse reinforcement shapes</h59>
     <h60>Step of transverse reinforcement in areas of thickening, mm:</h60>
     <h61>Calculation of anchoring by SP 52-101-2003</h61>
     <h62>Diameter:</h62>
@@ -4164,14 +4166,18 @@
     <h69>Required (estimated) anchoring length, mm:</h69>
     <h70>Anchoring length:</h70>
     <h71>The main step of the transverse reinforcement is recommended to be taken equal to 15d, and the step of the transverse reinforcement in the areas of thickening is 10d. Where d is the diameter of the longitudinal (working) reinforcement</h71>
-
+    <h72>Failed to add form to current layout: no place available to place the form!</h72>
     <h73>Column reinforcement settings</h73>
     <h74>Replace with reinforcement settings of the group</h74>
     <h75>Leave the reinforcement settings</h75>
     <h76>Columns reinforcement</h76>
     <h77>Rebar bar type:</h77>
     <h78>Diameter, mm:</h78>
-
+    <h79>Shape hooks by default:</h79>
+    <h80>Shape hooks:</h80>
+    <h81>set in sketch</h81>
+    <h82>use Revit hooks</h82>
+    <h83>Default parameters</h83>
     <h84>Cover from the rebars ends, mm:</h84>
     <h85>The main step of the transverse reinforcement, mm:</h85>
     <h86>Indent from the top of the column, mm:</h86>
@@ -4180,28 +4186,26 @@
     <h89>Thickening distance, fraction:</h89>
     <h90>Thickening of longitudinal reinforcement in the lower zone of the column</h90>
     <h91>If there are incoming joints, set the thickening distance of the lower zone along the length of joints</h91>
-
+    <h92>Attention! The number and position of longitudinal reinforcement bars, as well as the layout of the transverse reinforcement are not saved and not copied!</h92>
+    <h93>Triangular stirrups:</h93>
+    <h94>Circle girth rebars:</h94>
+    <h95>Hooks cannot be used in this form in a sketch</h95>
+    <h96>By parameter:</h96>
+    <h97>Параметр</h97>
     <h104>Anchoring length of straight joint, mm:</h104>
     <h105>Calculate anchoring length</h105>
     <h106>Floor anchoring length, mm:</h106>
     <h107>Anchoring length per column, mm</h107>
     <h108>Anchoring length in the overlying column, mm</h108>
-
     <h119>Default reinforcement settings</h119>
-
     <h138>Reinforcement cover:</h138>
-
     <h141>Do not close the window after creating reinforcement</h141>
-
     <h147>Reset</h147>
-    
     <h160>Joints type:</h160>
     <h161>Nominal floor thickness, mm:</h161>
-
     <h165>If the floor above the column is missing, then</h165>
     <h166>Binding bends to the top of the floor (by the center of the rebar)</h166>
     <h167>Binding bends to the bottom of the floor (by the center of the rebar)</h167>
-
     <h173>Straight rebars:</h173>
     <h174>L-shaped rebars (when creating bends of vertical rebars):</h174>
     <h177>C-shaped cross holes (stirrups):</h177>
@@ -4238,7 +4242,6 @@
     <m11>must be:</m11>
     <m12>The value of the property will be changed</m12>
     <m13>Reinforcement cover</m13>
-
     <m20>The list of columns contains columns whose reinforcement settings have been changed manually and differ from the settings of the reinforcement group</m20>
     <m23>Reinforcement settings copied</m23>
     <m25>No groups were selected for creating reinforcement!</m25>
@@ -4283,11 +4286,13 @@
     <t41>Save the reinforcement settings of current group in the xml file</t41>
     <t42>Load the reinforcement settings from the xml file and set it for the current group</t42>
     <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
-    <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</t44>
-
+    <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75. According to clause 10.3.30 of SP 63.13330, the coefficient α may be increased to 2.0</t44>
     <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
     <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
+    <re1>An error occurred while creating longitudinal reinforcement for column id = {0}:</re1>
+    <re2>An error occurred while calculating the location points of the transverse reinforcement for column id = {0}:</re2>
+    <re3>An error occurred while creating a transverse reinforcement part of type "{0}" in column id = {1}:</re3>
   </mprColumnsReinforcement>
   <mpStripMtext LocalName="Clear formatting"
                 Description="Remove specified formatting from multiline text"
