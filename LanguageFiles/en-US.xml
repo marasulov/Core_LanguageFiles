@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.10.3.0">
+<ModPlus Name="en-US" Version="4.10.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2845,6 +2845,9 @@
     <tab9>Tools</tab9>
     <tab10>Search</tab10>
     <tab11>Level marks</tab11>
+    <tab12>Search by value</tab12>
+    <tab13>Search for smart entities by type</tab13>
+    <tab14>Search for smart entities by the value of string and numeric properties</tab14>
     <defl>Default</defl>
     <err1>Could not find file</err1>
     <err2>Failed to load linetype</err2>
@@ -2906,7 +2909,7 @@
     <h37>In the current document, a text style will be created and applied to the entity, set in style</h37>
     <h38>The maximum limit of the selected entities when the property palette stops working. This setting is needed to speed up the work in the AutoCAD environment by disabling the reading of object properties. For example, if you need to select 1000 objects to copy to another drawing, then processing the properties of all these objects is not necessary</h38>
     <h39>Maximum limit of the selected entities (0 - always work):</h39>
-    <h40>smart entities settings</h40>
+    <h40>Smart entities settings</h40>
     <h41>Straight axis</h41>
     <h42>Change the scale of the line type in proportion to the scale of the entity</h42>
     <h43>The scale of the line type that is set for the axis will vary in proportion to the basic scale of the axis. For example, if you set the axis scale to 1:1 and scale the line type to 2, then if you set the axis scale to 1:100, the line type scale becomes 200</h43>
@@ -2923,13 +2926,13 @@
     <h54>Style name</h54>
     <h55>Style description</h55>
     <h56>Create break line according to GOST 2.303-68</h56>
-    <h57>Creation of an smart object on the basis of an anonymous block describing the line of the break according to GOST 2.303-68, by specifying two points</h57>
+    <h57>Creation of an smart entity on the basis of an anonymous block describing the line of the break according to GOST 2.303-68, by specifying two points</h57>
     <h58>Curvilinear break</h58>
     <h59>Cylindrical break</h59>
     <h60>Create curvilinear break</h60>
     <h61>Create cylindrical break</h61>
-    <h62>Creating an smart object based on an anonymous block describing a curvilinear break, by specifying two points</h62>
-    <h63>Creating an smart object based on an anonymous block describing a cylindrical break, by specifying two points</h63>
+    <h62>Creating an smart entity based on an anonymous block describing a curvilinear break, by specifying two points</h62>
+    <h63>Creating an smart entity based on an anonymous block describing a cylindrical break, by specifying two points</h63>
     <h64>Content</h64>
     <h65>Creating a straight axis according to GOST 21.101-97</h65>
     <h66>Creating an smart entity based on an anonymous block describing the straight axis in accordance with GOST 21.101-97, by specifying two points</h66>
@@ -2983,6 +2986,13 @@
     <h116>Creating an smart entity based on an anonymous block describing the waterproofing line</h116>
     <h117>Waterproofing from polyline</h117>
     <h118>Convert selected polyline to waterproofing line</h118>
+    <h119>For the smart object being created that contains the displayed number, set the separator for integer and fractional parts:</h119>
+    <h120>Search value</h120>
+    <h121>Search</h121>
+    <h122>Whole word</h122>
+    <h123>Case sensitive</h123>
+    <h124>No results were found for "{0}"</h124>
+    <h125>Add all to the current selection</h125>
     <so1>Select</so1>
     <sot1>All smart entities of the specified types in the current space will be selected</sot1>
     <so2>Remove data</so2>
@@ -3011,6 +3021,15 @@
     <glfst3>The distance between groups of strokes</glfst3>
     <wpfst1>Half distance between strokes</wpfst1>
     <wpfst2>No offset</wpfst2>
+    <separator1>From ModPlus settings</separator1>
+    <separator2>From style</separator2>
+    <separator3>Dot</separator3>
+    <separator4>Comma</separator4>
+    <tha1>Left</tha1>
+    <tha2>Center</tha2>
+    <tha3>Right</tha3>
+    <dot>Dot</dot>
+    <comma>Comma</comma>
     <close>Close</close>
     <accept>Accept</accept>
     <collapse>Collapse</collapse>
@@ -3129,6 +3148,11 @@
     <d69>Sets a value in the range from 0.000001 to 1000000 by which the distance measured in the drawing is multiplied</d69>
     <p70>Line thickness</p70>
     <p71>Text rotation angle</p71>
+    <p72>Number separator</p72>
+    <d72>Separator for integer and fractional parts of a number</d72>
+    <p73>Text alignment</p73>
+    <d73>Horizontal text alignment</d73>
+    <p74>Note alignment</p74>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
