@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.10.4.0">
+<ModPlus Name="en-US" Version="4.10.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4716,6 +4716,8 @@
     <mi17>Remove Solid pattern duplicates</mi17>
     <mi18>Display current pattern in notepad</mi18>
     <mi19>Preview selected pattern</mi19>
+    <mi20>Duplicate selected hatch</mi20>
+    <mi21>Remove multiple patterns</mi21>
     <all>All</all>
     <drafting>Drafting</drafting>
     <model>Model</model>
@@ -4817,6 +4819,13 @@
     <m25>Pattern width too small</m25>
     <m26>Pattern width too big</m26>
     <m27>Failed to convert elements to pattern</m27>
+    <m28>The current pattern has no geometry. Nothing to export</m28>
+    <m29>The current pattern already has geometry. Choose further action:</m29>
+    <m30>Add imported geometry to the current pattern</m30>
+    <m31>Remove current geometry and load from selected file</m31>
+    <m32>Cancel import of geometry</m32>
+    <m33>The selected file is not a geometry file for the pattern editor</m33>
+    <m34>The geometry of the selected file cannot be loaded because the pattern type and units of the current editor and the loaded file must match! The current editor has a pattern type "{0}" and a unit of measure "{1}". The loaded file has a pattern type "{2}" and a unit of measure "{3}"</m34>
   </mprPatterns>
   <mprSlabsReinforcement LocalName="Slabs reinforcement"
                          Description="Analysis, grouping and reinforcement of slabs for specified conditions"
