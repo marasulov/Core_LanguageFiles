@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.10.7.0">
+<ModPlus Name="en-US" Version="4.10.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4633,6 +4633,7 @@
     <msg24>You are trying to import a worksets group storage file</msg24>
     <msg25>The selected file is not a file for storing data about a group of worksets and cannot be imported!</msg25>
     <msg26>You are trying to import a configuration storage file</msg26>
+    <msg27>The workset was not applied for the following elements because the elements are owned by user "{0}": {1}</msg27>
     <i1>You can enter multiple valid values in the "Values" field, separated by a comma. A parameter is considered to satisfy the condition if its value matches at least one valid value.</i1>
     <i2>The condition "Presence of parameter" means that the element will be processed if there is such a parameter, regardless of the parameter value.</i2>
     <i3>String parameters are checked only by the conditions "Equal", "Not equal", "Contains", "Not contains".</i3>
