@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.10.6.0">
+<ModPlus Name="en-US" Version="4.10.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4067,6 +4067,7 @@
     <h15>has the "Read Only" property for the following elements</h15>
     <h16>It is not possible to change the instance parameter for an element located in a group if the parameter "Values ​​can vary by group instances" is not enabled for the parameter or it is not the "Mark" system parameter</h16>
     <h17>Errors occurred while changing the parameter values ​​of the listed items</h17>
+    <h18>Attention! The parameter is cleared for all elements of this schedule, regardless of the filtering settings. This means that if, for example, 10 columns are presented in the schedule, and only 5 columns are displayed in the filter settings, then the parameter will be cleared for all 10 columns! Clear parameter?</h18>
     <t1>The work of the plugin is possible only in the schedule in the sorting settings of which the property "Itemize every instance" is checked</t1>
     <m1>Select elements for numbered marking</m1>
     <m2>No items on current view schedule</m2>
