@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.10.5.0">
+<ModPlus Name="en-US" Version="4.10.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2449,12 +2449,12 @@
     <h3>Number of copies</h3>
     <h4>Select all sheets</h4>
     <h5>General duplication settings</h5>
-    <h6>Copy without views</h6>
-    <h7>Copy with views</h7>
+    <h6>Duplicate sheet content:</h6>
+    <h7>Views</h7>
     <h8>Set title block:</h8>
-    <h9>Configure the name of duplicate sheet</h9>
+    <h9>Sheets duplication settings</h9>
     <h10>When creating a new name, add the numbering in</h10>
-    <h11>Schedule duplication settings</h11>
+    <h11>Schedules duplication settings</h11>
     <h12>Failed to generate name for schedule duplicate</h12>
     <h13>Number prefix</h13>
     <h14>Number</h14>
@@ -2466,14 +2466,14 @@
     <h20>Case sensitive!</h20>
     <h21>on</h21>
     <h22>Do not add numbering if possible</h22>
-    <h23>If you add a prefix or suffix to the sheet number or sheet name to get a unique sheet number or sheet name, then the numbering will not be added</h23>
+    <h23>If adding a prefix or suffix to a sheet number, view name, schedule name or legend name results in a unique number or name, the numbering will not be added</h23>
     <h24>Available in full version</h24>
-    <h25>View duplication settings</h25>
+    <h25>Views duplication settings</h25>
     <h26>View copy option:</h26>
     <h27>View template:</h27>
-    <h28>Duplicate Legends</h28>
-    <h29>Duplicate Schedules</h29>
-    <h30>Configure names for:</h30>
+    <h28>Legends</h28>
+    <h29>Schedules Graphics</h29>
+    <h30>Additionally:</h30>
     <h31>View Name</h31>
     <h32>Proceed</h32>
     <h33>Current title block</h33>
@@ -2492,7 +2492,7 @@
     <h46>Copy values of sheet parameters</h46>
     <h47>Create copies of schedules</h47>
     <h48>Sheets selected:</h48>
-    <h49>Duplicate text notes</h49>
+    <h49>Text notes</h49>
     <h50>Duplicate name:</h50>
     <h51>Search and replace in new sheet names</h51>
     <h52>To find:</h52>
@@ -2501,11 +2501,18 @@
     <h55>Case sensitive</h55>
     <h56>Search and replace</h56>
     <h57>In the view name find and replace</h57>
-    <h58>Duplicate raster images (+ PDF)</h58>
+    <h58>Raster images (+ PDF)</h58>
     <h59>Crop view</h59>
     <h60>Crop Region Visible</h60>
     <h61>Annotation crop</h61>
     <h62>By default, when you create a dependent view, the "Crop View", "Crop Region Visible", and "Annotation crop" properties are enabled. You can specify which of these properties to disable</h62>
+    <h63>Create copies of legends</h63>
+    <h64>Legends duplication settings</h64>
+    <h65>Offset view range:</h65>
+    <h66>The same schedule can be inserted several times on different sheets. To create a copy of the schedule placed on the duplicated sheet, enable the option "Create copies of schedules" and, if necessary, specify the prefix and/or suffix of the name in the appropriate group below</h66>
+    <h67>The same legend can be inserted on different sheets. To create a copy of the legend placed on the duplicated sheet, enable the option "Create copies of legends" and, if necessary, specify the prefix and/or suffix of the name in the appropriate group below</h67>
+    <h68>All standard views (floor plans, elevations, sections, etc.) can be inserted into a sheet only once. When this option is enabled, copies of the views placed on the duplicated sheet will be created. You can set various settings for duplicating views in the corresponding group below</h68>
+    <h69>View range offset is only performed for floor plans. By offsetting  the range changing only the Primary Range</h69>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <start>Start</start>
