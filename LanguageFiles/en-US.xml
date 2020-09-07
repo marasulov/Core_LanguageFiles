@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.10.8.0">
+<ModPlus Name="en-US" Version="4.11.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5242,4 +5242,16 @@
     <and>AND</and>
     <or>OR</or>
   </mprContextFilter>
+  <mprCopyViewTemplateFilters LocalName="View template filters"
+                              Description="Manage filters of view templates with the ability to copy filters between view templates with saving graphics override settings">
+    <h1>Select filters to copy</h1>
+    <h2>Select templates to copy filters to</h2>
+    <h3>Search by filter or template name</h3>
+    <h4>Add selected filters to selected templates</h4>
+    <h5>The filter will be added to the template</h5>
+    <h6>The filter will be removed from the template</h6>
+    <h7>Remove filter from template</h7>
+    <h8>Undo remove filter from template</h8>
+    <h9>Copying View Template Filters</h9>
+  </mprCopyViewTemplateFilters>
 </ModPlus>
