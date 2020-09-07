@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.11.0.0">
+<ModPlus Name="en-US" Version="4.11.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5253,5 +5253,6 @@
     <h7>Remove filter from template</h7>
     <h8>Undo remove filter from template</h8>
     <h9>Copying View Template Filters</h9>
+    <apply>Apply</apply>
   </mprCopyViewTemplateFilters>
 </ModPlus>
