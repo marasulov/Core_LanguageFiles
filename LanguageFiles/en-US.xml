@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.11.3.0">
+<ModPlus Name="en-US" Version="4.12.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1865,7 +1865,7 @@
     <h29>Area, cm²:</h29>
     <h30>At step rods (mm):</h30>
     <h31>Area, cm²/1m:</h31>
-    <h32>Anchoring</h32>
+    <h32>Anchoring/Overlap</h32>
     <h33>SP 52-101-2003</h33>
     <h34>Concrete class:</h34>
     <h35>Concrete class for compressive strength</h35>
@@ -1885,6 +1885,8 @@
     <h49>Document status: Acting</h49>
     <h50>Document status: Inactive</h50>
     <h51>Document status: No information or legislation</h51>
+    <h52>Calculation of the length of anchorage or overlap for the current diameter of the reinforcement is performed in a separate window</h52>
+    <h53>Open</h53>
     <msg1>Available in full version!</msg1>
     <msg2>No value in the "Length" field</msg2>
     <msg3>Not selected reinforcement</msg3>
@@ -3781,7 +3783,7 @@
     <h114>Horizontal rebars</h114>
     <h115>U-shaped rebars along vertical</h115>
     <h116>U-shaped rebars along horizontal</h116>
-    <h117>Anchoring (detail) length, mm:</h117>
+    <h117>Detail length, mm:</h117>
     <h118>Detail step, mm:</h118>
     <h119>Default reinforcement settings for walls</h119>
     <h120>Default reinforcement settings for intersections</h120>
@@ -3857,13 +3859,17 @@
     <h190>Number of rod pairs covered:</h190>
     <h191>Consider details at ends and intersections</h191>
     <h192>Type of girth for background reinforcement bars:</h192>
+    <h193>First overlap length, mm:</h193>
+    <h194>Second overlap length, mm:</h194>
+    <h195>Calculate overlap length</h195>
+    <h196>Overlap length, mm:</h196>
     <g1>Girth vertical bars</g1>
     <g2>Girth horizontal bars</g2>
     <auto>Auto</auto>
     <oa1>do not create joints</oa1>
     <oa2>bend into floor (if available)</oa2>
     <npa1>assume a floor conditionally existing</npa1>
-    <npa2>calculate anchoring length from the top of the wall</npa2>
+    <npa2>calculate overlap length from the top of the wall</npa2>
     <jtd1>Joints of background vertical rebars are not created. Rebars are cut on the top of the wall according to the specified value of cover from the rebars ends</jtd1>
     <jtd2>Created straight joints of vertical rebars. The length of the anchorage is set from the top of the overlying floor or from the top of the wall. When the width of the overlying wall decreases, the reinforcement is bent (if floor exist)</jtd2>
     <jtd3>Vertical bar releases are created by analogy with straight releases, but with different anchorage lengths</jtd3>
@@ -4023,6 +4029,7 @@
     <t67>Group walls, intersections and openings according to the current grouping settings</t67>
     <t68>When this option is enabled, stirrups will not be created at intersections of walls and at the ends of walls where details are created (for example, U-shaped details)</t68>
     <t69>If the horizontal bars of the background reinforcement are on the inside and the vertical bars are on the outside, it is recommended to specify the girth of the vertical bars. For the opposite case, when the horizontal bars of the background reinforcement are located outside, it is recommended to specify the girth of the horizontal bars</t69>
+    <t70>The length of the detail is taken as the length of the anchoring</t70>
     <re1>Error while creating vertical bars of background reinforcement in the wall id={0}:</re1>
     <re2>Error while creating vertical bars of background reinforcement at the intersection in the wall id={0}:</re2>
     <re3>Error while creating additional vertical bars at the end of the wall id={0}:</re3>
@@ -4197,8 +4204,8 @@
     <h35>Cross-sectional area of ​​reinforcement, sq.mm:</h35>
     <h36>Reinforcement percentage:</h36>
     <h37>The cross-sectional area of ​​longitudinal reinforcement is not recommended to assign more than 5% of the cross-sectional area of ​​the column</h37>
-    <h38>Spaces between the centers of the rods along the width of the column:</h38>
-    <h39>Spaces between the centers of the rods along the depth of the column:</h39>
+    <h38>Spaces between the edges of the rods along the width of the column:</h38>
+    <h39>Spaces between the edges of the rods along the depth of the column:</h39>
     <h40>Attention! When changing the diameter, cover or number of rods, the distances between the rods will be reset to equivalent values!</h40>
     <h41>Longitudinal reinforcement joints</h41>
     <h42>Transverse reinforcement (layout)</h42>
@@ -4256,11 +4263,13 @@
     <h95>Hooks cannot be used in this form in a sketch</h95>
     <h96>By parameter:</h96>
     <h97>Параметр</h97>
-    <h104>Anchoring length of straight joint, mm:</h104>
+    <h98>Distance between the centers of the rods</h98>
+    <h104>Overlap length of straight joint, mm:</h104>
     <h105>Calculate anchoring length</h105>
     <h106>Floor anchoring length, mm:</h106>
     <h107>Anchoring length per column, mm</h107>
-    <h108>Anchoring length in the overlying column, mm</h108>
+    <h108>Overlap length in the overlying column, mm</h108>
+    <h109>The calculated overlap length is multiplied by 2</h109>
     <h119>Default reinforcement settings</h119>
     <h138>Reinforcement cover:</h138>
     <h141>Do not close the window after creating reinforcement</h141>
@@ -4937,7 +4946,7 @@
     <h114>Straight rods in the transverse direction</h114>
     <h115>U-shaped rods in the longitudinal direction</h115>
     <h116>U-shaped rods in the transverse direction</h116>
-    <h117>Anchoring (detail) length, mm:</h117>
+    <h117>Detail length, mm:</h117>
     <h118>Detail step, mm:</h118>
     <h119>Default reinforcement settings for slabs</h119>
     <h120>Default reinforcement settings for holes</h120>
@@ -5017,6 +5026,7 @@
     <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
     <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75.</t44>
     <t46>In accordance with GOST 21.501-2018, clause 6.4.7, the length of the detail is set along the outer edge of the rebar</t46>
+    <t47>The length of the detail is taken as the length of the anchoring</t47>
     <t49>The number of rows of longitudinal direction reinforcement (in a row is two bars "along" the hole)</t49>
     <t50>The number of rows of transverse direction reinforcement (in a row is two bars "along" the hole)</t50>
     <t53>Reset all values ​​of the current default reinforcement settings to the default values ​​set in the plugin</t53>
