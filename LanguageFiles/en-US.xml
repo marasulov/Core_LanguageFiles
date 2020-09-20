@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.12.6.0">
+<ModPlus Name="en-US" Version="4.12.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5291,6 +5291,7 @@
     <vtf2>Ceiling plans</vtf2>
     <vtf3>Elevations, Sections, Detail Views</vtf3>
     <vtf4>Floor, Structural, Area Plans</vtf4>
+    <vtf5>Rendering, Drafting Views</vtf5>
     <apply>Apply</apply>
   </mprCopyViewTemplateFilters>
 </ModPlus>
