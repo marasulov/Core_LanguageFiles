@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.12.7.0">
+<ModPlus Name="ru-RU" Version="4.13.0.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -5292,4 +5292,8 @@
     <vtf5>Визуализированные, чертежные виды</vtf5>
     <apply>Применить</apply>
   </mprCopyViewTemplateFilters>
+  <mprMergeDims LocalName="Объединить размеры"
+                Description="Создание новой размерной цепочки из выбранных размеров, лежащих на одной прямой">
+    <h1>Выберите размеры</h1>
+  </mprMergeDims>
 </ModPlus>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.12.7.0">
+<ModPlus Name="en-US" Version="4.13.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5294,4 +5294,8 @@
     <vtf5>Rendering, Drafting Views</vtf5>
     <apply>Apply</apply>
   </mprCopyViewTemplateFilters>
+  <mprMergeDims LocalName="Merge dimensions"
+                Description="Create a new dimension chain from selected dimensions that lie on one straight line">
+    <h1>Select dimensions</h1>
+  </mprMergeDims>
 </ModPlus>
