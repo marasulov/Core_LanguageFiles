@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.13.0.0">
+<ModPlus Name="en-US" Version="4.13.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -746,6 +746,10 @@
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <close>Close</close>
+    <bb>ByBlock</bb>
+    <bl>ByLayer</bl>
+    <mm>mm</mm>
+    <def>By default</def>
     <h1>MODPLUS SETTINGS</h1>
     <h2>GENERAL</h2>
     <h3>WORK WITH THE SERVER</h3>
@@ -1339,6 +1343,10 @@
     <h55>Compliance with GOST table</h55>
     <h56>The sizes of formats at multiplicity more than 1 are taken by multiplication of the parties of a format with multiplicity 1 on size of multiplicity that corresponds to limiting deviations in table 3 (paragraph 6). When you check the box, the sizes of the formats will be taken in full accordance with table 2 (paragraph 5)</h56>
     <h57>Format</h57>
+    <h79>Thin lines:</h79>
+    <h80>Thick lines:</h80>
+    <h81>The line thickness changes after the stamp is created. Changing the thickness of thin lines is done by processing the thickness of the lines of the original stamp, in which the default value of thin lines is "ByBlock"</h81>
+    <h82>The line thickness changes after the stamp is created. Changing the thickness of thick lines is done by processing the thickness of the lines of the original stamp, in which the default value of thick lines is "0.40 mm"</h82>
     <err1>The configuration file is corrupt!\nRun the ModPlus Configurator</err1>
     <err2>An error has occurred!</err2>
     <err3>Invalid characters in the layout name:</err3>
@@ -1602,6 +1610,11 @@
     <h75>You can use line breaks in boxes 2,3 and 9. To add line breaks use Enter</h75>
     <h76>Date</h76>
     <h77>Date is added if there is a surename in the line</h77>
+    <h78>The width factor for the field that is inserted into the stamp. The width factor will be applied directly to the inserted field, regardless of the width factor set in the text style. Valid values are from 0.01 to 100.0. In order not to change the width factor, specify the value 0</h78>
+    <h79>Thin lines:</h79>
+    <h80>Thick lines:</h80>
+    <h81>The line thickness changes after the stamp is created. Changing the thickness of thin lines is done by processing the thickness of the lines of the original stamp, in which the default value of thin lines is "ByBlock"</h81>
+    <h82>The line thickness changes after the stamp is created. Changing the thickness of thick lines is done by processing the thickness of the lines of the original stamp, in which the default value of thick lines is "0.40 mm"</h82>
     <msg1>The configuration file is corrupt!\nRun the ModPlus Configurator</msg1>
     <msg2>An error has occurred!</msg2>
     <msg3>Value</msg3>
