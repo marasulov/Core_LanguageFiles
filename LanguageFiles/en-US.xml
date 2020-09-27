@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.13.1.0">
+<ModPlus Name="en-US" Version="4.13.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1615,6 +1615,8 @@
     <h80>Thick lines:</h80>
     <h81>The line thickness changes after the stamp is created. Changing the thickness of thin lines is done by processing the thickness of the lines of the original stamp, in which the default value of thin lines is "ByBlock"</h81>
     <h82>The line thickness changes after the stamp is created. Changing the thickness of thick lines is done by processing the thickness of the lines of the original stamp, in which the default value of thick lines is "0.40 mm"</h82>
+    <h83>W.F.</h83>
+    <h84>Width factor</h84>
     <msg1>The configuration file is corrupt!\nRun the ModPlus Configurator</msg1>
     <msg2>An error has occurred!</msg2>
     <msg3>Value</msg3>
