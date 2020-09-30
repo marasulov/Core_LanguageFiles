@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.13.3.0">
+<ModPlus Name="en-US" Version="4.13.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -393,6 +393,7 @@
     <h118>User "{0}" has access to license server "{1}"</h118>
     <h119>User "{0}" does not have access to license server "{1}"</h119>
     <h120>Check access to the license server, the entered data for identification and contact your system administrator</h120>
+    <h121>Displayed plugins:</h121>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -403,7 +404,7 @@
     <ps2>When connecting to the internet, the following proxy is used:</ps2>
     <ps3>Manual proxy configuration</ps3>
     <openPath>Open directory</openPath>
-    <b1>Install and enable all</b1>
+    <b1>Install all displayed</b1>
     <b2>Install</b2>
     <b3>Build standard</b3>
     <b4>Bind</b4>
@@ -417,7 +418,8 @@
     <b12>Check</b12>
     <b13>Delete the shortcut on the desktop</b13>
     <b14>Create a shortcut on the desktop</b14>
-    <b15>Disable all</b15>
+    <b15>Disable all displayed</b15>
+    <b16>Enable all displayed</b16>
     <ribbon>Ribbon</ribbon>
     <fMenu>Floating menu</fMenu>
     <drawings>Drawings</drawings>
@@ -440,7 +442,7 @@
     <tt16>Download the key file from the ModPlus web server</tt16>
     <tt17>Update the list of plugins</tt17>
     <tt18>The list displays only those versions of the specified product that are in the PC</tt18>
-    <tt19>Install and enable all plugins currently visible in the list for the current version of the product</tt19>
+    <tt19>Install all plugins currently visible in the list</tt19>
     <tt20>Connect to ModPlus plugin</tt20>
     <tt21>Watch the video for the plugin</tt21>
     <tt22>Go to the store to purchase the full version of the plugin</tt22>
@@ -474,11 +476,12 @@
     <tt56>Copy to clipboard</tt56>
     <tt57>Add panel for small buttons</tt57>
     <tt58>The panel should contain only two or three plugins!</tt58>
-    <tt59>Disable all plugins for the current version of the product</tt59>
+    <tt59>Disable all plugins currently visible in the list</tt59>
     <tt60>Remove plugin</tt60>
     <tt61>Remove panel</tt61>
     <tt62>Copied</tt62>
     <tt63>Go to the description of the component on the site</tt63>
+    <tt64>Enable all plugins currently visible in the list</tt64>
     <w1>Login</w1>
     <w2>Finding a plugin in the list</w2>
     <w3>Activation key</w3>
@@ -531,7 +534,7 @@
     <msg13>All keys will be erased! Continue?</msg13>
     <msg14>All keys deleted</msg14>
     <msg15>Enter your email address</msg15>
-    <msg16>All missing plugins currently visible in the list for the specified product version will be installed and enabled\nContinue?</msg16>
+    <msg16>All missing plugins currently visible in the list will be installed and enabled\nContinue?</msg16>
     <msg17>It's valid activation key</msg17>
     <msg18>It's NOT valid activation key</msg18>
     <msg19>Attention! After downloading the configuration file from the server Configurator is restarted!\nContinue?</msg19>
@@ -5313,4 +5316,8 @@
                 Description="Create a new dimension chain from selected dimensions that lie on one straight line">
     <h1>Select dimensions</h1>
   </mprMergeDims>
+  <mprDimsCreator LocalName=""
+                  Description="">
+    <h1>Hello world</h1>
+  </mprDimsCreator>
 </ModPlus>
