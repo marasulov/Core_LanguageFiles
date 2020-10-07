@@ -1054,6 +1054,27 @@
     <yes>Yes</yes>
     <no>No</no>
   </NotesCore>
+  <ReinforcementBendRules>
+    <d1>SP 63.13330.2018</d1>
+    <d2>EN 1992-1-1</d2>
+    <t1>SP 63.13330.2018 "SNIP 52-01-2003 Concrete and reinforced concrete structures. Basic provisions", clause 10.3.33</t1>
+    <t2>EN 1992-1-1 "Eurocode 2: Design of concrete structures - Part 1-1 : General rules and rules for buildings", clause 8.3</t2>
+    <r1>Minimum mandrel diameter dop for reinforcement is taken depending on the diameter of the rod ds, not less than:&#x0a;- for plain rods&#x0a;dop = 2.5ds at ds &#60; 20 mm;&#x0a;dop=4ds at ds ≥ 20 mm;&#x0a;- for deformed rods&#x0a;dop=5ds at ds &#60; 20 mm;&#x0a;dоп=8ds at ds ≥ 20 mm;</r1>
+    <r2>Minimum mandrel diameter to avoid damage to reinforcement is taken:&#x0a;4Ø rod diameter Ø ≤ 16 mm;&#x0a;7Ø at rod diameter Ø &#62; 16 mm;</r2>
+    <h1>BENDING RULES</h1>
+    <h2>Rule Source:</h2>
+    <h3>Rules description:</h3>
+    <m1>Deformed deformation type rebars</m1>
+    <m2>Plain deformation type rebars</m2>
+    <m3>For rebar</m3>
+    <m4>bend diameter value</m4>
+    <m5>does not comply with the norms of</m5>
+    <m6>The minimum value of the bending diameter for the rebar</m6>
+    <m7>with diameter</m7>
+    <m8>must be:</m8>
+    <m9>The value of the property will be changed</m9>
+    <mm>mm</mm>
+  </ReinforcementBendRules>
   <mpTxtNumCopy LocalName="Copy with numbering"
                 Description="Copies the selected text or block with an attribute containing a numeric value, changing the value to a specified numerical step"
                 FullDescription="Copies the selected single line or multiline text, a block with an attribute or a multileader containing a digital value, with a value change to a specified numerical step. There are various settings - adding a prefix/suffix, suppressing tail zeros, etc.">
@@ -3805,7 +3826,7 @@
     <h111>Indent from the opening:</h111>
     <h112>Rows count:</h112>
     <h113>Displace when hit by vertical reinforcement bars</h113>
-    <h114>Horizontal rebars</h114>
+    <h114>Horizontal rebars at the top</h114>
     <h115>U-shaped rebars along vertical</h115>
     <h116>U-shaped rebars along horizontal</h116>
     <h117>Detail length, mm:</h117>
@@ -3888,6 +3909,9 @@
     <h194>Second overlap length, mm:</h194>
     <h195>Calculate overlap length</h195>
     <h196>Overlap length, mm:</h196>
+    <h197>LOADING</h197>
+    <h198>Horizontal rebars at the bottom</h198>
+    <h199>Top Tied Stirrups</h199>
     <g1>Girth vertical bars</g1>
     <g2>Girth horizontal bars</g2>
     <auto>Auto</auto>
@@ -4072,6 +4096,7 @@
     <re15>Error while creating U-shaped bars of the opening frame along the horizontal in the wall id={0}</re15>
     <re16>Error while creating diagonal rebars in the frame of opening in the wall id={0}:</re16>
     <re17>Error while creating joints from slab id={0} to wall id={1}:</re17>
+    <re18>Error while creating stirrups at the top of the frame of the opening in the wall id={0}:</re18>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="Plugin allows you to export all specified sheets to dwg/dxf">
