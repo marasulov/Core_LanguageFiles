@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.13.4.0">
+<ModPlus Name="en-US" Version="4.13.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2874,23 +2874,23 @@
   </ostViewIn3D>
   <mmRebarSolidAndVisible LocalName="Rebar solid and visible"
                           Description="Change the state of the visibility of the rebar (view unobscured and view as solid)"
-                          FullDescription="The visibility state of View unobscured is set to any view, whether 2D or 3D. View as solid - set only in 3D view"
-                          LocalName1="Disable visibility"
-                          Description1="Disable the state of the visibility of the rebar (view unobscured and view as solid)"
-                          LocalName2="Elements selection settings"
-                          Description2="Settings options for the selection of elements containing reinforcement for plugins">
-    <msg1>Select an element with rebar</msg1>
-    <msg2>Select an elements with rebar</msg2>
-    <t1>Turn on rebar visibility</t1>
-    <t2>Turn off rebar visibility</t2>
+                          FullDescription="The visibility state of View unobscured is set to any view, whether 2D or 3D. View as solid - set only in 3D view">
+    <msg1>Select an element with rebar or reinforcement</msg1>
+    <msg2>Select an elements with rebar or reinforcement</msg2>
+    <t1>Process:</t1>
     <h1>Turn on rebars visibility for:</h1>
-    <h2>Turn off rebars visibility for:</h2>
+    <h2>Show as solid</h2>
     <h3>Selected element</h3>
     <h4>Selected elements</h4>
     <h5>All elements on view</h5>
-    <h6>View unobscured</h6>
-    <h7>View as solid</h7>
+    <h6>Change property "View unobscured"</h6>
+    <h7>Change property "View as solid"</h7>
+    <h8>Show as line</h8>
+    <h9>Make unobscured</h9>
+    <h10>Make obscured</h10>
     <close>Close</close>
+    <apply>Apply</apply>
+    <continue>Continue</continue>
   </mmRebarSolidAndVisible>
   <mpESKD LocalName="ModPlus ESKD"
           Description="A collection of plugins that creates smart entities (custom entities) for drawing up drawings according to the rules of ESKD">
