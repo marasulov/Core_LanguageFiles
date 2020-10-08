@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.13.5.0">
+<ModPlus Name="en-US" Version="4.13.6.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2853,7 +2853,11 @@
   </ostViewIn3D>
   <mmRebarSolidAndVisible LocalName="Rebar solid and visible"
                           Description="Change the state of the visibility of the rebar (view unobscured and view as solid)"
-                          FullDescription="The visibility state of View unobscured is set to any view, whether 2D or 3D. View as solid - set only in 3D view">
+                          FullDescription="The visibility state of View unobscured is set to any view, whether 2D or 3D. View as solid - set only in 3D view"
+                          LocalName1="Disable visibility"
+                          Description1="Disable the state of the visibility of the rebar (view unobscured and view as solid)"
+                          LocalName2="Elements selection settings"
+                          Description2="Settings options for the selection of elements containing reinforcement for plugins">
     <msg1>Select an element with rebar or reinforcement</msg1>
     <msg2>Select an elements with rebar or reinforcement</msg2>
     <t1>Process:</t1>
