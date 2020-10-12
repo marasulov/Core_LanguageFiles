@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.13.6.0">
+<ModPlus Name="en-US" Version="4.14.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3867,7 +3867,7 @@
     <h148>Anchorage length in plate, mm:</h148>
     <h149>Base plate joints</h149>
     <h150>Contiguous walls count</h150>
-    <h151>Additional vertical reinforcement rebars</h151>
+    <h151>Additional vertical reinforcement rebars in ends</h151>
     <h152>Indent from extreme vertical rebars</h152>
     <h153>Top diagonal reinforcement</h153>
     <h154>Bottom diagonal reinforcement</h154>
