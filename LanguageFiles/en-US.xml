@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.14.0.0">
+<ModPlus Name="en-US" Version="4.14.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -628,7 +628,7 @@
     <h12>Install or update from the specified .mpif installation file</h12>
     <h13>Install or update from the specified folder where the .mpif installation files are located</h13>
     <h14>ModPlus: new plugins</h14>
-    <h15>New plugins are available in the ModPlus plugin!</h15>
+    <h15>New plugins are available in the ModPlus!</h15>
     <h16>Check the plugins in the list that you wish to install</h16>
     <h17>Plugin version:</h17>
     <h18>Product version:</h18>
