@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.14.1.0">
+<ModPlus Name="en-US" Version="4.15.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5345,6 +5345,10 @@
                 Description="Create a new dimension chain from selected dimensions that lie on one straight line">
     <h1>Select dimensions</h1>
   </mprMergeDims>
+  <mprSplitDimChain LocalName="Split dimensions"
+                    Description="Create new dimensions from segments of the selected dimension chain">
+    <h1>Select dimensions with more than one segment</h1>
+  </mprSplitDimChain>
   <mprDimsCreator LocalName=""
                   Description="">
     <h1>Hello world</h1>

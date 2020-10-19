@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.14.1.0">
+<ModPlus Name="ru-RU" Version="4.15.1.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -5343,6 +5343,10 @@
                 Description="Создание новой размерной цепочки из выбранных размеров, лежащих на одной прямой">
     <h1>Выберите размеры</h1>
   </mprMergeDims>
+  <mprSplitDimChain LocalName="Разбить размеры"
+                    Description="Создание новых размеров из сегментов выбранной размерной цепочки">
+    <h1>Выберите размеры, содержащие более одно сегмента</h1>
+  </mprSplitDimChain>
   <mprDimsCreator LocalName=""
                   Description="">
     <h1>Hello world</h1>
