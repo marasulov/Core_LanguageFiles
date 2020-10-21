@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.15.1.0">
+<ModPlus Name="en-US" Version="4.15.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2563,6 +2563,7 @@
     <h67>The same legend can be inserted on different sheets. To create a copy of the legend placed on the duplicated sheet, enable the option "Create copies of legends" and, if necessary, specify the prefix and/or suffix of the name in the appropriate group below</h67>
     <h68>All standard views (floor plans, elevations, sections, etc.) can be inserted into a sheet only once. When this option is enabled, copies of the views placed on the duplicated sheet will be created. You can set various settings for duplicating views in the corresponding group below</h68>
     <h69>View range offset is only performed for floor plans. By offsetting  the range changing only the Primary Range</h69>
+    <h70>Copy title block parameter values</h70>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <start>Start</start>
