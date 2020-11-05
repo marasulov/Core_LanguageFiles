@@ -5354,4 +5354,44 @@
                   Description="">
     <h1>Hello world</h1>
   </mprDimsCreator>
+  <mprCopyParameterValues LocalName=""
+                          Description=""
+                          FullDescription="">
+    <yes>Yes</yes>
+    <no>No</no>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <and>AND</and>
+    <or>OR</or>
+    <h4>Search (enter * to display only selected items)</h4>
+    <h5>Selected categories:</h5>
+    <h6>Instruction</h6>
+    <h7>Parameter name:</h7>
+    <h8>Condition:</h8>
+    <h9>Values:</h9>
+    <h19>Filter elements by category:</h19>
+    <h20>Filter elements by parameters:</h20>
+    <h47>Select categories</h47>
+    <h48>Equality parameters</h48>
+    <msg9>Delete selected item?</msg9>
+    <t13>Uncheck all categories</t13>
+    <t14>Add new item</t14>
+    <t15>Remove selected item</t15>
+    <i1>You can enter multiple valid values in the "Values" field, separated by a comma. A parameter is considered to satisfy the condition if its value matches at least one valid value.</i1>
+    <i2>The condition "Presence of parameter" means that the element will be processed if there is such a parameter, regardless of the parameter value.</i2>
+    <i3>String parameters are checked only by the conditions "Equal", "Not equal", "Contains", "Not contains".</i3>
+    <i4>Numeric parameters are checked by all conditions except "Contains".</i4>
+    <i5>The "Contains" condition checks that the element parameter contains at least one of the valid values. The condition "Not contains", respectively, checks that the parameter does not contain at least one of the values.</i5>
+    <i6>String values are case-insensitive.</i6>
+    <i7>Parameters of type "on/off" are checked as an integer (0-off, 1-on).</i7>
+    <c1>Equal</c1>
+    <c2>More</c2>
+    <c3>Less</c3>
+    <c4>More or equal</c4>
+    <c5>Less or equal</c5>
+    <c6>Not equal</c6>
+    <c7>Contains</c7>
+    <c8>Presence of parameter</c8>
+    <c9>Not contains</c9>
+  </mprCopyParameterValues>
 </ModPlus>
