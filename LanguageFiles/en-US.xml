@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.15.2.0">
+<ModPlus Name="en-US" Version="4.16.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5354,23 +5354,46 @@
                   Description="">
     <h1>Hello world</h1>
   </mprDimsCreator>
-  <mprCopyParameterValues LocalName=""
-                          Description=""
-                          FullDescription="">
+  <mprCopyParameterValues LocalName="Copy parameters"
+                          Description="Copy parameter values between elements or within one element"
+                          FullDescription="The plugin contains various copying options, allowing you to configure which elements to copy to. There is a possibility of copying a composite value (from several parameters to one). There are filters for selecting items by category and parameter values. There is an opportunity to convert values between different types of parameters">
     <yes>Yes</yes>
     <no>No</no>
     <accept>Accept</accept>
     <cancel>Cancel</cancel>
     <and>AND</and>
     <or>OR</or>
+    <add>Add</add>
+    <save>Save</save>
+    <saveNew>Save as new</saveNew>
+    <full>Available in the full version of the plugin</full>
+    <cn1>Copy within an element</cn1>
+    <cn2>Copying from one element to several</cn2>
+    <cn3>Copying from host to children</cn3>
+    <h1>Select copy option</h1>
+    <h2>Perform copy</h2>
+    <h3>Saved configurations</h3>
     <h4>Search (enter * to display only selected items)</h4>
     <h5>Selected categories:</h5>
     <h6>Instruction</h6>
     <h7>Parameter name:</h7>
     <h8>Condition:</h8>
     <h9>Values:</h9>
+    <h10>Sample element</h10>
+    <h11>The sample element is used to populate the list of parameter names in the parameter copy rule setup</h11>
+    <h12>Source element</h12>
+    <h13>The element from which the parameter values will be copied. Also used to populate the list of parameter names in the parameter copy rules setup</h13>
+    <h14>Sample host element</h14>
+    <h15>The sample host element is used to populate a list of source parameter names in the parameter copy rule setup</h15>
+    <h16>Sample target element</h16>
+    <h17>The sample target element is used to populate the list of target parameter names in the parameter copy rule setup</h17>
+    <h18>Pick</h18>
     <h19>Filter elements by category:</h19>
     <h20>Filter elements by parameters:</h20>
+    <h21>Selecting the type of copy rule</h21>
+    <h22>Add a parameters copy rule of type:</h22>
+    <h23>Single</h23>
+    <h24>Composite</h24>
     <h47>Select categories</h47>
     <h48>Equality parameters</h48>
     <msg9>Delete selected item?</msg9>
