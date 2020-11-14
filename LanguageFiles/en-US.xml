@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.15.3.0">
+<ModPlus Name="en-US" Version="4.15.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5176,6 +5176,8 @@
     <m60>{0} - The types collecting process has been started ({1}).</m60>
     <m61>{0} - The types collecting process has been finished ({1}).</m61>
     <m62>there was a critical Revit warning that required confirmation from the user. Disable warning suppression and try copying again</m62>
+    <m63>Shared parameters</m63>
+    <m64>No category</m64>
   </mprCopyElementsToOpenDocuments>
   <mprMepElementsBender LocalName="MEP clash solver"
                         Description="Solves MEP elements clashes"
