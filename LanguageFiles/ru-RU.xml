@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.16.0.0">
+<ModPlus Name="ru-RU" Version="4.16.1.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -5358,6 +5358,7 @@
     <h2>Инвертировать видимость</h2>
     <h3>Изолировать уровень</h3>
     <h4>Выбрать уровень</h4>
+    <all>Все уровни</all>
   </mrLevelsList>
   <mprCopyParameterValues LocalName="Копировать параметры"
                           Description="Копирование значений параметров между элементами или в пределах одного элемента"

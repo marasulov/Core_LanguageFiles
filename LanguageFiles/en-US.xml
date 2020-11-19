@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.16.0.0">
+<ModPlus Name="en-US" Version="4.16.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5360,6 +5360,7 @@
     <h2>Invert visibility</h2>
     <h3>Isolate level</h3>
     <h4>Select level</h4>
+    <all>All levels</all>
   </mrLevelsList>
   <mprCopyParameterValues LocalName="Copy parameters"
                           Description="Copy parameter values between elements or within one element"
