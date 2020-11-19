@@ -5354,10 +5354,13 @@
                     Description="Create new dimensions from segments of the selected dimension chain">
     <h1>Select dimensions with more than one segment</h1>
   </mprSplitDimChain>
-  <mprDimsCreator LocalName=""
-                  Description="">
-    <h1>Hello world</h1>
-  </mprDimsCreator>
+  <mrLevelsList LocalName="Levels"
+                Description="Displaying a list of levels with the ability to control their visibility">
+    <h1>Not available on this view</h1>
+    <h2>Invert visibility</h2>
+    <h3>Isolate level</h3>
+    <h4>Select level</h4>
+  </mrLevelsList>
   <mprCopyParameterValues LocalName="Copy parameters"
                           Description="Copy parameter values between elements or within one element"
                           FullDescription="The plugin contains various copying options, allowing you to configure which elements to copy to. There is a possibility of copying a composite value (from several parameters to one). There are filters for selecting items by category and parameter values. There is an opportunity to convert values between different types of parameters">
