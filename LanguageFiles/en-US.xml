@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.16.1.0">
+<ModPlus Name="en-US" Version="4.16.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -139,9 +139,9 @@
     <bi3>Dimensions by line</bi3>
     <bid3>Configuration of plugin for the Revit "Dimensions by line"</bid3>
     <bi4>Walls Reinforcement</bi4>
-    <bid4>Default reinforcement settings of plugin for the Revit "Walls Reinforcement"</bid4>
+    <bid4>Default reinforcement settings of plugin for the Revit "Walls reinforcement"</bid4>
     <bi5>Columns Reinforcement</bi5>
-    <bid5>Default reinforcement settings of plugin for the Revit "Columns Reinforcement"</bid5>
+    <bid5>Default reinforcement settings of plugin for the Revit "Columns reinforcement"</bid5>
     <bi6>Standards</bi6>
     <bid6>Custom standards are added to the plugin for the AutoCAD "Standards"</bid6>
     <bi7>Notes</bi7>
@@ -153,7 +153,9 @@
     <bi10>Slabs Reinforcement</bi10>
     <bid10>Default reinforcement settings of plugin for the Revit "Slabs Reinforcement"</bid10>
     <bi11>Context filter</bi11>
-    <bid11>User preset storage file for the "Context Filter" plugin (Revit)</bid11>
+    <bid11>User preset storage file for the "Context filter" plugin (Revit)</bid11>
+    <bi12>Copy parameters</bi12>
+    <bid12>Custom configuration storage files for the "Copy parameters" Plugin (Revit)</bid12>
     <s1>Active</s1>
     <s2>Subscription has not started</s2>
     <s3>Subscription expires</s3>
@@ -720,8 +722,6 @@
     <msg30>Your subscription expires</msg30>
     <msg31>{0} days left until the subscription expires</msg31>
     <msg32>An access error occurred while attempting to update. Restart the auto-update module with administrator rights?</msg32>
-    <msg33>User data has been updated</msg33>
-    <msg34>User data was updated on the site, but could not download them</msg34>
     <msg35>No updates available</msg35>
     <err1>Error reading file on server</err1>
     <err2>There are no updates for the configurator</err2>
