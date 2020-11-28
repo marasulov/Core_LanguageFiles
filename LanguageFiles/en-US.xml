@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.16.3.0">
+<ModPlus Name="en-US" Version="4.16.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4555,7 +4555,7 @@
     <e4>Type "{0}" not found in family "{1}"</e4>
     <e5>Failed to delete family "{0}" because instances of this family are present in the model</e5>
     <e6>Error while replacing type in family "{0}": {1}</e6>
-    <e7>Error deleting type "{0}" in family "{1}"</e7>
+    <e7>Error deleting type "{0}" in family "{1}": {2}</e7>
     <t1>Direction of processing: the family on the left is a duplicate, the family on the right is the main family</t1>
     <t2>Add to the processing list a couple of families that did not match the standard duplicate search</t2>
     <t3>In the main family new types will be created that are present in the duplicate family and are absent in the main family</t3>
