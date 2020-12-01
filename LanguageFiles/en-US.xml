@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.16.4.0">
+<ModPlus Name="en-US" Version="4.16.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -878,6 +878,16 @@
     <p15>Loading plugin:</p15>
   </AutocadDlls>
   <RevitDlls LocalName="Working libraries for Revit">
+    <parameters>Parameters</parameters>
+    <name>Name</name>
+    <value>Value</value>
+    <copy>Copy</copy>
+    <paste>Paste</paste>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <create>Create</create>
+    <rn>Rebar ⌀</rn>
+    <mm>mm</mm>
     <h1>MODPLUS SETTINGS</h1>
     <h2>GENERAL</h2>
     <h3>WORK WITH THE SERVER</h3>
@@ -1059,10 +1069,13 @@
   <ReinforcementBendRules>
     <d1>SP 63.13330.2018</d1>
     <d2>EN 1992-1-1</d2>
+    <d3>Do not use</d3>
     <t1>SP 63.13330.2018 "SNIP 52-01-2003 Concrete and reinforced concrete structures. Basic provisions", clause 10.3.33</t1>
     <t2>EN 1992-1-1 "Eurocode 2: Design of concrete structures - Part 1-1 : General rules and rules for buildings", clause 8.3</t2>
+    <t3>Take bend settings from shapes</t3>
     <r1>Minimum mandrel diameter dop for reinforcement is taken depending on the diameter of the rod ds, not less than:&#x0a;- for plain rods&#x0a;dop = 2.5ds at ds &#60; 20 mm;&#x0a;dop=4ds at ds ≥ 20 mm;&#x0a;- for deformed rods&#x0a;dop=5ds at ds &#60; 20 mm;&#x0a;dоп=8ds at ds ≥ 20 mm;</r1>
     <r2>Minimum mandrel diameter to avoid damage to reinforcement is taken:&#x0a;4Ø rod diameter Ø ≤ 16 mm;&#x0a;7Ø at rod diameter Ø &#62; 16 mm;</r2>
+    <r3>When creating rebars, the bend diameters will be taken from the rebar shape settings.</r3>
     <h1>BENDING RULES</h1>
     <h2>Rule Source:</h2>
     <h3>Rules description:</h3>
