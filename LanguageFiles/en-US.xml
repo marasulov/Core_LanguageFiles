@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.16.6.0">
+<ModPlus Name="en-US" Version="4.16.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5338,6 +5338,8 @@
     <h27>The context filter dialog is called by pressing the specified key combination. The default key combination is “Shift + F”. When specifying a different combination, consider existing combinations (Ctrl + C, Ctrl + V and others)</h27>
     <h28>Exclude checked elements from the current selection</h28>
     <h29>Do not close the filter after applying the action</h29>
+    <h30>Dynamic selection</h30>
+    <h31>When selecting a position in the tree, the selection of elements in the model will be performed</h31>
     <fo1>All elements</fo1>
     <fo2>All elements in view</fo2>
     <fo3>Selected elements</fo3>
