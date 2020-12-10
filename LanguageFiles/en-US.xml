@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.16.7.0">
+<ModPlus Name="en-US" Version="4.16.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -657,6 +657,7 @@
     <h37>When sending a request to the ModPlus web service, an access lock occurred. Contact your local network administrator for access to https://modplusservice.com services</h37>
     <h38>Do not show this notification again</h38>
     <h39>Support libraries have been updated</h39>
+    <h40>Downloading package: {0} of {1} bytes</h40>
     <b1>Install from file</b1>
     <b2>Install from folder</b2>
     <b3>Check all</b3>
@@ -701,12 +702,11 @@
     <msg9>Updates are available for plugin components:</msg9>
     <msg10>To update, you need to close AutoCAD</msg10>
     <msg11>To update, you need to close the ModPlus configurator</msg11>
-    <msg12>Updates plugin modules are available\nUpdate?</msg12>
+    <msg12>Updates available\nUpdate?</msg12>
     <msg13>Updates of plugin components are installed:</msg13>
     <msg14>Installing the update:</msg14>
     <msg15>Plugins updates are available:</msg15>
     <msg16>To update, you need to close Revit</msg16>
-    <msg17>Plugins updates available\nUpdate?</msg17>
     <msg18>Updated plugins are installed:</msg18>
     <msg19>New plugins are available:</msg19>
     <msg20>To install, you need to close AutoCAD</msg20>
@@ -724,20 +724,9 @@
     <msg32>An access error occurred while attempting to update. Restart the auto-update module with administrator rights?</msg32>
     <msg35>No updates available</msg35>
     <err1>Error reading file on server</err1>
-    <err2>There are no updates for the configurator</err2>
-    <err3>There are no updates for working files</err3>
-    <err4>There are no updates for databases</err4>
-    <err5>The local configurator file was not found</err5>
-    <err6>No local working files found</err6>
-    <err7>No local database files found</err7>
-    <err8>Error downloading configurator updates</err8>
-    <err9>Error while downloading working files updates</err9>
-    <err10>Error while downloading database updates</err10>
-    <err11>Error while downloading plugins updates</err11>
-    <err12>Error while updating data in the configuration file</err12>
+    <err8>Not all updates were installed</err8>
+    <err12>Error while updating data in the registry</err12>
     <err13>Error while unpacking updates</err13>
-    <err14>No entry was found in the registry. Run the configurator</err14>
-    <err15>The configuration file was not found. Run the configurator</err15>
     <err16>Unable to register application for Revit</err16>
     <err17>File not found</err17>
     <err18>No ModPlus installation files found</err18>
