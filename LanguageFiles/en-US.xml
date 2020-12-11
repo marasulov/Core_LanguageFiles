@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.16.9.0">
+<ModPlus Name="en-US" Version="4.17.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -657,7 +657,7 @@
     <h37>When sending a request to the ModPlus web service, an access lock occurred. Contact your local network administrator for access to https://modplusservice.com services</h37>
     <h38>Do not show this notification again</h38>
     <h39>Support libraries have been updated</h39>
-    <h40>Downloading package: {0} of {1} Mb</h40>
+    <h40>Downloading package: {0}/{1}</h40>
     <b1>Install from file</b1>
     <b2>Install from folder</b2>
     <b3>Check all</b3>
