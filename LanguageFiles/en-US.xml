@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.17.0.0">
+<ModPlus Name="en-US" Version="4.17.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -558,6 +558,7 @@
     <msg33>Error accessing the file system! Restart Configurator with administrator privileges?</msg33>
     <msg34>The current menu for AutoCAD will be overwritten!</msg34>
     <msg35>The current menu for Revit will be overwritten!</msg35>
+    <msg36>Your ModPlus version is not installed in the recommended directory. We strongly recommend that you reinstall ModPlus in the directory</msg36>
     <ftp1>Downloading the configuration file from the server</ftp1>
     <ftp2>Retrieving Authorization Data...</ftp2>
     <ftp3>Reading directories on the server...</ftp3>
@@ -565,20 +566,10 @@
     <ftp5>The server does not have a saved configuration file!</ftp5>
     <ftp6>Download the file from the server...</ftp6>
     <ftp7>The configuration file has been downloaded!</ftp7>
-    <ftp8>Sending a key file to the server</ftp8>
-    <ftp9>Creating a Key File</ftp9>
     <ftp10>Create a connection</ftp10>
     <ftp11>Create a user directory</ftp11>
-    <ftp12>Check for a saved key file</ftp12>
-    <ftp13>The server already has a saved key file! Overwrite it?</ftp13>
-    <ftp14>Uploading the key file to the server</ftp14>
-    <ftp15>The key file is stored on the server</ftp15>
     <ftp16>Failed to get authorization data!\nTry again</ftp16>
-    <ftp17>Attention! All current activation keys will be overwritten!\nContinue?</ftp17>
-    <ftp18>Downloading keys from the server</ftp18>
-    <ftp19>There is no saved key file on the server!</ftp19>
-    <ftp20>Downloading the key file</ftp20>
-    <ftp21>Installing the keys</ftp21>
+    <ftp20>Downloading the installation package</ftp20>
     <ftp22>Installation of the plugin:</ftp22>
     <ftp23>Create temporary folder</ftp23>
     <ftp24>Downloading a file from the server to a temporary folder</ftp24>
@@ -654,7 +645,7 @@
     <h34>Database</h34>
     <h35>Dwg base</h35>
     <h36>Do not show notifications if the update contains unimportant changes (bug fixes)</h36>
-    <h37>When sending a request to the ModPlus web service, an access lock occurred. Contact your local network administrator for access to https://modplusservice.com services</h37>
+    <h37>An error occurred while sending a request to the ModPlus web service and returned as html. Such errors may indicate a blocking of access by your network</h37>
     <h38>Do not show this notification again</h38>
     <h39>Support libraries have been updated</h39>
     <h40>Downloading package: {0}/{1}</h40>
