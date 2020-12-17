@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.17.1.0">
+<ModPlus Name="en-US" Version="4.17.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1552,6 +1552,8 @@
             FullDescription="Using the &quot;Field&quot; plugin allows you to add additional values to the document that you can insert into the title block in the form of fields. This allows you to change the values in the title block at once in all the title blocks throughout the document">
     <insert>Insert</insert>
     <no>No</no>
+    <export>Export</export>
+    <import>Import</import>
     <h1>Title blocks</h1>
     <h2>Name of title block</h2>
     <h3>Normative documents for:</h3>
@@ -1659,6 +1661,9 @@
     <msg22>The "Organization" cell contains a logo\nReplace on field?</msg22>
     <msg23>Use dwg-file as a logo</msg23>
     <msg24>Insertion point:</msg24>
+    <msg25>Field values ​​exported</msg25>
+    <msg26>At the moment, the area for working with the tag "{0}" is selected, and the tag "{1}" is specified in the loading file.\nDo you want to continue loading?</msg26>
+    <msg27>The selected file is not a field storage file</msg27>
   </mpStamps>
   <mpSummLength LocalName="Sum of lengths"
                 Description="Gets and displays the number and sum of the lengths of selected lines, polylines, circles, arcs and splines">
