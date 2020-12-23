@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.17.2.0">
+<ModPlus Name="en-US" Version="4.17.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3671,6 +3671,7 @@
     <InternalLoads>Structural Internal Loads</InternalLoads>
     <LoadCases>Structural Load Cases</LoadCases>
     <Loads>Structural Loads</Loads>
+    <GenericModels>Generic Models</GenericModels>
     <h1>Notching distance</h1>
     <h2>Notching distance, mm</h2>
     <h3>Automatically change the Notching distance for the elements of the Structural framing</h3>

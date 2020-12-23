@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.17.2.0">
+<ModPlus Name="ru-RU" Version="4.17.3.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -3671,6 +3671,7 @@
     <InternalLoads>Внутренние нагрузки несущих конструкций</InternalLoads>
     <LoadCases>Варианты нагружений на конструкцию</LoadCases>
     <Loads>Нагрузки на конструкцию</Loads>
+    <GenericModels>Обобщенные модели</GenericModels>
     <h1>Отступ врезки</h1>
     <h2>Отступ врезки, мм</h2>
     <h3>Автоматическое изменение Отступа врезки для элементов несущего каркаса</h3>
