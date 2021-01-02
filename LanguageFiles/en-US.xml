@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.17.3.0">
+<ModPlus Name="en-US" Version="4.17.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4173,8 +4173,24 @@
     <h19>Skipped templates -</h19>
     <h20>Deleted Templates -</h20>
     <h21>Removed references to view templates -</h21>
+    <h22>Unused shared parameters</h22>
+    <h23>Finding unused shared parameters can take some time, as it will require opening all families in the project</h23>
+    <h24>Parameter name</h24>
+    <h25>Parameters count:</h25>
+    <h26>Remove selected</h26>
+    <h27>Removing unused shared parameters</h27>
+    <h28>Removed {0} shared parameters</h28>
+    <h29>View filters</h29>
+    <h30>Removing View Filters</h30>
+    <h31>Used in templates</h31>
+    <h32>Used in views</h32>
+    <h33>Schedules</h33>
+    <h34>Removing Schedules</h34>
+    <h35>Placed on sheet</h35>
     <yes>Yes</yes>
     <no>No</no>
+    <search>Search</search>
+    <name>Name</name>
     <w1>Remove all views (Area plans only)</w1>
     <w2>Remove all Areas</w2>
     <w3>Remove all Area Separation Lines</w3>
@@ -4218,6 +4234,9 @@
     <w41>Remove all element in workset</w41>
     <w42>Remove all Coordination models</w42>
     <m1>The model must be saved to remove external links</m1>
+    <m2>Work in family document is not provided</m2>
+    <m3>Retrieving data from a document binding map</m3>
+    <m4>Reading a family</m4>
   </mprCleaner>
   <mprColumnsReinforcement LocalName="Columns reinforcement"
                            Description="Analysis, grouping and reinforcement of columns for specified conditions"
