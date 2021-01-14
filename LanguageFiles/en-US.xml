@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.18.1.0">
+<ModPlus Name="en-US" Version="4.18.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -2940,6 +2940,7 @@
     <tab12>Search by value</tab12>
     <tab13>Search for smart entities by type</tab13>
     <tab14>Search for smart entities by the value of string and numeric properties</tab14>
+    <tab15>Leaders</tab15>
     <defl>Default</defl>
     <err1>Could not find file</err1>
     <err2>Failed to load linetype</err2>
@@ -2959,6 +2960,8 @@
     <msg14>Select Level Marks:</msg14>
     <msg15>Select reference Level Mark:</msg15>
     <msg16>Remove objects from the selection:</msg16>
+    <msg17>Specify the frame point:</msg17>
+    <msg18>Specify the leader point:</msg18>
     <wrong>Invalid object!</wrong>
     <vc1>VARIOUS</vc1>
     <vc2>UNDEFINED</vc2>
@@ -3078,13 +3081,21 @@
     <h116>Creating an smart entity based on an anonymous block describing the waterproofing line</h116>
     <h117>Waterproofing from polyline</h117>
     <h118>Convert selected polyline to waterproofing line</h118>
-    <h119>For the smart object being created that contains the displayed number, set the separator for integer and fractional parts:</h119>
+    <h119>For the smart entity being created that contains the displayed number, set the separator for integer and fractional parts:</h119>
     <h120>Search value</h120>
     <h121>Search</h121>
     <h122>Whole word</h122>
     <h123>Case sensitive</h123>
     <h124>No results were found for "{0}"</h124>
     <h125>Add all to the current selection</h125>
+    <h126>Nodal leader</h126>
+    <h127>Creating a nodal leader</h127>
+    <h128>Creating an smart entity based on an anonymous block describing the nodal leader</h128>
+    <h129>Base style for Waterproofing</h129>
+    <h130>Base style for Nodal Leader</h130>
+    <h131>Continue node numbering from created nodal leaders</h131>
+    <so0>Refresh graphics</so0>
+    <sot0>All found smart entities will have graphics regeneration</sot0>
     <so1>Select</so1>
     <sot1>All smart entities of the specified types in the current space will be selected</sot1>
     <so2>Remove data</so2>
@@ -3120,6 +3131,8 @@
     <tha1>Left</tha1>
     <tha2>Center</tha2>
     <tha3>Right</tha3>
+    <ft1>Round</ft1>
+    <ft2>Rectangular</ft2>
     <dot>Dot</dot>
     <comma>Comma</comma>
     <close>Close</close>
@@ -3194,8 +3207,7 @@
     <p39>Tilt angle of the stroke</p39>
     <p40>Indent group of strokes</p40>
     <p41>Text style</p41>
-    <d41>Text style for Section text elements</d41>
-    <d41-1>Text style for Level Mark text elements</d41-1>
+    <d41>Text style for text elements</d41>
     <p42>Middle stroke length</p42>
     <d42>The length of the middle stroke to the point of fracture</d42>
     <p43>Stroke thickness</p43>
@@ -3228,7 +3240,7 @@
     <p61>Text indent</p61>
     <p62>Vertical text offset</p62>
     <p63>Shelf ledge</p63>
-    <d63>Level Mark shelf ledge relative to the longest text</d63>
+    <d63>Shelf ledge relative to the longest text</d63>
     <p64>Show plus</p64>
     <d64>Show plus if the measured value is greater than zero. This property is ignored if the text is redefined</d64>
     <p65>Measured value</p65>
@@ -3245,6 +3257,17 @@
     <p73>Text alignment</p73>
     <d73>Horizontal text alignment</d73>
     <p74>Note alignment</p74>
+    <p75>Show asterisk</p75>
+    <d75>Adding an asterisk at the end of the main value</d75>
+    <p76>Frame height</p76>
+    <p77>Frame width</p77>
+    <p78>Shelf position</p78>
+    <p79>Node number</p79>
+    <p80>Sheet number</p80>
+    <p81>Node address</p81>
+    <p82>Frame type</p82>
+    <p83>Corner radius</p83>
+    <d83>Corner radius of the rectangular frame</d83>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
