@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.18.2.0">
+<ModPlus Name="en-US" Version="4.18.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3008,8 +3008,8 @@
     <h41>Straight axis</h41>
     <h42>Change the scale of the line type in proportion to the scale of the entity</h42>
     <h43>The scale of the line type that is set for the axis will vary in proportion to the basic scale of the axis. For example, if you set the axis scale to 1:1 and scale the line type to 2, then if you set the axis scale to 1:100, the line type scale becomes 200</h43>
-    <h44>Save the values of the last created axes and continue the values of the new created axes</h44>
-    <h45>When creating axis, the value of the first marker will be stored in the current document and automatically continue for each new axis</h45>
+    <h44>Continue values of created axes</h44>
+    <h45>When creating axes, there will be search for already created axes in the drawing and collect their values from the first axis marker, followed by sorting the values in ascending order. For the created axis, the axis marker value will be set next from the last found value</h45>
     <h46>Show helper lines</h46>
     <h47>When you select a Level Mark, auxiliary lines from the base point to the level point and from the level point to the level mark will be shown</h47>
     <h48>Break Line</h48>
@@ -3093,7 +3093,8 @@
     <h128>Creating an smart entity based on an anonymous block describing the nodal leader</h128>
     <h129>Base style for Waterproofing</h129>
     <h130>Base style for Nodal Leader</h130>
-    <h131>Continue node numbering from created nodal leaders</h131>
+    <h131>Continue the values of the nodal leaders being created</h131>
+    <h132>When creating nodal leaders, there will be a search for already created nodal leaders in the drawing and collecting their node number values, followed by sorting the values in ascending order. For the created nodal leader, the value of the node number next from the last found value will be set</h132>
     <so0>Refresh graphics</so0>
     <sot0>All found smart entities will have graphics regeneration</sot0>
     <so1>Select</so1>
