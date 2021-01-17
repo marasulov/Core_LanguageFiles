@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.18.3.0">
+<ModPlus Name="en-US" Version="4.19.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -68,6 +68,9 @@
     <h52>Calculation of the length of overlap</h52>
     <h53>When sending a request to the ModPlus web service, an access lock occurred. Contact your local network administrator for access to https://modplusservice.com services</h53>
     <h54>Open in Notepad</h54>
+    <h55>Notification settings</h55>
+    <h56>News</h56>
+    <h57>News is displayed by the auto-update module in a special pop-up window in the lower right corner of the screen. The notification settings are also available in the settings window of the auto-update module</h57>
     <m1>Enter your email address</m1>
     <m2>The email address is used as a unique key to identify your data on the server.\nIt is recommended to use the email address you provided when registering on modplus.org</m2>
     <m3>Attention! The use of social networks for authorization is possible only after linking social network accounts to a personal account on the site! Otherwise, when you try to log in through social networks, a new account will be created on the site, and you will lose your license data!</m3>
@@ -118,6 +121,27 @@
     <u38>blocked</u38>
     <u39>Personal account</u39>
     <u40>Create an account</u40>
+    <u41>Logout all devices</u41>
+    <u42>In all instances ModPlus, which use your credentials need to re-login to your account</u42>
+    <nnAll>All news</nnAll>
+    <nndAll>Show all news</nndAll>
+    <nn0>Important news is shown regardless of the settings</nn0>
+    <nn1>Platform news</nn1>
+    <nnd1>Updates of the Configurator, auto-update module, working libraries, etc.</nnd1>
+    <nn2>Updates for AutoCAD</nn2>
+    <nnd2>News about major updates to existing plugins for AutoCAD</nnd2>
+    <nn3>Releases for AutoCAD</nn3>
+    <nnd3>News about releases of new plugins for AutoCAD</nnd3>
+    <nn4>Updates for Revit</nn4>
+    <nnd4>News about major updates to existing plugins for Revit</nnd4>
+    <nn5>Releases for Revit</nn5>
+    <nnd5>News about releases of new plugins for Revit</nnd5>
+    <nn6>Updates for Renga</nn6>
+    <nnd6>News about major updates to existing plugins for Renga</nnd6>
+    <nn7>Releases for Renga</nn7>
+    <nnd7>News about releases of new plugins for Renga</nnd7>
+    <nn8>Other news</nn8>
+    <nnd8>Other news that does not fit the existing categories</nnd8>
     <b1>The number of local files:</b1>
     <b2>Open folder</b2>
     <b3>Date of the last backup:</b3>
@@ -398,6 +422,7 @@
     <h119>User "{0}" does not have access to license server "{1}"</h119>
     <h120>Check access to the license server, the entered data for identification and contact your system administrator</h120>
     <h121>Displayed plugins:</h121>
+    <h122>Notification settings</h122>
     <sks1>Invalid activation key for subscription</sks1>
     <sks2>Subscription activation key not specified</sks2>
     <sks3>Subscription expires</sks3>
@@ -649,6 +674,7 @@
     <h38>Do not show this notification again</h38>
     <h39>Support libraries have been updated</h39>
     <h40>Downloading package: {0}/{1}</h40>
+    <h41>Notification settings</h41>
     <b1>Install from file</b1>
     <b2>Install from folder</b2>
     <b3>Check all</b3>
