@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.0.0">
+<ModPlus Name="en-US" Version="4.19.1.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3565,6 +3565,7 @@
     <h10>Do not show this notification again</h10>
     <h11>If possible, move dimensional text down rather than to the side</h11>
     <h12>If an offset is required for the text of a dimension chain segment and the offset can be performed towards the adjacent segment, then the text will be moved not only to the side, but also down</h12>
+    <h13>Attention! Before running the "Reload Latest" command on the "Collaborate" tab, you must disable the plugin, as the offset of the dimension text will be applied to the dimensions obtained from the loaded changes!</h13>
     <accept>Accept</accept>
   </mprDimBias>
   <mprExcelImport LocalName="Import from Excel"
