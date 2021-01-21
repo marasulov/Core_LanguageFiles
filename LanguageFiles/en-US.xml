@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.1.0">
+<ModPlus Name="en-US" Version="4.19.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -142,6 +142,27 @@
     <nnd7>News about releases of new plugins for Renga</nnd7>
     <nn8>Other news</nn8>
     <nnd8>Other news that does not fit the existing categories</nnd8>
+    <f1>Feedback</f1>
+    <f2>Message</f2>
+    <f3>Write us whatever you want</f3>
+    <f4>Attachments</f4>
+    <f5>Attach files to message</f5>
+    <f6>Attach clipboard image to message</f6>
+    <f7>Your email</f7>
+    <f8>Enter your email if you want to get response:</f8>
+    <f9>mail@domain.com</f9>
+    <f10>Join us:</f10>
+    <f11>Receiving data</f11>
+    <f12>Send</f12>
+    <f13>Message sent</f13>
+    <f14>We will definitely read it and answer you if necessary!</f14>
+    <f15>Office files</f15>
+    <f16>Images</f16>
+    <f17>Drawings and models</f17>
+    <f18>The file was not added because the maximum attachment size was exceeded</f18>
+    <f19>File "{0}" has already been added</f19>
+    <f20>Send message to developers</f20>
+    <f21>The command allows you to quickly send a message to the developers with you suggestions, wishes or comments</f21>
     <b1>The number of local files:</b1>
     <b2>Open folder</b2>
     <b3>Date of the last backup:</b3>
@@ -3996,6 +4017,11 @@
     <h197>LOADING</h197>
     <h198>Horizontal rebars at the bottom</h198>
     <h199>Top Tied Stirrups</h199>
+    <h200>Shape hooks:</h200>
+    <h201>Set in sketch</h201>
+    <h202>Use Revit hooks</h202>
+    <h203>Select again</h203>
+    <h204>Reselect walls that were processed in the current view when using the plugin</h204>
     <g1>Girth vertical bars</g1>
     <g2>Girth horizontal bars</g2>
     <auto>Auto</auto>
