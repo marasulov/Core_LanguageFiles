@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.2.0">
+<ModPlus Name="en-US" Version="4.19.3.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3933,7 +3933,7 @@
     <h113>Displace when hit by vertical reinforcement bars</h113>
     <h114>Horizontal rebars at the top</h114>
     <h115>U-shaped rebars along vertical</h115>
-    <h116>U-shaped rebars along horizontal</h116>
+    <h116>U-shaped rebars at the top</h116>
     <h117>Detail length, mm:</h117>
     <h118>Detail step, mm:</h118>
     <h119>Default reinforcement settings for walls</h119>
@@ -3968,7 +3968,7 @@
     <h148>Anchorage length in plate, mm:</h148>
     <h149>Base plate joints</h149>
     <h150>Contiguous walls count</h150>
-    <h151>Additional vertical reinforcement rebars in ends</h151>
+    <h151>Additional vertical rebars in ends</h151>
     <h152>Indent from extreme vertical rebars</h152>
     <h153>Top diagonal reinforcement</h153>
     <h154>Bottom diagonal reinforcement</h154>
@@ -3994,8 +3994,8 @@
     <h174>L-shaped rebars (when creating bends of vertical rebars):</h174>
     <h175>U-shaped rebars in the wall ends:</h175>
     <h176>U-shaped rebars along top wall end:</h176>
-    <h177>C-shaped cross holes (stirrups):</h177>
-    <h178>S-shaped cross holes (stirrups):</h178>
+    <h177>C-shaped cross holes (stirrups). Hooks in sketch:</h177>
+    <h178>S-shaped cross holes (stirrups). Hooks in sketch:</h178>
     <h179>L-shaped rebars:</h179>
     <h180>U-shaped rebars:</h180>
     <h181>Girth rebars:</h181>
@@ -4022,6 +4022,22 @@
     <h202>Use Revit hooks</h202>
     <h203>Select again</h203>
     <h204>Reselect walls that were processed in the current view when using the plugin</h204>
+    <h205>C-shaped cross holes (stirrups). Revit hooks:</h205>
+    <h206>S-shaped cross holes (stirrups). Revit hooks:</h206>
+    <h207>Create each detail with a separate rebar</h207>
+    <h208>Do not cut rebars by openings with sizes up to (LxH):</h208>
+    <h209>Rods in a row:</h209>
+    <h210>Layout along the length of:</h210>
+    <h211>opening</h211>
+    <h212>straight bars</h212>
+    <h213>U-shaped rebars at the bottom</h213>
+    <h214>Bottom Tied Stirrups</h214>
+    <h215>Vertical Tied Stirrups</h215>
+    <h216>Joints length, mm:</h216>
+    <h217>Move the outermost vertical rebars of the background reinforcement when hitting the U-shaped rebar</h217>
+    <h218>Additional vertical rebars near intersections</h218>
+    <h219>Snap to intersection face (center of rebar):</h219>
+    <hook>Hook:</hook>
     <g1>Girth vertical bars</g1>
     <g2>Girth horizontal bars</g2>
     <auto>Auto</auto>
@@ -4030,12 +4046,13 @@
     <npa1>assume a floor conditionally existing</npa1>
     <npa2>calculate overlap length from the top of the wall</npa2>
     <jtd1>Joints of background vertical rebars are not created. Rebars are cut on the top of the wall according to the specified value of cover from the rebars ends</jtd1>
-    <jtd2>Created straight joints of vertical rebars. The length of the anchorage is set from the top of the overlying floor or from the top of the wall. When the width of the overlying wall decreases, the reinforcement is bent (if floor exist)</jtd2>
+    <jtd2>Created straight joints of vertical rebars. Overlap length is set from the top of the overlying floor or from the top of the wall. When the width of the overlying wall decreases, the reinforcement is bent (if floor exist)</jtd2>
     <jtd3>Vertical bar releases are created by analogy with straight releases, but with different anchorage lengths</jtd3>
     <jtd4>Joints of vertical rebars with anchoring in the overlying floor are created. The length of the anchorage is counted from the side face of the wall. If the bends of the rebars can not be performed in two directions, the rebars are bent in one direction in different levels of the floor</jtd4>
-    <jtd5>Created straight joints of vertical rebars. The anchoring length is set from the top of the overlying floor or from the top of the wall</jtd5>
+    <jtd5>Created straight joints of vertical rebars. Overlap length is set from the top of the overlying floor or from the top of the wall</jtd5>
     <jtd6>Straight joints of vertical rebars in the form of a "bottle" are created - the bends are bent to the center of intersection to the diameter of the rebar. The anchoring length is set from the top of the overlying floor or from the top of the wall</jtd6>
     <jtd7>Joints are created in the overlying floor in the form of separate L-shaped bars. The first anchoring length - the length of the anchoring of the rods into the floor - is counted from the side face of the wall. The second anchoring length - the length of the anchoring of the rods into the wall - is counted from the top edge of the wall. If the bends of the rebars can not be performed in two directions, the rebars are bent in one direction in different levels of the floor</jtd7>
+    <jtd8>Created straight joints of vertical rebars without taking into account the overlying elements</jtd8>
     <i1>1. Corner</i1>
     <i2>2. T-shaped</i2>
     <i3>3. Cross</i3>
@@ -4180,7 +4197,7 @@
     <t59>When you turn on the "Breaking in" option, each first pair of joints along the wall will be created with the first anchoring length, every second pair - with the second anchoring length</t59>
     <t60>If the joints exceed the height of the overlying wall, they will be cut off along the upper face of the wall, taking into account the specified ends cover of the rebars</t60>
     <t61>The selection variant applies to the selection of foundation plates</t61>
-    <t62>If the creation of U-shaped rebars at the ends of the walls is turned on and the extreme vertical rebars fall onto the U-shaped rebars, these vertical rebars will be shifted to the beginning of the bending of U-shaped rebars</t62>
+    <t62>The vertical rebar is moved to the place where the U-shaped rebar bend begins, which is obtained by adding the values of the cover layer of the horizontal reinforcement from the ends, the diameter of the U-shaped rebar and the standard bending diameter of the U-shaped rebar</t62>
     <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
     <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
@@ -4203,10 +4220,11 @@
     <re12>Error while creating vertical bars for the frame of the opening in the wall id={0}:</re12>
     <re13>Error while creating horizontal bars for the frame of the opening in the wall id={0}:</re13>
     <re14>Error while creating U-shaped bars of the opening frame along the vertical in the wall id={0}</re14>
-    <re15>Error while creating U-shaped bars of the opening frame along the horizontal in the wall id={0}</re15>
+    <re15>Error while creating U-shaped bars of the opening frame along the horizontal (on top) in the wall id={0}</re15>
     <re16>Error while creating diagonal rebars in the frame of opening in the wall id={0}:</re16>
     <re17>Error while creating joints from slab id={0} to wall id={1}:</re17>
     <re18>Error while creating stirrups at the top of the frame of the opening in the wall id={0}:</re18>
+    <re19>Error while creating U-shaped bars of the opening frame along the horizontal (on bottom) in the wall id={0}</re19>
   </mprWallsReinforcement>
   <mrBatchSheetExport LocalName="Batch Sheets Export"
                       Description="Plugin allows you to export all specified sheets to dwg/dxf">
