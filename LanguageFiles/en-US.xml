@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.3.0">
+<ModPlus Name="en-US" Version="4.19.4.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3022,7 +3022,7 @@
     <h8>can be changed in the plugin</h8>
     <h9>settings</h9>
     <h10>plugins</h10>
-    <h11>Properties of ModPlus objects</h11>
+    <h11>ESKD properties</h11>
     <h12>System</h12>
     <h13>New User Style</h13>
     <h14>Style editor</h14>
@@ -3078,7 +3078,7 @@
     <h64>Content</h64>
     <h65>Creating a straight axis according to GOST 21.101-97</h65>
     <h66>Creating an smart entity based on an anonymous block describing the straight axis in accordance with GOST 21.101-97, by specifying two points</h66>
-    <h67>Edit Axis values</h67>
+    <h67></h67>
     <h68>Basic style for Straight Axis</h68>
     <h69>The selected style will be permanently deleted! Continue?</h69>
     <h70>Style group</h70>
@@ -3103,7 +3103,7 @@
     <h89>When you select a section, an auxiliary line will be displayed that passes through all points of the section</h89>
     <h90>Dependent text movement</h90>
     <h93>Restore text position</h93>
-    <h94>Edit Section values</h94>
+    <h94></h94>
     <h95>MP:Create analog</h95>
     <h96>Base style for Section</h96>
     <h97>When you move one of the texts of Section, the second text will automatically shift to the same distance</h97>
@@ -3118,7 +3118,7 @@
     <h106>Creating a elevation in accordance with GOST 21.101-97</h106>
     <h107>Creating an smart entity based on an anonymous block describing the elevation according to GOST 21.101-97</h107>
     <h108>Base style for Level Mark</h108>
-    <h109>Edit Level Mark values</h109>
+    <h109></h109>
     <h110>Align Level Marks</h110>
     <h111>Vertical alignment of Level Marks</h111>
     <h112>Combining the starting points</h112>
@@ -3142,6 +3142,18 @@
     <h130>Base style for Nodal Leader</h130>
     <h131>Continue the values of the nodal leaders being created</h131>
     <h132>When creating nodal leaders, there will be a search for already created nodal leaders in the drawing and collecting their node number values, followed by sorting the values in ascending order. For the created nodal leader, the value of the node number next from the last found value will be set</h132>
+    <h133>Secant nodal leader</h133>
+    <h134>Creating a secant nodal leader</h134>
+    <h135>Creating an smart entity based on an anonymous block describing the secant nodal leader</h135>
+    <h136>Continue the values of the secant nodal leaders being created</h136>
+    <h137>When creating secant nodal leaders, there will be a search for already created secant nodal leaders in the drawing and collecting their node number values, followed by sorting the values in ascending order. For the created secant nodal leader, the value of the node number next from the last found value will be set</h137>
+    <h138>Base style for Secant Nodal Leader</h138>
+    <h139>Weld joint</h139>
+    <h140>Creating of a seam symbol for welded joints in accordance with GOST 21.502-2016</h140>
+    <h141>Creating an smart entity based on an anonymous block describing the seam of welded joints in accordance with GOST 21.502-2016</h141>
+    <h142>Base style for seam symbol for welded joints</h142>
+    <h143>Weld joint from polyline</h143>
+    <h144>Convert selected polyline into a line for marking the weld seam in accordance with GOST 21.502-2016</h144>
     <so0>Refresh graphics</so0>
     <sot0>All found smart entities will have graphics regeneration</sot0>
     <so1>Select</so1>
@@ -3181,6 +3193,22 @@
     <tha3>Right</tha3>
     <ft1>Round</ft1>
     <ft2>Rectangular</ft2>
+    <wjt1>Butt factory solid on the visible side</wjt1>
+    <wjt2>Butt factory solid on the invisible side</wjt2>
+    <wjt3>Butt mounting solid from the visible side</wjt3>
+    <wjt4>Butt mounting solid from the invisible side</wjt4>
+    <wjt5>Butt factory intermittent on the visible side</wjt5>
+    <wjt6>Butt factory intermittent on the invisible side</wjt6>
+    <wjt7>Butt mounting intermittent from the visible side</wjt7>
+    <wjt8>Butt mounting intermittent from the invisible side</wjt8>
+    <wjt9>Corner factory solid on the visible side</wjt9>
+    <wjt10>Corner factory solid on the invisible side</wjt10>
+    <wjt11>Corner mounting solid from the visible side</wjt11>
+    <wjt12>Corner mounting solid from the invisible side</wjt12>
+    <wjt13>Corner factory intermittent on the visible side</wjt13>
+    <wjt14>Corner factory intermittent on the invisible side</wjt14>
+    <wjt15>Corner mounting intermittent from the visible side</wjt15>
+    <wjt16>Corner mounting intermittent on the invisible side</wjt16>
     <dot>Dot</dot>
     <comma>Comma</comma>
     <close>Close</close>
@@ -3316,6 +3344,24 @@
     <p82>Frame type</p82>
     <p83>Corner radius</p83>
     <d83>Corner radius of the rectangular frame</d83>
+    <p84>Text is always horizontal</p84>
+    <d84>Leader with text will maintain a horizontal position after rotating the object with the "Rotate" command</d84>
+    <p85>Hide background</p85>
+    <d85>Adding wipeout along the text outline with a specified offset. The display of frames for wipeouts is controlled by the WIPEOUTFRAME and FRAME system variables.</d85>
+    <p86>Wipeout offset</p86>
+    <p87>Secant element thickness</p87>
+    <p88>Secant element length</p88>
+    <p89>Weld joint type</p89>
+    <p90>Tick mark step</p90>
+    <p91>Tick mark half-height</p91>
+    <p92>Large cross step</p92>
+    <p93>Small cross step</p93>
+    <p94>Large cross half-height</p94>
+    <p95>Small cross height</p95>
+    <p96>Series length</p96>
+    <p97>Space length</p97>
+    <p98>Interval between series</p98>
+    <p99>Small tick mark height</p99>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
                       Description="Search for schedules in a project that contain the specified value"
