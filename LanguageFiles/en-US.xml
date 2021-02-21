@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.4.0">
+<ModPlus Name="en-US" Version="4.19.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3576,6 +3576,8 @@
     <h29>Distance between points is too small!</h29>
     <h30>A configuration with this name already exists! Please specify a different configuration name!</h30>
     <h31>Note</h31>
+    <h32>Specify the location of the dimension line</h32>
+    <h33>Pick a point to place the dimension line</h33>
     <attention>Attention!</attention>
     <edit>Edit</edit>
     <create>Create</create>
