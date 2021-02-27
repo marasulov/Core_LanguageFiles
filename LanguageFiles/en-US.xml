@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.6.0">
+<ModPlus Name="en-US" Version="4.19.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3695,7 +3695,7 @@
                              Description="Internal dimensions on the floor plan"
                              FullDescription="Plug processes only orthogonally positioned elements (arranged vertically or horizontally in a plane) without arc segments in geometry">
     <h1>Internal dimensions on plan</h1>
-    <h2>Axis dimensioning</h2>
+    <h2>Grids dimensioning</h2>
     <h3>Openings dimensioning</h3>
     <h4>Indentation of the dimension chain:</h4>
     <h5>Handle walls with a thickness of</h5>
