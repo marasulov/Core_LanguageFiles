@@ -4556,12 +4556,22 @@
     <h167>Binding bends to the bottom of the floor (by the center of the rebar)</h167>
     <h173>Straight rebars:</h173>
     <h174>L-shaped rebars (when creating bends of vertical rebars):</h174>
-    <h177>C-shaped cross holes (stirrups):</h177>
-    <h178>S-shaped cross holes (stirrups):</h178>
-    <h181>Girth rebars:</h181>
+    <h177>C-shaped cross holes (stirrups). Hooks in sketch:</h177>
+    <h178>S-shaped cross holes (stirrups). Hooks in sketch:</h178>
+    <h181>Rectangular stirrups:</h181>
+    <h182>Spiral rebars:</h182>
     <h183>Reset all values ​​to "Auto"</h183>
     <h184>Preferred Rebar Shapes</h184>
     <h185>Failed to set parameter values ​​for some elements. Below are the elements codes (id), parameter names, and set values:</h185>
+    <h186>Select again</h186>
+    <h187>Reselect columns that were processed in the current view when using the plugin</h187>
+    <h188>Indent from the bottom of the column, mm:</h188>
+    <h189>Radius in:</h189>
+    <h190>Specify a rebar shape parameter that defines the radius of the spiral</h190>
+    <h191>Spiral pitch:</h191>
+    <h205>C-shaped cross holes (stirrups). Revit hooks:</h205>
+    <h206>S-shaped cross holes (stirrups). Revit hooks:</h206>
+    <hook>Hook:</hook>
     <err1>No overlying floor found or distance to overlying column is 0</err1>
     <npa1>do not create joint</npa1>
     <npa2>create straight joints</npa2>
@@ -4622,6 +4632,9 @@
     <e4>Failed to get main or union solid</e4>
     <e5>Failed to get the top or bottom face</e5>
     <e6>Failed to determine transverse profile</e6>
+    <e7>The name of the shape used to create the spiral reinforcement is not specified. Use the Preferred Rebar Shapes window to specify the shape of the spiral rebar</e7>
+    <e8>The specified spiral reinforcement shape was not found in the current document</e8>
+    <e9>The specified parameter that specifies the radius of the spiral reinforcement was not found in the document</e9>
     <t7>The group contains columns whose reinforcement settings have been manually edited and differ from the group reinforcement settings</t7>
     <t10>Check all groups</t10>
     <t11>Uncheck all groups</t11>
