@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.7.0">
+<ModPlus Name="en-US" Version="4.19.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -1307,11 +1307,11 @@
   </mpRotAtt>
   <mpLayerAuto LocalName="Auto layers"
                Description="Plugin is used to automatically add a layer to the created objects"
-               FullDescription="Plugin processes the creation, copying, pasting and other commands when working with AutoCAD objects - dimensions, text, multileaders, hatching, tables, viewports, lines, polylines, xLines, rays, circles, ellipses, splines, arcs - and sets the layer specified in the plugin settings for them. There is an option to specify the specified layers for the selected objects">
+               FullDescription="Plugin processes the creation, copying, pasting and other commands when working with AutoCAD objects - dimensions, text, multileaders, hatching, tables, viewports, lines, polylines, xLines, rays, circles, ellipses, splines, arcs, blocks - and sets the layer specified in the plugin settings for them. There is an option to specify the specified layers for the selected objects. There is an opportunity to set block layers by name">
     <save>Save</save>
-    <h1>AUTO LAYERS</h1>
-    <h2>Set the layers</h2>
-    <h3>Other settings are available in the full version</h3>
+    <h1>Layers for entities</h1>
+    <h2>Layer assignment</h2>
+    <h3>Available in the full version of the plugin</h3>
     <h4>For dimensions:</h4>
     <h5>For text:</h5>
     <h6>For multileaders:</h6>
@@ -1332,8 +1332,8 @@
     <h21>Save the settings for the current drawing and close the window</h21>
     <h22>Apply to selected</h22>
     <h23>Apply settings to selected objects</h23>
-    <h24>Disable</h24>
-    <h25>Enable</h25>
+    <h24>Layers for blocks by name</h24>
+    <h25>The limited version is available to three positions</h25>
     <h26>Default Layer</h26>
     <h27>You did not enter command!</h27>
     <h28>Command</h28>
@@ -1351,6 +1351,15 @@
     <h40>For ellipses:</h40>
     <h41>For splines:</h41>
     <h42>For arcs:</h42>
+    <h43>For blocks:</h43>
+    <h44>Layer settings for blocks by name are not saved in the drawing, as layer settings for entities, but in a user configuration file</h44>
+    <h45>Block name:</h45>
+    <h46>Layer:</h46>
+    <h47>Full match of block name</h47>
+    <h48>Partial match of block name</h48>
+    <h49>Save layer settings for blocks by name to xml file</h49>
+    <h50>Load layer settings for blocks by names from xml file</h50>
+    <h51>The selected file is not a file for storing layer settings for blocks by name</h51>
   </mpLayerAuto>
   <mpFormats LocalName="Formats"
              Description="Plugin of inserting in the drawing formats according to GOST 2.301-68/ISO 216"
