@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.8.0">
+<ModPlus Name="en-US" Version="4.19.9.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -3842,6 +3842,7 @@
     <LoadCases>Structural Load Cases</LoadCases>
     <Loads>Structural Loads</Loads>
     <GenericModels>Generic Models</GenericModels>
+    <Reinforcement>Reinforcement</Reinforcement>
     <h1>Notching distance</h1>
     <h2>Notching distance, mm</h2>
     <h3>Automatically change the Notching distance for the elements of the Structural framing</h3>
@@ -3860,6 +3861,18 @@
     <h16>Toggle mode of 2D grids in 3D, 3D grids - in 2D</h16>
     <h17>Rebars outside host</h17>
     <h18>For rebars, the search is performed in two ways: if the layout type is set to “Single”, then a check is made for the location of the rebar in the host. For other variants of the layout type, a check is made for the protrusion of the reinforcement from the host. In the case of checking the reinforcement in the system (for example, area reinforcement) check is performed on the protrusion of the reinforcement from the host</h18>
+    <h19>Grid bubbles visibility</h19>
+    <h20>Toggle on/off the bubble visibility of the selected grids or grids on the view</h20>
+    <h21>Show bubbles at the start</h21>
+    <h22>Show bubbles at the end</h22>
+    <h23>Hide bubbles at the start</h23>
+    <h24>Hide bubbles at the end</h24>
+    <h25>Invert the display of bubbles</h25>
+    <h26>Selected grids</h26>
+    <h27>Grids on view</h27>
+    <h28>Select grids</h28>
+    <h29>Selecting annotations</h29>
+    <h30>Quick selection of specific annotations by the frame: dimensions, tags, text</h30>
     <m1>It is not possible to change the visibility for a category in the current view, as the view template is applied to the view</m1>
     <m2>No rebars were found in the current project</m2>
     <m3>Found in current project:</m3>
