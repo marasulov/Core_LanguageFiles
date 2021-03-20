@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.19.10.0">
+<ModPlus Name="en-US" Version="4.20.0.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4144,15 +4144,6 @@
     <m1>Enter a value from</m1>
     <m2>to</m2>
     <m3>To run the command, go to the floor plan</m3>
-    <m4>Deformed deformation type rebars</m4>
-    <m5>Plain deformation type rebars</m5>
-    <m6>For rebar</m6>
-    <m7>value of the property "Standard bend diameter"</m7>
-    <m8>does not comply with the norms of SP 63.13330.2012</m8>
-    <m9>The minimum value of the bending diameter for the rebar</m9>
-    <m10>with diameter</m10>
-    <m11>must be:</m11>
-    <m12>The value of the property will be changed</m12>
     <m13>Reinforcement cover</m13>
     <m14>Up to</m14>
     <m15>From</m15>
@@ -4171,7 +4162,7 @@
     <m28>Select foundation plates</m28>
     <m29>The selected foundation plate (id: {0}) has no mates with selected walls</m29>
     <m30>Attention! Reinforcement settings for foundation plate joint bars will be reset! Continue?</m30>
-    <m31>Bend radius of rebar is less than the minimum allowable according to SP 63.13330.2012</m31>
+    <m31>Bend radius of rebar is less than the minimum allowable</m31>
     <m32>The specified reinforcement settings will make it impossible to model the reinforcement details!</m32>
     <m33>Attention! Repeated analysis will clear the current list of groups and the list of foundation plates! Repeat analysis?</m33>
     <p1>Search is not processed walls intersecting with the selected walls</p1>
@@ -4567,10 +4558,15 @@
     <h107>Anchoring length per column, mm</h107>
     <h108>Overlap length in the overlying column, mm</h108>
     <h109>The calculated overlap length is multiplied by 2</h109>
+    <h110>Create Reinforcement</h110>
     <h119>Default reinforcement settings</h119>
+    <h127>FP joint bars</h127>
+    <h135>Joints type:</h135>
     <h138>Reinforcement cover:</h138>
     <h141>Do not close the window after creating reinforcement</h141>
+    <h144>Detail offset from base plate sole:</h144>
     <h147>Reset</h147>
+    <h148>Anchorage length in plate, mm:</h148>
     <h160>Joints type:</h160>
     <h161>Nominal floor thickness, mm:</h161>
     <h165>If the floor above the column is missing, then</h165>
@@ -4580,8 +4576,10 @@
     <h174>L-shaped rebars (when creating bends of vertical rebars):</h174>
     <h177>C-shaped cross holes (stirrups). Hooks in sketch:</h177>
     <h178>S-shaped cross holes (stirrups). Hooks in sketch:</h178>
+    <h179>L-shaped rebars:</h179>
+    <h180>U-shaped rebars:</h180>
     <h181>Rectangular stirrups:</h181>
-    <h182>Spiral rebars:</h182>
+    <h182>L-shaped rebars with big bend:</h182>
     <h183>Reset all values ​​to "Auto"</h183>
     <h184>Preferred Rebar Shapes</h184>
     <h185>Failed to set parameter values ​​for some elements. Below are the elements codes (id), parameter names, and set values:</h185>
@@ -4591,8 +4589,13 @@
     <h189>Radius in:</h189>
     <h190>Specify a rebar shape parameter that defines the radius of the spiral</h190>
     <h191>Spiral pitch:</h191>
+    <h193>First overlap length, mm:</h193>
+    <h194>Second overlap length, mm:</h194>
+    <h195>Calculate overlap length</h195>
+    <h196>Overlap length, mm:</h196>
     <h205>C-shaped cross holes (stirrups). Revit hooks:</h205>
     <h206>S-shaped cross holes (stirrups). Revit hooks:</h206>
+    <h207>Spiral rebars:</h207>
     <hook>Hook:</hook>
     <err1>No overlying floor found or distance to overlying column is 0</err1>
     <npa1>do not create joint</npa1>
@@ -4614,13 +4617,6 @@
     <m3>to</m3>
     <m4>Deformed deformation type rebars</m4>
     <m5>Plain deformation type rebars</m5>
-    <m6>For rebar</m6>
-    <m7>value of the property "Standard bend diameter"</m7>
-    <m8>does not comply with the norms of SP 63.13330.2012</m8>
-    <m9>The minimum value of the bending diameter for the rebar</m9>
-    <m10>with diameter</m10>
-    <m11>must be:</m11>
-    <m12>The value of the property will be changed</m12>
     <m13>Reinforcement cover</m13>
     <m20>The list of columns contains columns whose reinforcement settings have been changed manually and differ from the settings of the reinforcement group</m20>
     <m23>Reinforcement settings copied</m23>
@@ -4648,6 +4644,7 @@
     <p8>Removing the reinforcement created earlier</p8>
     <p9>Calculation and modeling of longitudinal reinforcement</p9>
     <p10>Calculation and modeling of transverse reinforcement</p10>
+    <p14>Calculation and modeling of joints from the plate</p14>
     <e1>Column analysis errors</e1>
     <e2>Failed to initialize column</e2>
     <e3>Failed to get solids</e3>
@@ -4677,6 +4674,7 @@
     <re1>An error occurred while creating longitudinal reinforcement for column id = {0}:</re1>
     <re2>An error occurred while calculating the location points of the transverse reinforcement for column id = {0}:</re2>
     <re3>An error occurred while creating a transverse reinforcement part of type "{0}" in column id = {1}:</re3>
+    <re17>Error while creating joints from slab id={0} to column id={1}:</re17>
   </mprColumnsReinforcement>
   <mpStripMtext LocalName="Clear formatting"
                 Description="Remove specified formatting from multiline text"
