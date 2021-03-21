@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - символ перехода на новую строку для xaml -->
-<ModPlus Name="ru-RU" Version="4.20.0.0">
+<ModPlus Name="ru-RU" Version="4.20.1.0">
   <ModPlusAPI>
     <msg1>Не удалось создать объект Word! Убедитесь, что установлен Microsoft Office</msg1>
     <msg2>Не найдено числовых значений!</msg2>
@@ -3627,6 +3627,7 @@
     <e27>Импосты витража</e27>
     <e28>IFC арматура</e28>
     <e29>Фундаментные плиты</e29>
+    <e30>Линии детализации</e30>
     <n1>Только на разрезах и фасадах</n1>
   </mprDimByLine>
   <mprDimBias LocalName="Смещение размеров"
