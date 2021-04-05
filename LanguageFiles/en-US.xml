@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.20.1.0">
+<ModPlus Name="en-US" Version="4.20.2.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -493,7 +493,7 @@
     <tt17>Update the list of plugins</tt17>
     <tt18>The list displays only those versions of the specified product that are in the PC</tt18>
     <tt19>Install all plugins currently visible in the list</tt19>
-    <tt20>Connect to ModPlus plugin</tt20>
+    <tt20>Connect to ModPlus</tt20>
     <tt21>Watch the video for the plugin</tt21>
     <tt22>Go to the store to purchase the full version of the plugin</tt22>
     <tt23>Download and install the plugin</tt23>
@@ -2790,7 +2790,6 @@
     <msg45>Check the "Current file" for dwg-file, however, it failed to recognize the current location of the file directory</msg45>
     <msg46>Specify the dwg file to copy the block</msg46>
     <msg47>Selecting a file to add a block</msg47>
-    <msg48>The selected file must be saved in AutoCAD 2013 version!</msg48>
     <msg49>The specified file must be located in a subfolder of the folder</msg49>
     <msg50>Create a new dwg database file</msg50>
     <msg51>Do not create a file in the root of the</msg51>
@@ -4541,7 +4540,7 @@
     <h84>Cover from the rebars ends, mm:</h84>
     <h85>The main step of the transverse reinforcement, mm:</h85>
     <h86>Indent from the top of the column, mm:</h86>
-    <h87>Thickening of longitudinal reinforcement in the upper zone of the column</h87>
+    <h87>Thickening of transverse reinforcement in the upper zone of the column</h87>
     <h88>Thickening distance, mm:</h88>
     <h89>Thickening distance, fraction:</h89>
     <h90>Thickening of longitudinal reinforcement in the lower zone of the column</h90>
@@ -4669,9 +4668,11 @@
     <t42>Load the reinforcement settings from the xml file and set it for the current group</t42>
     <t43>Attention! The surface appearance of the reinforcement may depend on the class of reinforcement, diameter or other values that are not considered by the program. Read the normative documentation</t43>
     <t44>α is a coefficient that takes into account the effect on the anchoring length of the stress state of concrete and reinforcement and the structural solution of the element in the anchoring zone. When anchoring rods of a periodic profile with straight ends (straight anchoring) or smooth reinforcement with hooks or loops without additional anchoring devices for stretched rods, take α = 1.0, and for compressed ones - α = 0.75. According to clause 10.3.30 of SP 63.13330, the coefficient α may be increased to 2.0</t44>
+    <t53>Reset all values ​​of the current default reinforcement settings to the default values ​​set in the plugin</t53>
     <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
     <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
     <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
+    <t66>Save current reinforcement settings as default reinforcement settings</t66>
     <re1>An error occurred while creating longitudinal reinforcement for column id = {0}:</re1>
     <re2>An error occurred while calculating the location points of the transverse reinforcement for column id = {0}:</re2>
     <re3>An error occurred while creating a transverse reinforcement part of type "{0}" in column id = {1}:</re3>
@@ -5750,4 +5751,147 @@
     <sv3>Custom selection with filter</sv3>
     <sv4>Custom selection without filter </sv4>
   </mprCopyParameterValues>
+  <mprBeamsReinforcement LocalName="Beams reinforcement"
+                         Description="Analysis, grouping and reinforcement of beams for specified conditions"
+                         FullDescription="Plugin allows you to process both individually selected beams and all beams in a view or in a document. Transverse reinforcement can be assembled using a variety of rebar shape options. Plugin can work even on an empty template">
+    <h1>Selection variants</h1>
+    <h2>Pick beams</h2>
+    <h3>Select all beams on current view</h3>
+    <h4>Select all beams in document</h4>
+    <h5>Reinforcement is possible only in structural beams</h5>
+    <h6>Select</h6>
+    <h7>Analyze</h7>
+    <h8>Total selected columns:</h8>
+    <h9>Of these successfully analyzed:</h9>
+    <h10>Create reinforcement</h10>
+    <h11>Group reinforcement settings</h11>
+    <h12>Grouping</h12>
+    <h13>By Level</h13>
+    <h15>Group</h15>
+    <h16>Count</h16>
+    <h17>Profile</h17>
+    <h18>Levels</h18>
+    <h20>Beams in group:</h20>
+    <h21>Level</h21>
+    <h23>Group by:</h23>
+    <h24>Section</h24>
+    <h25>Longitudinal reinforcement</h25>
+    <h27>Working reinforcement cover:</h27>
+    <h28>Cover for the working reinforcement shall be not less than 20 mm or not less than the diameter of the reinforcement</h28>
+    <h29>The diameter of the longitudinal working rebars of precast columns it is recommended to appoint not less than 16 mm. For monolithic columns and for structural reinforcement may be applied bar diameter 12 mm</h29>
+    <h30>Parameter</h30>
+    <h31>The number of rods in width:</h31>
+    <h32>The number of rods in height:</h32>
+    <h33>Edit spaces</h33>
+    <h34>The cross-sectional area of ​​the beam, sq.mm:</h34>
+    <h35>Cross-sectional area of ​​reinforcement, sq.mm:</h35>
+    <h36>Reinforcement percentage:</h36>
+    <h37>The cross-sectional area of ​​longitudinal reinforcement is not recommended to assign more than 5% of the cross-sectional area of ​​the beam</h37>
+    <h38>Spaces between the edges of the rods along the width of the column:</h38>
+    <h39>Spaces between the edges of the rods along the depth of the column:</h39>
+    <h40>Attention! When changing the diameter, cover or number of rods, the distances between the rods will be reset to equivalent values!</h40>
+    <h41>Longitudinal reinforcement joints</h41>
+    <h42>Transverse reinforcement (layout)</h42>
+    <h43>Transverse reinforcement (shapes)</h43>
+    <h50>Settings</h50>
+    <h51>PLUGIN WINDOW:</h51>
+    <h52>Over the windows</h52>
+    <h53>DISPLAY IN THE MODEL:</h53>
+    <h54>Scaling factor:</h54>
+    <h55>REINFORCEMENT BY DEFAULT:</h55>
+    <h56>Displacement</h56>
+    <h57>Girth</h57>
+    <h58>Remove selected shape</h58>
+    <h59>Specify type of shapes hooks, parameters, diameter and rebar bar type of rebar that will be set by default for added transverse reinforcement shapes</h59>
+    <h60>Step of transverse reinforcement in areas of thickening, mm:</h60>
+    <h61>Calculation of anchoring by SP 52-101-2003</h61>
+    <h72>Failed to add form to current layout: no place available to place the form!</h72>
+    <h73>Beam reinforcement settings</h73>
+    <h74>Replace with reinforcement settings of the group</h74>
+    <h75>Leave the reinforcement settings</h75>
+    <h76>Beams reinforcement</h76>
+    <h77>Rebar bar type:</h77>
+    <h78>Diameter, mm:</h78>
+    <h79>Shape hooks by default:</h79>
+    <h80>Shape hooks:</h80>
+    <h81>set in sketch</h81>
+    <h82>use Revit hooks</h82>
+    <h85>The main step of the transverse reinforcement, mm:</h85>
+    <h86>Indent from the end of the beam, mm:</h86>
+    <h87>Thickening of transverse reinforcement</h87>
+    <h88>Thickening distance, mm:</h88>
+    <h89>Thickening distance, fraction:</h89>
+    <h92>Attention! The number and position of longitudinal reinforcement bars, as well as the layout of the transverse reinforcement are not saved and not copied!</h92>
+    <h97>Параметр</h97>
+    <h96>By parameter:</h96>
+    <h98>Distance between the centers of the rods</h98>
+    <h141>Do not close the window after creating reinforcement</h141>
+    <h147>Reset</h147>
+    <h184>Preferred Rebar Shapes</h184>
+    <h186>Select again</h186>
+    <h187>Reselect beams that were processed in the current view when using the plugin</h187>
+    <m1>Pick beams</m1>
+    <m2>Enter a value from</m2>
+    <m3>to</m3>
+    <m4>Deformed deformation type rebars</m4>
+    <m5>Plain deformation type rebars</m5>
+    <m13>Reinforcement cover</m13>
+    <m20>The list of beams contains beams whose reinforcement settings have been changed manually and differ from the settings of the reinforcement group</m20>
+    <m23>Reinforcement settings copied</m23>
+    <m25>No groups were selected for creating reinforcement!</m25>
+    <m27>Attention! No loaded rebar shapes found in the current project! In this case, the rebar shapes created during the operation of the plugin cannot be opened in the Family Editor! It is recommended that before using the plugin, load the rebar shapes into the project!\nPerform reinforcement, despite the missing rebar shapes?</m27>
+    <create>Create</create>
+    <rn>Rebar ⌀</rn>
+    <mm>mm</mm>
+    <full>Available in full version!</full>
+    <full2>Limited version only has one form available</full2>
+    <accept>Accept</accept>
+    <cancel>Cancel</cancel>
+    <yes>Yes</yes>
+    <no>No</no>
+    <saved>Saved</saved>
+    <parameters>Parameters</parameters>
+    <name>Name</name>
+    <value>Value</value>
+    <copy>Copy</copy>
+    <paste>Paste</paste>
+    <auto>Auto</auto>
+    <add>Add</add>
+    <p1>Analysis of the beam:</p1>
+    <p2>Search for related elements:</p2>
+    <pt1>Taurus</pt1>
+    <pt2>I-Beam</pt2>
+    <pt3>Rectangle</pt3>
+    <pt4>Square</pt4>
+    <pt5>Undefined</pt5>
+    <pt6>Trapezoid</pt6>
+    <pt7>L-Beam</pt7>
+    <e1>Beam analysis errors</e1>
+    <e2>Failed to initialize column</e2>
+    <e3>Failed to get solids</e3>
+    <e4>Failed to get main or union solid</e4>
+    <e6>Failed to determine transverse profile</e6>
+    <p1>Analysis of the beam:</p1>
+    <p2>Search for related elements:</p2>
+    <p8>Removing the reinforcement created earlier</p8>
+    <p9>Calculation and modeling of longitudinal reinforcement</p9>
+    <p10>Calculation and modeling of transverse reinforcement</p10>
+    <t7>The group contains beams whose reinforcement settings have been manually edited and differ from the group reinforcement settings</t7>
+    <t10>Check all groups</t10>
+    <t11>Uncheck all groups</t11>
+    <t12>The beam reinforcement settings have been edited manually and differ from the group reinforcement settings</t12>
+    <t13>Edit the reinforcement settings of the selected beam</t13>
+    <t14>Replace column reinforcement settings from the group</t14>
+    <t15>Display in the model the previous beam in the list</t15>
+    <t16>Display in the model the beam selected in the list</t16>
+    <t17>Display in the model the next beam in the list</t17>
+    <t40>Copy the reinforcement settings of the current group to all selected groups</t40>
+    <t41>Save the reinforcement settings of current group in the xml file</t41>
+    <t42>Load the reinforcement settings from the xml file and set it for the current group</t42>
+    <t53>Reset all values ​​of the current default reinforcement settings to the default values ​​set in the plugin</t53>
+    <t66>Save current reinforcement settings as default reinforcement settings</t66>
+    <re1>An error occurred while creating longitudinal reinforcement for beam id = {0}:</re1>
+    <re2>An error occurred while calculating the location points of the transverse reinforcement for beam id = {0}:</re2>
+    <re3>An error occurred while creating a transverse reinforcement part of type "{0}" in beam id = {1}:</re3>
+  </mprBeamsReinforcement>
 </ModPlus>
