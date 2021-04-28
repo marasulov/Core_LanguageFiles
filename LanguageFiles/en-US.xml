@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.20.4.0">
+<ModPlus Name="en-US" Version="4.20.5.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -4120,6 +4120,7 @@
     <h217>Move the outermost vertical rebars of the background reinforcement when hitting the U-shaped rebar</h217>
     <h218>Additional vertical rebars near intersections</h218>
     <h219>Snap to intersection face (center of rebar):</h219>
+    <h220>Only for walls crossed at right angles</h220>
     <hook>Hook:</hook>
     <g1>Girth vertical bars</g1>
     <g2>Girth horizontal bars</g2>
