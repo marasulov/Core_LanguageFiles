@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.20.6.0">
+<ModPlus Name="en-US" Version="4.20.7.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5800,6 +5800,7 @@
     <h41>Longitudinal reinforcement joints</h41>
     <h42>Transverse reinforcement (layout)</h42>
     <h43>Transverse reinforcement (shapes)</h43>
+    <h44>Bend upper rods in case of insufficient anchoring distance</h44>
     <h50>Settings</h50>
     <h51>PLUGIN WINDOW:</h51>
     <h52>Over the windows</h52>
@@ -5829,7 +5830,10 @@
     <h87>Thickening of transverse reinforcement</h87>
     <h88>Thickening distance, mm:</h88>
     <h89>Thickening distance, fraction:</h89>
+    <h90>Thickening at the ends of the beam</h90>
+    <h91>Thickening of reinforcement at the ends of the beam in the absence of underlying elements</h91>
     <h92>Attention! The number and position of longitudinal reinforcement bars, as well as the layout of the transverse reinforcement are not saved and not copied!</h92>
+    <h93>Take into account underlying and end columns and walls</h93>
     <h97>Параметр</h97>
     <h96>By parameter:</h96>
     <h98>Distance between the centers of the rods</h98>
@@ -5841,7 +5845,6 @@
     <h187>Reselect beams that were processed in the current view when using the plugin</h187>
     <jt1>Longitudinal reinforcement joints are not created. The rods are cut off at the side of the beam according to the specified value of the cover layer from the ends of the reinforcement</jt1>
     <jt2>Straight joints of the rebars of the longitudinal reinforcement are created. The anchoring length is set from the edge of the beam</jt2>
-    <jt3>Joints with bend of the longitudinal rebars that lie in the upper zone of the beam are created. Straight joints of longitudinal rebars that lie in the bottom zone of the beam are created</jt3>
     <m1>Pick beams</m1>
     <m2>Enter a value from</m2>
     <m3>to</m3>
