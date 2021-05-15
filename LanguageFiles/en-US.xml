@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- &#x0a; - newline character for xaml -->
-<ModPlus Name="en-US" Version="4.20.7.0">
+<ModPlus Name="en-US" Version="4.20.8.0">
   <ModPlusAPI>
     <msg1>Failed to create Word object! Make sure you installed Microsoft Office</msg1>
     <msg2>No numeric values found!</msg2>
@@ -5840,11 +5840,21 @@
     <h104>Anchoring length of straight joints, mm:</h104>
     <h141>Do not close the window after creating reinforcement</h141>
     <h147>Reset</h147>
+    <h173>Straight rebars:</h173>
+    <h174>L-shaped rebars:</h174>
+    <h177>C-shaped cross holes (stirrups). Hooks in sketch:</h177>
+    <h178>S-shaped cross holes (stirrups). Hooks in sketch:</h178>
+    <h180>U-shaped rebars:</h180>
+    <h181>Rectangular stirrups:</h181>
+    <h182>L-shaped rebars with big bend:</h182>
+    <h183>Reset all values ​​to "Auto"</h183>
     <h184>Preferred Rebar Shapes</h184>
     <h186>Select again</h186>
     <h187>Reselect beams that were processed in the current view when using the plugin</h187>
+    <h205>C-shaped cross holes (stirrups). Revit hooks:</h205>
+    <h206>S-shaped cross holes (stirrups). Revit hooks:</h206>
     <jt1>Longitudinal reinforcement joints are not created. The rods are cut off at the side of the beam according to the specified value of the cover layer from the ends of the reinforcement</jt1>
-    <jt2>Straight joints of the rebars of the longitudinal reinforcement are created. The anchoring length is set from the edge of the beam</jt2>
+    <jt2>Straight joints of the rebars of the longitudinal reinforcement are created. The anchoring length is set from the edge of the beam. The joints are only created if there is a wall or column at the end of the beam, otherwise the joints will not be created and the longitudinal bars will be cut at the end of the beam, taking into account the specified ends cover</jt2>
     <m1>Pick beams</m1>
     <m2>Enter a value from</m2>
     <m3>to</m3>
@@ -5904,6 +5914,9 @@
     <t41>Save the reinforcement settings of current group in the xml file</t41>
     <t42>Load the reinforcement settings from the xml file and set it for the current group</t42>
     <t53>Reset all values ​​of the current default reinforcement settings to the default values ​​set in the plugin</t53>
+    <t63>You can specify preferred rebar shapes for different types of rebars created by the plugin.</t63>
+    <t64>Setting the preferred shapes does not guarantee that the reinforcement will be created using the specified shape of the rebar.</t64>
+    <t65>When creating rebars, an attempt will be made to use the specified shape. If creating a rebar with the specified shape is not possible, Revit will automatically search for a suitable shape or create a new shape.</t65>
     <t66>Save current reinforcement settings as default reinforcement settings</t66>
     <re1>An error occurred while creating longitudinal reinforcement for beam id = {0}:</re1>
     <re2>An error occurred while calculating the location points of the transverse reinforcement for beam id = {0}:</re2>
