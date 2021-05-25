@@ -3377,6 +3377,7 @@
     <p97>Space length</p97>
     <p98>Interval between series</p98>
     <p99>Small tick mark height</p99>
+    <p100>Corner radius</p100>
     <d86>Corner radius of the fragment mark</d86>
   </mpESKD>
   <whshScheduleLookup LocalName="Schedule lookup"
